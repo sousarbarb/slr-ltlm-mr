@@ -1,0 +1,11 @@
+﻿label	replace by
+copyright	
+elsevier b v	
+elsevier bv	
+elsevier science	
+elsevier science bv	
+elsevier science inc	
+inc	
+john wiley & sons	
+ltd	
+wiley periodical	

@@ -1,0 +1,18 @@
+﻿label	replace by
+calero, c	calero-medina, c
+medina, cc	calero-medina, c
+medina, cmc	calero-medina, c
+moed, h	moed, hf
+moed, hk	moed, hf
+noyons, e	noyons, ecm
+noyons, ec	noyons, ecm
+tijssen, r	tijssen, rjw
+vaneck, jn	van eck, nj
+van leeuwen, t	van leeuwen, tn
+vanleeuwen, t	van leeuwen, tn
+vanleeuwen, tn	van leeuwen, tn
+vanraan, a	van raan, afj
+vanraan, afj	van raan, afj
+vanraananton, fj	van raan, afj
+van raan, a	van raan, afj
+van raan, t	van raan, afj

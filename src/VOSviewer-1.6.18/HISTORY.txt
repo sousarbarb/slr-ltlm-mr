@@ -1,0 +1,441 @@
+1.6.17 -> 1.6.18 (January 24, 2022)
+- Querying of the OpenAlex API has been added.
+- Querying of the Europe PMC API has been improved as follows:
+  - Support has been added for downloading reference data, enabling citation-based maps to be created.
+  - Support has been added for searching in full texts (in addition to titles and abstracts).
+  - Support has been added for searching using the OR operator.
+- Querying of the Semantic Scholar API has been improved as follows:
+  - Old Semantic Scholar API has been replaced by new one (https://medium.com/ai2-blog/a-new-and-improved-semantic-scholar-api-8dd6329972bc).
+  - Support has been added for creating co-authorship, citation, and bibliographic coupling maps of organizations.
+  - Topics are no longer supported by Semantic Scholar and have been replaced by fields of study. Co-occurrence maps of topics have therefore been replaced by co-occurrence maps of fields of study.
+- Querying of the Crossref API has been improved. Support has been added for querying the API using ROR (Research Organization Registry) IDs (https://www.crossref.org/blog/a-ror-some-update-to-our-api/).
+- Microsoft Academic has been discontinued. Querying of the Microsoft Academic API is therefore not supported anymore.
+
+1.6.16 -> 1.6.17 (July 22, 2021)
+- Support has been added for sharing maps online. Maps can be uploaded to Google Drive, Dropbox, and Microsoft OneDrive. Maps will be visualized using VOSviewer Online.
+- Support has been added for creating maps based on Lens files.
+- Support has been added for VOSviewer JSON files. This is a new file type that provides an alternative for VOSviewer map and network files.
+- Bug in querying the Crossref API has been solved.
+
+1.6.15 -> 1.6.16 (November 25, 2020)
+- Support has been added for querying the Microsoft Academic API using author, affiliation, and journal IDs.
+- Support has been added for creating term co-occurrence maps based on Semantic Scholar data.
+- Problems in reading Dimensions files have been solved.
+- Problems in querying the Semantic Scholar API have been solved.
+- Version 1.1.0 of the networkanalysis library for network layout and network clustering (https://github.com/CWTSLeiden/networkanalysis) has been integrated.
+
+1.6.14 -> 1.6.15 (April 1, 2020)
+- Querying of the Microsoft Academic API has been repaired. The L attribute, which is not supported anymore by the Microsoft Academic API, is no longer used.
+- Querying of the Microsoft Academic API has been improved as follows:
+  - Support has been added for searching in abstracts.
+  - Support has been added for searching using the OR operator.
+  - Support has been added for restricting query results to primary documents and to documents with DOIs.
+  - Title/abstract search has been improved by normalizing the search string (e.g., replacing punctuation marks by spaces).
+- The following bugs have been solved:
+  - Bug in creating citation and bibliographic coupling maps based on Microsoft Academic data. Document IDs were incorrectly processed as regular integers instead of long integers.
+  - Bug in querying the Crossref API using title search. Title search was case sensitive.
+  - Some minor bugs in the user interface of the Create Map wizard.
+
+1.6.13 -> 1.6.14 (January 15, 2020)
+- Crossref has been replaced by Microsoft Academic as the default API.
+- Support has been added for querying the Microsoft Academic API using DOI files.
+- Code for querying the Microsoft Academic API has been revised. Instead of depreciated extended metadata attributes, top level attributes are requested.
+- Title search for querying the Crossref API has been repaired. The query.title feature of the Crossref API is no longer supported. Instead of this feature, the query.bibliographic feature is used.
+- Requirements for DOI files have been weakened. Any text file that contains DOIs can be used as a DOI file.
+- UTF8 encoding is always used for writing Pajek files. This ensures that Pajek files can be read by Pajek.
+- When reading a VOSviewer map file and a VOSviewer network file, item IDs in the network file are no longer required to also occur in the map file. Links involving items not found in the map file are ignored.
+- The following bugs have been solved:
+  - Bug in querying the Microsoft Academic API. Authors sometimes were listed multiple times in the author list of a document.
+  - Bug in querying the Crossref API using DOI files. Documents sometimes were not retrieved.
+  - Bug in handling documents without a publication year. These documents were not handled correctly in the Create Map wizard and in overlay visualizations based on publication year.
+  - Bug in labeling documents when there are multiple documents with the same first author and the same publication year.
+
+1.6.12 -> 1.6.13 (September 16, 2019)
+- The following bugs have been solved:
+  - Bug in code for reading Web of Science files in plain text format. This bug occurs when the EY field is used in a plain text Web of Science file.
+  - Bug in VOSviewer update notification.
+  - Minor bug in the optimization algorithm of the layout technique.
+
+1.6.11 -> 1.6.12 (August 31, 2019)
+- Support has been added for creating maps based on data downloaded through the Microsoft Academic API.
+- Support has been added for interactive querying of the Europe PMC API based on affiliation.
+- 'Verify retrieved documents' step has been added to the Create Map wizard. This step enables verification of documents retrieved through an API.
+- Code for reading Web of Science files has been revised. For 'early access' documents, the publication year is extracted from the EY field instead of the PY field.
+
+1.6.10 -> 1.6.11 (April 3, 2019)
+- Problems in reading Scopus files have been solved.
+
+1.6.9 -> 1.6.10 (January 10, 2019)
+- Support has been added for creating co-citation and term co-occurrence maps based on Dimensions files.
+- Support has been added for creating co-authorship, keyword co-occurrence, and term co-occurrence maps based on EndNote and RefWorks files.
+- Support has been added for creating maps based on data downloaded through the Europe PMC, Semantic Scholar, OCC (OpenCitations Corpus), COCI (OpenCitations Index of Crossref open DOI-to-DOI citations), and Wikidata APIs.
+- Search Query tab has been added to the Create Map wizard to enable interactive querying of the Crossref and Europe PMC APIs.
+- Some smaller changes have been made to the Create Map wizard. The most important changes are:
+  - 'Choose data source' step has been added to the Create Map wizard.
+  - Check boxes for ignoring structured abstract labels and copyright statements have been moved from the 'Select files' step to the 'Choose fields' step in the Create Map wizard.
+  - Check box for reducing first names of authors to initials is now unchecked by default.
+  - Error handling for APIs has been improved.
+  - Code for saving JSON files has been made more memory efficient.
+  - URLs of documents in bibliographic coupling maps created based on Dimensions files have been changed. URLs now refer to the Dimensions website instead of the publisher's website. This is consistent with the URLs of documents in citation maps created based on Dimensions files.
+
+1.6.8 -> 1.6.9 (August 29, 2018)
+- Support has been added for creating co-authorship, citation, and bibliographic coupling maps based on Dimensions files.
+- To ensure compatibility with Java 9 and 10, the user interface library Insubstantial has been replaced by Radiance Substance. This has resulted in some small changes in the user interface.
+- When creating a map based on bibliographic data, the default choice for the number of items has been increased from 500 to 1000.
+- Default value for the maximum number of lines that are displayed has been increased from 500 to 1000.
+- UTF8 encoding is always used for writing GML files. This ensures that GML files can be read by Gephi.
+
+1.6.7 -> 1.6.8 (April 27, 2018)
+- Algorithms for parsing of reference strings in Web of Science, Scopus, and Crossref JSON files and for citation matching have been improved. A high-level description of the algorithms can be found in the VOSviewer manual.
+- Support has been restored for creating co-authorship, citation, and bibliographic coupling maps of organizations based on Scopus files. This functionality was removed in version 1.6.6, but users have requested this functionality to be restored.
+- Support has been restored for creating co-authorship maps of organizations based on PubMed files. This functionality was removed in version 1.6.6, but users have requested this functionality to be restored. Cleaning of PubMed organization data has been improved.
+- Support has been added for creating co-authorship, citation, and bibliographic coupling maps of organizations based on Crossref JSON files.
+- Code for reading Web of Science files has been revised. The AU field is used if the AF field is not available.
+- Further changes have been made to the code for reading RIS files in order to make sure that RIS files created by EndNote can be read.
+- Some minor changes to the user interface have been made.
+- Bug related to the command line parameter 'corpus' has been solved.
+
+1.6.6 -> 1.6.7 (February 16, 2018)
+- Colors used in the network visualization have been revised. The network visualization now uses a modified version of the tab20 color scheme obtained from Python's Matplotlib library (https://matplotlib.org/users/colormaps.html). Colors are available for 18 clusters. The remaining clusters are colored grey.
+- Colors used in the overlay and density visualizations have been revised. The overlay and density visualizations now provide multiple color schemes. These are modified versions of color schemes obtained from Python's Matplotlib library (https://matplotlib.org/users/colormaps.html). The viridis color scheme is used as the default scheme.
+- Lab color model has replaced RGB color model for interpolating colors in the network, overlay, and density visualizations.
+- Algorithm for automatically determining minimum and maximum scores in the Set Overlay Colors Range dialog box has been improved.
+- Support has been added for ignoring 'hyperauthorship' publications (i.e., publications with a large number of authors) when creating co-authorship, citation, and bibliographic coupling maps of authors, organizations, and countries.
+- Support has been added for including first names of authors when creating co-authorship, citation, and bibliographic coupling maps based on Web of Science or PubMed files. A choice can be made between using first names or converting first names to initials. The conversion of first names to initials when creating maps based on Crossref data has been revised.
+- Support has been added for ignoring commonly used structured abstract section labels when creating term maps. The list of section labels that are ignored can be found in the VOSviewer manual.
+- List of adjectives that are ignored when creating term maps has been revised. The revised list can be found in the VOSviewer manual.
+- Support has been added for saving screenshots in the TIFF file format.
+- Support has been added for saving screenshots with a transparent background (only for the PDF, PNG, and TIFF file formats).
+- Code for reading RIS files has been revised in order to make sure that RIS files created by EndNote can be read.
+- Some minor changes to the user interface have been made.
+- Some small bugs have been solved.
+
+1.6.5 -> 1.6.6 (October 23, 2017)
+- A number of changes have been made to the Create Map wizard:
+  - Support has been removed for creating co-authorship, citation, and bibliographic coupling maps of organizations based on Scopus files. The data quality is insufficient.
+  - Support has been removed for creating co-authorship maps of organizations based on PubMed files. The data quality is insufficient.
+  - Support has been added for creating maps based on Crossref JSON files.
+  - Support has been added for creating maps based on data downloaded through the Crossref API.
+  - When creating a citation or bibliographic coupling map of documents, the label of a document includes a letter after the publication year if there are multiple documents that have the same first author and the same publication year (e.g., 'Smith (2015a)' and 'Smith (2015b)').
+  - When creating a map based on bibliographic data, documents without authors are handled in a consistent way for all file types.
+  - Warning message is shown when creating a co-citation map of cited authors based on Web of Science files. Only first authors are included.
+  - Warning message is shown when creating a co-citation map of cited references or cited sources based on Scopus files. The data quality may be insufficient.
+- Visualizations have been improved. In particular, improvements have been made to mouseover effects.
+- Some minor improvements to the screenshots have been made.
+- Lines text box in the options panel has been replaced by Min. strength and Max. lines text boxes. Default value for the maximum number of lines that are displayed has been set to 500.
+- Availability of fonts in the Font drop down list in the options panel has been made dependent on the use of CJKV (Chinese, Japanese, Korean, and Vietnamese) characters in the labels of items. When the labels of items include CJKV characters, only the SansSerif font is available.
+- A number of changes have been made to the way in which encodings of text files are handled:
+  - Functionality for detecting the encoding of a text file has been improved using the juniversalchardet library.
+  - Encoding that is used when writing item labels to a text file has been made dependent on encoding that was detected when the item labels were read from a text file.
+  - When data is written to a text file using the UTF-8 encoding, a BOM (byte order mark) is added.
+- Code for writing GML files has been revised in order to make sure that GML files can be read by Gephi.
+- Command line parameters 'min_line_strength', 'max_n_lines', 'pan_step_size', 'zoom_speed', and 'zoom_step_size' have been added. Command line parameter 'n_lines' has been removed.
+- Some minor changes to the user interface have been made.
+- A number of bugs have been solved. The most important bugs are:
+  - Null pointer exception when creating a map without links.
+  - Citation matching algorithm treats DOIs as case-sensitive when creating citation and bibliographic coupling maps.
+
+1.6.4 -> 1.6.5 (September 26, 2016)
+- An Overlay Visualization tab has been added to the main panel. This tab replaces the 'Score colors' and 'User defined colors' options available in the options panel when the Network Visualization tab is selected in the main panel. The 'No colors' option is no longer available in the options panel.
+- Functionality for creating maps based on bibliographic data and based on text data has been improved and extended:
+  - Duplicate records in Web of Science, Scopus, and PubMed files are automatically removed.
+  - When creating a map based on bibliographic data from Web of Science or Scopus, a citation threshold can be used to select the items to be included in the map.
+  - When creating a map based on bibliographic data from Web of Science or Scopus, additional weights and scores providing normalized and unnormalized citation statistics are calculated.
+  - When creating a map based on bibliographic data, item descriptions are no longer generated, except when creating a map of a citation network or a bibliographic coupling network of documents.
+  - When creating a map based on bibliographic data, an additional score providing publication year statistics is calculated.
+  - When creating a map based on text data from Web of Science or Scopus, an additional score providing unnormalized citation statistics is calculated.
+  - When creating a map of a citation network of documents, there can be only one citation link between two documents.
+- Standardized weights have been introduced:
+  - When a map has been created or a map and a network have been opened, two standardized weights are calculated for each item. One weight is the number of links of an item. The other weight is the total strength of the links of an item. The latter weight is not available when all links in a network have a strength of 1.
+  - In the Weights drop down list in the options panel, the standardized weights are always listed above the user-defined weights. By default, the first user-defined weight is selected. If there are no user-defined weights, the total link strength weight is selected by default.
+- A large number of command line parameters have been added. In particular, command line parameters have been added for saving maps and saving screenshots.
+- A number of changes to the user interface have been made. The most important changes are:
+  - Most of the functionality of the information panel has been transferred to the status bar. The information panel is no longer available if there are no item descriptions.
+  - The options panel has been reorganized. Most importantly, the weights and scores drop down lists have been made more prominently visible in the top part of the options panel.
+  - The order of the Pajek and GML tabs in the Create Map wizard and the Open Map dialog box has been reversed.
+  - A Save Map dialog box has been added. Saving a normalized network is no longer supported.
+  - Drag and drop functionality of the main panel has been improved. Support for dropping GML files and Pajek network files has been added.
+  - Quality of the density visualization has been improved by increasing the number of points for which the density calculations are performed. In this way, quality loss due to interpolation has been reduced.
+- A number of bugs have been solved. The most important bugs are:
+  - When clicking the Update Clustering button on the Analysis tab in the action panel, the selected weight in the Weights drop down list in the options panel may change.
+  - The cluster density visualization shows the density of items that do not belong to any cluster.
+  - Various bugs related to reading and writing VOSviewer map files, GML files, and Pajek network files.
+
+1.6.3 -> 1.6.4 (April 7, 2016)
+- Support has been added for creating keyword co-occurrence maps and citation maps. Citation maps are maps based on direct citation relations between documents, sources, authors, organizations, or countries. The direction of a citation is ignored.
+- Support has been added for creating maps based on RIS files.
+- Functionality has been added for automatically determining the values of the attraction and repulsion parameters of the layout technique when creating a map. Co-authorship maps of authors, keyword co-occurrence maps, and citation maps of documents use values of, respectively, -1, 0, and 0 for the repulsion parameter. All other maps use a value of 1 for the repulsion parameter. The attraction parameter always has a value of 2.
+- When creating a map based on bibliographic data, the default choice for the number of items has been set to 500. Previously, the default choice was to include all items.
+- Optimization algorithm of the clustering technique has been improved based on the idea of 'fast local moving'.
+- Items may have no cluster assignment.
+- Functionality has been added for removing small clusters from the results of the clustering technique. When small clusters are removed, items belonging to these clusters have no cluster assignment.
+- Functionality has been added for normalizing scores.
+- Some changes to the options panel have been made:
+  - Some improvements have been made to the 'Lines' spinner.
+  - The 'Apply normalization' check box has been removed.
+  - The 'Colored lines' and 'Curved lines' check boxes are now checked by default.
+- When a map and a network have been opened using the Open Map dialog box, the layout and clustering techniques are no longer disabled.
+- When the option 'No normalization' or 'LinLog/modularity' is selected on the Analysis tab (formerly the Map tab) in the action panel, it is no longer possible to save the normalized network.
+- When reading a VOSviewer map file or a VOSviewer scores file, proper checks for NaN values are made. Null values are interpreted as NaN values.
+- When writing a VOSviewer map file, the order of the columns has been changed.
+- When reading a Scopus file, parsing of reference strings no longer depends on the use of upper case letters in author names.
+- Command line parameters 'scores_normalization' and 'show_item' have been added. Command line parameters 'normalized_lines' and 'view_only' have been removed.
+- A number of changes to the user interface have been made. The most important changes are:
+  - A number of improvements have been made to the action panel:
+    - The Action tab has been renamed into the File tab and the Map tab has been renamed into the Analysis tab.
+    - The 'Group items by cluster' check box on the Items tab is now checked by default.
+    - The Analysis tab (formerly the Map tab) has been redesigned. Normalization methods 1 and 2 have been renamed into, respectively, 'Association strength' and 'Fractionalization'. The term 'mapping' has been replaced by 'layout'.
+  - The first step in the Create Map wizard has been redesigned.
+  - Some improvements have been made to the color bar that is shown when working with overlay visualizations.
+  - A status bar has been added.
+- Mac OS X version of VOSviewer is now signed with a Developer ID to support the Gatekeeper feature that was introduced in OS X Mountain Lion.
+- A number of bugs have been solved. The most important bugs are:
+  - When the normalization method is changed, this change does not immediately become effective.
+  - Bug that occurs when creating a term map using command line parameters.
+  - Bugs related to the presence of multiple weights or multiple scores per item. These bugs occur when creating a map, opening a map, or running the layout or clustering technique.
+
+1.6.2 -> 1.6.3 (October 26, 2015)
+- Support has been added for creating bibliographic coupling and co-authorship maps of countries.
+- Support has been added for ignoring copyright statements when creating term maps.
+- When creating bibliographic coupling, co-citation, and co-authorship maps of authors based on Web of Science, Scopus, or PubMed files, dummy author names ('[Anonymous]', '[No author name available]', and 'et al.') are removed.
+- Support has been added for the tags '<cluster>', '<weight label>', '<weight>', '<score label>', and '<score>' in the descriptions of items.
+- Command line parameter 'colors' has been added.
+- Some minor changes to the user interface have been made.
+- A number of bugs have been solved. The most important bugs are:
+  - When creating term maps based on PubMed files, the abstracts of publications are processed only partially.
+  - When creating bibliographic coupling and co-authorship maps of organizations, no deduplication is performed for publications with multiple addresses belonging to the same organization.
+
+1.6.1 -> 1.6.2 (August 27, 2015)
+- A number of improvements have been made to the network visualization:
+  - Thickness of lines has been made dependent on link strength.
+  - Support for curved and colored lines has been added.
+  - Visual effects (transparency and mouseover) have been improved.
+- Support has been added for having multiple weights and multiple scores per item.
+- Bibliographic coupling, co-citation, co-authorship, and term maps are created with multiple weights per item (e.g., documents and co-authorships or occurrences and co-occurrences).
+- Term maps created based on Web of Science, Scopus, or PubMed files now always include scores (if the data required to calculate scores is available). Each term has one or two scores (i.e., average publication year and average citation impact).
+- Default counting method for creating bibliographic coupling, co-citation, and co-authorship maps has been changed from fractional counting to full counting.
+- Priority of cluster colors and score colors has been reversed. Cluster colors now have priority over score colors.
+- Code for reading GML files has been revised in order to make sure that GML files created by Gephi can be read.
+- A number of command line parameters have been added. The 'label_size' parameter has been replaced by the 'scale' parameter.
+- Some changes to the user interface have been made:
+  - Height of the options panel has been increased. Width of the information panel has been decreased.
+  - Options panel has been partly redesigned.
+  - Min./Max. Scores dialog box is now called Set Score Colors Range dialog box.
+  - Weights of items are shown in the information panel.
+- A number of bugs have been solved. Some of the more important bugs are:
+  - Double counting of co-occurrences when creating term maps.
+  - Bug in code for writing CSV files (incorrect separator; tab instead of comma).
+  - Items tab is not always updated properly.
+
+1.6.0 -> 1.6.1 (March 16, 2015)
+- Support for GML files has been added.
+- Support for creating co-authorship maps based on PubMed files has been added.
+- Code for reading text files consisting of multiple columns (e.g., VOSviewer map and network files and Web of Science files) and CSV files (e.g., Scopus files) has been improved. In version 1.6.0, Scopus files often were not read properly, causing some lines to be ignored. Also, files saved using Excel sometimes caused problems. These issues have been solved.
+- To improve the quality of the part-of-speech tagging for creating term maps, sentences that are completely in upper case are converted to lower case.
+- When creating term map overlay visualizations based on Web of Science, Scopus, or PubMed files, checks have been implemented to properly handle invalid publication years.
+- First step in the Create Map wizard has been redesigned. Three options are offered instead of two. The option 'Create a map based on a network' has been split into the options 'Create a map based on a network' and 'Create a map based on bibliographic data'.
+- Maximum zoom level in the main panel has been increased.
+- Command line parameters 'black_background' and 'white_background' have been added.
+- Some minor changes to the user interface have been made.
+- Some bugs have been solved.
+
+1.5.7 -> 1.6.0 (January 11, 2015)
+- Support for overlay visualizations has been improved:
+  - Scores are no longer expected to be in the range between 0 and 2.
+  - Suitable mapping from scores to colors is determined algorithmically. This mapping can be changed manually in the Min./Max. Scores dialog box.
+  - Color bar is presented horizontally rather than vertically, creating more space for showing scores.
+- A number of changes have been made to the Create Map wizard:
+  - Support has been added for creating bibliographic coupling, co-citation, and co-authorship maps based on Scopus files.
+  - Support has been added for creating term maps based on PubMed files.
+  - Support has been added for creating term map overlay visualizations based on Web of Science, Scopus, and PubMed files. These visualizations can be created either for showing time trends or for showing citation impact differences.
+- A number of algorithmic changes have been made:
+  - Data structure for storing networks has been changed. Networks are stored in a sparse format rather than in the full format that was used previously. This leads to a significant reduction in memory usage in the case of sparse networks.
+  - Option has been added in the Advanced Parameters dialog box for using the LinLog/modularity normalization.
+  - VOS mapping technique has been generalized. Two new parameters, the mapping attraction and the mapping repulsion, have been made available on the Map tab. Changing the values of these parameters may in some cases lead to more satisfactory mapping results.
+  - Optimization algorithm of the VOS mapping technique has been changed. The majorization algorithm that was used previously has been replaced by a gradient descent algorithm. As a consequence, the Efficient Java Matrix Library is no longer needed. The mapping parameters available in the Advanced Parameters dialog box have been changed.
+  - Default number of iterations of the optimization algorithm of the VOS clustering technique has been reduced from 50 to 10 in the Advanced Parameters dialog box. Clustering therefore takes less time.
+- A number of changes have been made to the user interface. The most important changes are:
+  - The label view, density view, and cluster density view have been replaced by a network visualization and a density visualization.
+  - The scatter view has been removed.
+  - The Options dialog box has been replaced by an options panel.
+  - An Update VOSviewer button has been added to the Action tab.
+- A number of changes have been made to the visualization options:
+  - Option has been added for choosing between different fonts for displaying the labels of items. The default font has been changed from SansSerif into Open Sans.
+  - Option has been added for having a black instead of a white background in the network visualization.
+  - Option has been added for importing and exporting density colors.
+  - A number of less important visualization options have been removed. This simplifies the user interface.
+- Mac compatibility has been improved. A special Mac OS X version of VOSviewer has been created.
+- Various libraries (FreeHep VectorGraphics, Insubstantial, and SwingX) have been updated.
+- A substantial number of bugs have been solved. Some of the more important bugs are:
+  - URLs are incorrectly linked to items when there are multiple connected components and only the largest connected component is kept.
+  - Null pointer exception in case of networks with unconnected items.
+  - Cluster numbers starting at 0 rather than 1 in Pajek partition files.
+  - Null pointer exception when reading Scopus files.
+  - Missing Scopus file names in the VOSviewer title bar.
+  - Resizing the VOSviewer main window.
+  - Too much overlap of labels.
+  - Missing VOSviewer logo when saving screenshots in vector format.
+  - Mapping and Clustering dialog boxes sometimes remain visible and VOSviewer then does not respond anymore. This bug seemed to occur mainly on Mac systems.
+  - Mouse events are not properly handled after closing a dialog box. This bug seemed to occur only on Mac systems.
+
+1.5.6 -> 1.5.7 (June 2, 2014)
+- Some of the default cluster colors have been changed slightly. The colors red (cluster 1) and blue (cluster 3) have both been made slightly less dark.
+- Some bugs have been solved.
+
+1.5.5 -> 1.5.6 (May 15, 2014)
+- Support has been added for creating co-authorship maps based on Web of Science files.
+- Algorithm for determining which labels are displayed and which are not has been improved.
+- Definition of normalization method 2 has been changed.
+- To improve the quality of the part-of-speech tagging for creating term maps, a distinction between upper case and lower case characters is no longer made.
+- Default settings in the Screenshot Options dialog box have been changed. The default scaling has been increased from 100% to 200%. A border is no longer included by default.
+- Reference to the Web of Science terms of use has been added to the Create Map wizard.
+- A small bug in the processing of Web of Science data has been solved.
+
+1.5.4 -> 1.5.5 (December 7, 2013)
+- Support has been added for scores files in creating term maps. Scores files can be used to create 'overlay visualizations'.
+- Screenshot Options dialog box has been added. This dialog box can be used to increase the resolution of screenshots.
+- Cleaning of bibliographic data extracted from Web of Science files has been improved.
+- Old CWTS logo has been replaced by new one.
+- Various libraries (Apache OpenNLP, Efficient Java Matrix Library, FreeHEP VectorGraphics, Insubstantial, and SwingX) have been updated.
+- A number of bugs have been solved. These bugs relate to:
+  - Frames in label view.
+  - Pajek partition files.
+  - Web of Science files.
+  - Identification of noun phrases.
+  - Screenshots.
+  - User interface.
+
+1.5.3 -> 1.5.4 (January 1, 2013)
+- Minimum cluster size parameter has been added.
+- Map tab has been redesigned. Most mapping and clustering parameters have been moved from the Map tab to an Advanced Parameters dialog box.
+- When a VOSviewer map file containing coordinates or cluster numbers is opened in the Create Map wizard, the wizard asks whether the coordinates or cluster numbers from the map file should be used or whether new coordinates or cluster numbers should be calculated. A Pajek network file containing coordinates is handled in a similar way.
+
+1.5.2 -> 1.5.3 (December 3, 2012)
+- Functionality has been added for switching between user defined item colors, score-based item colors, and cluster-based item colors. The 'cluster', 'score', 'red', 'green', and 'blue' columns may now all be used together in a VOSviewer map file.
+- Optimization algorithm of the VOS clustering technique has been improved. An Iterations parameter has been added to the Map tab in the action panel.
+- The JLAPACK library has been replaced by the Efficient Java Matrix Library, resulting in a significant increase in the speed of the optimization algorithm of the VOS mapping technique.
+- Search for updates functionality has been added.
+- When items do not have descriptions but do have scores, their scores are reported in the information panel.
+- VOSviewer label has been added to screenshots (in the lower left corner).
+- A number of changes to the user interface have been made (e.g., the Options tab has been replaced by an Options dialog box and automatic filtering has been added to the Items tab).
+- Some bugs have been solved.
+
+1.5.1 -> 1.5.2 (September 1, 2012)
+- Support for Pajek files has been extended.
+- Support has been added for Web of Science files in plain text format.
+- Support has been added for creating term maps based on Scopus files.
+- Functionality has been added for changing the font size of labels displayed in the main panel.
+- A number of new command line parameters have been added.
+- Default number of terms in a term map has been increased.
+- Some minor changes to the user interface have been made.
+- Some bugs have been solved.
+
+1.5.0 -> 1.5.1 (June 13, 2012)
+- Bug has been solved. This bug sometimes caused VOSviewer to crash when using Java 7.
+
+1.4.3 -> 1.5.0 (May 23, 2012)
+- Functionality has been added for creating different types of maps based on Web of Science files.
+- Functionality for creating term maps has been extended. Support for thesaurus files has been added. Document-term relations can be saved in a text file.
+- Functionality has been added for automatically recognizing the character encoding of a text file.
+- Splash screen has been added.
+- Some changes to the user interface have been made.
+- Some bugs have been solved.
+
+1.4.2 -> 1.4.3 (March 14, 2012)
+- Functionality has been added for creating a term map based on Web of Science files.
+- Some minor changes to the user interface have been made.
+
+1.4.1 -> 1.4.2 (February 23, 2012)
+- Some bugs in the Create Map wizard have been solved.
+- Random starts parameter of the VOS mapping technique has been added back to the Map tab in the action panel. (This parameter was removed in version 1.3.0.)
+- Command line parameter has been added for specifying the character encoding to be used for reading and writing text files.
+- Java version number has been added to the About dialog box.
+- Some minor changes to the user interface have been made.
+
+1.4.0 -> 1.4.1 (January 18, 2012)
+- Optimization algorithm of the VOS clustering technique has been improved. The new algorithm is much faster than the old one. The Random starts 2 parameter has been removed from the Map tab in the action panel.
+- Support has been added for cluster color files and score color files.
+- Distinction between scores and normalized scores has been removed. Normalization of scores is not performed anymore.
+- Color bar panel has been improved. Scores are no longer restricted to the range from 0 to 2.
+- Natural language processing techniques for term identification have been improved.
+- Support for command line parameters has been improved and extended.
+- Default height of the information panel has been increased.
+- Version 6.3 of the Substance library has been replaced by version 7.0.
+- Apache OpenNLP 1.5.1-incubating has been replaced by Apache OpenNLP 1.5.2-incubating.
+- Some bugs have been solved.
+
+1.3.2 -> 1.4.0 (September 10, 2011)
+- A clear separation between creating new maps and opening existing maps has been introduced. The Open Map dialog box can no longer be used for creating new maps. This dialog box can only be used for opening existing maps. The Create Map wizard has been added for creating new maps.
+- Functionality has been added for selecting the items to be included in a new map.
+- Functionality has been added for creating a term map based on a text corpus. Terms are identified using natural language processing techniques. Also, a technique for selecting the most relevant terms is provided.
+- Support has been added for map files with a NORMALIZED WEIGHT column.
+- Support has been added for map files with a SCORE or NORMALIZED SCORE column.
+- Functionality has been added for saving a map or a network in a Pajek file.
+- Names of the libraries used by VOSviewer have been added to the About dialog box.
+- Some changes to the user interface have been made.
+- Some bugs have been solved.
+
+1.3.1 -> 1.3.2 (June 8, 2011)
+- Functionality has been added for assigning URLs to items. When one clicks on the label of an item in the main panel, the URL assigned to the item will be opened.
+- Information on memory usage has been added to the About dialog box.
+- Some memory-related bugs have been solved.
+
+1.3.0 -> 1.3.1 (March 9, 2011)
+- Visualization of lines in the label view and the scatter view has been changed. The lines have become better visible.
+- Open button on Action tab is always enabled.
+- Some minor changes to the user interface have been made.
+- Some bugs have been solved.
+
+1.2.1 -> 1.3.0 (January 22, 2011)
+- File types used by VOSviewer have been changed. Item files, co-occurrences files, and coordinates files are no longer supported. Item files and coordinates files have been replaced by map files. Co-occurrences files have been replaced by network files.
+- Functionality has been added for saving normalized and unnormalized networks.
+- Support for asymmetric adjacency matrices (i.e., directed networks) has been added. Internally, these matrices are made symmetric.
+- Support for networks with unconnected items has been changed. One can choose to map either all items in the network or only the largest set of connected items.
+- Similarity measure 1 has been removed. Similarity measures are now referred to as normalization methods. Similarity measures 2 and 3 have become normalization methods 1 and 2, respectively. Self links may or may not be ignored during normalization. Normalization is no longer enforced.
+- Normalization is now performed each time the mapping and/or clustering techniques are run rather than only when a map is opened.
+- Functionality has been added for displaying lines between items in the label view and the scatter view of the main panel.
+- Various minor changes have been made to the way in which maps are shown in the different views of the main panel.
+- Functionality has been added for optimizing screenshots.
+- Functionality has been added for rotating and flipping maps.
+- Random starts parameter of the mapping technique has been removed from the Map tab in the action panel. The parameter now has a fixed value of 1. The default value of Convergence parameter of the mapping technique has been changed.
+- Action panel has been largely redesigned. The VOS tab is now called the Map tab.
+- Drag and drop functionality has been added to the main panel.
+- Information panel has been made always visible. The default description of items in the information panel has been changed.
+- Line numbers have been added to error messages that appear when reading a map file or a network file.
+- Version 6.1 of the Substance library (https://substance.dev.java.net/) has been integrated. As a consequence, the look and feel has changed.
+- Various bugs have been solved.
+
+1.2.0 -> 1.2.1 (June 15, 2010):
+- Bug during opening map has been solved.
+- Functionality for saving similarities files has been removed.
+- Default setting of "Group items by cluster" check box on the Items tab has been changed.
+
+1.1.0 -> 1.2.0 (May 18, 2010):
+- VOS clustering technique has been added.
+- Find tab has been redesigned. The tab is now called the Items tab.
+- Support for coordinates files with four columns has been added. The fourth column can be used to specify cluster numbers.
+- New similarity measure has been added.
+- Functionality has been added to the Change Cluster Colors dialog box for choosing cluster colors randomly.
+- Drag and drop functionality has been added to the Open Map dialog box.
+- Various small bugs have been solved.
+
+1.0.2 -> 1.1.0 (January 6, 2010):
+- Functionality has been added for automatically identifying the largest set of connected items.
+- Functionality has been added for changing the colors of clusters.
+- Support for items files with non-consecutive cluster numbers has been added.
+- Support for sparse co-occurrences files consisting of two (rather than three) columns has been added.
+- Import functionality for Pajek files has been added.
+- Error handling has been added for unexpected errors during file input, in particular for out of memory errors.
+- Various file I/O bugs have been solved.
+- Open Map dialog box has been redesigned.
+- Various minor changes to the user interface have been made, and some bugs in the user interface have been solved.
+
+1.0.1 -> 1.0.2 (October 1, 2009):
+- Copy screenshot to clipboard functionality has been added.
+- Print screenshot functionality has been added.
+- Zoom level used by the Show button on the Find tab has been changed.
+- Map reflection procedure has been changed.
+- Version 5.0 of the Substance library has been replaced by version 5.3.
+
+1.0.0 -> 1.0.1 (July 6, 2009):
+- About dialog box has been changed.

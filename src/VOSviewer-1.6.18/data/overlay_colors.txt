@@ -1,0 +1,4 @@
+﻿color value	red	green	blue
+0	127	127	127
+0.5	30	30	255
+1	255	0	0

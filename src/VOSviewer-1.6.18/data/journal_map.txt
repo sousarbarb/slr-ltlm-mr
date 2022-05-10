@@ -1,0 +1,233 @@
+﻿id	label	description	x	y	cluster	weight<Links>	weight<Total link strength>	weight<Citations>	score<Journal impact factor>
+1	eur j oper res	<table><tr><td>Journal:</td><td>EUROPEAN JOURNAL OF OPERATIONAL RESEARCH</td></tr><tr><td>ISSN:</td><td>0377-2217</td></tr><tr></tr></table>	0.8602	-0.6316	3	78	493	892	1.096
+2	am econ rev	<table><tr><td>Journal:</td><td>AMERICAN ECONOMIC REVIEW</td></tr><tr><td>ISSN:</td><td>0002-8282</td></tr><tr></tr></table>	-0.6906	-0.1531	1	115	602	643	2.239
+3	j financ	<table><tr><td>Journal:</td><td>JOURNAL OF FINANCE</td></tr><tr><td>ISSN:</td><td>0022-1082</td></tr><tr></tr></table>	-0.7616	0.3077	5	92	563	518	3.353
+4	acad manage j	<table><tr><td>Journal:</td><td>ACADEMY OF MANAGEMENT JOURNAL</td></tr><tr><td>ISSN:</td><td>0001-4273</td></tr><tr></tr></table>	0.6773	0.5419	2	96	552	450	5.017
+5	manage sci	<table><tr><td>Journal:</td><td>MANAGEMENT SCIENCE</td></tr><tr><td>ISSN:</td><td>0025-1909</td></tr><tr></tr></table>	0.5552	-0.3202	3	115	440	445	1.931
+6	j financ econ	<table><tr><td>Journal:</td><td>JOURNAL OF FINANCIAL ECONOMICS</td></tr><tr><td>ISSN:</td><td>0304-405X</td></tr><tr></tr></table>	-0.6573	0.2799	5	83	461	440	2.988
+7	comput oper res	<table><tr><td>Journal:</td><td>COMPUTERS & OPERATIONS RESEARCH</td></tr><tr><td>ISSN:</td><td>0305-0548</td></tr><tr></tr></table>	0.9035	-0.7444	3	36	254	439	1.147
+8	ecol econ	<table><tr><td>Journal:</td><td>ECOLOGICAL ECONOMICS</td></tr><tr><td>ISSN:</td><td>0921-8009</td></tr><tr></tr></table>	-0.1947	-0.2346	1	54	116	422	1.549
+9	j polit econ	<table><tr><td>Journal:</td><td>JOURNAL OF POLITICAL ECONOMY</td></tr><tr><td>ISSN:</td><td>0022-3808</td></tr><tr></tr></table>	-0.7921	-0.3348	1	83	395	415	4.19
+10	health econ	<table><tr><td>Journal:</td><td>HEALTH ECONOMICS</td></tr><tr><td>ISSN:</td><td>1057-9230</td></tr><tr></tr></table>	-0.3629	-0.2894	1	34	67	348	1.648
+11	j bus res	<table><tr><td>Journal:</td><td>JOURNAL OF BUSINESS RESEARCH</td></tr><tr><td>ISSN:</td><td>0148-2963</td></tr><tr></tr></table>	0.7323	0.1663	4	90	327	329	0.878
+12	j econometrics	<table><tr><td>Journal:</td><td>JOURNAL OF ECONOMETRICS</td></tr><tr><td>ISSN:</td><td>0304-4076</td></tr><tr></tr></table>	-0.7123	-0.2889	1	60	172	318	1.99
+13	j public econ	<table><tr><td>Journal:</td><td>JOURNAL OF PUBLIC ECONOMICS</td></tr><tr><td>ISSN:</td><td>0047-2727</td></tr><tr></tr></table>	-0.5807	-0.2332	1	72	241	316	1.403
+14	acad manage rev	<table><tr><td>Journal:</td><td>ACADEMY OF MANAGEMENT REVIEW</td></tr><tr><td>ISSN:</td><td>0363-7425</td></tr><tr></tr></table>	0.6694	0.6214	2	82	367	314	4.372
+15	strategic manage j	<table><tr><td>Journal:</td><td>STRATEGIC MANAGEMENT JOURNAL</td></tr><tr><td>ISSN:</td><td>0143-2095</td></tr><tr></tr></table>	0.5721	0.4007	2	90	421	307	2.829
+16	econometrica	<table><tr><td>Journal:</td><td>ECONOMETRICA</td></tr><tr><td>ISSN:</td><td>0012-9682</td></tr><tr></tr></table>	-0.6915	-0.2828	1	49	170	300	2.972
+17	world dev	<table><tr><td>Journal:</td><td>WORLD DEVELOPMENT</td></tr><tr><td>ISSN:</td><td>0305-750X</td></tr><tr></tr></table>	-0.2868	-0.056	1	38	86	295	1.565
+18	int j prod res	<table><tr><td>Journal:</td><td>INTERNATIONAL JOURNAL OF PRODUCTION RESEARCH</td></tr><tr><td>ISSN:</td><td>0020-7543</td></tr><tr></tr></table>	1.1282	-0.4138	3	42	186	291	0.56
+19	q j econ	<table><tr><td>Journal:</td><td>QUARTERLY JOURNAL OF ECONOMICS</td></tr><tr><td>ISSN:</td><td>0033-5533</td></tr><tr></tr></table>	-0.8	-0.0866	1	83	314	284	3.688
+20	j marketing	<table><tr><td>Journal:</td><td>JOURNAL OF MARKETING</td></tr><tr><td>ISSN:</td><td>0022-2429</td></tr><tr></tr></table>	0.8442	0.1352	4	74	358	283	3.75
+21	int j prod econ	<table><tr><td>Journal:</td><td>INTERNATIONAL JOURNAL OF PRODUCTION ECONOMICS</td></tr><tr><td>ISSN:</td><td>0925-5273</td></tr><tr></tr></table>	1.0751	-0.3917	3	50	212	274	0.995
+22	expert syst appl	<table><tr><td>Journal:</td><td>EXPERT SYSTEMS WITH APPLICATIONS</td></tr><tr><td>ISSN:</td><td>0957-4174</td></tr><tr></tr></table>	1.0338	-0.4754	3	29	95	269	1.177
+23	organ sci	<table><tr><td>Journal:</td><td>ORGANIZATION SCIENCE</td></tr><tr><td>ISSN:</td><td>1047-7039</td></tr><tr></tr></table>	0.6966	0.5407	2	77	373	269	3.13
+24	res policy	<table><tr><td>Journal:</td><td>RESEARCH POLICY</td></tr><tr><td>ISSN:</td><td>0048-7333</td></tr><tr></tr></table>	0.1157	0.2227	2	77	217	257	2.211
+25	organ stud	<table><tr><td>Journal:</td><td>ORGANIZATION STUDIES</td></tr><tr><td>ISSN:</td><td>0170-8406</td></tr><tr></tr></table>	0.4043	0.5583	2	80	287	256	2.042
+26	econ j	<table><tr><td>Journal:</td><td>ECONOMIC JOURNAL</td></tr><tr><td>ISSN:</td><td>0013-0133</td></tr><tr></tr></table>	-0.5698	-0.0464	1	80	199	254	1.548
+27	harvard bus rev	<table><tr><td>Journal:</td><td>HARVARD BUSINESS REVIEW</td></tr><tr><td>ISSN:</td><td>0017-8012</td></tr><tr></tr></table>	0.7737	0.4298	2	69	219	240	1.323
+28	j manage stud	<table><tr><td>Journal:</td><td>JOURNAL OF MANAGEMENT STUDIES</td></tr><tr><td>ISSN:</td><td>0022-2380</td></tr><tr></tr></table>	0.6289	0.6034	2	67	286	240	1.926
+29	rev econ stud	<table><tr><td>Journal:</td><td>REVIEW OF ECONOMIC STUDIES</td></tr><tr><td>ISSN:</td><td>0034-6527</td></tr><tr></tr></table>	-0.6717	-0.1291	1	87	231	239	2.539
+30	mis quart	<table><tr><td>Journal:</td><td>MIS QUARTERLY</td></tr><tr><td>ISSN:</td><td>0276-7783</td></tr><tr></tr></table>	1.1045	0.0766	4	52	229	238	5.826
+31	j int econ	<table><tr><td>Journal:</td><td>JOURNAL OF INTERNATIONAL ECONOMICS</td></tr><tr><td>ISSN:</td><td>0022-1996</td></tr><tr></tr></table>	-0.8173	-0.2334	1	53	203	236	1.541
+32	eur econ rev	<table><tr><td>Journal:</td><td>EUROPEAN ECONOMIC REVIEW</td></tr><tr><td>ISSN:</td><td>0014-2921</td></tr><tr></tr></table>	-0.6948	-0.1014	1	65	161	235	0.994
+33	j econ perspect	<table><tr><td>Journal:</td><td>JOURNAL OF ECONOMIC PERSPECTIVES</td></tr><tr><td>ISSN:</td><td>0895-3309</td></tr><tr></tr></table>	-0.3955	-0.0268	1	76	193	230	2.831
+34	rev econ stat	<table><tr><td>Journal:</td><td>REVIEW OF ECONOMICS AND STATISTICS</td></tr><tr><td>ISSN:</td><td>0034-6535</td></tr><tr></tr></table>	-0.6951	-0.1428	1	76	195	226	1.724
+35	j health econ	<table><tr><td>Journal:</td><td>JOURNAL OF HEALTH ECONOMICS</td></tr><tr><td>ISSN:</td><td>0167-6296</td></tr><tr></tr></table>	-0.5534	-0.252	1	35	96	220	1.521
+36	market sci	<table><tr><td>Journal:</td><td>MARKETING SCIENCE</td></tr><tr><td>ISSN:</td><td>0732-2399</td></tr><tr></tr></table>	0.5505	-0.0025	4	47	163	218	3.964
+37	decis support syst	<table><tr><td>Journal:</td><td>DECISION SUPPORT SYSTEMS</td></tr><tr><td>ISSN:</td><td>0167-9236</td></tr><tr></tr></table>	1.1277	-0.2527	3	31	114	216	1.119
+38	j consum res	<table><tr><td>Journal:</td><td>JOURNAL OF CONSUMER RESEARCH</td></tr><tr><td>ISSN:</td><td>0093-5301</td></tr><tr></tr></table>	0.5147	0.0276	4	35	118	215	1.738
+39	j monetary econ	<table><tr><td>Journal:</td><td>JOURNAL OF MONETARY ECONOMICS</td></tr><tr><td>ISSN:</td><td>0304-3932</td></tr><tr></tr></table>	-0.91	-0.2368	1	56	254	203	1.478
+40	j optimiz theory app	<table><tr><td>Journal:</td><td>JOURNAL OF OPTIMIZATION THEORY AND APPLICATIONS</td></tr><tr><td>ISSN:</td><td>0022-3239</td></tr><tr></tr></table>	0.8539	-0.8917	3	15	38	201	0.688
+41	j bank financ	<table><tr><td>Journal:</td><td>JOURNAL OF BANKING & FINANCE</td></tr><tr><td>ISSN:</td><td>0378-4266</td></tr><tr></tr></table>	-0.7998	0.177	5	51	169	191	0.753
+42	j account econ	<table><tr><td>Journal:</td><td>JOURNAL OF ACCOUNTING & ECONOMICS</td></tr><tr><td>ISSN:</td><td>0165-4101</td></tr><tr></tr></table>	-1.0108	0.8871	5	31	204	187	3.034
+43	inform manage-amster	<table><tr><td>Journal:</td><td>INFORMATION & MANAGEMENT</td></tr><tr><td>ISSN:</td><td>0378-7206</td></tr><tr></tr></table>	0.9786	0.016	4	46	152	185	1.631
+44	math program	<table><tr><td>Journal:</td><td>MATHEMATICAL PROGRAMMING</td></tr><tr><td>ISSN:</td><td>0025-5610</td></tr><tr></tr></table>	0.8394	-0.9005	3	13	38	184	1.475
+45	j marketing res	<table><tr><td>Journal:</td><td>JOURNAL OF MARKETING RESEARCH</td></tr><tr><td>ISSN:</td><td>0022-2437</td></tr><tr></tr></table>	0.4575	-0.1015	4	60	206	184	1.739
+46	appl econ	<table><tr><td>Journal:</td><td>APPLIED ECONOMICS</td></tr><tr><td>ISSN:</td><td>0003-6846</td></tr><tr></tr></table>	-0.5255	-0.2765	1	48	92	182	0.473
+47	rev financ stud	<table><tr><td>Journal:</td><td>REVIEW OF FINANCIAL STUDIES</td></tr><tr><td>ISSN:</td><td>0893-9454</td></tr><tr></tr></table>	-0.8064	0.0527	5	47	168	181	2.16
+48	oper res	<table><tr><td>Journal:</td><td>OPERATIONS RESEARCH</td></tr><tr><td>ISSN:</td><td>0030-364X</td></tr><tr></tr></table>	0.7045	-0.6779	3	36	90	180	1.467
+49	econ lett	<table><tr><td>Journal:</td><td>ECONOMICS LETTERS</td></tr><tr><td>ISSN:</td><td>0165-1765</td></tr><tr></tr></table>	-0.5817	-0.2521	1	59	121	179	0.302
+50	j organ behav	<table><tr><td>Journal:</td><td>JOURNAL OF ORGANIZATIONAL BEHAVIOR</td></tr><tr><td>ISSN:</td><td>0894-3796</td></tr><tr></tr></table>	0.7596	0.6404	2	45	125	179	1.981
+51	game econ behav	<table><tr><td>Journal:</td><td>GAMES AND ECONOMIC BEHAVIOR</td></tr><tr><td>ISSN:</td><td>0899-8256</td></tr><tr></tr></table>	-0.363	-0.3119	1	37	82	171	1.468
+52	j bus ethics	<table><tr><td>Journal:</td><td>JOURNAL OF BUSINESS ETHICS</td></tr><tr><td>ISSN:</td><td>0167-4544</td></tr><tr></tr></table>	0.3219	0.5156	2	53	130	170	0.538
+53	technovation	<table><tr><td>Journal:</td><td>TECHNOVATION</td></tr><tr><td>ISSN:</td><td>0166-4972</td></tr><tr></tr></table>	0.6111	0.2465	2	46	125	169	1.004
+54	j environ econ manag	<table><tr><td>Journal:</td><td>JOURNAL OF ENVIRONMENTAL ECONOMICS AND MANAGEMENT</td></tr><tr><td>ISSN:</td><td>0095-0696</td></tr><tr></tr></table>	-0.3239	-0.279	1	45	108	168	1.438
+55	j bus	<table><tr><td>Journal:</td><td>JOURNAL OF BUSINESS</td></tr><tr><td>ISSN:</td><td>0021-9398</td></tr><tr></tr></table>	-0.6996	0.3525	5	58	189	165	1.133
+56	reliab eng syst safe	<table><tr><td>Journal:</td><td>RELIABILITY ENGINEERING & SYSTEM SAFETY</td></tr><tr><td>ISSN:</td><td>0951-8320</td></tr><tr></tr></table>	1.0553	-0.6565	3	17	40	164	1.004
+57	j oper res soc	<table><tr><td>Journal:</td><td>JOURNAL OF THE OPERATIONAL RESEARCH SOCIETY</td></tr><tr><td>ISSN:</td><td>0160-5682</td></tr><tr></tr></table>	0.6929	-0.5899	3	26	81	161	0.784
+58	j econ lit	<table><tr><td>Journal:</td><td>JOURNAL OF ECONOMIC LITERATURE</td></tr><tr><td>ISSN:</td><td>0022-0515</td></tr><tr></tr></table>	-0.6492	-0.1777	1	48	140	158	3.973
+59	am j agr econ	<table><tr><td>Journal:</td><td>AMERICAN JOURNAL OF AGRICULTURAL ECONOMICS</td></tr><tr><td>ISSN:</td><td>0002-9092</td></tr><tr></tr></table>	-0.3149	-0.3471	1	35	78	153	1.034
+60	j manage	<table><tr><td>Journal:</td><td>JOURNAL OF MANAGEMENT</td></tr><tr><td>ISSN:</td><td>0149-2063</td></tr><tr></tr></table>	0.591	0.634	2	62	197	153	2
+61	j int bus stud	<table><tr><td>Journal:</td><td>JOURNAL OF INTERNATIONAL BUSINESS STUDIES</td></tr><tr><td>ISSN:</td><td>0047-2506</td></tr><tr></tr></table>	0.7511	0.4621	2	53	220	151	2.283
+62	account rev	<table><tr><td>Journal:</td><td>ACCOUNTING REVIEW</td></tr><tr><td>ISSN:</td><td>0001-4826</td></tr><tr></tr></table>	-0.8844	0.9268	5	34	182	150	1.733
+63	transport res b-meth	<table><tr><td>Journal:</td><td>TRANSPORTATION RESEARCH PART B-METHODOLOGICAL</td></tr><tr><td>ISSN:</td><td>0191-2615</td></tr><tr></tr></table>	0.3469	-0.5659	3	18	38	148	1.948
+64	j global optim	<table><tr><td>Journal:</td><td>JOURNAL OF GLOBAL OPTIMIZATION</td></tr><tr><td>ISSN:</td><td>0925-5001</td></tr><tr></tr></table>	0.9431	-0.9532	3	9	43	148	0.813
+65	rev account stud	<table><tr><td>Journal:</td><td>REVIEW OF ACCOUNTING STUDIES</td></tr><tr><td>ISSN:</td><td>1380-6653</td></tr><tr></tr></table>	-1.102	0.9831	5	14	73	146	2.176
+66	j econ theory	<table><tr><td>Journal:</td><td>JOURNAL OF ECONOMIC THEORY</td></tr><tr><td>ISSN:</td><td>0022-0531</td></tr><tr></tr></table>	-0.4591	-0.4143	1	37	103	142	1.353
+67	j policy anal manag	<table><tr><td>Journal:</td><td>JOURNAL OF POLICY ANALYSIS AND MANAGEMENT</td></tr><tr><td>ISSN:</td><td>0276-8739</td></tr><tr></tr></table>	-0.4878	-0.1771	1	19	37	139	1.8
+68	acad manag learn edu	<table><tr><td>Journal:</td><td>ACADEMY OF MANAGEMENT LEARNING & EDUCATION</td></tr><tr><td>ISSN:</td><td>1537-260X</td></tr><tr></tr></table>	0.487	0.6629	2	44	156	135	2.796
+69	organ behav hum dec	<table><tr><td>Journal:</td><td>ORGANIZATIONAL BEHAVIOR AND HUMAN DECISION PROCESSES</td></tr><tr><td>ISSN:</td><td>0749-5978</td></tr><tr></tr></table>	0.5274	0.2864	4	43	115	134	1.847
+70	j econ behav organ	<table><tr><td>Journal:</td><td>JOURNAL OF ECONOMIC BEHAVIOR & ORGANIZATION</td></tr><tr><td>ISSN:</td><td>0167-2681</td></tr><tr></tr></table>	-0.3557	-0.0907	1	49	87	133	0.772
+71	omega-int j manage s	<table><tr><td>Journal:</td><td>OMEGA-INTERNATIONAL JOURNAL OF MANAGEMENT SCIENCE</td></tr><tr><td>ISSN:</td><td>0305-0483</td></tr><tr></tr></table>	1.1011	-0.4247	3	37	124	131	1.327
+72	tourism manage	<table><tr><td>Journal:</td><td>TOURISM MANAGEMENT</td></tr><tr><td>ISSN:</td><td>0261-5177</td></tr><tr></tr></table>	0.1377	-0.0833	4	20	27	131	0.89
+73	rand j econ	<table><tr><td>Journal:</td><td>RAND JOURNAL OF ECONOMICS</td></tr><tr><td>ISSN:</td><td>0741-6261</td></tr><tr></tr></table>	-0.3283	-0.0957	1	44	90	130	1.44
+74	environ resour econ	<table><tr><td>Journal:</td><td>ENVIRONMENTAL & RESOURCE ECONOMICS</td></tr><tr><td>ISSN:</td><td>0924-6460</td></tr><tr></tr></table>	-0.3456	-0.3512	1	39	99	129	1.237
+75	econ theor	<table><tr><td>Journal:</td><td>ECONOMIC THEORY</td></tr><tr><td>ISSN:</td><td>0938-2259</td></tr><tr></tr></table>	-0.3811	-0.4236	1	28	34	127	0.602
+76	oper res lett	<table><tr><td>Journal:</td><td>OPERATIONS RESEARCH LETTERS</td></tr><tr><td>ISSN:</td><td>0167-6377</td></tr><tr></tr></table>	0.9789	-0.88	3	15	57	124	0.517
+77	j bus venturing	<table><tr><td>Journal:</td><td>JOURNAL OF BUSINESS VENTURING</td></tr><tr><td>ISSN:</td><td>0883-9026</td></tr><tr></tr></table>	0.4024	0.4908	2	50	203	124	1.875
+78	int j forecasting	<table><tr><td>Journal:</td><td>INTERNATIONAL JOURNAL OF FORECASTING</td></tr><tr><td>ISSN:</td><td>0169-2070</td></tr><tr></tr></table>	-0.4054	-0.2848	1	41	72	123	1.409
+79	j appl economet	<table><tr><td>Journal:</td><td>JOURNAL OF APPLIED ECONOMETRICS</td></tr><tr><td>ISSN:</td><td>0883-7252</td></tr><tr></tr></table>	-0.9453	-0.3982	1	33	92	123	1.094
+80	j money credit bank	<table><tr><td>Journal:</td><td>JOURNAL OF MONEY CREDIT AND BANKING</td></tr><tr><td>ISSN:</td><td>0022-2879</td></tr><tr></tr></table>	-0.8084	-0.1058	1	58	162	122	0.947
+81	ann oper res	<table><tr><td>Journal:</td><td>ANNALS OF OPERATIONS RESEARCH</td></tr><tr><td>ISSN:</td><td>0254-5330</td></tr><tr></tr></table>	0.8098	-0.8076	3	31	62	122	0.544
+82	entrep theory pract	<table><tr><td>Journal:</td><td>ENTREPRENEURSHIP THEORY AND PRACTICE</td></tr><tr><td>ISSN:</td><td>1042-2587</td></tr><tr></tr></table>	0.5874	0.5719	2	46	163	119	1.805
+83	iie trans	<table><tr><td>Journal:</td><td>IIE TRANSACTIONS</td></tr><tr><td>ISSN:</td><td>0740-817X</td></tr><tr></tr></table>	0.994	-0.6064	3	36	103	119	0.797
+84	j dev econ	<table><tr><td>Journal:</td><td>JOURNAL OF DEVELOPMENT ECONOMICS</td></tr><tr><td>ISSN:</td><td>0304-3878</td></tr><tr></tr></table>	-0.7227	-0.1695	1	44	93	118	0.912
+85	j urban econ	<table><tr><td>Journal:</td><td>JOURNAL OF URBAN ECONOMICS</td></tr><tr><td>ISSN:</td><td>0094-1190</td></tr><tr></tr></table>	-0.3849	-0.2908	1	33	67	117	0.942
+86	j manage inform syst	<table><tr><td>Journal:</td><td>JOURNAL OF MANAGEMENT INFORMATION SYSTEMS</td></tr><tr><td>ISSN:</td><td>0742-1222</td></tr><tr></tr></table>	1.1893	0.0293	4	29	144	117	1.867
+87	j eur econ assoc	<table><tr><td>Journal:</td><td>JOURNAL OF THE EUROPEAN ECONOMIC ASSOCIATION</td></tr><tr><td>ISSN:</td><td>1542-4766</td></tr><tr></tr></table>	-0.8436	-0.2126	1	48	127	117	0.871
+88	energ econ	<table><tr><td>Journal:</td><td>ENERGY ECONOMICS</td></tr><tr><td>ISSN:</td><td>0140-9883</td></tr><tr></tr></table>	-0.5221	-0.2784	1	30	54	115	1.557
+89	j hum resour	<table><tr><td>Journal:</td><td>JOURNAL OF HUMAN RESOURCES</td></tr><tr><td>ISSN:</td><td>0022-166X</td></tr><tr></tr></table>	-0.6352	-0.1823	1	33	75	112	1.162
+90	j econ dyn control	<table><tr><td>Journal:</td><td>JOURNAL OF ECONOMIC DYNAMICS & CONTROL</td></tr><tr><td>ISSN:</td><td>0165-1889</td></tr><tr></tr></table>	-0.6038	-0.4565	1	36	81	111	0.703
+91	admin sci quart	<table><tr><td>Journal:</td><td>ADMINISTRATIVE SCIENCE QUARTERLY</td></tr><tr><td>ISSN:</td><td>0001-8392</td></tr><tr></tr></table>	0.6999	0.7521	2	45	154	111	2.912
+92	j econ geogr	<table><tr><td>Journal:</td><td>JOURNAL OF ECONOMIC GEOGRAPHY</td></tr><tr><td>ISSN:</td><td>1468-2702</td></tr><tr></tr></table>	-0.3129	-0.026	1	34	58	106	2.679
+93	economet theor	<table><tr><td>Journal:</td><td>ECONOMETRIC THEORY</td></tr><tr><td>ISSN:</td><td>0266-4666</td></tr><tr></tr></table>	-0.6307	-0.2906	1	16	50	106	0.748
+94	leadership quart	<table><tr><td>Journal:</td><td>LEADERSHIP QUARTERLY</td></tr><tr><td>ISSN:</td><td>1048-9843</td></tr><tr></tr></table>	0.7693	0.6248	2	31	81	104	1.763
+95	ind market manag	<table><tr><td>Journal:</td><td>INDUSTRIAL MARKETING MANAGEMENT</td></tr><tr><td>ISSN:</td><td>0019-8501</td></tr><tr></tr></table>	0.8871	0.1654	4	47	127	103	0.911
+96	hum relat	<table><tr><td>Journal:</td><td>HUMAN RELATIONS</td></tr><tr><td>ISSN:</td><td>0018-7267</td></tr><tr></tr></table>	0.7144	0.8408	2	28	81	103	1.103
+97	j oper manag	<table><tr><td>Journal:</td><td>JOURNAL OF OPERATIONS MANAGEMENT</td></tr><tr><td>ISSN:</td><td>0272-6963</td></tr><tr></tr></table>	1.0438	-0.1905	3	43	141	102	1.851
+98	int j hum resour man	<table><tr><td>Journal:</td><td>INTERNATIONAL JOURNAL OF HUMAN RESOURCE MANAGEMENT</td></tr><tr><td>ISSN:</td><td>0958-5192</td></tr><tr></tr></table>	0.6519	0.5006	2	38	79	101	0.546
+99	organization	<table><tr><td>Journal:</td><td>ORGANIZATION</td></tr><tr><td>ISSN:</td><td>1350-5084</td></tr><tr></tr></table>	0.5943	0.8102	2	25	65	100	1.169
+100	j financ quant anal	<table><tr><td>Journal:</td><td>JOURNAL OF FINANCIAL AND QUANTITATIVE ANALYSIS</td></tr><tr><td>ISSN:</td><td>0022-1090</td></tr><tr></tr></table>	-0.5718	0.4633	5	38	123	98	1.342
+101	psychol market	<table><tr><td>Journal:</td><td>PSYCHOLOGY & MARKETING</td></tr><tr><td>ISSN:</td><td>0742-6046</td></tr><tr></tr></table>	0.4949	0.0444	4	29	64	97	0.919
+102	j int money financ	<table><tr><td>Journal:</td><td>JOURNAL OF INTERNATIONAL MONEY AND FINANCE</td></tr><tr><td>ISSN:</td><td>0261-5606</td></tr><tr></tr></table>	-0.9437	-0.2358	1	36	85	97	0.709
+103	transport sci	<table><tr><td>Journal:</td><td>TRANSPORTATION SCIENCE</td></tr><tr><td>ISSN:</td><td>0041-1655</td></tr><tr></tr></table>	0.7422	-0.7432	3	20	61	96	1.427
+104	int j oper prod man	<table><tr><td>Journal:</td><td>INTERNATIONAL JOURNAL OF OPERATIONS & PRODUCTION MANAGEMENT</td></tr><tr><td>ISSN:</td><td>0144-3577</td></tr><tr></tr></table>	0.9772	-0.0235	3	41	133	95	1.054
+105	j account res	<table><tr><td>Journal:</td><td>JOURNAL OF ACCOUNTING RESEARCH</td></tr><tr><td>ISSN:</td><td>0021-8456</td></tr><tr></tr></table>	-0.97	0.8847	5	25	142	94	2.115
+106	int econ rev	<table><tr><td>Journal:</td><td>INTERNATIONAL ECONOMIC REVIEW</td></tr><tr><td>ISSN:</td><td>0020-6598</td></tr><tr></tr></table>	-0.8349	-0.3051	1	39	84	92	0.917
+107	j corp financ	<table><tr><td>Journal:</td><td>JOURNAL OF CORPORATE FINANCE</td></tr><tr><td>ISSN:</td><td>0929-1199</td></tr><tr></tr></table>	-0.8065	0.6181	5	30	102	92	1.354
+108	econ soc	<table><tr><td>Journal:</td><td>ECONOMY AND SOCIETY</td></tr><tr><td>ISSN:</td><td>0308-5147</td></tr><tr></tr></table>	-0.1198	0.0661	1	13	37	91	1.678
+109	inform syst res	<table><tr><td>Journal:</td><td>INFORMATION SYSTEMS RESEARCH</td></tr><tr><td>ISSN:</td><td>1047-7047</td></tr><tr></tr></table>	1.0575	-0.1671	4	33	107	91	2.682
+110	j labor econ	<table><tr><td>Journal:</td><td>JOURNAL OF LABOR ECONOMICS</td></tr><tr><td>ISSN:</td><td>0734-306X</td></tr><tr></tr></table>	-0.4532	-0.0703	1	32	52	90	1.473
+111	world econ	<table><tr><td>Journal:</td><td>WORLD ECONOMY</td></tr><tr><td>ISSN:</td><td>0378-5920</td></tr><tr></tr></table>	-0.7125	-0.1443	1	20	31	90	0.715
+112	appl econ lett	<table><tr><td>Journal:</td><td>APPLIED ECONOMICS LETTERS</td></tr><tr><td>ISSN:</td><td>1350-4851</td></tr><tr></tr></table>	-0.5913	-0.3114	1	28	47	88	0.294
+113	rev int polit econ	<table><tr><td>Journal:</td><td>REVIEW OF INTERNATIONAL POLITICAL ECONOMY</td></tr><tr><td>ISSN:</td><td>0969-2290</td></tr><tr></tr></table>	-0.1762	0.0493	1	24	57	88	1
+114	can j econ	<table><tr><td>Journal:</td><td>CANADIAN JOURNAL OF ECONOMICS-REVUE CANADIENNE D ECONOMIQUE</td></tr><tr><td>ISSN:</td><td>0008-4085</td></tr><tr></tr></table>	-0.733	-0.2632	1	37	81	87	0.54
+115	ind corp change	<table><tr><td>Journal:</td><td>INDUSTRIAL AND CORPORATE CHANGE</td></tr><tr><td>ISSN:</td><td>0960-6491</td></tr><tr></tr></table>	-0.0992	0.2249	1	72	132	85	1.325
+116	prod oper manag	<table><tr><td>Journal:</td><td>PRODUCTION AND OPERATIONS MANAGEMENT</td></tr><tr><td>ISSN:</td><td>1059-1478</td></tr><tr></tr></table>	0.8468	-0.2311	3	40	94	85	2.123
+117	brit j manage	<table><tr><td>Journal:</td><td>BRITISH JOURNAL OF MANAGEMENT</td></tr><tr><td>ISSN:</td><td>1045-3172</td></tr><tr></tr></table>	0.2105	0.5747	2	50	102	84	1.534
+118	futures	<table><tr><td>Journal:</td><td>FUTURES</td></tr><tr><td>ISSN:</td><td>0016-3287</td></tr><tr></tr></table>	0.0487	0.1478	1	16	19	82	0.843
+119	energ j	<table><tr><td>Journal:</td><td>ENERGY JOURNAL</td></tr><tr><td>ISSN:</td><td>0195-6574</td></tr><tr></tr></table>	-0.3207	-0.2198	1	29	51	81	1.575
+120	j econ psychol	<table><tr><td>Journal:</td><td>JOURNAL OF ECONOMIC PSYCHOLOGY</td></tr><tr><td>ISSN:</td><td>0167-4870</td></tr><tr></tr></table>	0.097	-0.2396	4	40	67	81	0.9
+121	acad manage exec	<table><tr><td>Journal:</td><td>ACADEMY OF MANAGEMENT EXECUTIVE</td></tr><tr><td>ISSN:</td><td>0896-3789</td></tr><tr></tr></table>	0.7694	0.5293	2	45	101	81	1.61
+122	public choice	<table><tr><td>Journal:</td><td>PUBLIC CHOICE</td></tr><tr><td>ISSN:</td><td>0048-5829</td></tr><tr></tr></table>	-0.3032	-0.217	1	30	39	81	0.527
+123	oxford b econ stat	<table><tr><td>Journal:</td><td>OXFORD BULLETIN OF ECONOMICS AND STATISTICS</td></tr><tr><td>ISSN:</td><td>0305-9049</td></tr><tr></tr></table>	-0.6983	-0.2596	1	32	65	79	0.732
+124	j econ manage strat	<table><tr><td>Journal:</td><td>JOURNAL OF ECONOMICS & MANAGEMENT STRATEGY</td></tr><tr><td>ISSN:</td><td>1058-6407</td></tr><tr></tr></table>	-0.3734	-0.1657	1	31	56	79	0.875
+125	j acad market sci	<table><tr><td>Journal:</td><td>JOURNAL OF THE ACADEMY OF MARKETING SCIENCE</td></tr><tr><td>ISSN:</td><td>0092-0703</td></tr><tr></tr></table>	0.7995	0.1602	4	38	108	78	1.18
+126	j bus econ stat	<table><tr><td>Journal:</td><td>JOURNAL OF BUSINESS & ECONOMIC STATISTICS</td></tr><tr><td>ISSN:</td><td>0735-0015</td></tr><tr></tr></table>	-0.8499	-0.3644	1	28	56	77	1.129
+127	mit sloan manage rev	<table><tr><td>Journal:</td><td>MIT SLOAN MANAGEMENT REVIEW</td></tr><tr><td>ISSN:</td><td>1532-9194</td></tr><tr></tr></table>	0.9249	0.246	2	43	86	76	0.849
+128	reg sci urban econ	<table><tr><td>Journal:</td><td>REGIONAL SCIENCE AND URBAN ECONOMICS</td></tr><tr><td>ISSN:</td><td>0166-0462</td></tr><tr></tr></table>	-0.1803	-0.4085	1	33	47	76	0.885
+129	rev econ dynam	<table><tr><td>Journal:</td><td>REVIEW OF ECONOMIC DYNAMICS</td></tr><tr><td>ISSN:</td><td>1094-2025</td></tr><tr></tr></table>	-0.9594	-0.4213	1	30	102	76	0.972
+130	j dev stud	<table><tr><td>Journal:</td><td>JOURNAL OF DEVELOPMENT STUDIES</td></tr><tr><td>ISSN:</td><td>0022-0388</td></tr><tr></tr></table>	-0.587	-0.1221	1	11	20	75	0.686
+131	land econ	<table><tr><td>Journal:</td><td>LAND ECONOMICS</td></tr><tr><td>ISSN:</td><td>0023-7639</td></tr><tr></tr></table>	-0.181	-0.3595	1	20	39	75	1.042
+132	j consum psychol	<table><tr><td>Journal:</td><td>JOURNAL OF CONSUMER PSYCHOLOGY</td></tr><tr><td>ISSN:</td><td>1057-7408</td></tr><tr></tr></table>	0.5135	0.1125	4	15	42	74	1.72
+133	corp gov-oxford	<table><tr><td>Journal:</td><td>CORPORATE GOVERNANCE-AN INTERNATIONAL REVIEW</td></tr><tr><td>ISSN:</td><td>0964-8410</td></tr><tr></tr></table>	-0.348	0.4897	5	50	101	74	1.59
+134	fed reserve bank st	<table><tr><td>Journal:</td><td>FEDERAL RESERVE BANK OF ST LOUIS REVIEW</td></tr><tr><td>ISSN:</td><td>0014-9187</td></tr><tr></tr></table>	-0.6623	-0.2168	1	29	54	72	0.536
+135	food policy	<table><tr><td>Journal:</td><td>FOOD POLICY</td></tr><tr><td>ISSN:</td><td>0306-9192</td></tr><tr></tr></table>	-0.0706	-0.0217	1	11	19	72	1.056
+136	j bus finan account	<table><tr><td>Journal:</td><td>JOURNAL OF BUSINESS FINANCE & ACCOUNTING</td></tr><tr><td>ISSN:</td><td>0306-686X</td></tr><tr></tr></table>	-0.8137	0.719	5	35	95	72	0.692
+137	j econ surv	<table><tr><td>Journal:</td><td>JOURNAL OF ECONOMIC SURVEYS</td></tr><tr><td>ISSN:</td><td>0950-0804</td></tr><tr></tr></table>	-0.5205	-0.1861	1	38	54	71	0.797
+138	int bus rev	<table><tr><td>Journal:</td><td>INTERNATIONAL BUSINESS REVIEW</td></tr><tr><td>ISSN:</td><td>0969-5931</td></tr><tr></tr></table>	0.7145	0.5213	2	26	77	70	1.056
+139	account org soc	<table><tr><td>Journal:</td><td>ACCOUNTING ORGANIZATIONS AND SOCIETY</td></tr><tr><td>ISSN:</td><td>0361-3682</td></tr><tr></tr></table>	-0.042	0.4485	2	33	52	69	1.032
+140	small bus econ	<table><tr><td>Journal:</td><td>SMALL BUSINESS ECONOMICS</td></tr><tr><td>ISSN:</td><td>0921-898X</td></tr><tr></tr></table>	-0.0262	0.1934	1	28	60	69	1.168
+141	int j ind organ	<table><tr><td>Journal:</td><td>INTERNATIONAL JOURNAL OF INDUSTRIAL ORGANIZATION</td></tr><tr><td>ISSN:</td><td>0167-7187</td></tr><tr></tr></table>	-0.4154	-0.1292	1	22	31	69	0.464
+142	math financ	<table><tr><td>Journal:</td><td>MATHEMATICAL FINANCE</td></tr><tr><td>ISSN:</td><td>0960-1627</td></tr><tr></tr></table>	-0.1937	-0.5989	1	6	12	68	0.984
+143	math oper res	<table><tr><td>Journal:</td><td>MATHEMATICS OF OPERATIONS RESEARCH</td></tr><tr><td>ISSN:</td><td>0364-765X</td></tr><tr></tr></table>	0.3217	-0.7054	3	18	28	68	0.875
+144	j law econ	<table><tr><td>Journal:</td><td>JOURNAL OF LAW & ECONOMICS</td></tr><tr><td>ISSN:</td><td>0022-2186</td></tr><tr></tr></table>	-0.7503	0.5	5	44	89	68	1.62
+145	comput optim appl	<table><tr><td>Journal:</td><td>COMPUTATIONAL OPTIMIZATION AND APPLICATIONS</td></tr><tr><td>ISSN:</td><td>0926-6003</td></tr><tr></tr></table>	0.9471	-0.9476	3	10	31	67	0.851
+146	contemp account res	<table><tr><td>Journal:</td><td>CONTEMPORARY ACCOUNTING RESEARCH</td></tr><tr><td>ISSN:</td><td>0823-9150</td></tr><tr></tr></table>	-1.0573	0.9564	5	20	91	66	1.219
+147	econ dev cult change	<table><tr><td>Journal:</td><td>ECONOMIC DEVELOPMENT AND CULTURAL CHANGE</td></tr><tr><td>ISSN:</td><td>0013-0079</td></tr><tr></tr></table>	-0.6505	-0.1347	1	27	46	65	0.875
+148	econ educ rev	<table><tr><td>Journal:</td><td>ECONOMICS OF EDUCATION REVIEW</td></tr><tr><td>ISSN:</td><td>0272-7757</td></tr><tr></tr></table>	-0.4673	-0.2169	1	18	38	64	0.557
+149	j law econ organ	<table><tr><td>Journal:</td><td>JOURNAL OF LAW ECONOMICS & ORGANIZATION</td></tr><tr><td>ISSN:</td><td>8756-6222</td></tr><tr></tr></table>	-0.5844	-0.155	1	18	33	64	1.488
+150	decision sci	<table><tr><td>Journal:</td><td>DECISION SCIENCES</td></tr><tr><td>ISSN:</td><td>0011-7315</td></tr><tr></tr></table>	1.0035	0.0546	3	47	108	63	1.435
+151	j serv res-us	<table><tr><td>Journal:</td><td>JOURNAL OF SERVICE RESEARCH</td></tr><tr><td>ISSN:</td><td>1094-6705</td></tr><tr></tr></table>	0.8964	0.1235	4	33	90	63	1.14
+152	camb j econ	<table><tr><td>Journal:</td><td>CAMBRIDGE JOURNAL OF ECONOMICS</td></tr><tr><td>ISSN:</td><td>0309-166X</td></tr><tr></tr></table>	-0.3481	0.1242	1	36	48	62	0.7
+153	nav res log	<table><tr><td>Journal:</td><td>NAVAL RESEARCH LOGISTICS</td></tr><tr><td>ISSN:</td><td>0894-069X</td></tr><tr></tr></table>	0.9802	-0.7594	3	15	42	62	0.548
+154	ieee t eng manage	<table><tr><td>Journal:</td><td>IEEE TRANSACTIONS ON ENGINEERING MANAGEMENT</td></tr><tr><td>ISSN:</td><td>0018-9391</td></tr><tr></tr></table>	0.9517	0.0676	4	32	65	62	0.962
+155	prod plan control	<table><tr><td>Journal:</td><td>PRODUCTION PLANNING & CONTROL</td></tr><tr><td>ISSN:</td><td>0953-7287</td></tr><tr></tr></table>	1.1031	-0.3347	3	24	52	62	0.561
+156	econ geogr	<table><tr><td>Journal:</td><td>ECONOMIC GEOGRAPHY</td></tr><tr><td>ISSN:</td><td>0013-0095</td></tr><tr></tr></table>	-0.1216	0.0489	1	15	32	61	2.065
+157	econ inq	<table><tr><td>Journal:</td><td>ECONOMIC INQUIRY</td></tr><tr><td>ISSN:</td><td>0095-2583</td></tr><tr></tr></table>	-0.5605	-0.2061	1	36	52	60	0.535
+158	econ transit	<table><tr><td>Journal:</td><td>ECONOMICS OF TRANSITION</td></tr><tr><td>ISSN:</td><td>0967-0750</td></tr><tr></tr></table>	-0.5253	-0.0977	1	31	50	57	0.736
+159	financ anal j	<table><tr><td>Journal:</td><td>FINANCIAL ANALYSTS JOURNAL</td></tr><tr><td>ISSN:</td><td>0015-198X</td></tr><tr></tr></table>	-0.3733	0.2022	5	24	31	57	0.72
+160	oxford rev econ pol	<table><tr><td>Journal:</td><td>OXFORD REVIEW OF ECONOMIC POLICY</td></tr><tr><td>ISSN:</td><td>0266-903X</td></tr><tr></tr></table>	-0.638	0.229	1	41	60	56	0.552
+161	j prod innovat manag	<table><tr><td>Journal:</td><td>JOURNAL OF PRODUCT INNOVATION MANAGEMENT</td></tr><tr><td>ISSN:</td><td>0737-6782</td></tr><tr></tr></table>	0.7941	0.1079	2	37	67	54	1.585
+162	organ res methods	<table><tr><td>Journal:</td><td>ORGANIZATIONAL RESEARCH METHODS</td></tr><tr><td>ISSN:</td><td>1094-4281</td></tr><tr></tr></table>	0.9757	0.7	2	16	28	53	2.548
+163	calif manage rev	<table><tr><td>Journal:</td><td>CALIFORNIA MANAGEMENT REVIEW</td></tr><tr><td>ISSN:</td><td>0008-1256</td></tr><tr></tr></table>	0.7058	0.2861	2	37	65	53	0.945
+164	int tax public finan	<table><tr><td>Journal:</td><td>INTERNATIONAL TAX AND PUBLIC FINANCE</td></tr><tr><td>ISSN:</td><td>0927-5940</td></tr><tr></tr></table>	-0.4651	-0.3163	1	15	26	53	0.757
+165	qual reliab eng int	<table><tr><td>Journal:</td><td>QUALITY AND RELIABILITY ENGINEERING INTERNATIONAL</td></tr><tr><td>ISSN:</td><td>0748-8017</td></tr><tr></tr></table>	1.1984	-0.6841	3	8	22	52	0.5
+166	transport res e-log	<table><tr><td>Journal:</td><td>TRANSPORTATION RESEARCH PART E-LOGISTICS AND TRANSPORTATION REVIEW</td></tr><tr><td>ISSN:</td><td>1366-5545</td></tr><tr></tr></table>	0.7606	-0.5478	3	21	39	51	1
+167	j econ hist	<table><tr><td>Journal:</td><td>JOURNAL OF ECONOMIC HISTORY</td></tr><tr><td>ISSN:</td><td>0022-0507</td></tr><tr></tr></table>	-0.5432	0.2006	1	34	58	50	1.015
+168	j risk uncertainty	<table><tr><td>Journal:</td><td>JOURNAL OF RISK AND UNCERTAINTY</td></tr><tr><td>ISSN:</td><td>0895-5646</td></tr><tr></tr></table>	-0.2077	-0.3494	1	17	35	49	1.122
+169	int j electron comm	<table><tr><td>Journal:</td><td>INTERNATIONAL JOURNAL OF ELECTRONIC COMMERCE</td></tr><tr><td>ISSN:</td><td>1086-4415</td></tr><tr></tr></table>	0.9602	-0.0682	4	17	43	49	1.186
+170	j small bus manage	<table><tr><td>Journal:</td><td>JOURNAL OF SMALL BUSINESS MANAGEMENT</td></tr><tr><td>ISSN:</td><td>0047-2778</td></tr><tr></tr></table>	0.5269	0.4075	2	32	60	47	0.703
+171	labour econ	<table><tr><td>Journal:</td><td>LABOUR ECONOMICS</td></tr><tr><td>ISSN:</td><td>0927-5371</td></tr><tr></tr></table>	-0.686	-0.0388	1	25	37	47	0.671
+172	scand j econ	<table><tr><td>Journal:</td><td>SCANDINAVIAN JOURNAL OF ECONOMICS</td></tr><tr><td>ISSN:</td><td>0347-0520</td></tr><tr></tr></table>	-0.8021	-0.2607	1	28	43	47	0.676
+173	j comp econ	<table><tr><td>Journal:</td><td>JOURNAL OF COMPARATIVE ECONOMICS</td></tr><tr><td>ISSN:</td><td>0147-5967</td></tr><tr></tr></table>	-0.6658	-0.1145	1	19	37	46	0.691
+174	int j res mark	<table><tr><td>Journal:</td><td>INTERNATIONAL JOURNAL OF RESEARCH IN MARKETING</td></tr><tr><td>ISSN:</td><td>0167-8116</td></tr><tr></tr></table>	0.4251	-0.0719	4	26	49	45	1.071
+175	j econ issues	<table><tr><td>Journal:</td><td>JOURNAL OF ECONOMIC ISSUES</td></tr><tr><td>ISSN:</td><td>0021-3624</td></tr><tr></tr></table>	-0.4139	0.1668	1	44	50	45	0.47
+176	econ model	<table><tr><td>Journal:</td><td>ECONOMIC MODELLING</td></tr><tr><td>ISSN:</td><td>0264-9993</td></tr><tr></tr></table>	-0.7425	-0.3645	1	25	50	44	0.375
+177	j ind econ	<table><tr><td>Journal:</td><td>JOURNAL OF INDUSTRIAL ECONOMICS</td></tr><tr><td>ISSN:</td><td>0022-1821</td></tr><tr></tr></table>	-0.2417	-0.1373	1	28	34	43	0.86
+178	long range plann	<table><tr><td>Journal:</td><td>LONG RANGE PLANNING</td></tr><tr><td>ISSN:</td><td>0024-6301</td></tr><tr></tr></table>	0.8498	0.6175	2	21	34	43	1.667
+179	world bank econ rev	<table><tr><td>Journal:</td><td>WORLD BANK ECONOMIC REVIEW</td></tr><tr><td>ISSN:</td><td>0258-6770</td></tr><tr></tr></table>	-0.8046	-0.1391	1	20	31	43	1.263
+180	j retailing	<table><tr><td>Journal:</td><td>JOURNAL OF RETAILING</td></tr><tr><td>ISSN:</td><td>0022-4359</td></tr><tr></tr></table>	0.7942	0.0465	4	16	36	42	2.054
+181	financ manage	<table><tr><td>Journal:</td><td>FINANCIAL MANAGEMENT</td></tr><tr><td>ISSN:</td><td>0046-3892</td></tr><tr></tr></table>	-0.4211	0.7321	5	32	67	42	1
+182	resour energy econ	<table><tr><td>Journal:</td><td>RESOURCE AND ENERGY ECONOMICS</td></tr><tr><td>ISSN:</td><td>0928-7655</td></tr><tr></tr></table>	-0.1176	-0.4786	1	17	25	41	1.05
+183	j manage inquiry	<table><tr><td>Journal:</td><td>JOURNAL OF MANAGEMENT INQUIRY</td></tr><tr><td>ISSN:</td><td>1056-4926</td></tr><tr></tr></table>	0.5188	0.8381	2	19	37	40	1.338
+184	j real estate financ	<table><tr><td>Journal:</td><td>JOURNAL OF REAL ESTATE FINANCE AND ECONOMICS</td></tr><tr><td>ISSN:</td><td>0895-5638</td></tr><tr></tr></table>	0.3594	-0.5257	3	19	22	40	0.372
+185	j regul econ	<table><tr><td>Journal:</td><td>JOURNAL OF REGULATORY ECONOMICS</td></tr><tr><td>ISSN:</td><td>0922-680X</td></tr><tr></tr></table>	-0.4569	-0.2576	1	16	32	40	0.548
+186	rev dev econ	<table><tr><td>Journal:</td><td>REVIEW OF DEVELOPMENT ECONOMICS</td></tr><tr><td>ISSN:</td><td>1363-6669</td></tr><tr></tr></table>	-0.6734	-0.1397	1	27	37	40	0.55
+187	group organ manage	<table><tr><td>Journal:</td><td>GROUP & ORGANIZATION MANAGEMENT</td></tr><tr><td>ISSN:</td><td>1059-6011</td></tr><tr></tr></table>	0.9444	0.7568	2	12	22	39	0.787
+188	hum resour manage-us	<table><tr><td>Journal:</td><td>HUMAN RESOURCE MANAGEMENT</td></tr><tr><td>ISSN:</td><td>0090-4848</td></tr><tr></tr></table>	0.6427	0.6114	2	19	32	39	0.642
+189	supply chain manag	<table><tr><td>Journal:</td><td>SUPPLY CHAIN MANAGEMENT-AN INTERNATIONAL JOURNAL</td></tr><tr><td>ISSN:</td><td>1359-8546</td></tr><tr></tr></table>	0.846	-0.1774	3	24	40	39	0.913
+190	interfaces	<table><tr><td>Journal:</td><td>INTERFACES</td></tr><tr><td>ISSN:</td><td>0092-2102</td></tr><tr></tr></table>	1.1116	-0.7972	3	10	24	39	0.575
+191	oxford econ pap	<table><tr><td>Journal:</td><td>OXFORD ECONOMIC PAPERS-NEW SERIES</td></tr><tr><td>ISSN:</td><td>0030-7653</td></tr><tr></tr></table>	-0.6029	0.0327	1	36	47	38	0.645
+192	int small bus j	<table><tr><td>Journal:</td><td>INTERNATIONAL SMALL BUSINESS JOURNAL</td></tr><tr><td>ISSN:</td><td>0266-2426</td></tr><tr></tr></table>	0.6615	0.5312	2	22	43	38	1.25
+193	j popul econ	<table><tr><td>Journal:</td><td>JOURNAL OF POPULATION ECONOMICS</td></tr><tr><td>ISSN:</td><td>0933-1433</td></tr><tr></tr></table>	-0.7684	-0.0425	1	15	26	38	0.487
+194	j policy model	<table><tr><td>Journal:</td><td>JOURNAL OF POLICY MODELING</td></tr><tr><td>ISSN:</td><td>0161-8938</td></tr><tr></tr></table>	-0.6948	-0.2887	1	18	22	38	0.279
+195	int j serv ind manag	<table><tr><td>Journal:</td><td>INTERNATIONAL JOURNAL OF SERVICE INDUSTRY MANAGEMENT</td></tr><tr><td>ISSN:</td><td>0956-4233</td></tr><tr></tr></table>	0.8636	0.1005	4	15	30	38	0.804
+196	auditing-j pract th	<table><tr><td>Journal:</td><td>AUDITING-A JOURNAL OF PRACTICE & THEORY</td></tr><tr><td>ISSN:</td><td>0278-0380</td></tr><tr></tr></table>	-1.0221	0.9565	5	11	39	38	0.71
+197	total qual manag bus	<table><tr><td>Journal:</td><td>TOTAL QUALITY MANAGEMENT & BUSINESS EXCELLENCE</td></tr><tr><td>ISSN:</td><td>1478-3363</td></tr><tr></tr></table>	0.7027	0.0579	4	21	33	37	0.278
+198	explor econ hist	<table><tr><td>Journal:</td><td>EXPLORATIONS IN ECONOMIC HISTORY</td></tr><tr><td>ISSN:</td><td>0014-4983</td></tr><tr></tr></table>	-0.5294	0.1965	1	33	57	37	0.667
+199	j financ intermed	<table><tr><td>Journal:</td><td>JOURNAL OF FINANCIAL INTERMEDIATION</td></tr><tr><td>ISSN:</td><td>1042-9573</td></tr><tr></tr></table>	-0.8462	0.3758	5	18	51	35	0.805
+200	j world bus	<table><tr><td>Journal:</td><td>JOURNAL OF WORLD BUSINESS</td></tr><tr><td>ISSN:</td><td>1090-9516</td></tr><tr></tr></table>	0.795	0.524	2	18	38	35	0.69
+201	int j technol manage	<table><tr><td>Journal:</td><td>INTERNATIONAL JOURNAL OF TECHNOLOGY MANAGEMENT</td></tr><tr><td>ISSN:</td><td>0267-5730</td></tr><tr></tr></table>	0.6321	0.3013	2	28	43	35	0.356
+202	j econ growth	<table><tr><td>Journal:</td><td>JOURNAL OF ECONOMIC GROWTH</td></tr><tr><td>ISSN:</td><td>1381-4338</td></tr><tr></tr></table>	-0.8756	-0.1674	1	19	31	34	2.292
+203	eur financ manag	<table><tr><td>Journal:</td><td>EUROPEA<N FINANCIAL MANAGEMENT</td></tr><tr><td>ISSN:</td><td>1354-7798</td></tr><tr></tr></table>	-0.7703	0.5757	5	18	35	34	0.717
+204	bus ethics q	<table><tr><td>Journal:</td><td>BUSINESS ETHICS QUARTERLY</td></tr><tr><td>ISSN:</td><td>1052-150X</td></tr><tr></tr></table>	0.3496	0.6128	2	15	31	33	0.594
+205	market lett	<table><tr><td>Journal:</td><td>MARKETING LETTERS</td></tr><tr><td>ISSN:</td><td>0923-0645</td></tr><tr></tr></table>	0.3334	-0.1028	4	20	43	33	0.672
+206	stud nonlinear dyn e	<table><tr><td>Journal:</td><td>STUDIES IN NONLINEAR DYNAMICS AND ECONOMETRICS</td></tr><tr><td>ISSN:</td><td>1081-1826</td></tr><tr></tr></table>	-0.8324	-0.3482	1	15	21	33	0.593
+207	nber macroecon ann	<table><tr><td>Journal:</td><td>NBER MACROECONOMICS ANNUAL</td></tr><tr><td>ISSN:</td><td>0889-3365</td></tr><tr></tr></table>	-1.0223	-0.377	1	19	51	33	0
+208	or spectrum	<table><tr><td>Journal:</td><td>OR SPECTRUM</td></tr><tr><td>ISSN:</td><td>0171-6468</td></tr><tr></tr></table>	1.0307	-0.7587	3	11	27	32	0.562
+209	r&d manage	<table><tr><td>Journal:</td><td>R & D MANAGEMENT</td></tr><tr><td>ISSN:</td><td>0033-6807</td></tr><tr></tr></table>	0.3873	0.3229	2	27	55	32	0.597
+210	j int marketing	<table><tr><td>Journal:</td><td>JOURNAL OF INTERNATIONAL MARKETING</td></tr><tr><td>ISSN:</td><td>1069-031X</td></tr><tr></tr></table>	0.8652	0.263	4	25	55	32	0.95
+211	econ hist rev	<table><tr><td>Journal:</td><td>ECONOMIC HISTORY REVIEW</td></tr><tr><td>ISSN:</td><td>0013-0117</td></tr><tr></tr></table>	-0.4553	0.2142	1	30	38	32	1.171
+212	exp econ	<table><tr><td>Journal:</td><td>EXPERIMENTAL ECONOMICS</td></tr><tr><td>ISSN:</td><td>1386-4157</td></tr><tr></tr></table>	-0.5396	-0.2858	1	12	23	32	1.128
+213	res technol manage	<table><tr><td>Journal:</td><td>RESEARCH-TECHNOLOGY MANAGEMENT</td></tr><tr><td>ISSN:</td><td>0895-6308</td></tr><tr></tr></table>	0.5417	0.2044	2	19	24	30	0.476
+214	rev ind organ	<table><tr><td>Journal:</td><td>REVIEW OF INDUSTRIAL ORGANIZATION</td></tr><tr><td>ISSN:</td><td>0889-938X</td></tr><tr></tr></table>	-0.3556	-0.1234	1	21	25	29	0.411
+215	j organ change manag	<table><tr><td>Journal:</td><td>JOURNAL OF ORGANIZATIONAL CHANGE MANAGEMENT</td></tr><tr><td>ISSN:</td><td>0953-4814</td></tr><tr></tr></table>	0.6277	0.8748	2	13	29	29	0.36
+216	j agr econ	<table><tr><td>Journal:</td><td>JOURNAL OF AGRICULTURAL ECONOMICS</td></tr><tr><td>ISSN:</td><td>0021-857X</td></tr><tr></tr></table>	-0.2288	-0.1592	1	14	18	29	1
+217	j forecasting	<table><tr><td>Journal:</td><td>JOURNAL OF FORECASTING</td></tr><tr><td>ISSN:</td><td>0277-6693</td></tr><tr></tr></table>	-0.5912	-0.3458	1	18	28	28	0.4
+218	scot j polit econ	<table><tr><td>Journal:</td><td>SCOTTISH JOURNAL OF POLITICAL ECONOMY</td></tr><tr><td>ISSN:</td><td>0036-9292</td></tr><tr></tr></table>	-0.5677	0.1369	1	25	29	25	0.343
+219	organ dyn	<table><tr><td>Journal:</td><td>ORGANIZATIONAL DYNAMICS</td></tr><tr><td>ISSN:</td><td>0090-2616</td></tr><tr></tr></table>	0.5844	0.6058	2	21	37	24	0.345
+220	econ policy	<table><tr><td>Journal:</td><td>ECONOMIC POLICY</td></tr><tr><td>ISSN:</td><td>0266-4658</td></tr><tr></tr></table>	-0.619	0.0267	1	36	46	24	1.281
+221	am j econ sociol	<table><tr><td>Journal:</td><td>AMERICAN JOURNAL OF ECONOMICS AND SOCIOLOGY</td></tr><tr><td>ISSN:</td><td>0002-9246</td></tr><tr></tr></table>	-0.4776	0.1525	1	24	24	24	0.192
+222	int market rev	<table><tr><td>Journal:</td><td>INTERNATIONAL MARKETING REVIEW</td></tr><tr><td>ISSN:</td><td>0265-1335</td></tr><tr></tr></table>	0.5184	0.2071	4	19	30	23	0.508
+223	fisc stud	<table><tr><td>Journal:</td><td>FISCAL STUDIES</td></tr><tr><td>ISSN:</td><td>0143-5671</td></tr><tr></tr></table>	-0.4815	0.1466	1	25	29	23	0.439
+224	economet rev	<table><tr><td>Journal:</td><td>ECONOMETRIC REVIEWS</td></tr><tr><td>ISSN:</td><td>0747-4938</td></tr><tr></tr></table>	-0.8201	-0.3436	1	17	37	23	0.711
+225	int j manag rev	<table><tr><td>Journal:</td><td>INTERNATIONAL JOURNAL OF MANAGEMENT REVIEWS</td></tr><tr><td>ISSN:</td><td>1460-8545</td></tr><tr></tr></table>	0.6475	0.4347	2	23	32	23	1.5
+226	bus hist	<table><tr><td>Journal:</td><td>BUSINESS HISTORY</td></tr><tr><td>ISSN:</td><td>0007-6791</td></tr><tr></tr></table>	-0.4753	0.2816	1	30	42	21	0.62
+227	macroecon dyn	<table><tr><td>Journal:</td><td>MACROECONOMIC DYNAMICS</td></tr><tr><td>ISSN:</td><td>1365-1005</td></tr><tr></tr></table>	-0.9373	-0.4279	1	14	28	20	0.453
+228	manch sch	<table><tr><td>Journal:</td><td>MANCHESTER SCHOOL</td></tr><tr><td>ISSN:</td><td>1463-6786</td></tr><tr></tr></table>	-0.6248	0.1061	1	27	31	20	0.153
+229	new tech work employ	<table><tr><td>Journal:</td><td>NEW TECHNOLOGY WORK AND EMPLOYMENT</td></tr><tr><td>ISSN:</td><td>0268-1072</td></tr><tr></tr></table>	0.0086	0.5152	2	26	30	19	0.857
+230	rev world econ	<table><tr><td>Journal:</td><td>REVIEW OF WORLD ECONOMICS</td></tr><tr><td>ISSN:</td><td>1610-2878</td></tr><tr></tr></table>	-0.7711	-0.2598	1	11	26	19	0.382
+231	enterp soc	<table><tr><td>Journal:</td><td>ENTERPRISE & SOCIETY</td></tr><tr><td>ISSN:</td><td>1467-2227</td></tr><tr></tr></table>	-0.4794	0.2506	1	27	35	14	0.475
+232	bus hist rev	<table><tr><td>Journal:</td><td>BUSINESS HISTORY REVIEW</td></tr><tr><td>ISSN:</td><td>0007-6805</td></tr><tr></tr></table>	-0.4779	0.2449	1	28	36	10	0.679
