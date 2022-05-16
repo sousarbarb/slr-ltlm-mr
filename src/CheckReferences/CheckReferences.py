@@ -1,5 +1,7 @@
-from fileinput import close
 import os
+import re
+import hashlib
+
 import bibtexparser
 
 # Utilities
@@ -30,12 +32,73 @@ def month2num(month):
   if month[0] == "d":
     return "12"
 
+# - unify author
+def custom_unify_author(author):
+  if ", " in author:
+    author = " ".join(author.split(", ")[::-1])
+
+  list_names = re.split(r"[.\s]\s*",author)
+
+  author = ""
+  for i in range(len(list_names)-1):
+    if list_names[i].startswith("-"):
+      list_names[i] = list_names[i][0] + list_names[i][1].upper()
+
+    elif len(list_names[i]) > 1:
+      if "-" in list_names[i]:
+        tmp = list_names[i].split("-")
+        list_names[i] = tmp[0][0].upper() + ". -" + tmp[1][0].upper()
+      else:
+        list_names[i] = list_names[i][0].upper()
+
+    author += list_names[i] + ". "
+
+  author += list_names[-1]
+  author = author.replace(" -","-")
+
+  return author
+
+# - unify ID (e.g., author1-author2:year)
+def custom_unify_ID(authors,year,doi):
+  max_authors = 2
+
+  ID = authors[0].split(". ")[-1].lower()
+  num_authors_ID = min(max_authors,len(authors))
+
+  for i in range (1,num_authors_ID-1):
+    ID += "-" + authors[i].split(". ")[-1].lower()
+
+  if len(authors) > max_authors:
+    ID += "-et-al"
+  elif len(authors) == max_authors:
+    ID += "-" + authors[max_authors-1].split(". ")[-1].lower()
+
+  ID += ":" + year
+
+  if (len(doi) > 0):
+    ID += ":" + re.split(r"[-/._]",doi)[-1]
+
+  return ID
+
 # - unify references format to the desired one
 def custom_unify_reference(record):
   global report
 
   # - missing fields
   missing_str = ""
+
+  # - authors
+  if 'author' in record:
+    if len(record['author']) == 0:
+      missing_str += "author "
+    else:
+      authors = record['author'].split(" and ")
+      for i in range(len(authors)):
+        authors[i] = custom_unify_author(authors[i])
+
+      record['author'] = " and ".join(authors)
+  else:
+    missing_str += "author "
 
   # - type (output: type with upper cases)
   if 'ENTRYTYPE' in record:
@@ -106,6 +169,19 @@ def custom_unify_reference(record):
     record['month'] = record['month'].replace(" ","")
     if any(c.isalpha() for c in record['month']):
       record['month'] = month2num(record['month'].lower())
+
+  # - custom id
+  if 'ID' in record:
+    if len(record['ID']) == 0:
+      missing_str += "ID "
+    else:
+      if 'author' in record and 'year' in record:
+        doi = ""
+        if 'doi' in record:
+          doi = record['doi']
+        record['ID'] = custom_unify_ID(record['author'].split(" and "),record['year'],doi)
+  else:
+    missing_str += "ID "
 
   # - print missing fields
   if len(missing_str) > 0:
