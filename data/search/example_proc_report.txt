@@ -1,0 +1,52 @@
+[mayol-et-al:2004] DOI 
+[leblond-et-al:2005] DOI 
+[prekel:1988] DOI 
+[xiaoxiao-et-al:2016] volume number DOI 
+[hochdorfer-schlegel:2009] DOI 
+[bichucher-et-al:2015] DOI 
+[kanji:8Sept.2016] volume number DOI 
+[leung-et-al:2008] DOI 
+[sola-et-al:2007] DOI 
+[bryson-sukkarieh:2006] DOI 
+[newman:2005] DOI 
+[shinohara-et-al:2013] DOI 
+[spero-jarvis:2005] DOI 
+[filliat:2007] DOI 
+[martinson-schultz:2007] DOI 
+[linaker-ishikawa:2004] DOI 
+[sabe-et-al:2004] DOI 
+[williams-mahon:2004] DOI 
+[ding-et-al:2019] volume number DOI 
+[zhang-et-al:2020] volume number DOI 
+[maddern-et-al:2013] DOI 
+[gomez-ojeda-et-al:2015] volume number DOI 
+[quan-et-al:2019:2930201] number 
+[peng-weikersdorfer:20Sept.2019] volume number DOI 
+[saleiro-et-al:2012] DOI 
+[biswas-veloso:2017:005] number 
+[fridman-et-al:2019:2926040] number 
+[li-et-al:2015] DOI 
+[clement-et-al:2019] volume number DOI 
+[zhang-et-al:2019] volume number DOI 
+[carlevaris-bianco:2015] volume number DOI 
+[ma-et-al:2018:029] number 
+[joo-et-al:2019] volume number DOI 
+[kim-et-al:2021:3047421] number 
+[wang-et-al:2019] volume number DOI 
+[schaefer-et-al:2019] volume number DOI 
+[gassner-et-al:2021] volume number DOI 
+[zhang-et-al:2019] DOI 
+[melo-matos:2017:047] number 
+[mccormac-et-al:16Sept.2016] volume number DOI 
+[zhu-et-al:2018:8419384] number 
+[jang-kim:2022:3145978] number 
+[aitken-et-al:2021:3115981] number 
+[hashemifar-et-al:2019] volume number DOI 
+[mo-sattar:16Sept.2019] volume number DOI 
+[thomas-et-al:2020] volume number DOI 
+[bescos-et-al:2018] volume number DOI 
+[chen-et-al:2020] volume number DOI 
+[huang-et-al:2019] volume number DOI 
+[mathur-et-al:2017] volume number DOI 
+[butterworth-et-al:2019] volume number DOI 
+[nie-et-al:2020:2968353] number 
