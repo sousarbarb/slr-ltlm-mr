@@ -1,0 +1,52 @@
+[7832648] DOI 
+[8634390] DOI 
+[3288082] DOI 
+[16848819] volume number DOI 
+[10801924] DOI 
+[15798792] DOI 
+[16393824] volume number DOI 
+[10014880] DOI 
+[9552909] DOI 
+[9109904] DOI 
+[8724429] DOI 
+[14533643] DOI 
+[8412039] DOI 
+[9561798] DOI 
+[9517353] DOI 
+[8348591] DOI 
+[8313734] DOI 
+[8065726] DOI 
+[18787621] volume number DOI 
+[19784652] volume number DOI 
+[13919302] DOI 
+[16246630] volume number DOI 
+[18862549] number 
+[19483531] volume number DOI 
+[13336904] DOI 
+[16740705] number 
+[18880425] number 
+[15798733] DOI 
+[18842574] volume number DOI 
+[19204254] volume number DOI 
+[15658832] volume number DOI 
+[18517446] number 
+[18999326] volume number DOI 
+[20322850] number 
+[18926823] volume number DOI 
+[20882056] volume number DOI 
+[20655845] volume number DOI 
+[18955253] DOI 
+[17199501] number 
+[16406345] volume number DOI 
+[18567598] number 
+[21589128] number 
+[21203267] number 
+[18803794] volume number DOI 
+[19350016] volume number DOI 
+[20886414] volume number DOI 
+[17961800] volume number DOI 
+[20103294] volume number DOI 
+[19469740] volume number DOI 
+[16989841] volume number DOI 
+[18877447] volume number DOI 
+[19313930] number 
