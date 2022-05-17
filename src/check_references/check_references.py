@@ -211,7 +211,7 @@ bibtex_writer.order_entries_by = ('author','year','ID')
 
 
 # File processing
-file_str = "../../data/search/example.bib"
+file_str = "../../data/methodology/example.bib"
 report = ""
 
 with open(file_str,encoding="utf8") as bibtex_file:
