@@ -62,3 +62,35 @@ A Systematic Literature Review on Long-Term Localization and Mapping for Mobile 
   - Topic: equivalent to retrieving results from any of the fields title,
     abstract, author keywords, and Keywords Plus
   - Query: `TS=((robot* OR vehicle*) AND ((locali* AND map*) OR "slam") AND ("long term" OR "life long" OR lifelong))`
+
+## Contacts
+
+If you have any questions or you want to know more about the work developed by
+us, please contact one of the contributors of this project:
+
+- Ricardo B. Sousa ([gitlab](https://gitlab.com/sousarbarb/),
+  [github](https://github.com/sousarbarb/),
+  [personal](mailto:sousa.ricardob@outlook.com),
+  [feup:professor](mailto:rbs@fe.up.pt),
+  [feup:student](mailto:up201503004@edu.fe.up.pt),
+  [inesctec](mailto:ricardo.b.sousa@inesctec.pt))
+  _(corresponding author)_
+- Héber Miguel Sobreira ([gitlab](https://gitlab.inesctec.pt/heber.m.sobreira),
+  [inesctec](mailto:heber.m.sobreira@inesctec.pt))
+- António Paulo Moreira ([feup](mailto:amoreira@fe.up.pt))
+
+Project Link:
+[https://github.com/sousarbarb/slr-ltlm-mr](https://github.com/sousarbarb/slr-ltlm-mr)
+
+## Acknowledgements
+
+- [CRIIS - Centre for Robotics in Industry and Intelligent Systems](https://www.inesctec.pt/en/centres/criis)
+  from
+  [INESC TEC - Institute for Systems and Computer Engineering, Technology and Science](https://www.inesctec.pt/en)
+- [Faculty of Engineering, University of Porto (FEUP)](https://sigarra.up.pt/feup/en/WEB_PAGE.INICIAL)
+
+## Funding
+
+This work is financed by National Funds through the Portuguese funding agency,
+[FCT - Fundação para a Ciência e a Tecnologia](https://www.fct.pt/index.phtml.en),
+within scholarship 2021.04591.BD.
