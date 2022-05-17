@@ -52,8 +52,13 @@ A Systematic Literature Review on Long-Term Localization and Mapping for Mobile 
     ([link](https://service.elsevier.com/app/answers/detail/a_id/25647/supporthub/engineering-village/#panel10))
   - `(((robot* OR vehicle*) AND ((locali* AND map*) OR "slam") AND ("long term" OR "life long" OR lifelong)) WN KY)`
 - [Scopus](https://www.scopus.com/results/results.uri?sort=plf-f&src=s&st1=%28robot*+OR+vehicle*%29+AND+%28%28locali*+AND+map*%29+OR+%22slam%22%29+AND+%28%22long+term%22+OR+%22life+long%22+OR+lifelong%29&sid=ab05b8cb41e4e85b9b1f90ec80501dac&sot=b&sdt=b&sl=115&s=TITLE-ABS-KEY%28%28robot*+OR+vehicle*%29+AND+%28%28locali*+AND+map*%29+OR+%22slam%22%29+AND+%28%22long+term%22+OR+%22life+long%22+OR+lifelong%29%29&origin=searchbasic&editSaveSearch=&yearFrom=Before+1960&yearTo=Present)
-  (530 results)
-  - Query: `TITLE-ABS-KEY((robot* OR vehicle*) AND ((locali* AND map*) OR "slam") AND ("long term" OR "life long" OR lifelong))`
+  - 530 results
+  - TITLE-ABS-KEY: equivalent to retrieving results from any of the fields
+    abstract, title, and keywords
+    ([link](https://service.elsevier.com/app/answers/detail/a_id/11236/supporthub/scopus/kw/TITLE-ABS-KEY/)
+  - `TITLE-ABS-KEY((robot* OR vehicle*) AND ((locali* AND map*) OR "slam") AND ("long term" OR "life long" OR lifelong))`
 - [Web of Science](https://www.webofscience.com/wos/woscc/summary/08d9d511-f688-4cb4-bee0-195db4f123b4-388d46fe/relevance/1)
-  (387 results)
+  - 387 results
+  - Topic: equivalent to retrieving results from any of the fields title,
+    abstract, author keywords, and Keywords Plus
   - Query: `TS=((robot* OR vehicle*) AND ((locali* AND map*) OR "slam") AND ("long term" OR "life long" OR lifelong))`
