@@ -4,13 +4,13 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>063c1799-d107-42fe-b359-383421531365</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>CheckReferences.py</StartupFile>
+    <StartupFile>check_references.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>CheckReferences</Name>
-    <RootNamespace>CheckReferences</RootNamespace>
+    <Name>check_references</Name>
+    <RootNamespace>check_references</RootNamespace>
     <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -22,7 +22,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="CheckReferences.py" />
+    <Compile Include="check_references.py" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
