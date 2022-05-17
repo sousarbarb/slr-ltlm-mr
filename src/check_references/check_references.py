@@ -116,10 +116,14 @@ def custom_unify_reference(record):
   # - issue
   if 'number' in record:
     record['number'] = record['number'].replace(" ","")
-    if len(record['number']) == 0 and record['ENTRYTYPE'] == "ARTICLE":
+    if len(record['number']) == 0 and record['ENTRYTYPE'] == "ARTICLE" and 'volume' not in record:
+      missing_str += "number "
+    elif len(record['number']) == 0 and record['ENTRYTYPE'] == "ARTICLE" and len(record['volume']) == 0:
       missing_str += "number "
   else:
-    if record['ENTRYTYPE'] == "ARTICLE":
+    if record['ENTRYTYPE'] == "ARTICLE" and 'volume' not in record:
+      missing_str += "number "
+    elif record['ENTRYTYPE'] == "ARTICLE" and len(record['volume']) == 0:
       missing_str += "number "
 
   # - pages (output: double hyphen + no spaces)
@@ -141,12 +145,19 @@ def custom_unify_reference(record):
   # - doi (output: only the DOI number, not the link)
   if 'doi' in record:
     record['doi'] = record['doi'].replace(" ","")
-    if len(record['doi']) == 0:
-      missing_str += "DOI "
-    elif "doi.org/" in record['doi']:
-      record['doi'] = record['doi'].split("doi.org/")[1]
+    if len(record['doi']) > 0:
+      if "doi.org/" in record['doi']:
+        record['doi'] = record['doi'].split("doi.org/")[1]
+    else:
+      if 'url' not in record:
+        missing_str += "DOI "
+      elif len(record['url']) == 0 or ("engineeringvillage" in record['url'] or "scopus" in record['url'] or "wos" in record['url']):
+        missing_str += "DOI "
   else:
-    missing_str += "DOI "
+    if 'url' not in record:
+      missing_str += "DOI "
+    elif len(record['url']) == 0 or ("engineeringvillage" in record['url'] or "scopus" in record['url'] or "wos" in record['url']):
+      missing_str += "DOI "
 
   # - year (output: YYYY)
   if 'year' in record:
@@ -211,7 +222,7 @@ bibtex_writer.order_entries_by = ('author','year','ID')
 
 
 # File processing
-file_str = "../../data/methodology/example.bib"
+file_str = "../../data/methodology/identification/ieee_abstract.bib"
 report = ""
 
 with open(file_str,encoding="utf8") as bibtex_file:
