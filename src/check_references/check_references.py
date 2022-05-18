@@ -151,12 +151,12 @@ def custom_unify_reference(record):
     else:
       if 'url' not in record:
         missing_str += "DOI "
-      elif len(record['url']) == 0 or ("engineeringvillage" in record['url'] or "scopus" in record['url'] or "wos" in record['url']):
+      elif len(record['url']) == 0 or ("dimensions" in record['url'] or "engineeringvillage" in record['url'] or "scopus" in record['url'] or "wos" in record['url']):
         missing_str += "DOI "
   else:
     if 'url' not in record:
       missing_str += "DOI "
-    elif len(record['url']) == 0 or ("engineeringvillage" in record['url'] or "scopus" in record['url'] or "wos" in record['url']):
+    elif len(record['url']) == 0 or ("dimensions" in record['url'] or "engineeringvillage" in record['url'] or "scopus" in record['url'] or "wos" in record['url']):
       missing_str += "DOI "
 
   # - year (output: YYYY)
