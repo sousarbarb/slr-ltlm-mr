@@ -66,7 +66,7 @@ A Systematic Literature Review on Long-Term Localization and Mapping for Mobile 
 
 **Records removed before screening:**
 
-- Duplicates: 
+- Duplicates: 1240 records
 - Exclusion criteria: 
 
 ## Contacts
