@@ -1,0 +1,24 @@
+[WOS:000756469700001] volume number pages year 
+[hong-et-al:2022:02783649221080483] volume number pages 
+[hochdorfer-schlegel:2009] DOI 
+[jang-kim:2019:8867531] pages 
+[sung-et-al:2021:2] volume number pages 
+[rao-han:2015:7274622] pages 
+[zhang-et-al:2018:1729881418780178] pages 
+[banerjee-et-al:2019:8870347] pages 
+[zhang-et-al:2016:043] pages 
+[sun-et-al:2018] DOI 
+[perez-grau-et-al:2017:1729881417732757] pages 
+[ascher-et-al:2009] DOI 
+[bouaziz-et-al:2022:4] volume number pages 
+[wang-et-al:2021:17298814211047690] pages 
+[schaefer-et-al:2019:8870928] pages 
+[azpurua-et-al:2021:5] pages 
+[rosinol-et-al:2020] pages 
+[tang-et-al:2021:17298814211037497] pages 
+[berrio-et-al:2021:3094485] volume number pages 
+[jingdong-et-al:2008] DOI 
+[zhu-et-al:2019:9010305] pages 
+[mu-et-al:2015] pages 
+[stuntz-et-al:2015:7271751] pages 
+[kadlecek-et-al:2013] DOI 

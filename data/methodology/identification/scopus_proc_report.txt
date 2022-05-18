@@ -1,0 +1,39 @@
+[hochdorfer-schlegel:2009] DOI 
+[zhang-et-al:2018:1729881418780178] pages 
+[harris-et-al:2012] pages 
+[cumani-guiducci:2005] DOI 
+[knotts-et-al:1998] DOI 
+[cao-et-al:2022:3133730] volume number pages 
+[yang-et-al:2008] DOI 
+[adams:2006:340225] pages 
+[bouaziz-et-al:2022:4] volume number pages 
+[kassas-et-al:2022:3154110] volume number pages 
+[NoAuthor2022] author pages DOI 
+[xing-et-al:2022:22062] volume number pages 
+[tang-et-al:2021:17298814211037497] pages 
+[sung-et-al:2021:2] volume number pages 
+[wang-et-al:2021:17298814211047690] pages 
+[berrio-et-al:2021:3094485] volume number pages 
+[NoAuthor2021] author pages DOI 
+[NoAuthor2019] author pages DOI 
+[NoAuthor2019] author pages DOI 
+[NoAuthor2019] author pages DOI 
+[NoAuthor2018] author pages DOI 
+[NoAuthor2018] author pages DOI 
+[NoAuthor2017] author pages DOI 
+[NoAuthor20171] author DOI 
+[NoAuthor20171] author DOI 
+[NoAuthor20171] author DOI 
+[NoAuthor20161] author DOI 
+[NoAuthor20161] author DOI 
+[NoAuthor2015] author pages DOI 
+[NoAuthor2015] author pages DOI 
+[NoAuthor2014] author pages DOI 
+[NoAuthor2013] author pages DOI 
+[kadleček-et-al:2013] DOI 
+[NoAuthor2012] author pages DOI 
+[NoAuthor2010] author pages DOI 
+[NoAuthor2008] author pages DOI 
+[NoAuthor2007] author pages DOI 
+[NoAuthor20061] author DOI 
+[NoAuthor2005] author pages DOI 
