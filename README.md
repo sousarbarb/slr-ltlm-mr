@@ -9,7 +9,7 @@ A Systematic Literature Review on Long-Term Localization and Mapping for Mobile 
 
 `(robot* OR vehicle*) AND ((locali* AND map*) OR "slam") AND ("long term" OR "life long" OR lifelong)`
 
-**Inquiries:** (2040 records)
+**Inquiries:** 2040 records
 
 - [ACM Digital Library](https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&expand=dl&AllField=Title%3A%28%28robot*+OR+vehicle*%29+AND+%28%28locali*+AND+map*%29+OR+%22slam%22%29+AND+%28%22long+term%22+OR+%22life+long%22+OR+lifelong%29%29+OR+Abstract%3A%28%28robot*+OR+vehicle*%29+AND+%28%28locali*+AND+map*%29+OR+%22slam%22%29+AND+%28%22long+term%22+OR+%22life+long%22+OR+lifelong%29%29+OR+Keyword%3A%28%28robot*+OR+vehicle*%29+AND+%28%28locali*+AND+map*%29+OR+%22slam%22%29+AND+%28%22long+term%22+OR+%22life+long%22+OR+lifelong%29%29)
   - 5 results
@@ -70,7 +70,9 @@ A Systematic Literature Review on Long-Term Localization and Mapping for Mobile 
 - Duplicates: 1250 records
 - Exclusion criteria: 214 records
 
-**Results:** 576 records
+**Final Results:** 576 records
+
+### Screening
 
 ## Contacts
 
