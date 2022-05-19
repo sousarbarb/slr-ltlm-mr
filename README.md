@@ -20,7 +20,8 @@ A Systematic Literature Review on Long-Term Localization and Mapping for Mobile 
   - Title + abstract
   - `(robot OR robots OR robotics OR vehicle OR vehicles) AND (((localize OR localization OR localizing OR localise OR localisation OR localising) AND (map OR maps OR mapping)) OR "slam") AND ("long term" OR "life long" OR lifelong)`
 - [IEEE](https://ieeexplore.ieee.org/search/advanced)
-  - 260 results (without duplicates)
+  - 260 results (after removing 173 duplicate records of the inquiries using a
+    single field)
   - IEEE limits the maximum number of wildcards (e.g., `*`) in a query to 7
   - Search results obtained using single queries for each search field wanted
   - [Title](https://ieeexplore.ieee.org/search/searchresult.jsp?action=search&matchBoolean=true&newsearch=true&queryText=((%22Document%20Title%22:robot*%20OR%20%22Document%20Title%22:vehicle*)%20AND%20((%22Document%20Title%22:locali*%20AND%20%22Document%20Title%22:map*)%20OR%20%22Document%20Title%22:%22slam%22)%20AND%20(%22Document%20Title%22:%22long%20term%22%20OR%20%22Document%20Title%22:%22life%20long%22%20OR%20%22Document%20Title%22:lifelong)))
@@ -66,8 +67,10 @@ A Systematic Literature Review on Long-Term Localization and Mapping for Mobile 
 
 **Records removed before screening:**
 
-- Duplicates: 1240 records
-- Exclusion criteria: 
+- Duplicates: 1250 records
+- Exclusion criteria: 214 records
+
+**Results:** 576 records
 
 ## Contacts
 
