@@ -70,9 +70,22 @@ A Systematic Literature Review on Long-Term Localization and Mapping for Mobile 
 - Duplicates: 1250 records
 - Exclusion criteria: 214 records
 
-**Final Results:** 576 records
+**Records identified from the search results:** 576 records
 
 ### Screening
+
+**Records screened:** 576 records
+
+**Records removed after screening:**
+
+- Duplicates: 13 records
+- Exclusion criteria: 134 records
+
+**Records accepted for quality assessment:** 429 records
+
+### Quality Evaluation
+
+**Records assessed for eligibility:** 429 records
 
 ## Contacts
 
