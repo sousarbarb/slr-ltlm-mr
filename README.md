@@ -72,6 +72,14 @@ A Systematic Literature Review on Long-Term Localization and Mapping for Mobile 
 
 **Records identified from the search results:** 576 records
 
+Further information relative to this phase of the review can be found in
+[`identification/`](data/methodology/identification/).
+The source code for checking if the references have all required information
+(while normalizing the BibTex files generated from the different data sources
+considered in the review) and to identify short papers is available in
+[`check_references/`](src/check_references/) and
+[`check_short_papers/`](src/check_short_papers/), respectively.
+
 ### Screening
 
 **Records screened:** 576 records
@@ -83,9 +91,24 @@ A Systematic Literature Review on Long-Term Localization and Mapping for Mobile 
 
 **Records accepted for quality assessment:** 410 records
 
+Further information relative to this phase of the review can be found in
+[`screening/`](data/methodology/screening/).
+
 ### Quality Evaluation
 
 **Records assessed for eligibility:** 410 records
+
+**Records removed after quality assessment:**
+
+1. QE2, QE3, QE5, QE8 (no compliance): 113 records
+2. Cut-off score (7.5/10.0): 86 records
+
+**Records to include in the review:** 211 records
+
+Further information relative to this phase of the review can be found in
+[`quality-assessment/`](data/methodology/quality-assessment/).
+
+### Data Extraction
 
 ## Contacts
 
