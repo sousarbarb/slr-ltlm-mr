@@ -100,15 +100,29 @@ Further information relative to this phase of the review can be found in
 
 **Records removed after quality assessment:**
 
-1. QE2, QE3, QE5, QE8 (no compliance): 113 records
-2. Cut-off score (7.5/10.0): 86 records
+1. QE2, QE3, QE5, QE8 (no compliance): 116 records
+2. Cut-off score (7.5/10.0): 119 records
 
-**Records to include in the review:** 211 records
+**Records accepted for analysis:** 175 records
 
 Further information relative to this phase of the review can be found in
 [`quality-assessment/`](data/methodology/quality-assessment/).
 
 ### Data Extraction
+
+**Records analyzed for data extraction:** 175 records
+
+**Records removed for having extended versions:** 31 records
+
+**Records to include in the review:** 144 records
+
+**Data extraction items:**
+
+1. _Complete this section_
+2. ...
+
+Further information relative to this phase of the review can be found in
+[`data-extraction/`](data/methodology/data-extraction/).
 
 ## Contacts
 
