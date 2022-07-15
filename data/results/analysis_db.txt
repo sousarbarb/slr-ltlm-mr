@@ -1,0 +1,146 @@
+title;year;doi;acm;dim;ieee;inspec;scopus;wos
+Simultaneous localization and map-building using active vision;2002;10.1109/TPAMI.2002.1017615;0;0;0;0;1;1
+A visual bag of words method for interactive qualitative localization and mapping;2007;10.1109/ROBOT.2007.364080;0;1;1;1;1;1
+Experimental analysis of sample-based maps for long-term SLAM;2009;10.1177/0278364908096286;0;1;0;1;1;1
+Keypoint design and evaluation for place recognition in 2D lidar maps;2009;10.1016/j.robot.2009.07.009;0;1;0;1;1;1
+Lifelong localization of a mobile service-robot in everyday indoor environments using omnidirectional vision;2009;10.1109/TEPRA.2009.5339626;0;0;1;1;1;1
+Robust outdoor visual localization using a three-dimensional-edge map;2009;10.1002/rob.20306;0;1;0;1;1;1
+Towards a robust visual SLAM approach: Addressing the challenge of life-long operation;2009;nan;0;0;1;0;1;0
+Towards lifelong visual maps;2009;10.1109/IROS.2009.5354121;0;0;0;1;1;0
+FAB-MAP + RatSLAM: Appearance-based SLAM for multiple times of day;2010;10.1109/ROBOT.2010.5509547;0;0;1;1;1;0
+Lifelong Map Learning for Graph-based SLAM in Static Environments;2010;10.1007/s13218-010-0034-2;0;1;0;0;1;0
+Position-invariant robust features for long-term recognition of dynamic outdoor scenes;2010;10.1587/transinf.E93.D.2587;0;0;0;1;1;1
+Visual robot localization using compact binary landmarks;2010;10.1109/ROBOT.2010.5509579;0;0;1;1;1;1
+CD SLAM - Continuous localization and mapping in a dynamic world;2011;10.1109/IROS.2011.6048253;0;0;0;1;1;0
+Efficient information-theoretic graph pruning for graph-based SLAM with laser range finders;2011;10.1109/IROS.2011.6048060;0;0;1;1;1;0
+Long-term experiments with an adaptive spherical view representation for navigation in changing environments;2011;10.1016/j.robot.2011.02.013;0;1;0;1;1;1
+Capping Computation Time and Storage Requirements for Appearance-based Localization with CAT-SLAM;2012;10.1109/ICRA.2012.6224622;0;1;0;0;0;1
+Dynamic pose graph SLAM: Long-term mapping in low dynamic environments;2012;10.1109/IROS.2012.6385561;0;0;1;1;1;1
+Information-theoretic compression of pose graphs for laser-based SLAM;2012;10.1177/0278364912455072;0;1;0;0;1;1
+Realizing, reversing, recovering: Incremental robust loop closing over time using the iRRR algorithm;2012;10.1109/IROS.2012.6385879;0;0;1;1;1;1
+3D normal distributions transform occupancy maps: An efficient representation for mapping in dynamic environments;2013;10.1177/0278364913499415;0;0;0;1;0;0
+A spatio-temporal Long-term Memory approach for visual place recognition in mobile robotic navigation;2013;10.1016/j.robot.2012.12.004;0;0;0;0;1;1
+A speeded-up online incremental vision-based loop-closure detection for long-term SLAM;2013;10.1080/01691864.2013.826410;0;1;0;1;1;1
+Consistent sparsification for graph optimization;2013;10.1109/ECMR.2013.6698835;0;0;0;1;1;0
+Experience-based navigation for long-term localisation;2013;10.1177/0278364913499193;0;0;0;0;1;1
+Generic 2D/3D SLAM with NDT maps for lifelong application;2013;10.1109/ECMR.2013.6698849;0;0;1;1;1;0
+Hierarchical SLAM using spectral submap matching with opportunities for long-term operation;2013;10.1109/ICAR.2013.6766479;0;0;0;1;1;0
+Lifelong localization in changing environments;2013;10.1177/0278364913502830;0;1;0;1;1;1
+Localization and navigation of the CoBots over long-term deployments;2013;10.1177/0278364913503892;0;1;0;1;1;1
+Long-term mapping and localization using feature stability histograms;2013;10.1016/j.robot.2013.07.003;0;0;0;1;0;0
+OpenRatSLAM: An open source brain-based SLAM system;2013;10.1007/s10514-012-9317-9;0;1;0;1;1;1
+Self-help: Seeking out perplexing images for ever improving topological mapping;2013;10.1177/0278364913509859;0;1;0;1;1;1
+Temporally scalable visual SLAM using a reduced pose graph;2013;10.1109/ICRA.2013.6630556;0;0;0;1;1;0
+Towards persistent localization and mapping with a continuous appearance-based topology;2013;10.15607/rss.2012.viii.036;0;0;0;0;1;0
+Concurrent filtering and smoothing: A parallel architecture for real-time navigation and full smoothing;2014;10.1177/0278364914531056;0;0;0;0;1;1
+Generic node removal for factor-graph SLAM;2014;10.1109/TRO.2014.2347571;0;0;1;1;1;1
+Incremental unsupervised topological place discovery;2014;10.1109/ICRA.2014.6907022;0;0;1;1;1;1
+Long-term 3D map maintenance in dynamic environments;2014;10.1109/ICRA.2014.6907397;0;1;1;1;1;1
+Efficient and effective matching of image sequences under substantial appearance changes exploiting GPS priors;2015;10.1109/ICRA.2015.7139576;0;0;0;1;0;0
+Enhanced Monte Carlo Localization with Visual Place Recognition for Robust Robot Localization;2015;10.1007/s10846-015-0198-y;0;1;0;0;1;1
+Environment selection and hierarchical place recognition;2015;10.1109/ICRA.2015.7139966;0;0;1;1;1;1
+Generic NDT mapping in dynamic environments and its application for lifelong SLAM;2015;10.1016/j.robot.2014.08.008;0;0;0;1;1;1
+High-Level Visual Features for Underwater Place Recognition;2015;10.1109/ICRA.2015.7139706;0;0;0;0;0;1
+ORB-SLAM: A Versatile and Accurate Monocular SLAM System;2015;10.1109/TRO.2015.2463671;0;0;1;1;1;0
+Semi-Markov Process Based Localization using Radar in Dynamic Environments;2015;10.1109/ITSC.2015.77;0;0;0;0;0;1
+Superpixel-based appearance change prediction for long-term navigation across seasons;2015;10.1016/j.robot.2014.08.005;0;0;0;1;0;1
+The gist of maps - Summarizing experience for lifelong localization;2015;10.1109/ICRA.2015.7139575;0;0;0;1;1;1
+Vision-based Markov localization across large perceptual changes;2015;10.1109/ECMR.2015.7324181;0;0;1;1;1;1
+An integrated model of autonomous topological spatial cognition;2016;10.1007/s10514-015-9514-4;0;0;0;0;0;1
+Ceiling vision-based active SLAM framework for dynamic and wide-open environments;2016;10.1007/s10514-015-9453-0;0;1;0;1;1;1
+Checkout my map: Version control for fleetwide visual localisation;2016;10.1109/IROS.2016.7759843;0;0;1;1;1;1
+Erasing bad memories: Agent-side summarization for long-term mapping;2016;10.1109/IROS.2016.7759673;0;0;1;1;1;1
+Lifelong Information- Driven Exploration to Complete and Refine 4-DSpatio-Temporal Maps;2016;10.1109/LRA.2016.2516594;0;0;0;0;0;1
+Long-term Mapping Techniques for Ship Hull Inspection and Surveillance using an Autonomous Underwater Vehicle;2016;10.1002/rob.21582;0;1;0;1;1;1
+Mining DCNN landmarks for long-term visual SLAM;2016;10.1109/ROBIO.2016.7866383;0;0;1;1;1;1
+Nonlinear factor recovery for long-term SLAM;2016;10.1177/0278364915581629;0;0;0;1;1;1
+Summary Maps for Lifelong Visual Localization;2016;10.1002/rob.21595;0;1;0;1;1;1
+Will it last? Learning stable features for long-term visual localization;2016;10.1109/3DV.2016.66;0;0;1;1;1;0
+Episodic non-Markov localization;2017;10.1016/j.robot.2016.09.005;0;1;0;1;1;1
+FreMEn: Frequency map enhancement for long-term mobile robot autonomy in changing environments;2017;10.1109/TRO.2017.2665664;0;0;1;1;1;1
+Semantics-aware visual localization under challenging perceptual conditions;2017;10.1109/ICRA.2017.7989305;0;0;1;1;0;0
+SLAM++1-A highly efficient and temporally scalable incremental SLAM framework;2017;10.1177/0278364917691110;0;0;0;0;1;1
+Sparse optimization for robust and efficient loop closing;2017;10.1016/j.robot.2017.03.016;0;0;0;1;1;1
+SRAL: Shared Representative Appearance Learning for Long-Term Visual Place Recognition;2017;10.1109/LRA.2017.2662061;0;1;1;1;1;1
+Survey Registration for Long-Term Natural Environment Monitoring;2017;10.1002/rob.21664;0;0;0;1;1;0
+Visual place recognition with CNNs: from global to partial;2017;10.1109/IPTA.2017.8310121;0;0;1;1;0;0
+Are you ABLE to perform a life-long visual topological localization?;2018;10.1007/s10514-017-9664-7;0;0;0;1;0;1
+Distributed and collaborative monocular simultaneous localization and mapping for multi-robot systems in large-scale environments;2018;10.1177/1729881418780178;0;1;0;1;1;1
+DynaSLAM: Tracking, Mapping, and Inpainting in Dynamic Scenes;2018;10.1109/LRA.2018.2860039;0;1;1;1;1;1
+Efficient Long-term Mapping in Dynamic Environments;2018;10.1109/IROS.2018.8594310;0;1;1;1;1;1
+Efficient Map Compression for Collaborative Visual SLAM;2018;10.1109/WACV.2018.00114;0;1;1;1;1;1
+Learning Context Flexible Attention Model for Long-Term Visual Place Recognition;2018;10.1109/LRA.2018.2859916;0;0;1;0;1;1
+Learning of Holism-Landmark graph embedding for place recognition in Long-Term autonomy;2018;10.1109/LRA.2018.2856274;0;0;1;1;1;0
+Learning Place-and-Time-Dependent Binary Descriptors for Long-Term Visual Localization;2018;10.1109/ICRA.2018.8460674;0;0;0;0;1;0
+LLama-SLAM: Learning High-Quality Visual Landmarks for Long-Term Mapping and Localization;2018;10.1109/ITSC.2018.8569323;0;1;1;1;1;1
+Omnidirectional multisensory perception fusion for long-term place recognition;2018;10.1109/ICRA.2018.8461042;0;0;1;1;1;1
+Online probabilistic change detection in feature-based maps;2018;10.1109/ICRA.2018.8461111;0;0;0;0;1;0
+PoseMap: Lifelong, Multi-Environment 3D LiDAR Localization;2018;10.1109/IROS.2018.8593854;0;1;1;1;1;1
+Recurrent-OctoMap: Learning State-Based Map Refinement for Long-Term Semantic Mapping with 3-D-Lidar Data;2018;10.1109/LRA.2018.2856268;0;0;1;0;1;1
+Robust long-term registration of UAV images of crop fields for precision agriculture;2018;10.1109/LRA.2018.2849603;0;0;1;0;1;1
+Robust Place Recognition and Loop Closing in Laser-Based SLAM for UGVs in Urban Environments;2018;10.1109/JSEN.2018.2815956;0;1;1;1;1;1
+Selective memory: Recalling relevant experience for long-term visual localization;2018;10.1002/rob.21838;0;1;0;1;1;1
+Sequence-based sparse optimization methods for long-term loop closure detection in visual SLAM;2018;10.1007/s10514-018-9736-3;0;0;0;1;1;0
+Stabilize an Unsupervised Feature Learning for LiDAR-based Place Recognition;2018;10.1109/IROS.2018.8593562;0;1;1;1;1;1
+Visual Odometry and Place Recognition Fusion for Vehicle PositionTracking in Urban Environments;2018;10.3390/s18040939;0;0;0;0;0;1
+Visual Place Recognition in Long-term and Large-scale Environment based on CNN Feature;2018;10.1109/IVS.2018.8500686;0;0;0;1;0;0
+1-Day Learning, 1-Year Localization: Long-Term LiDAR Localization Using Scan Context Image;2019;10.1109/LRA.2019.2897340;0;1;1;1;1;1
+A DenseNet feature-based loop closure method for visual SLAM system;2019;10.1109/ROBIO49542.2019.8961714;0;0;1;1;1;0
+A pose graph-based localization system for long-term navigation in CAD floor plans;2019;10.1016/j.robot.2018.11.003;0;1;0;0;1;1
+A unified framework for mutual improvement of SLAM and semantic segmentation;2019;10.1109/ICRA.2019.8793499;0;0;1;1;1;1
+Appearance-based landmark selection for visual localization;2019;10.1002/rob.21870;0;1;0;0;1;1
+Clustermap building and relocalization in urban environments for unmanned vehicles;2019;10.3390/s19194252;0;1;0;1;1;1
+Communication constrained cloud-based long-term visual localization in real time;2019;10.1109/IROS40897.2019.8968550;0;1;1;1;1;1
+Deep Supervised Hashing with Similar Hierarchy for Place Recognition;2019;10.1109/IROS40897.2019.8968599;0;0;1;1;1;0
+Identifying robust landmarks in feature-based maps;2019;10.1109/IVS.2019.8814289;0;1;1;1;1;1
+Learning Local Feature Descriptor with Motion Attribute For Vision-based Localization;2019;10.1109/IROS40897.2019.8967749;0;0;0;1;0;0
+Network uncertainty informed semantic feature selection for visual SLAM;2019;10.1109/CRV.2019.00024;0;0;1;1;1;1
+On the Redundancy Detection in Keyframe-Based SLAM;2019;10.1109/3DV.2019.00071;0;0;1;1;1;1
+RTAB-Map as an open-source lidar and visual simultaneous localization and mapping library for large-scale and long-term online operation;2019;10.1002/rob.21831;0;1;0;1;1;1
+SDF-Loc: Signed distance Field based 2D relocalization and map update in dynamic environments;2019;10.23919/acc.2019.8814347;0;1;0;0;1;0
+Topological local-metric framework for mobile robots navigation: a long term perspective;2019;10.1007/s10514-018-9724-7;0;1;0;1;1;1
+3D LiDAR-Based Global Localization Using Siamese Neural Network;2020;10.1109/TITS.2019.2905046;0;1;1;1;1;1
+Appearance-invariant place recognition by adversarially learning disentangled representation;2020;10.1016/j.robot.2020.103561;0;0;0;0;1;0
+AVP-SLAM: Semantic visual mapping and localization for autonomous vehicles in the parking lot;2020;10.1109/IROS45743.2020.9340939;0;0;1;1;1;1
+Day and Night Collaborative Dynamic Mapping in Unstructured Environment Based on Multimodal Sensors;2020;10.1109/ICRA40945.2020.9197072;0;0;1;1;0;0
+Edge-SLAM: Edge-assisted visual simultaneous localization and mapping;2020;10.1145/3386901.3389033;0;0;0;1;1;0
+Highly Robust Visual Place Recognition Through Spatial Matching of CNN Features;2020;10.1109/ICRA40945.2020.9196967;0;0;0;0;1;0
+kRadar++: Coarse-to-fine FMCW scanning radar localisation;2020;10.3390/s20216002;0;1;0;1;1;1
+Learning Matchable Image Transformations for Long-Term Metric Visual Localization;2020;10.1109/LRA.2020.2967659;0;1;1;1;1;1
+Long-term localization with time series map prediction for mobile robots in dynamic environments;2020;10.1109/IROS45743.2020.9468884;0;0;1;1;1;1
+Long-term Place Recognition through Worst-case Graph Matching to Integrate Landmark Appearances and Spatial Relationships;2020;10.1109/ICRA40945.2020.9196906;0;1;1;1;1;1
+Merging of appearance-based place knowledge among multiple robots;2020;10.1007/s10514-020-09911-2;0;0;0;0;0;1
+Persistent Stereo Visual Localization on Cross-Modal Invariant Map;2020;10.1109/TITS.2019.2942760;0;1;1;1;1;1
+SGC-VSLAM: A semantic and geometric constraints VSLAM for dynamic indoor environments;2020;10.3390/s20082432;0;1;0;1;1;1
+Voxel-based representation learning for place recognition based on 3D point clouds;2020;10.1109/IROS45743.2020.9340992;0;0;0;1;1;0
+A brain-inspired compact cognitive mapping system;2021;10.1007/s11571-020-09621-6;0;1;0;0;1;1
+A Flexible and Efficient Loop Closure Detection Based on Motion Knowledge;2021;10.1109/ICRA48506.2021.9561126;0;0;1;1;0;0
+A Geodetic Normal Distribution Map for Long-Term LiDAR Localization on Earth;2021;10.1109/ACCESS.2020.3047421;0;1;1;1;1;1
+A Life-Long SLAM Approach Using Adaptable Local Maps Based on Rasterized LIDAR Images;2021;10.1109/JSEN.2021.3100882;0;1;1;1;1;1
+Change detection using weighted features for image-based localization;2021;10.1016/j.robot.2020.103676;0;1;0;0;1;1
+DiSCO: Differentiable Scan Context with Orientation;2021;10.1109/LRA.2021.3060741;0;1;1;1;1;1
+Explicit feature disentanglement for visual place recognition across appearance changes;2021;10.1177/17298814211037497;0;1;0;0;1;1
+FusionVLAD: A Multi-View Deep Fusion Networks for Viewpoint-Free 3D Place Recognition;2021;10.1109/LRA.2021.3061375;0;0;1;0;1;1
+Geometry-based Graph Pruning for Lifelong SLAM;2021;10.1109/IROS51168.2021.9636530;0;1;1;1;1;1
+Hierarchical Loop Closure Detection for Long-term Visual SLAM with Semantic-Geometric Descriptors;2021;10.1109/ITSC48978.2021.9564866;0;0;1;1;1;0
+Improving Image Description with Auxiliary Modality for Visual Localization in Challenging Conditions;2021;10.1007/s11263-020-01363-6;0;1;0;1;1;1
+Lifelong Localization in Semi-Dynamic Environment;2021;10.1109/ICRA48506.2021.9561584;0;1;1;1;1;1
+Long-Term Map Maintenance Pipeline for Autonomous Vehicles;2021;10.1109/TITS.2021.3094485;0;1;1;0;1;1
+Long-term vehicle localization in urban environments based on pole landmarks extracted from 3-D lidar scans;2021;10.1016/j.robot.2020.103709;0;1;0;0;1;1
+Loop-Closure Detection with a Multiresolution Point Cloud Histogram Mode in Lidar Odometry and Mapping for Intelligent Vehicles;2021;10.1109/TMECH.2021.3062647;0;0;1;1;1;1
+Modest-vocabulary loop-closure detection with incremental bag of tracked words;2021;10.1016/j.robot.2021.103782;0;1;0;0;1;1
+PLSAV: Parallel loop searching and verifying for loop closure detection;2021;10.1049/itr2.12054;0;1;0;0;1;1
+Pole-like Objects Mapping and Long-Term Robot Localization in Dynamic Urban Scenarios;2021;10.1109/ROBIO54168.2021.9739599;0;1;1;0;1;0
+Radar-to-Lidar: Heterogeneous Place Recognition via Joint Learning;2021;10.3389/frobt.2021.661199;0;1;0;0;1;1
+Robust and Long-term Monocular Teach and Repeat Navigation using a Single-experience Map;2021;10.1109/IROS51168.2021.9635886;0;0;0;1;1;0
+Season-Invariant and Viewpoint-Tolerant LiDAR Place Recognition in GPS-Denied Environments;2021;10.1109/TIE.2019.2962416;0;0;1;1;0;0
+Self-Supervised Learning of Lidar Segmentation for Autonomous Indoor Navigation;2021;10.1109/ICRA48506.2021.9561701;0;1;1;1;1;1
+Variational Bayesian approach to condition-invariant feature extraction for visual place recognition;2021;10.3390/app11198976;0;0;0;0;1;1
+Accurate Dynamic SLAM Using CRF-Based Long-Term Consistency;2022;10.1109/TVCG.2020.3028218;0;0;1;1;0;0
+Appearance-Based Loop Closure Detection via Locality-Driven Accurate Motion Field Learning;2022;10.1109/TITS.2021.3086822;0;1;1;0;1;1
+DE-SLAM: SLAM for highly dynamic environment;2022;10.1002/rob.22062;0;1;0;0;1;1
+Domain-Invariant Similarity Activation Map Contrastive Learning for Retrieval-Based Long-Term Visual Localization;2022;10.1109/JAS.2021.1003907;0;1;1;1;1;1
+Map management for robust long-term visual localization of an autonomous shuttle in changing conditions;2022;10.1007/s11042-021-11870-4;0;1;0;0;1;1
+RadarSLAM: A robust simultaneous localization and mapping system for allweather conditions;2022;10.1177/02783649221080483;0;1;0;0;0;1
+Tightly-Coupled Magneto-Visual-Inertial Fusion for Long Term Localization in Indoor Environment;2022;10.1109/LRA.2021.3136241;0;0;1;1;1;0
+VIRAL-Fusion: A Visual-Inertial-Ranging-Lidar Sensor Fusion Approach;2022;10.1109/TRO.2021.3094157;0;0;0;0;0;1
