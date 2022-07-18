@@ -112,9 +112,9 @@ Further information relative to this phase of the review can be found in
 
 **Records analyzed for data extraction:** 175 records
 
-**Records removed for having extended versions:** 30 records
+**Records removed for having extended versions:** 31 records
 
-**Records to include in the review:** 145 records
+**Records to include in the review:** 144 records
 
 **Data extraction items:**
 

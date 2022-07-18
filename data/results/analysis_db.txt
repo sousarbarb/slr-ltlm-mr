@@ -9,7 +9,6 @@ Towards a robust visual SLAM approach: Addressing the challenge of life-long ope
 Towards lifelong visual maps;2009;10.1109/IROS.2009.5354121;0;0;0;1;1;0
 FAB-MAP + RatSLAM: Appearance-based SLAM for multiple times of day;2010;10.1109/ROBOT.2010.5509547;0;0;1;1;1;0
 Lifelong Map Learning for Graph-based SLAM in Static Environments;2010;10.1007/s13218-010-0034-2;0;1;0;0;1;0
-Position-invariant robust features for long-term recognition of dynamic outdoor scenes;2010;10.1587/transinf.E93.D.2587;0;0;0;1;1;1
 Visual robot localization using compact binary landmarks;2010;10.1109/ROBOT.2010.5509579;0;0;1;1;1;1
 CD SLAM - Continuous localization and mapping in a dynamic world;2011;10.1109/IROS.2011.6048253;0;0;0;1;1;0
 Efficient information-theoretic graph pruning for graph-based SLAM with laser range finders;2011;10.1109/IROS.2011.6048060;0;0;1;1;1;0
