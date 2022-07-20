@@ -101,16 +101,16 @@ considered in the review) and to identify short papers is available in
 **Records removed after screening:**
 
 - Duplicates: 13 records
-- Exclusion criteria: 153 records
+- Exclusion criteria: 165 records
 
-**Records accepted for quality assessment:** 410 records
+**Records accepted for quality assessment:** 411 records
 
 Further information relative to this phase of the review can be found in
 [`screening/`](data/methodology/screening/).
 
 ### Quality Evaluation
 
-**Records assessed for eligibility:** 410 records
+**Records assessed for eligibility:** 411 records
 
 **Quality evaluation criteria:**
 
