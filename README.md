@@ -65,6 +65,8 @@ A Systematic Literature Review on Long-Term Localization and Mapping for Mobile 
     abstract, author keywords, and Keywords Plus
   - Query: `TS=((robot* OR vehicle*) AND ((locali* AND map*) OR "slam") AND ("long term" OR "life long" OR lifelong))`
 
+**Last inquiry:** May 17, 2022
+
 **Records removed before screening:**
 
 - Duplicates: 1250 records
@@ -84,6 +86,18 @@ considered in the review) and to identify short papers is available in
 
 **Records screened:** 576 records
 
+**Eligibility criteria (exclusion):**
+
+- [E1] Index: Papers not indexed in a scientific publication venue
+- [E2] Language: Full-text of the papers not published in English
+- [E3] Subject Area: Papers not classified in the databases as Computer Science, Engineering, Mathematics, or Multidisciplinary
+- [E4] Short Papers: Papers classified as short papers accordingly to the publication venue
+- [E5] Gray, Secondary, and Tertiary Literature: Books, preprints, reports, reviews, thesis, ...
+- [E6] Availability: Full-text of the papers not available in digital libraries
+- [E7] Dataset: Papers that focus only on data collection
+- [E8] Coverage: Papers using only odometry for localization
+- [E9] Scope Papers: that focus on different and not related subjects
+
 **Records removed after screening:**
 
 - Duplicates: 13 records
@@ -98,10 +112,21 @@ Further information relative to this phase of the review can be found in
 
 **Records assessed for eligibility:** 410 records
 
+**Quality evaluation criteria:**
+
+- [QE1] Does the paper have an updated state of the art on long-term localization and mapping? `0.0, 0.5, 1.0`
+- [QE2] Is the methodology appropriate and detailed? `0.0, 0.5, 1.0`
+- [QE3] Does the methodology consider both localization and mapping problems? `0.0, 1.0, 2.0`
+- [QE4 Is the hardware and/or software used in the experiments detailed? `0.0, 0.5, 1.0`
+- [QE5] Does the paper presents any kind of long-term experimental results? `0.0, 2.0`
+- [QE6] Does the paper presents comparative results with other methods and/or ground-truth data? `0.0, 1.0`
+- [QE7] Does the work's implementation and/or the data used in the experiments are publicly available? `0.0, 1.0`
+- [QE8] Is the discussion of the results and conclusions appropriate and detailed? `0.0, 0.5, 1.0`
+
 **Records removed after quality assessment:**
 
-1. QE2, QE3, QE5, QE8 (no compliance): 116 records
-2. Cut-off score (7.5/10.0): 119 records
+1. QE2, QE3, QE5, QE8 (= 0): 116 records
+2. Cut-off score (<= 7.5/10.0): 119 records
 
 **Records accepted for analysis:** 175 records
 
