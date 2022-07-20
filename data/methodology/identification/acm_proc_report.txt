@@ -6,7 +6,9 @@
 [huang:2013] pages 
 [10.1287/opre.1120.1076] author 
 [walcott:2011] pages 
+[borgstrom:2009] pages 
 [gifford:2009] pages 
+[he:2008] pages 
 [navalpakkam:2006] pages 
 [wind-et-al:2001] pages DOI 
 [stone-veloso:1998] pages 
