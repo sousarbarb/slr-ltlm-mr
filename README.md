@@ -11,8 +11,8 @@ A Systematic Literature Review on Long-Term Localization and Mapping for Mobile 
 
 **Inquiries:** 2040 records
 
-- [ACM Digital Library](https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&expand=dl&AllField=Title%3A%28%28robot*+OR+vehicle*%29+AND+%28%28locali*+AND+map*%29+OR+%22slam%22%29+AND+%28%22long+term%22+OR+%22life+long%22+OR+lifelong%29%29+OR+Abstract%3A%28%28robot*+OR+vehicle*%29+AND+%28%28locali*+AND+map*%29+OR+%22slam%22%29+AND+%28%22long+term%22+OR+%22life+long%22+OR+lifelong%29%29+OR+Keyword%3A%28%28robot*+OR+vehicle*%29+AND+%28%28locali*+AND+map*%29+OR+%22slam%22%29+AND+%28%22long+term%22+OR+%22life+long%22+OR+lifelong%29%29)
-  - 5 results
+- [ACM Digital Library](https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&expand=all&AllField=Title%3A%28%28robot*+OR+vehicle*%29+AND+%28%28locali*+AND+map*%29+OR+%22slam%22%29+AND+%28%22long+term%22+OR+%22life+long%22+OR+lifelong%29%29+OR+Abstract%3A%28%28robot*+OR+vehicle*%29+AND+%28%28locali*+AND+map*%29+OR+%22slam%22%29+AND+%28%22long+term%22+OR+%22life+long%22+OR+lifelong%29%29+OR+Keyword%3A%28%28robot*+OR+vehicle*%29+AND+%28%28locali*+AND+map*%29+OR+%22slam%22%29+AND+%28%22long+term%22+OR+%22life+long%22+OR+lifelong%29%29)
+  - 125 results
   - Title + abstract + author keywords
   - `Title:((robot* OR vehicle*) AND ((locali* AND map*) OR "slam") AND ("long term" OR "life long" OR lifelong)) OR Abstract:((robot* OR vehicle*) AND ((locali* AND map*) OR "slam") AND ("long term" OR "life long" OR lifelong)) OR Keyword:((robot* OR vehicle*) AND ((locali* AND map*) OR "slam") AND ("long term" OR "life long" OR lifelong))`
 - [Dimensions](https://app.dimensions.ai/discover/publication?search_mode=content&search_text=(robot%20OR%20robots%20OR%20robotics%20OR%20vehicle%20OR%20vehicles)%20AND%20(((localize%20OR%20localization%20OR%20localizing%20OR%20localise%20OR%20localisation%20OR%20localising)%20AND%20(map%20OR%20maps%20OR%20mapping))%20OR%20%22slam%22)%20AND%20(%22long%20term%22%20OR%20%22life%20long%22%20OR%20lifelong)&search_type=kws&search_field=text_search)
