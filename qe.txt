@@ -1,0 +1,1 @@
+Learning Highly Dynamic Environments with Stochastic Variational Inference (2017)
