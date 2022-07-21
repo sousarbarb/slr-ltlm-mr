@@ -1,0 +1,2168 @@
+TY  - CPAPER
+AU  - Ali, Ali J Ben
+AU  - Hashemifar, Zakieh Sadat
+AU  - Dantu, Karthik
+TI  - Edge-SLAM: Edge-assisted visual simultaneous localization and mapping
+SP  - 325-337
+PY  - 2020
+DA  - 2020
+DO  - 10.1145/3386901.3389033
+UR  - http://dx.doi.org/10.1145/3386901.3389033
+ER  - 
+
+TY  - JOUR
+AU  - Davison, Andrew J
+AU  - Murray, David W
+TI  - Simultaneous localization and map-building using active vision
+T2  - IEEE Transactions on Pattern Analysis and Machine Intelligence
+VL  - 24
+IS  - 7
+SP  - 865-880
+PY  - 2002
+DA  - 2002
+DO  - 10.1109/TPAMI.2002.1017615
+UR  - http://dx.doi.org/10.1109/TPAMI.2002.1017615
+ER  - 
+
+TY  - CPAPER
+AU  - Glover, Arren J
+AU  - Maddern, William P
+AU  - Milford, Michael J
+AU  - Wyeth, Gordon F
+TI  - FAB-MAP + RatSLAM: Appearance-based SLAM for multiple times of day
+SP  - 3507-3512
+PY  - 2010
+DA  - 2010
+DO  - 10.1109/ROBOT.2010.5509547
+UR  - http://dx.doi.org/10.1109/ROBOT.2010.5509547
+ER  - 
+
+TY  - JOUR
+AU  - Kawewong, Aram
+AU  - Tongprasit, Noppharit
+AU  - Hasegawa, Osamu
+TI  - A speeded-up online incremental vision-based loop-closure detection for
+      long-term SLAM
+T2  - Advanced Robotics
+VL  - 27
+IS  - 17
+SP  - 1325-1336
+PY  - 2013
+DA  - 2013
+DO  - 10.1080/01691864.2013.826410
+UR  - http://dx.doi.org/10.1080/01691864.2013.826410
+ER  - 
+
+TY  - JOUR
+AU  - Schaefer, Alexander
+AU  - Büscher, Daniel
+AU  - Vertens, Johan
+AU  - Luft, Lukas
+AU  - Burgard, Wolfram
+TI  - Long-term vehicle localization in urban environments based on pole
+      landmarks extracted from 3-D lidar scans
+T2  - Robotics and Autonomous Systems
+VL  - 136
+SP  - 103709
+PY  - 2021
+DA  - 2021
+DO  - 10.1016/j.robot.2020.103709
+UR  - http://dx.doi.org/10.1016/j.robot.2020.103709
+ER  - 
+
+TY  - CPAPER
+AU  - Walcott-Bryant, Aisha
+AU  - Kaess, Michael
+AU  - Johannsson, Hordur
+AU  - Leonard, John J
+TI  - Dynamic pose graph SLAM: Long-term mapping in low dynamic environments
+SP  - 1871-1878
+PY  - 2012
+DA  - 2012
+DO  - 10.1109/IROS.2012.6385561
+UR  - http://dx.doi.org/10.1109/IROS.2012.6385561
+ER  - 
+
+TY  - JOUR
+AU  - Bacca, Bladimir
+AU  - Salvi, Joaquim
+AU  - Cufí, Xavier
+TI  - Long-term mapping and localization using feature stability histograms
+T2  - Robotics and Autonomous Systems
+VL  - 61
+IS  - 12
+SP  - 1539-1558
+PY  - 2013
+DA  - 2013
+DO  - 10.1016/j.robot.2013.07.003
+UR  - http://dx.doi.org/10.1016/j.robot.2013.07.003
+ER  - 
+
+TY  - JOUR
+AU  - Bescos, Berta
+AU  - Fácil, José M
+AU  - Civera, Javier
+AU  - Neira, José
+TI  - DynaSLAM: Tracking, Mapping, and Inpainting in Dynamic Scenes
+T2  - IEEE Robotics and Automation Letters
+VL  - 3
+IS  - 4
+SP  - 4076-4083
+PY  - 2018
+DA  - 2018
+DO  - 10.1109/LRA.2018.2860039
+UR  - http://dx.doi.org/10.1109/LRA.2018.2860039
+ER  - 
+
+TY  - CPAPER
+AU  - Liu, Bingxi
+AU  - Tang, Fulin
+AU  - Fu, Yujie
+AU  - Yang, Yanqun
+AU  - Wu, Yihong
+TI  - A Flexible and Efficient Loop Closure Detection Based on Motion Knowledge
+SP  - 11241-11247
+PY  - 2021
+DA  - 2021
+DO  - 10.1109/ICRA48506.2021.9561126
+UR  - http://dx.doi.org/10.1109/ICRA48506.2021.9561126
+ER  - 
+
+TY  - JOUR
+AU  - Kim, Chansoo
+AU  - Cho, Sungjin
+AU  - Sunwoo, Myoungho
+AU  - Resende, Paulo
+AU  - Bradaï, Benazouz
+AU  - Jo, Kichun
+TI  - A Geodetic Normal Distribution Map for Long-Term LiDAR Localization on
+      Earth
+T2  - IEEE Access
+VL  - 9
+SP  - 470-484
+PY  - 2021
+DA  - 2021
+DO  - 10.1109/ACCESS.2020.3047421
+UR  - http://dx.doi.org/10.1109/ACCESS.2020.3047421
+ER  - 
+
+TY  - JOUR
+AU  - Qin, Cao
+AU  - Zhang, Yunzhou
+AU  - Liu, Yan
+AU  - Coleman, Sonya
+AU  - Kerr, Dermot
+AU  - Lv, Guanghao
+TI  - Appearance-invariant place recognition by adversarially learning
+      disentangled representation
+T2  - Robotics and Autonomous Systems
+VL  - 131
+SP  - 103561
+PY  - 2020
+DA  - 2020
+DO  - 10.1016/j.robot.2020.103561
+UR  - http://dx.doi.org/10.1016/j.robot.2020.103561
+ER  - 
+
+TY  - CPAPER
+AU  - Yu, Chao
+AU  - Liu, Zuxin
+AU  - Liu, Xin-Jun
+AU  - Qiao, Fei
+AU  - Wang, Yu
+AU  - Xie, Fugui
+AU  - Wei, Qi
+AU  - Yang, Yi
+TI  - A DenseNet feature-based loop closure method for visual SLAM system
+SP  - 258-265
+PY  - 2019
+DA  - 2019
+DO  - 10.1109/ROBIO49542.2019.8961714
+UR  - http://dx.doi.org/10.1109/ROBIO49542.2019.8961714
+ER  - 
+
+TY  - JOUR
+AU  - Ball, David
+AU  - Heath, Scott
+AU  - Wiles, Janet
+AU  - Wyeth, Gordon F
+AU  - Corke, Peter
+AU  - Milford, Michael J
+TI  - OpenRatSLAM: An open source brain-based SLAM system
+T2  - Autonomous Robots
+VL  - 34
+IS  - 3
+SP  - 149-176
+PY  - 2013
+DA  - 2013
+DO  - 10.1007/s10514-012-9317-9
+UR  - http://dx.doi.org/10.1007/s10514-012-9317-9
+ER  - 
+
+TY  - JOUR
+AU  - Martini, Daniele De
+AU  - Gadd, Matthew
+AU  - Newman, Paul
+TI  - kRadar++: Coarse-to-fine FMCW scanning radar localisation
+T2  - Sensors
+VL  - 20
+IS  - 21
+SP  - 1-23
+PY  - 2020
+DA  - 2020
+DO  - 10.3390/s20216002
+UR  - http://dx.doi.org/10.3390/s20216002
+ER  - 
+
+TY  - CPAPER
+AU  - Filliat, David
+TI  - A visual bag of words method for interactive qualitative localization and
+      mapping
+SP  - 3921-3926
+PY  - 2007
+DA  - 2007
+DO  - 10.1109/ROBOT.2007.364080
+UR  - http://dx.doi.org/10.1109/ROBOT.2007.364080
+ER  - 
+
+TY  - CPAPER
+AU  - Van Opdenbosch, Dominik
+AU  - Aykut, Tamay
+AU  - Oelsch, Martin
+AU  - Alt, Nicolas
+AU  - Steinbach, Eckehard
+TI  - Efficient Map Compression for Collaborative Visual SLAM
+VL  - 2018-January
+SP  - 992-1000
+PY  - 2018
+DA  - 2018
+DO  - 10.1109/WACV.2018.00114
+UR  - http://dx.doi.org/10.1109/WACV.2018.00114
+ER  - 
+
+TY  - JOUR
+AU  - Derner, Erik
+AU  - Gomez, Clara
+AU  - Hernandez, Alejandra C
+AU  - Barber, Ramon
+AU  - Babuška, Robert
+TI  - Change detection using weighted features for image-based localization
+T2  - Robotics and Autonomous Systems
+VL  - 135
+SP  - 103676
+PY  - 2021
+DA  - 2021
+DO  - 10.1016/j.robot.2020.103676
+UR  - http://dx.doi.org/10.1016/j.robot.2020.103676
+ER  - 
+
+TY  - CPAPER
+AU  - Einhorn, Erik
+AU  - Gross, Horst-Michael
+TI  - Generic 2D/3D SLAM with NDT maps for lifelong application
+SP  - 240-247
+PY  - 2013
+DA  - 2013
+DO  - 10.1109/ECMR.2013.6698849
+UR  - http://dx.doi.org/10.1109/ECMR.2013.6698849
+ER  - 
+
+TY  - JOUR
+AU  - Einhorn, Erik
+AU  - Gross, Horst-Michael
+TI  - Generic NDT mapping in dynamic environments and its application for
+      lifelong SLAM
+T2  - Robotics and Autonomous Systems
+VL  - 69
+IS  - 1
+SP  - 28-39
+PY  - 2015
+DA  - 2015
+DO  - 10.1016/j.robot.2014.08.008
+UR  - http://dx.doi.org/10.1016/j.robot.2014.08.008
+ER  - 
+
+TY  - JOUR
+AU  - Boniardi, Federico
+AU  - Caselitz, Tim
+AU  - Kümmerle, Rainer
+AU  - Burgard, Wolfram
+TI  - A pose graph-based localization system for long-term navigation in CAD
+      floor plans
+T2  - Robotics and Autonomous Systems
+VL  - 112
+SP  - 84-97
+PY  - 2019
+DA  - 2019
+DO  - 10.1016/j.robot.2018.11.003
+UR  - http://dx.doi.org/10.1016/j.robot.2018.11.003
+ER  - 
+
+TY  - JOUR
+AU  - Cao, Fengkui
+AU  - Yan, Fei
+AU  - Wang, Sen
+AU  - Zhuang, Yan
+AU  - Wang, Wei
+TI  - Season-Invariant and Viewpoint-Tolerant LiDAR Place Recognition in
+      GPS-Denied Environments
+T2  - IEEE Transactions on Industrial Electronics
+VL  - 68
+IS  - 1
+SP  - 563-574
+PY  - 2021
+DA  - 2021
+DO  - 10.1109/TIE.2019.2962416
+UR  - http://dx.doi.org/10.1109/TIE.2019.2962416
+ER  - 
+
+TY  - JOUR
+AU  - Cao, Fengkui
+AU  - Zhuang, Yan
+AU  - Zhang, Hong
+AU  - Wang, Wei
+TI  - Robust Place Recognition and Loop Closing in Laser-Based SLAM for UGVs in
+      Urban Environments
+T2  - IEEE Sensors Journal
+VL  - 18
+IS  - 10
+SP  - 4242-4252
+PY  - 2018
+DA  - 2018
+DO  - 10.1109/JSEN.2018.2815956
+UR  - http://dx.doi.org/10.1109/JSEN.2018.2815956
+ER  - 
+
+TY  - JOUR
+AU  - Dayoub, Feras
+AU  - Cielniak, Grzegorz
+AU  - Duckett, Tom
+TI  - Long-term experiments with an adaptive spherical view representation for
+      navigation in changing environments
+T2  - Robotics and Autonomous Systems
+VL  - 59
+IS  - 5
+SP  - 285-295
+PY  - 2011
+DA  - 2011
+DO  - 10.1016/j.robot.2011.02.013
+UR  - http://dx.doi.org/10.1016/j.robot.2011.02.013
+ER  - 
+
+TY  - JOUR
+AU  - Han, Fei
+AU  - Wang, Hua
+AU  - Huang, Guoquan
+AU  - Zhang, Hao
+TI  - Sequence-based sparse optimization methods for long-term loop closure
+      detection in visual SLAM
+T2  - Autonomous Robots
+VL  - 42
+IS  - 7
+SP  - 1323-1335
+PY  - 2018
+DA  - 2018
+DO  - 10.1007/s10514-018-9736-3
+UR  - http://dx.doi.org/10.1007/s10514-018-9736-3
+ER  - 
+
+TY  - JOUR
+AU  - Han, Fei
+AU  - Beleidy, Saad El
+AU  - Wang, Hua
+AU  - Ye, Cang
+AU  - Zhang, Hao
+TI  - Learning of Holism-Landmark graph embedding for place recognition in
+      Long-Term autonomy
+T2  - IEEE Robotics and Automation Letters
+VL  - 3
+IS  - 4
+SP  - 3669-3676
+PY  - 2018
+DA  - 2018
+DO  - 10.1109/LRA.2018.2856274
+UR  - http://dx.doi.org/10.1109/LRA.2018.2856274
+ER  - 
+
+TY  - JOUR
+AU  - Han, Fei
+AU  - Yang, Xue
+AU  - Deng, Yiming
+AU  - Rentschler, Mark
+AU  - Yang, Dejun
+AU  - Zhang, Hao
+TI  - SRAL: Shared Representative Appearance Learning for Long-Term Visual Place
+      Recognition
+T2  - IEEE Robotics and Automation Letters
+VL  - 2
+IS  - 2
+SP  - 1172-1179
+PY  - 2017
+DA  - 2017
+DO  - 10.1109/LRA.2017.2662061
+UR  - http://dx.doi.org/10.1109/LRA.2017.2662061
+ER  - 
+
+TY  - CPAPER
+AU  - Nobre, Fernando
+AU  - Heckman, Christoffer
+AU  - Ozog, Paul
+AU  - Wolcott, Ryan W
+AU  - Walls, Jeffrey M
+TI  - Online probabilistic change detection in feature-based maps
+SP  - 3661-3668
+PY  - 2018
+DA  - 2018
+DO  - 10.1109/ICRA.2018.8461111
+UR  - http://dx.doi.org/10.1109/ICRA.2018.8461111
+ER  - 
+
+TY  - CPAPER
+AU  - Pomerleau, Francois
+AU  - Krüsi, Philipp
+AU  - Colas, Francis
+AU  - Furgale, Paul
+AU  - Siegwart, Roland
+TI  - Long-term 3D map maintenance in dynamic environments
+SP  - 3712-3719
+PY  - 2014
+DA  - 2014
+DO  - 10.1109/ICRA.2014.6907397
+UR  - http://dx.doi.org/10.1109/ICRA.2014.6907397
+ER  - 
+
+TY  - JOUR
+AU  - Tipaldi, Gian Diego
+AU  - Meyer-Delius, Daniel
+AU  - Burgard, Wolfram
+TI  - Lifelong localization in changing environments
+T2  - International Journal of Robotics Research
+VL  - 32
+IS  - 14
+SP  - 1662-1678
+PY  - 2013
+DA  - 2013
+DO  - 10.1177/0278364913502830
+UR  - http://dx.doi.org/10.1177/0278364913502830
+ER  - 
+
+TY  - CPAPER
+AU  - Huang, Guoquan
+AU  - Kaess, Michael
+AU  - Leonard, John J
+TI  - Consistent sparsification for graph optimization
+SP  - 150-157
+PY  - 2013
+DA  - 2013
+DO  - 10.1109/ECMR.2013.6698835
+UR  - http://dx.doi.org/10.1109/ECMR.2013.6698835
+ER  - 
+
+TY  - JOUR
+AU  - Kim, Giseop
+AU  - Park, Byungjae
+AU  - Kim, Ayoung
+TI  - 1-Day Learning, 1-Year Localization: Long-Term LiDAR Localization Using
+      Scan Context Image
+T2  - IEEE Robotics and Automation Letters
+VL  - 4
+IS  - 2
+SP  - 1948-1955
+PY  - 2019
+DA  - 2019
+DO  - 10.1109/LRA.2019.2897340
+UR  - http://dx.doi.org/10.1109/LRA.2019.2897340
+ER  - 
+
+TY  - CPAPER
+AU  - Kurz, Gerhard
+AU  - Holoch, Matthias
+AU  - Biber, Peter
+TI  - Geometry-based Graph Pruning for Lifelong SLAM
+SP  - 3313-3320
+PY  - 2021
+DA  - 2021
+DO  - 10.1109/IROS51168.2021.9636530
+UR  - http://dx.doi.org/10.1109/IROS51168.2021.9636530
+ER  - 
+
+TY  - CPAPER
+AU  - Singh, Gaurav
+AU  - Wu, Meiqing
+AU  - Lam, Siew-Kei
+AU  - Van Minh, Do
+TI  - Hierarchical Loop Closure Detection for Long-term Visual SLAM with
+      Semantic-Geometric Descriptors
+VL  - 2021-September
+SP  - 2909-2916
+PY  - 2021
+DA  - 2021
+DO  - 10.1109/ITSC48978.2021.9564866
+UR  - http://dx.doi.org/10.1109/ITSC48978.2021.9564866
+ER  - 
+
+TY  - JOUR
+AU  - Hu, Hanjiang
+AU  - Wang, Hesheng
+AU  - Liu, Zhe
+AU  - Chen, Weidong
+TI  - Domain-Invariant Similarity Activation Map Contrastive Learning for
+      Retrieval-Based Long-Term Visual Localization
+T2  - IEEE/CAA Journal of Automatica Sinica
+VL  - 9
+IS  - 2
+SP  - 313-328
+PY  - 2022
+DA  - 2022
+DO  - 10.1109/JAS.2021.1003907
+UR  - http://dx.doi.org/10.1109/JAS.2021.1003907
+ER  - 
+
+TY  - CPAPER
+AU  - Johannsson, Hordur
+AU  - Kaess, Michael
+AU  - Fallon, Maurice
+AU  - Leonard, John J
+TI  - Temporally scalable visual SLAM using a reduced pose graph
+SP  - 54-61
+PY  - 2013
+DA  - 2013
+DO  - 10.1109/ICRA.2013.6630556
+UR  - http://dx.doi.org/10.1109/ICRA.2013.6630556
+ER  - 
+
+TY  - JOUR
+AU  - Karaoğuz, Hakan
+AU  - Bozma, H Işil
+TI  - An integrated model of autonomous topological spatial cognition
+T2  - Autonomous Robots
+VL  - 40
+IS  - 8
+SP  - 1379-1402
+PY  - 2016
+DA  - 2016
+DO  - 10.1007/s10514-015-9514-4
+UR  - http://dx.doi.org/10.1007/s10514-015-9514-4
+ER  - 
+
+TY  - JOUR
+AU  - Karaoğuz, Hakan
+AU  - Bozma, H Işil
+TI  - Merging of appearance-based place knowledge among multiple robots
+T2  - Autonomous Robots
+VL  - 44
+IS  - 6
+SP  - 1009-1027
+PY  - 2020
+DA  - 2020
+DO  - 10.1007/s10514-020-09911-2
+UR  - http://dx.doi.org/10.1007/s10514-020-09911-2
+ER  - 
+
+TY  - JOUR
+AU  - Kretzschmar, Henrik
+AU  - Stachniss, Cyrill
+TI  - Information-theoretic compression of pose graphs for laser-based SLAM
+T2  - International Journal of Robotics Research
+VL  - 31
+IS  - 11
+SP  - 1219-1230
+PY  - 2012
+DA  - 2012
+DO  - 10.1177/0278364912455072
+UR  - http://dx.doi.org/10.1177/0278364912455072
+ER  - 
+
+TY  - CPAPER
+AU  - Kretzschmar, Henrik
+AU  - Stachniss, Cyrill
+AU  - Grisetti, Giorgio
+TI  - Efficient information-theoretic graph pruning for graph-based SLAM with
+      laser range finders
+SP  - 865-871
+PY  - 2011
+DA  - 2011
+DO  - 10.1109/IROS.2011.6094414
+UR  - http://dx.doi.org/10.1109/IROS.2011.6094414
+ER  - 
+
+TY  - JOUR
+AU  - Kretzschmar, Henrik
+AU  - Grisetti, Giorgio
+AU  - Stachniss, Cyrill
+TI  - Lifelong Map Learning for Graph-based SLAM in Static Environments
+T2  - KI - Kunstliche Intelligenz
+VL  - 24
+IS  - 3
+SP  - 199-206
+PY  - 2010
+DA  - 2010
+DO  - 10.1007/s13218-010-0034-2
+UR  - http://dx.doi.org/10.1007/s13218-010-0034-2
+ER  - 
+
+TY  - CPAPER
+AU  - Thomas, Hugues
+AU  - Agro, Ben
+AU  - Gridseth, Mona
+AU  - Zhang, Jian
+AU  - Barfoot, Timothy D
+TI  - Self-Supervised Learning of Lidar Segmentation for Autonomous Indoor
+      Navigation
+VL  - 2021-May
+SP  - 14047-14053
+PY  - 2021
+DA  - 2021
+DO  - 10.1109/ICRA48506.2021.9561701
+UR  - http://dx.doi.org/10.1109/ICRA48506.2021.9561701
+ER  - 
+
+TY  - JOUR
+AU  - Yin, Huan
+AU  - Xu, Xuecheng
+AU  - Wang, Yue
+AU  - Xiong, Rong
+TI  - Radar-to-Lidar: Heterogeneous Place Recognition via Joint Learning
+T2  - Frontiers in Robotics and AI
+VL  - 8
+SP  - 661199
+PY  - 2021
+DA  - 2021
+DO  - 10.3389/frobt.2021.661199
+UR  - http://dx.doi.org/10.3389/frobt.2021.661199
+ER  - 
+
+TY  - JOUR
+AU  - Yin, Huan
+AU  - Wang, Yue
+AU  - Ding, Xiaqing
+AU  - Tang, Li
+AU  - Huang, Shoudong
+AU  - Xiong, Rong
+TI  - 3D LiDAR-Based Global Localization Using Siamese Neural Network
+T2  - IEEE Transactions on Intelligent Transportation Systems
+VL  - 21
+IS  - 4
+SP  - 1380-1392
+PY  - 2020
+DA  - 2020
+DO  - 10.1109/TITS.2019.2905046
+UR  - http://dx.doi.org/10.1109/TITS.2019.2905046
+ER  - 
+
+TY  - JOUR
+AU  - Zhang, Hui
+AU  - Chen, Xieyuanli
+AU  - Lu, Huimin
+AU  - Xiao, Junhao
+TI  - Distributed and collaborative monocular simultaneous localization and
+      mapping for multi-robot systems in large-scale environments
+T2  - International Journal of Advanced Robotic Systems
+VL  - 15
+IS  - 3
+PY  - 2018
+DA  - 2018
+DO  - 10.1177/1729881418780178
+UR  - http://dx.doi.org/10.1177/1729881418780178
+ER  - 
+
+TY  - JOUR
+AU  - Biswas, Joydeep
+AU  - Veloso, Manuela M
+TI  - Localization and navigation of the CoBots over long-term deployments
+T2  - International Journal of Robotics Research
+VL  - 32
+IS  - 14
+SP  - 1679-1694
+PY  - 2013
+DA  - 2013
+DO  - 10.1177/0278364913503892
+UR  - http://dx.doi.org/10.1177/0278364913503892
+ER  - 
+
+TY  - JOUR
+AU  - Biswas, Joydeep
+AU  - Veloso, Manuela M
+TI  - Episodic non-Markov localization
+T2  - Robotics and Autonomous Systems
+VL  - 87
+SP  - 162-176
+PY  - 2017
+DA  - 2017
+DO  - 10.1016/j.robot.2016.09.005
+UR  - http://dx.doi.org/10.1016/j.robot.2016.09.005
+ER  - 
+
+TY  - JOUR
+AU  - Coulin, Jade
+AU  - Guillemard, Richard
+AU  - Gay-Bellile, Vincent
+AU  - Joly, Cyril
+AU  - de La Fortelle, Arnaud
+TI  - Tightly-Coupled Magneto-Visual-Inertial Fusion for Long Term Localization
+      in Indoor Environment
+T2  - IEEE Robotics and Automation Letters
+VL  - 7
+IS  - 2
+SP  - 952-959
+PY  - 2022
+DA  - 2022
+DO  - 10.1109/LRA.2021.3136241
+UR  - http://dx.doi.org/10.1109/LRA.2021.3136241
+ER  - 
+
+TY  - CPAPER
+AU  - Li, Jie
+AU  - Eustice, Ryan M
+AU  - Johnson-Roberson, Matthew
+TI  - High-Level Visual Features for Underwater Place Recognition
+T2  - 2015 IEEE International Conference on Robotics and Automation (ICRA)
+SP  - 3652-3659
+PY  - 2015
+DA  - 2015
+DO  - 10.1109/ICRA.2015.7139706
+UR  - http://dx.doi.org/10.1109/ICRA.2015.7139706
+ER  - 
+
+TY  - JOUR
+AU  - Santos, João Machado
+AU  - Krajník, Tomáš
+AU  - Fentanes, Jaime Pulido
+AU  - Duckett, Tom
+TI  - Lifelong Information-Driven Exploration to Complete and Refine 4-D
+      Spatio-Temporal Maps
+T2  - IEEE Robotics and Automation Letters
+VL  - 1
+IS  - 2
+SP  - 684-691
+PY  - 2016
+DA  - 2016
+DO  - 10.1109/LRA.2016.2516594
+UR  - http://dx.doi.org/10.1109/LRA.2016.2516594
+ER  - 
+
+TY  - CPAPER
+AU  - Oberländer, Jan
+AU  - Roennau, Arne
+AU  - Dillmann, Rüdiger
+TI  - Hierarchical SLAM using spectral submap matching with opportunities for
+      long-term operation
+SP  - 1-7
+PY  - 2013
+DA  - 2013
+DO  - 10.1109/ICAR.2013.6766479
+UR  - http://dx.doi.org/10.1109/ICAR.2013.6766479
+ER  - 
+
+TY  - JOUR
+AU  - Oh, Junghyun
+AU  - Eoh, Gyuho
+TI  - Variational Bayesian approach to condition-invariant feature extraction
+      for visual place recognition
+T2  - Applied Sciences
+VL  - 11
+IS  - 19
+SP  - 8976
+PY  - 2021
+DA  - 2021
+DO  - 10.3390/app11198976
+UR  - http://dx.doi.org/10.3390/app11198976
+ER  - 
+
+TY  - JOUR
+AU  - Saarinen, Jari P
+AU  - Andreasson, Henrik
+AU  - Stoyanov, Todor
+AU  - Lilienthal, Achim J
+TI  - 3D normal distributions transform occupancy maps: An efficient
+      representation for mapping in dynamic environments
+T2  - International Journal of Robotics Research
+VL  - 32
+IS  - 14
+SP  - 1627-1644
+PY  - 2013
+DA  - 2013
+DO  - 10.1177/0278364913499415
+UR  - http://dx.doi.org/10.1177/0278364913499415
+ER  - 
+
+TY  - JOUR
+AU  - Pérez, Javier
+AU  - Caballero, Fernando
+AU  - Merino, Luis
+TI  - Enhanced Monte Carlo Localization with Visual Place Recognition for Robust
+      Robot Localization
+T2  - Journal of Intelligent and Robotic Systems: Theory and Applications
+VL  - 80
+IS  - 3-4
+SP  - 641-656
+PY  - 2015
+DA  - 2015
+DO  - 10.1007/s10846-015-0198-y
+UR  - http://dx.doi.org/10.1007/s10846-015-0198-y
+ER  - 
+
+TY  - CPAPER
+AU  - Berrio, Julie Stephany
+AU  - Ward, James
+AU  - Worrall, Stewart
+AU  - Nebot, Eduardo
+TI  - Identifying robust landmarks in feature-based maps
+VL  - 2019-June
+SP  - 1166-1172
+PY  - 2019
+DA  - 2019
+DO  - 10.1109/IVS.2019.8814289
+UR  - http://dx.doi.org/10.1109/IVS.2019.8814289
+ER  - 
+
+TY  - JOUR
+AU  - Berrio, Julie Stephany
+AU  - Worrall, Stewart
+AU  - Shan, M
+AU  - Nebot, Eduardo
+TI  - Long-Term Map Maintenance Pipeline for Autonomous Vehicles
+T2  - IEEE Transactions on Intelligent Transportation Systems
+PY  - 2021
+DA  - 2021
+DO  - 10.1109/TITS.2021.3094485
+UR  - http://dx.doi.org/10.1109/TITS.2021.3094485
+ER  - 
+
+TY  - CPAPER
+AU  - Zhu, Jianliang
+AU  - Ai, Yunfeng
+AU  - Tian, Bin
+AU  - Cao, Dongpu
+AU  - Scherer, Sebastian
+TI  - Visual Place Recognition in Long-term and Large-scale Environment based on
+      CNN Feature
+SP  - 1679-1685
+PY  - 2018
+DA  - 2018
+DO  - 10.1109/IVS.2018.8500686
+UR  - http://dx.doi.org/10.1109/IVS.2018.8500686
+ER  - 
+
+TY  - JOUR
+AU  - Tsintotas, Konstantinos A
+AU  - Bampis, Loukas
+AU  - Gasteratos, Antonios
+TI  - Modest-vocabulary loop-closure detection with incremental bag of tracked
+      words
+T2  - Robotics and Autonomous Systems
+VL  - 141
+SP  - 103782
+PY  - 2021
+DA  - 2021
+DO  - 10.1016/j.robot.2021.103782
+UR  - http://dx.doi.org/10.1016/j.robot.2021.103782
+ER  - 
+
+TY  - CPAPER
+AU  - Ikeda, Kouichirou
+AU  - Kanji, Tanaka
+TI  - Visual robot localization using compact binary landmarks
+SP  - 4397-4403
+PY  - 2010
+DA  - 2010
+DO  - 10.1109/ROBOT.2010.5509579
+UR  - http://dx.doi.org/10.1109/ROBOT.2010.5509579
+ER  - 
+
+TY  - CPAPER
+AU  - Konolige, Kurt
+AU  - Bowman, James
+TI  - Towards lifelong visual maps
+SP  - 1156-1163
+PY  - 2009
+DA  - 2009
+DO  - 10.1109/IROS.2009.5354121
+UR  - http://dx.doi.org/10.1109/IROS.2009.5354121
+ER  - 
+
+TY  - JOUR
+AU  - MacTavish, Kirk
+AU  - Paton, Michael
+AU  - Barfoot, Timothy D
+TI  - Selective memory: Recalling relevant experience for long-term visual
+      localization
+T2  - Journal of Field Robotics
+VL  - 35
+IS  - 8
+SP  - 1265-1292
+PY  - 2018
+DA  - 2018
+DO  - 10.1002/rob.21838
+UR  - http://dx.doi.org/10.1002/rob.21838
+ER  - 
+
+TY  - CPAPER
+AU  - Pirker, Katrin
+AU  - Rüther, Matthias
+AU  - Bischof, Horst
+TI  - CD SLAM - Continuous localization and mapping in a dynamic world
+SP  - 3990-3997
+PY  - 2011
+DA  - 2011
+DO  - 10.1109/IROS.2011.6048253
+UR  - http://dx.doi.org/10.1109/IROS.2011.6048253
+ER  - 
+
+TY  - CPAPER
+AU  - Wang, Kai
+AU  - Lin, Yimin
+AU  - Wang, Luowei
+AU  - Han, Liming
+AU  - Hua, Minjie
+AU  - Wang, Xiang
+AU  - Lian, Shiguo
+AU  - Huang, Bill
+TI  - A unified framework for mutual improvement of SLAM and semantic
+      segmentation
+VL  - 2019-May
+SP  - 5224-5230
+PY  - 2019
+DA  - 2019
+DO  - 10.1109/ICRA.2019.8793499
+UR  - http://dx.doi.org/10.1109/ICRA.2019.8793499
+ER  - 
+
+TY  - JOUR
+AU  - Zhang, Kaining
+AU  - Jiang, Xingyu
+AU  - Ma, Jiayi
+TI  - Appearance-Based Loop Closure Detection via Locality-Driven Accurate
+      Motion Field Learning
+T2  - IEEE Transactions on Intelligent Transportation Systems
+VL  - 23
+IS  - 3
+SP  - 2350-2365
+PY  - 2022
+DA  - 2022
+DO  - 10.1109/TITS.2021.3086822
+UR  - http://dx.doi.org/10.1109/TITS.2021.3086822
+ER  - 
+
+TY  - JOUR
+AU  - Clement, Lee
+AU  - Gridseth, Mona
+AU  - Tomasi, Justin
+AU  - Kelly, Jonathan
+TI  - Learning Matchable Image Transformations for Long-Term Metric Visual
+      Localization
+T2  - IEEE Robotics and Automation Letters
+VL  - 5
+IS  - 2
+SP  - 1492-1499
+PY  - 2020
+DA  - 2020
+DO  - 10.1109/LRA.2020.2967659
+UR  - http://dx.doi.org/10.1109/LRA.2020.2967659
+ER  - 
+
+TY  - CPAPER
+AU  - Camara, Luis G
+AU  - Gäbert, Carl
+AU  - Přeučil, Libor
+TI  - Highly Robust Visual Place Recognition Through Spatial Matching of CNN
+      Features
+SP  - 3748-3755
+PY  - 2020
+DA  - 2020
+DO  - 10.1109/ICRA40945.2020.9196967
+UR  - http://dx.doi.org/10.1109/ICRA40945.2020.9196967
+ER  - 
+
+TY  - CPAPER
+AU  - Murphy, Liz
+AU  - Sibley, Gabe
+TI  - Incremental unsupervised topological place discovery
+SP  - 1312-1318
+PY  - 2014
+DA  - 2014
+DO  - 10.1109/ICRA.2014.6907022
+UR  - http://dx.doi.org/10.1109/ICRA.2014.6907022
+ER  - 
+
+TY  - CPAPER
+AU  - Sun, Li
+AU  - Taher, Marwan
+AU  - Wild, Christopher
+AU  - Zhao, Cheng
+AU  - Zhang, Yu
+AU  - Majer, Filip
+AU  - Yan, Zhi
+AU  - Krajník, Tomáš
+AU  - Prescott, Tony
+AU  - Duckett, Tom
+TI  - Robust and Long-term Monocular Teach and Repeat Navigation using a
+      Single-experience Map
+SP  - 2635-2642
+PY  - 2021
+DA  - 2021
+DO  - 10.1109/IROS51168.2021.9635886
+UR  - http://dx.doi.org/10.1109/IROS51168.2021.9635886
+ER  - 
+
+TY  - JOUR
+AU  - Sun, L
+AU  - Yan, Zhi
+AU  - Zaganidis, Anestis
+AU  - Zhao, Cheng
+AU  - Duckett, Tom
+TI  - Recurrent-OctoMap: Learning State-Based Map Refinement for Long-Term
+      Semantic Mapping with 3-D-Lidar Data
+T2  - IEEE Robotics and Automation Letters
+VL  - 3
+IS  - 4
+SP  - 3749-3756
+PY  - 2018
+DA  - 2018
+DO  - 10.1109/LRA.2018.2856268
+UR  - http://dx.doi.org/10.1109/LRA.2018.2856268
+ER  - 
+
+TY  - JOUR
+AU  - Tang, Li
+AU  - Wang, Yue
+AU  - Tan, Qimeng
+AU  - Xiong, Rong
+TI  - Explicit feature disentanglement for visual place recognition across
+      appearance changes
+T2  - International Journal of Advanced Robotic Systems
+VL  - 18
+IS  - 6
+PY  - 2021
+DA  - 2021
+DO  - 10.1177/17298814211037497
+UR  - http://dx.doi.org/10.1177/17298814211037497
+ER  - 
+
+TY  - JOUR
+AU  - Tang, Li
+AU  - Wang, Yue
+AU  - Ding, Xiaqing
+AU  - Yin, Huan
+AU  - Xiong, Rong
+AU  - Huang, Shoudong
+TI  - Topological local-metric framework for mobile robots navigation: a long
+      term perspective
+T2  - Autonomous Robots
+VL  - 43
+IS  - 1
+SP  - 197-211
+PY  - 2019
+DA  - 2019
+DO  - 10.1007/s10514-018-9724-7
+UR  - http://dx.doi.org/10.1007/s10514-018-9724-7
+ER  - 
+
+TY  - CPAPER
+AU  - Wang, Lisai
+AU  - Chen, Weidong
+AU  - Wang, Jingchuan
+TI  - Long-term localization with time series map prediction for mobile robots
+      in dynamic environments
+VL  - 2020-January
+SP  - 8587-8593
+PY  - 2020
+DA  - 2020
+DO  - 10.1109/IROS45743.2020.9468884
+UR  - http://dx.doi.org/10.1109/IROS45743.2020.9468884
+ER  - 
+
+TY  - CPAPER
+AU  - Wu, Lang
+AU  - Wu, Yihong
+TI  - Deep Supervised Hashing with Similar Hierarchy for Place Recognition
+SP  - 3781-3786
+PY  - 2019
+DA  - 2019
+DO  - 10.1109/IROS40897.2019.8968599
+UR  - http://dx.doi.org/10.1109/IROS40897.2019.8968599
+ER  - 
+
+TY  - JOUR
+AU  - Bosse, Michael
+AU  - Zlot, Robert
+TI  - Keypoint design and evaluation for place recognition in 2D lidar maps
+T2  - Robotics and Autonomous Systems
+VL  - 57
+IS  - 12
+SP  - 1211-1224
+PY  - 2009
+DA  - 2009
+DO  - 10.1016/j.robot.2009.07.009
+UR  - http://dx.doi.org/10.1016/j.robot.2009.07.009
+ER  - 
+
+TY  - JOUR
+AU  - Bürki, Mathias
+AU  - Cadena, Cesar
+AU  - Gilitschenski, Igor
+AU  - Siegwart, Roland
+AU  - Nieto, Juan
+TI  - Appearance-based landmark selection for visual localization
+T2  - Journal of Field Robotics
+VL  - 36
+IS  - 6
+SP  - 1041-1073
+PY  - 2019
+DA  - 2019
+DO  - 10.1002/rob.21870
+UR  - http://dx.doi.org/10.1002/rob.21870
+ER  - 
+
+TY  - CPAPER
+AU  - Dymczyk, Marcin
+AU  - Stumm, Elena
+AU  - Nieto, Juan
+AU  - Siegwart, Roland
+AU  - Gilitschenski, Igor
+TI  - Will it last? Learning stable features for long-term visual localization
+SP  - 572-581
+PY  - 2016
+DA  - 2016
+DO  - 10.1109/3DV.2016.66
+UR  - http://dx.doi.org/10.1109/3DV.2016.66
+ER  - 
+
+TY  - CPAPER
+AU  - Dymczyk, Marcin
+AU  - Lynen, Simon
+AU  - Cieslewski, Titus
+AU  - Bosse, Michael
+AU  - Siegwart, Roland
+AU  - Furgale, Paul
+TI  - The gist of maps - Summarizing experience for lifelong localization
+VL  - 2015-June
+SP  - 2767-2773
+PY  - 2015
+DA  - 2015
+DO  - 10.1109/ICRA.2015.7139575
+UR  - http://dx.doi.org/10.1109/ICRA.2015.7139575
+ER  - 
+
+TY  - CPAPER
+AU  - Dymczyk, Marcin
+AU  - Schneider, Thomas
+AU  - Gilitschenski, Igor
+AU  - Siegwart, Roland
+AU  - Stumm, Elena
+TI  - Erasing bad memories: Agent-side summarization for long-term mapping
+VL  - 2016-Noember
+SP  - 4572-4579
+PY  - 2016
+DA  - 2016
+DO  - 10.1109/IROS.2016.7759673
+UR  - http://dx.doi.org/10.1109/IROS.2016.7759673
+ER  - 
+
+TY  - CPAPER
+AU  - Gadd, Matthew
+AU  - Newman, Paul
+TI  - Checkout my map: Version control for fleetwide visual localisation
+VL  - 2016-Noember
+SP  - 5729-5736
+PY  - 2016
+DA  - 2016
+DO  - 10.1109/IROS.2016.7759843
+UR  - http://dx.doi.org/10.1109/IROS.2016.7759843
+ER  - 
+
+TY  - JOUR
+AU  - Labbé, Mathieu
+AU  - Michaud, François
+TI  - RTAB-Map as an open-source lidar and visual simultaneous localization and
+      mapping library for large-scale and long-term online operation
+T2  - Journal of Field Robotics
+VL  - 36
+IS  - 2
+SP  - 416-446
+PY  - 2019
+DA  - 2019
+DO  - 10.1002/rob.21831
+UR  - http://dx.doi.org/10.1002/rob.21831
+ER  - 
+
+TY  - JOUR
+AU  - Mazuran, Mladen
+AU  - Burgard, Wolfram
+AU  - Tipaldi, Gian Diego
+TI  - Nonlinear factor recovery for long-term SLAM
+T2  - International Journal of Robotics Research
+VL  - 35
+IS  - 1-3
+SP  - 50-72
+PY  - 2016
+DA  - 2016
+DO  - 10.1177/0278364915581629
+UR  - http://dx.doi.org/10.1177/0278364915581629
+ER  - 
+
+TY  - CPAPER
+AU  - Mohan, Mahesh
+AU  - Gálvez-López, Dorian
+AU  - Monteleoni, Claire
+AU  - Sibley, Gabe
+TI  - Environment selection and hierarchical place recognition
+VL  - 2015-June
+SP  - 5487-5494
+PY  - 2015
+DA  - 2015
+DO  - 10.1109/ICRA.2015.7139966
+UR  - http://dx.doi.org/10.1109/ICRA.2015.7139966
+ER  - 
+
+TY  - CPAPER
+AU  - Rapp, Matthias
+AU  - Hahn, Markus
+AU  - Thom, Markus
+AU  - Dickmann, Jürgen
+AU  - Dietmayer, Klaus
+TI  - Semi-Markov Process Based Localization using radar in Dynamic Environments
+T2  - 2015 IEEE International Intelligent Transportation Systems Conference
+      (ITSC)
+SP  - 423-429
+PY  - 2015
+DA  - 2015
+DO  - 10.1109/ITSC.2015.77
+UR  - http://dx.doi.org/10.1109/ITSC.2015.77
+ER  - 
+
+TY  - CPAPER
+AU  - Lázaro, María T
+AU  - Capobianco, Roberto
+AU  - Grisetti, Giorgio
+TI  - Efficient Long-term Mapping in Dynamic Environments
+SP  - 153-160
+PY  - 2018
+DA  - 2018
+DO  - 10.1109/IROS.2018.8594310
+UR  - http://dx.doi.org/10.1109/IROS.2018.8594310
+ER  - 
+
+TY  - CPAPER
+AU  - Zhang, Mingming
+AU  - Chen, Yiming
+AU  - Li, Mingyang
+TI  - SDF-Loc: Signed distance Field based 2D relocalization and map update in
+      dynamic environments
+VL  - 2019-July
+SP  - 1997-2004
+PY  - 2019
+DA  - 2019
+DO  - 10.23919/acc.2019.8814347
+UR  - http://dx.doi.org/10.23919/acc.2019.8814347
+ER  - 
+
+TY  - JOUR
+AU  - Carlevaris-Bianco, Nicholas
+AU  - Kaess, Michael
+AU  - Eustice, Ryan M
+TI  - Generic node removal for factor-graph SLAM
+T2  - IEEE Transactions on Robotics
+VL  - 30
+IS  - 6
+SP  - 1371-1385
+PY  - 2014
+DA  - 2014
+DO  - 10.1109/TRO.2014.2347571
+UR  - http://dx.doi.org/10.1109/TRO.2014.2347571
+ER  - 
+
+TY  - JOUR
+AU  - Chebrolu, Nived
+AU  - Läbe, Thomas
+AU  - Stachniss, Cyrill
+TI  - Robust long-term registration of UAV images of crop fields for precision
+      agriculture
+T2  - IEEE Robotics and Automation Letters
+VL  - 3
+IS  - 4
+SP  - 3097-3104
+PY  - 2018
+DA  - 2018
+DO  - 10.1109/LRA.2018.2849603
+UR  - http://dx.doi.org/10.1109/LRA.2018.2849603
+ER  - 
+
+TY  - JOUR
+AU  - Piasco, Nathan
+AU  - Sidibé, Désiré
+AU  - Gouet-Brunet, Valérie
+AU  - Demonceaux, Cédric
+TI  - Improving Image Description with Auxiliary Modality for Visual
+      Localization in Challenging Conditions
+T2  - International Journal of Computer Vision
+VL  - 129
+IS  - 1
+SP  - 185-202
+PY  - 2021
+DA  - 2021
+DO  - 10.1007/s11263-020-01363-6
+UR  - http://dx.doi.org/10.1007/s11263-020-01363-6
+ER  - 
+
+TY  - CPAPER
+AU  - Zhang, Nan
+AU  - Warren, Michael
+AU  - Barfoot, Timothy D
+TI  - Learning Place-and-Time-Dependent Binary Descriptors for Long-Term Visual
+      Localization
+SP  - 828-835
+PY  - 2018
+DA  - 2018
+DO  - 10.1109/ICRA.2018.8460674
+UR  - http://dx.doi.org/10.1109/ICRA.2018.8460674
+ER  - 
+
+TY  - CPAPER
+AU  - Vysotska, Olga
+AU  - Naseer, Tayyab
+AU  - Spinello, Luciano
+AU  - Burgard, Wolfram
+AU  - Stachniss, Cyrill
+TI  - Efficient and effective matching of image sequences under substantial
+      appearance changes exploiting GPS priors
+SP  - 2774-2779
+PY  - 2015
+DA  - 2015
+DO  - 10.1109/ICRA.2015.7139576
+UR  - http://dx.doi.org/10.1109/ICRA.2015.7139576
+ER  - 
+
+TY  - JOUR
+AU  - Biber, Peter
+AU  - Duckett, Tom
+TI  - Experimental analysis of sample-based maps for long-term SLAM
+T2  - International Journal of Robotics Research
+VL  - 28
+IS  - 1
+SP  - 20-33
+PY  - 2009
+DA  - 2009
+DO  - 10.1177/0278364908096286
+UR  - http://dx.doi.org/10.1177/0278364908096286
+ER  - 
+
+TY  - CPAPER
+AU  - Egger, Philipp
+AU  - Borges, Paulo V K
+AU  - Catt, Gavin
+AU  - Pfrunder, Andreas
+AU  - Siegwart, Roland
+AU  - Dubé, Renaud
+TI  - PoseMap: Lifelong, Multi-Environment 3D LiDAR Localization
+SP  - 3430-3437
+PY  - 2018
+DA  - 2018
+DO  - 10.1109/IROS.2018.8593854
+UR  - http://dx.doi.org/10.1109/IROS.2018.8593854
+ER  - 
+
+TY  - CPAPER
+AU  - Ganti, Pranav
+AU  - Waslander, Steven L
+TI  - Network uncertainty informed semantic feature selection for visual SLAM
+SP  - 121-128
+PY  - 2019
+DA  - 2019
+DO  - 10.1109/CRV.2019.00024
+UR  - http://dx.doi.org/10.1109/CRV.2019.00024
+ER  - 
+
+TY  - CPAPER
+AU  - Gao, Peng
+AU  - Zhang, Hao
+TI  - Long-term Place Recognition through Worst-case Graph Matching to Integrate
+      Landmark Appearances and Spatial Relationships
+SP  - 1070-1076
+PY  - 2020
+DA  - 2020
+DO  - 10.1109/ICRA40945.2020.9196906
+UR  - http://dx.doi.org/10.1109/ICRA40945.2020.9196906
+ER  - 
+
+TY  - JOUR
+AU  - Mühlfellner, Peter
+AU  - Bürki, Mathias
+AU  - Bosse, Michael
+AU  - Derendarz, Wojciech
+AU  - Philippsen, Roland
+AU  - Furgale, Paul
+TI  - Summary Maps for Lifelong Visual Localization
+T2  - Journal of Field Robotics
+VL  - 33
+IS  - 5
+SP  - 561-590
+PY  - 2016
+DA  - 2016
+DO  - 10.1002/rob.21595
+UR  - http://dx.doi.org/10.1002/rob.21595
+ER  - 
+
+TY  - JOUR
+AU  - Neubert, Peer
+AU  - Sünderhauf, Niko
+AU  - Protzel, Peter
+TI  - Superpixel-based appearance change prediction for long-term navigation
+      across seasons
+T2  - Robotics and Autonomous Systems
+VL  - 69
+SP  - 15-27
+PY  - 2015
+DA  - 2015
+DO  - 10.1016/j.robot.2014.08.005
+UR  - http://dx.doi.org/10.1016/j.robot.2014.08.005
+ER  - 
+
+TY  - JOUR
+AU  - Ozog, Paul
+AU  - Carlevaris-Bianco, Nicholas
+AU  - Kim, Ayoung
+AU  - Eustice, Ryan M
+TI  - Long-term Mapping Techniques for Ship Hull Inspection and Surveillance
+      using an Autonomous Underwater Vehicle
+T2  - Journal of Field Robotics
+VL  - 33
+IS  - 3
+SP  - 265-289
+PY  - 2016
+DA  - 2016
+DO  - 10.1002/rob.21582
+UR  - http://dx.doi.org/10.1002/rob.21582
+ER  - 
+
+TY  - CPAPER
+AU  - Schmuck, Patrik
+AU  - Chli, Margarita
+TI  - On the Redundancy Detection in Keyframe-Based SLAM
+SP  - 594-603
+PY  - 2019
+DA  - 2019
+DO  - 10.1109/3DV.2019.00071
+UR  - http://dx.doi.org/10.1109/3DV.2019.00071
+ER  - 
+
+TY  - JOUR
+AU  - Yin, Peng
+AU  - Xu, Ji
+AU  - Zhang, Ji
+AU  - Choset, Howie
+TI  - FusionVLAD: A Multi-View Deep Fusion Networks for Viewpoint-Free 3D Place
+      Recognition
+T2  - IEEE Robotics and Automation Letters
+VL  - 6
+IS  - 2
+SP  - 2304-2310
+PY  - 2021
+DA  - 2021
+DO  - 10.1109/LRA.2021.3061375
+UR  - http://dx.doi.org/10.1109/LRA.2021.3061375
+ER  - 
+
+TY  - CPAPER
+AU  - Yin, Peng
+AU  - Xu, Lingyun
+AU  - Liu, Zhe
+AU  - Li, Lu
+AU  - Salman, Hadi
+AU  - He, Yuqing
+AU  - Xu, Weiliang
+AU  - Wang, Hesheng
+AU  - Choset, Howie
+TI  - Stabilize an Unsupervised Feature Learning for LiDAR-based Place
+      Recognition
+SP  - 1162-1167
+PY  - 2018
+DA  - 2018
+DO  - 10.1109/IROS.2018.8593562
+UR  - http://dx.doi.org/10.1109/IROS.2018.8593562
+ER  - 
+
+TY  - JOUR
+AU  - Meng, Qingyu
+AU  - Guo, Hongyan
+AU  - Zhao, Xiaoming
+AU  - Cao, Dongpu
+AU  - Chen, Hong
+TI  - Loop-Closure Detection with a Multiresolution Point Cloud Histogram Mode
+      in Lidar Odometry and Mapping for Intelligent Vehicles
+T2  - IEEE/ASME Transactions on Mechatronics
+VL  - 26
+IS  - 3
+SP  - 1307-1317
+PY  - 2021
+DA  - 2021
+DO  - 10.1109/TMECH.2021.3062647
+UR  - http://dx.doi.org/10.1109/TMECH.2021.3062647
+ER  - 
+
+TY  - JOUR
+AU  - Arroyo, Roberto
+AU  - Alcantarilla, Pablo F
+AU  - Bergasa, Luis M
+AU  - Romera, Eduardo
+TI  - Are you ABLE to perform a life-long visual topological localization?
+T2  - Autonomous Robots
+VL  - 42
+IS  - 3
+SP  - 665-685
+PY  - 2018
+DA  - 2018
+DO  - 10.1007/s10514-017-9664-7
+UR  - http://dx.doi.org/10.1007/s10514-017-9664-7
+ER  - 
+
+TY  - JOUR
+AU  - Mur-Artal, Raúl
+AU  - Montiel, J M M
+AU  - Tardós, Juan D
+TI  - ORB-SLAM: A Versatile and Accurate Monocular SLAM System
+T2  - IEEE Transactions on Robotics
+VL  - 31
+IS  - 5
+SP  - 1147-1163
+PY  - 2015
+DA  - 2015
+DO  - 10.1109/TRO.2015.2463671
+UR  - http://dx.doi.org/10.1109/TRO.2015.2463671
+ER  - 
+
+TY  - JOUR
+AU  - Paul, Rohan
+AU  - Newman, Paul
+TI  - Self-help: Seeking out perplexing images for ever improving topological
+      mapping
+T2  - International Journal of Robotics Research
+VL  - 32
+IS  - 14
+SP  - 1742-1766
+PY  - 2013
+DA  - 2013
+DO  - 10.1177/0278364913509859
+UR  - http://dx.doi.org/10.1177/0278364913509859
+ER  - 
+
+TY  - JOUR
+AU  - Griffith, Shane
+AU  - Pradalier, Cédric
+TI  - Survey Registration for Long-Term Natural Environment Monitoring
+T2  - Journal of Field Robotics
+VL  - 34
+IS  - 1
+SP  - 188-208
+PY  - 2017
+DA  - 2017
+DO  - 10.1002/rob.21664
+UR  - http://dx.doi.org/10.1002/rob.21664
+ER  - 
+
+TY  - CPAPER
+AU  - Hochdorfer, Siegfried
+AU  - Schlegel, Christian
+TI  - Towards a robust visual SLAM approach: Addressing the challenge of
+      life-long operation
+SP  - 1-6
+PY  - 2009
+DA  - 2009
+UR  - https://ieeexplore.ieee.org/document/5174794
+ER  - 
+
+TY  - CPAPER
+AU  - Hochdorfer, Siegfried
+AU  - Lutz, Matthias
+AU  - Schlegel, Christian
+TI  - Lifelong localization of a mobile service-robot in everyday indoor
+      environments using omnidirectional vision
+SP  - 161-166
+PY  - 2009
+DA  - 2009
+DO  - 10.1109/TEPRA.2009.5339626
+UR  - http://dx.doi.org/10.1109/TEPRA.2009.5339626
+ER  - 
+
+TY  - CPAPER
+AU  - Luthardt, Stefan
+AU  - Willert, Volker
+AU  - Adamy, Jürgen
+TI  - LLama-SLAM: Learning High-Quality Visual Landmarks for Long-Term Mapping
+      and Localization
+VL  - 2018-Noember
+SP  - 2645-2652
+PY  - 2018
+DA  - 2018
+DO  - 10.1109/ITSC.2018.8569323
+UR  - http://dx.doi.org/10.1109/ITSC.2018.8569323
+ER  - 
+
+TY  - JOUR
+AU  - Nuske, Stephen
+AU  - Roberts, Jonathan
+AU  - Wyeth, Gordon F
+TI  - Robust outdoor visual localization using a three-dimensional-edge map
+T2  - Journal of Field Robotics
+VL  - 26
+IS  - 9
+SP  - 728-756
+PY  - 2009
+DA  - 2009
+DO  - 10.1002/rob.20306
+UR  - http://dx.doi.org/10.1002/rob.20306
+ER  - 
+
+TY  - JOUR
+AU  - Ouerghi, Safa
+AU  - Boutteau, Rémi
+AU  - Savatier, Xavier
+AU  - Tlili, Fethi
+TI  - Visual Odometry and Place Recognition Fusion for Vehicle Position Tracking
+      in Urban Environments
+T2  - Sensors
+VL  - 18
+IS  - 4
+SP  - 939
+PY  - 2018
+DA  - 2018
+DO  - 10.3390/s18040939
+UR  - http://dx.doi.org/10.3390/s18040939
+ER  - 
+
+TY  - CPAPER
+AU  - Siva, Sriram
+AU  - Zhang, Hao
+TI  - Omnidirectional multisensory perception fusion for long-term place
+      recognition
+SP  - 5175-5181
+PY  - 2018
+DA  - 2018
+DO  - 10.1109/ICRA.2018.8461042
+UR  - http://dx.doi.org/10.1109/ICRA.2018.8461042
+ER  - 
+
+TY  - CPAPER
+AU  - Siva, Sriram
+AU  - Nahman, Zachary
+AU  - Zhang, Hao
+TI  - Voxel-based representation learning for place recognition based on 3D
+      point clouds
+SP  - 8351-8357
+PY  - 2020
+DA  - 2020
+DO  - 10.1109/IROS45743.2020.9340992
+UR  - http://dx.doi.org/10.1109/IROS45743.2020.9340992
+ER  - 
+
+TY  - JOUR
+AU  - Williams, Stephen
+AU  - Indelman, Vadim
+AU  - Kaess, Michael
+AU  - Roberts, Richard
+AU  - Leonard, John J
+AU  - Dellaert, Frank
+TI  - Concurrent filtering and smoothing: A parallel architecture for real-time
+      navigation and full smoothing
+T2  - International Journal of Robotics Research
+VL  - 33
+IS  - 12
+SP  - 1544-1568
+PY  - 2014
+DA  - 2014
+DO  - 10.1177/0278364914531056
+UR  - http://dx.doi.org/10.1177/0278364914531056
+ER  - 
+
+TY  - JOUR
+AU  - Yang, Shiqiang
+AU  - Fan, Guohao
+AU  - Bai, Lele
+AU  - Zhao, Cheng
+AU  - Li, Dexin
+TI  - SGC-VSLAM: A semantic and geometric constraints VSLAM for dynamic indoor
+      environments
+T2  - Sensors
+VL  - 20
+IS  - 8
+SP  - 2432
+PY  - 2020
+DA  - 2020
+DO  - 10.3390/s20082432
+UR  - http://dx.doi.org/10.3390/s20082432
+ER  - 
+
+TY  - CPAPER
+AU  - Zhu, Shifan
+AU  - Zhang, Xinyu
+AU  - Guo, Shichun
+AU  - Li, Jun
+AU  - Liu, Huaping
+TI  - Lifelong Localization in Semi-Dynamic Environment
+VL  - 2021-May
+SP  - 14389-14395
+PY  - 2021
+DA  - 2021
+DO  - 10.1109/ICRA48506.2021.9561584
+UR  - http://dx.doi.org/10.1109/ICRA48506.2021.9561584
+ER  - 
+
+TY  - JOUR
+AU  - An, Su-Yong
+AU  - Lee, Lae-Kyoung
+AU  - Oh, Se-Young
+TI  - Ceiling vision-based active SLAM framework for dynamic and wide-open
+      environments
+T2  - Autonomous Robots
+VL  - 40
+IS  - 2
+SP  - 291-324
+PY  - 2016
+DA  - 2016
+DO  - 10.1007/s10514-015-9453-0
+UR  - http://dx.doi.org/10.1007/s10514-015-9453-0
+ER  - 
+
+TY  - JOUR
+AU  - Krajník, Tomáš
+AU  - Fentanes, Jaime Pulido
+AU  - Santos, João Machado
+AU  - Duckett, Tom
+TI  - FreMEn: Frequency map enhancement for long-term mobile robot autonomy in
+      changing environments
+T2  - IEEE Transactions on Robotics
+VL  - 33
+IS  - 4
+SP  - 964-977
+PY  - 2017
+DA  - 2017
+DO  - 10.1109/TRO.2017.2665664
+UR  - http://dx.doi.org/10.1109/TRO.2017.2665664
+ER  - 
+
+TY  - CPAPER
+AU  - Naseer, Tayyab
+AU  - Suger, Benjamin
+AU  - Ruhnke, Michael
+AU  - Burgard, Wolfram
+TI  - Vision-based Markov localization across large perceptual changes
+SP  - 1-6
+PY  - 2015
+DA  - 2015
+DO  - 10.1109/ECMR.2015.7324181
+UR  - http://dx.doi.org/10.1109/ECMR.2015.7324181
+ER  - 
+
+TY  - CPAPER
+AU  - Naseer, Tayyab
+AU  - Oliveira, Gabriel L
+AU  - Brox, Thomas
+AU  - Burgard, Wolfram
+TI  - Semantics-aware visual localization under challenging perceptual
+      conditions
+SP  - 2614-2620
+PY  - 2017
+DA  - 2017
+DO  - 10.1109/ICRA.2017.7989305
+UR  - http://dx.doi.org/10.1109/ICRA.2017.7989305
+ER  - 
+
+TY  - CPAPER
+AU  - Qin, Tong
+AU  - Chen, Tongqing
+AU  - Chen, Yilun
+AU  - Su, Qing
+TI  - AVP-SLAM: Semantic visual mapping and localization for autonomous vehicles
+      in the parking lot
+SP  - 5939-5945
+PY  - 2020
+DA  - 2020
+DO  - 10.1109/IROS45743.2020.9340939
+UR  - http://dx.doi.org/10.1109/IROS45743.2020.9340939
+ER  - 
+
+TY  - CPAPER
+AU  - Taisho, Tsukamoto
+AU  - Kanji, Tanaka
+TI  - Mining DCNN landmarks for long-term visual SLAM
+SP  - 570-576
+PY  - 2016
+DA  - 2016
+DO  - 10.1109/ROBIO.2016.7866383
+UR  - http://dx.doi.org/10.1109/ROBIO.2016.7866383
+ER  - 
+
+TY  - JOUR
+AU  - Zeng, Taiping
+AU  - Si, Bailu
+TI  - A brain-inspired compact cognitive mapping system
+T2  - Cognitive Neurodynamics
+VL  - 15
+IS  - 1
+SP  - 91-101
+PY  - 2021
+DA  - 2021
+DO  - 10.1007/s11571-020-09621-6
+UR  - http://dx.doi.org/10.1007/s11571-020-09621-6
+ER  - 
+
+TY  - JOUR
+AU  - Nguyen, Thien-Minh
+AU  - Cao, Muqing
+AU  - Yuan, Shenghai
+AU  - Lyu, Yang
+AU  - Nguyen, Thien Hoang
+AU  - Xie, Lihua
+TI  - VIRAL-Fusion: A Visual-Inertial-Ranging-Lidar Sensor Fusion Approach
+T2  - IEEE Transactions on Robotics
+VL  - 38
+IS  - 2
+SP  - 958-977
+PY  - 2022
+DA  - 2022
+DO  - 10.1109/TRO.2021.3094157
+UR  - http://dx.doi.org/10.1109/TRO.2021.3094157
+ER  - 
+
+TY  - JOUR
+AU  - Nguyen, Vu Anh
+AU  - Starzyk, Janusz A
+AU  - Goh, Wooi-Boon
+TI  - A spatio-temporal Long-term Memory approach for visual place recognition
+      in mobile robotic navigation
+T2  - Robotics and Autonomous Systems
+VL  - 61
+IS  - 12
+SP  - 1744-1758
+PY  - 2013
+DA  - 2013
+DO  - 10.1016/j.robot.2012.12.004
+UR  - http://dx.doi.org/10.1016/j.robot.2012.12.004
+ER  - 
+
+TY  - JOUR
+AU  - Ila, Viorela
+AU  - Polok, Lukas
+AU  - Solony, Marek
+AU  - Svoboda, Pavel
+TI  - SLAM++ - A highly efficient and temporally scalable incremental SLAM
+      framework
+T2  - International Journal of Robotics Research
+VL  - 36
+IS  - 2
+SP  - 210-230
+PY  - 2017
+DA  - 2017
+DO  - 10.1177/0278364917691110
+UR  - http://dx.doi.org/10.1177/0278364917691110
+ER  - 
+
+TY  - JOUR
+AU  - Ali, Waqas
+AU  - Liu, Peilin
+AU  - Ying, Rendong
+AU  - Gong, Zheng
+TI  - A Life-Long SLAM Approach Using Adaptable Local Maps Based on Rasterized
+      LIDAR Images
+T2  - IEEE Sensors Journal
+VL  - 21
+IS  - 19
+SP  - 21740-21749
+PY  - 2021
+DA  - 2021
+DO  - 10.1109/JSEN.2021.3100882
+UR  - http://dx.doi.org/10.1109/JSEN.2021.3100882
+ER  - 
+
+TY  - JOUR
+AU  - Churchill, Winston
+AU  - Newman, Paul
+TI  - Experience-based navigation for long-term localisation
+T2  - International Journal of Robotics Research
+VL  - 32
+IS  - 14
+SP  - 1645-1661
+PY  - 2013
+DA  - 2013
+DO  - 10.1177/0278364913499193
+UR  - http://dx.doi.org/10.1177/0278364913499193
+ER  - 
+
+TY  - CPAPER
+AU  - Maddern, Will
+AU  - Milford, Michael J
+AU  - Wyeth, Gordon F
+TI  - Capping Computation Time and Storage Requirements for Appearance-based
+      Localization with CAT-SLAM
+T2  - 2012 IEEE International Conference on Robotics and Automation (ICRA)
+SP  - 822-827
+PY  - 2012
+DA  - 2012
+DO  - 10.1109/ICRA.2012.6224622
+UR  - http://dx.doi.org/10.1109/ICRA.2012.6224622
+ER  - 
+
+TY  - CPAPER
+AU  - Maddern, Will
+AU  - Milford, Michael J
+AU  - Wyeth, Gordon F
+TI  - Towards persistent localization and mapping with a continuous
+      appearance-based topology
+VL  - 8
+SP  - 281-288
+PY  - 2013
+DA  - 2013
+DO  - 10.15607/rss.2012.viii.036
+UR  - http://dx.doi.org/10.15607/rss.2012.viii.036
+ER  - 
+
+TY  - CPAPER
+AU  - Ding, Xiaqing
+AU  - Wang, Yue
+AU  - Tang, Li
+AU  - Yin, Huan
+AU  - Xiong, Rong
+TI  - Communication constrained cloud-based long-term visual localization in
+      real time
+SP  - 2159-2166
+PY  - 2019
+DA  - 2019
+DO  - 10.1109/IROS40897.2019.8968550
+UR  - http://dx.doi.org/10.1109/IROS40897.2019.8968550
+ER  - 
+
+TY  - JOUR
+AU  - Ding, Xiaqing
+AU  - Wang, Yue
+AU  - Xiong, Rong
+AU  - Li, Dongxuan
+AU  - Tang, Li
+AU  - Yin, Huan
+AU  - Zhao, Liang
+TI  - Persistent Stereo Visual Localization on Cross-Modal Invariant Map
+T2  - IEEE Transactions on Intelligent Transportation Systems
+VL  - 21
+IS  - 11
+SP  - 4646-4658
+PY  - 2020
+DA  - 2020
+DO  - 10.1109/TITS.2019.2942760
+UR  - http://dx.doi.org/10.1109/TITS.2019.2942760
+ER  - 
+
+TY  - JOUR
+AU  - Xu, Xuecheng
+AU  - Yin, Huan
+AU  - Chen, Zexi
+AU  - Li, Yuehua
+AU  - Wang, Yue
+AU  - Xiong, Rong
+TI  - DiSCO: Differentiable Scan Context with Orientation
+T2  - IEEE Robotics and Automation Letters
+VL  - 6
+IS  - 2
+SP  - 2791-2798
+PY  - 2021
+DA  - 2021
+DO  - 10.1109/LRA.2021.3060741
+UR  - http://dx.doi.org/10.1109/LRA.2021.3060741
+ER  - 
+
+TY  - JOUR
+AU  - Bouaziz, Youssef
+AU  - Royer, Eric
+AU  - Bresson, Guillaume
+AU  - Dhome, Michel
+TI  - Map management for robust long-term visual localization of an autonomous
+      shuttle in changing conditions
+T2  - Multimedia Tools and Applications
+PY  - 2022
+DA  - 2022
+DO  - 10.1007/s11042-021-11870-4
+UR  - http://dx.doi.org/10.1007/s11042-021-11870-4
+ER  - 
+
+TY  - CPAPER
+AU  - Latif, Yasir
+AU  - Cadena, Cesar
+AU  - Neira, José
+TI  - Realizing, reversing, recovering: Incremental robust loop closing over
+      time using the iRRR algorithm
+SP  - 4211-4217
+PY  - 2012
+DA  - 2012
+DO  - 10.1109/IROS.2012.6385879
+UR  - http://dx.doi.org/10.1109/IROS.2012.6385879
+ER  - 
+
+TY  - JOUR
+AU  - Latif, Yasir
+AU  - Huang, Guoquan
+AU  - Leonard, John J
+AU  - Neira, José
+TI  - Sparse optimization for robust and efficient loop closing
+T2  - Robotics and Autonomous Systems
+VL  - 93
+SP  - 13-26
+PY  - 2017
+DA  - 2017
+DO  - 10.1016/j.robot.2017.03.016
+UR  - http://dx.doi.org/10.1016/j.robot.2017.03.016
+ER  - 
+
+TY  - CPAPER
+AU  - Song, Yafei
+AU  - Zhu, Di
+AU  - Li, Jia
+AU  - Tian, Yonghong
+AU  - Li, Mingyang
+TI  - Learning Local Feature Descriptor with Motion Attribute For Vision-based
+      Localization
+SP  - 3794-3801
+PY  - 2019
+DA  - 2019
+DO  - 10.1109/IROS40897.2019.8967749
+UR  - http://dx.doi.org/10.1109/IROS40897.2019.8967749
+ER  - 
+
+TY  - CPAPER
+AU  - Yue, Yufeng
+AU  - Yang, Chule
+AU  - Zhang, Jun
+AU  - Wen, Mingxing
+AU  - Wu, Zhenyu
+AU  - Zhang, Haoyuan
+AU  - Wang, Danwei
+TI  - Day and Night Collaborative Dynamic Mapping in Unstructured Environment
+      Based on Multimodal Sensors
+SP  - 2981-2987
+PY  - 2020
+DA  - 2020
+DO  - 10.1109/ICRA40945.2020.9197072
+UR  - http://dx.doi.org/10.1109/ICRA40945.2020.9197072
+ER  - 
+
+TY  - JOUR
+AU  - Chen, Zetao
+AU  - Liu, Lingqiao
+AU  - Sa, Inkyu
+AU  - Ge, Zongyuan
+AU  - Chli, Margarita
+TI  - Learning Context Flexible Attention Model for Long-Term Visual Place
+      Recognition
+T2  - IEEE Robotics and Automation Letters
+VL  - 3
+IS  - 4
+SP  - 4015-4022
+PY  - 2018
+DA  - 2018
+DO  - 10.1109/LRA.2018.2859916
+UR  - http://dx.doi.org/10.1109/LRA.2018.2859916
+ER  - 
+
+TY  - JOUR
+AU  - Hong, Ziyang
+AU  - Petillot, Yvan
+AU  - Wallace, Andrew
+AU  - Wang, Sen
+TI  - RadarSLAM: A robust simultaneous localization and mapping system for all
+      weather conditions
+T2  - International Journal of Robotics Research
+PY  - 2022
+DA  - 2022
+DO  - 10.1177/02783649221080483
+UR  - http://dx.doi.org/10.1177/02783649221080483
+ER  - 
+
+TY  - JOUR
+AU  - Pan, Zhichen
+AU  - Chen, Haoyao
+AU  - Li, Silin
+AU  - Liu, Yunhui
+TI  - Clustermap building and relocalization in urban environments for unmanned
+      vehicles
+T2  - Sensors
+VL  - 19
+IS  - 19
+SP  - 4252
+PY  - 2019
+DA  - 2019
+DO  - 10.3390/s19194252
+UR  - http://dx.doi.org/10.3390/s19194252
+ER  - 
+
+TY  - CPAPER
+AU  - Wang, Zhihao
+AU  - Li, Silin
+AU  - Cao, Ming
+AU  - Chen, Haoyao
+AU  - Liu, Yunhui
+TI  - Pole-like Objects Mapping and Long-Term Robot Localization in Dynamic
+      Urban Scenarios
+SP  - 998-1003
+PY  - 2021
+DA  - 2021
+DO  - 10.1109/ROBIO54168.2021.9739599
+UR  - http://dx.doi.org/10.1109/ROBIO54168.2021.9739599
+ER  - 
+
+TY  - CPAPER
+AU  - Xin, Zhe
+AU  - Cui, Xiaoguang
+AU  - Zhang, Jixiang
+AU  - Yang, Yiping
+AU  - Wang, Yanqing
+TI  - Visual place recognition with CNNs: from global to partial
+SP  - 6pp.-
+PY  - 2017
+DA  - 2017
+DO  - 10.1109/IPTA.2017.8310121
+UR  - http://dx.doi.org/10.1109/IPTA.2017.8310121
+ER  - 
+
+TY  - JOUR
+AU  - Xing, Zhiwei
+AU  - Zhu, Xiaorui
+AU  - Dong, Dingcheng
+TI  - DE-SLAM: SLAM for highly dynamic environment
+T2  - Journal of Field Robotics
+PY  - 2022
+DA  - 2022
+DO  - 10.1002/rob.22062
+UR  - http://dx.doi.org/10.1002/rob.22062
+ER  - 
+
+TY  - JOUR
+AU  - Yang, Zhe
+AU  - Pan, Yun
+AU  - Deng, Lei
+AU  - Xie, Yuan
+AU  - Huan, Ruohong
+TI  - PLSAV: Parallel loop searching and verifying for loop closure detection
+T2  - IET Intelligent Transport Systems
+VL  - 15
+IS  - 5
+SP  - 683-698
+PY  - 2021
+DA  - 2021
+DO  - 10.1049/itr2.12054
+UR  - http://dx.doi.org/10.1049/itr2.12054
+ER  - 
+
+TY  - JOUR
+AU  - Du, Zheng-Jun
+AU  - Huang, Shi-Sheng
+AU  - Mu, Tai-Jiang
+AU  - Zhao, Qunhe
+AU  - Martin, Ralph R
+AU  - Xu, Kun
+TI  - Accurate Dynamic SLAM Using CRF-Based Long-Term Consistency
+T2  - IEEE Transactions on Visualization and Computer Graphics
+VL  - 28
+IS  - 4
+SP  - 1745-1757
+PY  - 2022
+DA  - 2022
+DO  - 10.1109/TVCG.2020.3028218
+UR  - http://dx.doi.org/10.1109/TVCG.2020.3028218
+ER  - 

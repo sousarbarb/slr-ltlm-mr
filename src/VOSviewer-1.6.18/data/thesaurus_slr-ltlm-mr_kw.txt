@@ -1,0 +1,38 @@
+label	replace by
+simultaneous localization and mapping	slam
+slam (robots)	slam
+mobile robots	robot
+intelligent robots	robot
+agricultural robots	robot
+robotics	robot
+robot applications	robot
+robots	robot
+robot vision	vision
+computer vision	vision
+navigation systems	navigation
+localisation	localization
+localisation systems	localization
+localization system	localization
+localization performance	localization
+mapping systems	mapping
+localization and mappings	slam
+real world environments	real world
+real world experiment	real world
+dynamic environments	dynamic environ
+indoor environment	indoor
+indoors	indoor
+indoor environments	indoor
+outdoor environment	outdoor
+outdoors	outdoor
+outdoor environments	outdoor
+information theory	info theory
+re-localization	global localization
+real time performance	real-time
+real time	real-time
+graph-based	graph
+graph slam	graph
+changing environment	environ change
+changing environments	environ change
+normal distribution	normal dist
+environmental change	environ change
+neural networks	nn
