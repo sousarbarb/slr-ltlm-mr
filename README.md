@@ -1,5 +1,16 @@
 # slr-ltlm-mr
-A Systematic Literature Review on Long-Term Localization and Mapping for Mobile Robots
+
+A Systematic Literature Review on Long-Term Localization and Mapping for
+Mobile Robots
+
+- [Methodology](#methodology)
+  - [Identification](#identification)
+  - [Screening](#screening)
+  - [Quality Evaluation](#quality-evaluation)
+  - [Data Extraction](#data-extraction)
+- [Contacts](#contacts)
+- [Acknowledgements](#acknowledgements)
+- [Funding](#funding)
 
 ## Methodology
 
@@ -9,10 +20,10 @@ A Systematic Literature Review on Long-Term Localization and Mapping for Mobile 
 
 `(robot* OR vehicle*) AND ((locali* AND map*) OR "slam") AND ("long term" OR "life long" OR lifelong)`
 
-**Inquiries:** 2040 records
+**Inquiries:** 2160 records
 
-- [ACM Digital Library](https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&expand=dl&AllField=Title%3A%28%28robot*+OR+vehicle*%29+AND+%28%28locali*+AND+map*%29+OR+%22slam%22%29+AND+%28%22long+term%22+OR+%22life+long%22+OR+lifelong%29%29+OR+Abstract%3A%28%28robot*+OR+vehicle*%29+AND+%28%28locali*+AND+map*%29+OR+%22slam%22%29+AND+%28%22long+term%22+OR+%22life+long%22+OR+lifelong%29%29+OR+Keyword%3A%28%28robot*+OR+vehicle*%29+AND+%28%28locali*+AND+map*%29+OR+%22slam%22%29+AND+%28%22long+term%22+OR+%22life+long%22+OR+lifelong%29%29)
-  - 5 results
+- [ACM Digital Library](https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&expand=all&AllField=Title%3A%28%28robot*+OR+vehicle*%29+AND+%28%28locali*+AND+map*%29+OR+%22slam%22%29+AND+%28%22long+term%22+OR+%22life+long%22+OR+lifelong%29%29+OR+Abstract%3A%28%28robot*+OR+vehicle*%29+AND+%28%28locali*+AND+map*%29+OR+%22slam%22%29+AND+%28%22long+term%22+OR+%22life+long%22+OR+lifelong%29%29+OR+Keyword%3A%28%28robot*+OR+vehicle*%29+AND+%28%28locali*+AND+map*%29+OR+%22slam%22%29+AND+%28%22long+term%22+OR+%22life+long%22+OR+lifelong%29%29)
+  - 125 results
   - Title + abstract + author keywords
   - `Title:((robot* OR vehicle*) AND ((locali* AND map*) OR "slam") AND ("long term" OR "life long" OR lifelong)) OR Abstract:((robot* OR vehicle*) AND ((locali* AND map*) OR "slam") AND ("long term" OR "life long" OR lifelong)) OR Keyword:((robot* OR vehicle*) AND ((locali* AND map*) OR "slam") AND ("long term" OR "life long" OR lifelong))`
 - [Dimensions](https://app.dimensions.ai/discover/publication?search_mode=content&search_text=(robot%20OR%20robots%20OR%20robotics%20OR%20vehicle%20OR%20vehicles)%20AND%20(((localize%20OR%20localization%20OR%20localizing%20OR%20localise%20OR%20localisation%20OR%20localising)%20AND%20(map%20OR%20maps%20OR%20mapping))%20OR%20%22slam%22)%20AND%20(%22long%20term%22%20OR%20%22life%20long%22%20OR%20lifelong)&search_type=kws&search_field=text_search)
@@ -69,10 +80,10 @@ A Systematic Literature Review on Long-Term Localization and Mapping for Mobile 
 
 **Records removed before screening:**
 
-- Duplicates: 1250 records
-- Exclusion criteria: 214 records
+- Duplicates: 1339 records
+- Exclusion criteria: 232 records
 
-**Records identified from the search results:** 576 records
+**Records identified from the search results:** 589 records
 
 Further information relative to this phase of the review can be found in
 [`identification/`](data/methodology/identification/).
@@ -84,15 +95,18 @@ considered in the review) and to identify short papers is available in
 
 ### Screening
 
-**Records screened:** 576 records
+**Records screened:** 589 records
 
 **Eligibility criteria (exclusion):**
 
 - [E1] Index: Papers not indexed in a scientific publication venue
 - [E2] Language: Full-text of the papers not published in English
-- [E3] Subject Area: Papers not classified in the databases as Computer Science, Engineering, Mathematics, or Multidisciplinary
-- [E4] Short Papers: Papers classified as short papers accordingly to the publication venue
-- [E5] Gray, Secondary, and Tertiary Literature: Books, preprints, reports, reviews, thesis, ...
+- [E3] Subject Area: Papers not classified in the databases as Computer
+  Science, Engineering, Mathematics, or Multidisciplinary
+- [E4] Short Papers: Papers classified as short papers accordingly to the
+  publication venue
+- [E5] Gray, Secondary, and Tertiary Literature: Books, preprints, reports,
+  reviews, thesis, ...
 - [E6] Availability: Full-text of the papers not available in digital libraries
 - [E7] Dataset: Papers that focus only on data collection
 - [E8] Coverage: Papers using only odometry for localization
@@ -101,32 +115,39 @@ considered in the review) and to identify short papers is available in
 **Records removed after screening:**
 
 - Duplicates: 13 records
-- Exclusion criteria: 153 records
+- Exclusion criteria: 165 records
 
-**Records accepted for quality assessment:** 410 records
+**Records accepted for quality assessment:** 411 records
 
 Further information relative to this phase of the review can be found in
 [`screening/`](data/methodology/screening/).
 
 ### Quality Evaluation
 
-**Records assessed for eligibility:** 410 records
+**Records assessed for eligibility:** 411 records
 
 **Quality evaluation criteria:**
 
-- [QE1] Does the paper have an updated state of the art on long-term localization and mapping? `0.0, 0.5, 1.0`
+- [QE1] Does the paper have an updated state of the art on long-term
+  localization and mapping? `0.0, 0.5, 1.0`
 - [QE2] Is the methodology appropriate and detailed? `0.0, 0.5, 1.0`
-- [QE3] Does the methodology consider both localization and mapping problems? `0.0, 1.0, 2.0`
-- [QE4 Is the hardware and/or software used in the experiments detailed? `0.0, 0.5, 1.0`
-- [QE5] Does the paper presents any kind of long-term experimental results? `0.0, 2.0`
-- [QE6] Does the paper presents comparative results with other methods and/or ground-truth data? `0.0, 1.0`
-- [QE7] Does the work's implementation and/or the data used in the experiments are publicly available? `0.0, 1.0`
-- [QE8] Is the discussion of the results and conclusions appropriate and detailed? `0.0, 0.5, 1.0`
+- [QE3] Does the methodology consider both localization and mapping problems?
+  `0.0, 1.0, 2.0`
+- [QE4 Is the hardware and/or software used in the experiments detailed?
+  `0.0, 0.5, 1.0`
+- [QE5] Does the paper presents any kind of long-term experimental results?
+  `0.0, 2.0`
+- [QE6] Does the paper presents comparative results with other methods and/or
+  ground-truth data? `0.0, 1.0`
+- [QE7] Does the work's implementation and/or the data used in the experiments
+  are publicly available? `0.0, 1.0`
+- [QE8] Is the discussion of the results and conclusions appropriate and
+  detailed? `0.0, 0.5, 1.0`
 
 **Records removed after quality assessment:**
 
 1. QE2, QE3, QE5, QE8 (= 0): 116 records
-2. Cut-off score (<= 7.5/10.0): 119 records
+2. Cut-off score (<= 7.5/10.0): 120 records
 
 **Records accepted for analysis:** 175 records
 
@@ -143,8 +164,24 @@ Further information relative to this phase of the review can be found in
 
 **Data extraction items:**
 
-1. _Complete this section_
-2. ...
+1. [DE1] Long-term considerations: place recognition in varying conditions,
+   dynamic changing environments, memory management, multi-session...
+2. [DE2] Localization method: algorithm / type of localizer -- 2D/3DoF, 3D/6DoF,
+   topological, ...
+3. [DE3] Mapping method: map update algorithm / type of map -- grid, features,
+   topological, ...
+4. [DE4] Multi-robot: no, yes
+5. [DE5] Execution mode: online, offline, both -- requires both online and
+   offline executions
+6. [DE6] Environment and domain: indoor, outdoor / ground, air, water
+7. [DE7] Sensory setup: wheeled odometry, IMU, laser, camera, sonar, radar,
+   GNSS...
+8. [DE8] Evaluation metrics: average traveled error, computation time, memory
+   requirements, precision-recall, ...
+9. [DE9] Ground-truth data: external tracking systems, GNSS, manual, ...
+10. [DE10] Datasets used in the experiments
+11. [DE11] Total traveled distance: total distance / route path
+12. [DE12] Total time interval: total interval / total continuous operation
 
 Further information relative to this phase of the review can be found in
 [`data-extraction/`](data/methodology/data-extraction/).
