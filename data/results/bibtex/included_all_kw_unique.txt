@@ -1,0 +1,1007 @@
+edge computing
+localization
+mapping
+mobile systems
+split architecture
+visual simultaneous localization and mapping
+memory architecture
+slam robotics
+computing resource
+indoor localization
+local mapping
+memory resources
+processing time
+split architectures
+urban environments
+visual simultaneous localization and mappings
+indoor positioning systems
+active vision
+mobile robots
+simultaneous localization and map-building
+active visual sensing
+electromechanical stereo head
+high resolution omni-directional data
+odometry
+algorithms
+cameras
+closed loop control systems
+degrees of freedom (mechanics)
+electromechanical devices
+feature extraction
+kalman filtering
+kinematics
+mathematical models
+matrix algebra
+probability density function
+computer vision
+appearance based
+data association
+data sets
+experience mappings
+local feature
+localisation
+single cameras
+suburban streets
+sun angle
+data processing
+metals
+roads and streets
+robotics
+place localization
+robotics navigation
+simultaneous localization and mapping
+vision-based loop-closure detection
+calculation techniques
+hierarchical k-means
+loop closure
+off-line dictionaries
+perceptual aliasing
+real-time computations
+mathematical techniques
+robots
+autonomous driving
+landmark
+lidar
+pole
+agricultural robots
+optical radar
+poles
+complete mappings
+construction sites
+localization system
+long term stability
+on-line localization
+open source implementation
+vehicle localization
+urban growth
+autonomous mobile robot
+change detection
+critical challenges
+dynamic environments
+dynamical environment
+environmental change
+indoor environment
+laser data
+laser scans
+mapping process
+time dimension
+image matching
+intelligent robots
+intelligent systems
+lasers
+state estimation
+slam (robots)
+
+slam
+visual-based navigation
+deep learning
+economic and social effects
+autonomous vehicles
+background inpainting
+dynamic scenarios
+multi-view geometry
+real world environments
+service robotics
+object detection
+distance measurement
+graph theory
+neural nets
+pose estimation
+robot vision
+map compression
+normal distribution map
+registration
+world-scale map management
+errors
+geodesy
+normal distribution
+vehicles
+cartesian coordinate
+coordinate conversion
+lidar measurements
+light detection and ranging
+mass production
+probabilistic distribution
+truncation errors
+vehicle location
+adversarial learning
+changing environment
+representation disentanglement
+visual place recognition
+dimensionality reduction
+signal encoding
+auto encoders
+content information
+multiple domains
+place recognition
+visual navigation
+arts computing
+convolutional neural network
+densenet
+biomimetics
+neural networks
+semantics
+geometry structure
+locality sensitive hashing
+semantic information
+state-of-the-art performance
+appearance-based
+brain-based
+hippocampus
+navigation
+open-source
+openratslam
+ratslam
+ros
+data visualization
+navigation systems
+open systems
+brain mapping
+radar
+air navigation
+frequency modulation
+alternative state
+autonomous navigation
+inclement conditions
+localisation systems
+long term durability
+online operations
+sensing technology
+article
+male
+recall
+telecommunication
+database systems
+image analysis
+learning systems
+manipulators
+user interfaces
+image databases
+interactive qualitative localization
+real robots
+visual localization
+anthropomorphic robots
+integer programming
+swarm intelligence
+compression algorithms
+compression approach
+compression properties
+exploration of unknown environments
+inter-feature dependencies
+linear integer programming
+minimum spanning trees
+state-of-the-art techniques
+image-based localization
+long-term autonomy
+mobile robotics
+industrial robots
+autonomous operations
+change detection algorithms
+experimental evaluation
+image-based localizations
+misleading informations
+vision based localization
+sensors
+free space measurements
+generic approach
+graph-based
+moving obstacles
+sensor data
+slam approach
+2d and 3d mapping
+detection and tracking of moving objects
+lifelong slam
+map registration
+normal distribution transform
+occupancy mapping
+graphic methods
+3-d mapping
+its applications
+adaptive systems
+computer aided design
+floors
+architectural floor plans
+computationally efficient
+long-term experiments
+mobile robotic
+relative localization
+image classification
+image sensors
+object recognition
+visual databases
+laser scanning
+simultaneous localization and mapping (slam)
+unmanned ground vehicles (ugvs)
+ground vehicles
+image enhancement
+query processing
+computational costs
+normalization algorithms
+state-of-the-art approach
+unmanned ground vehicles
+verification algorithms
+intelligent vehicle highway systems
+mobile robot navigation
+omnidirectional vision
+persistent mapping
+3d geometry
+human memory
+topological map
+visual feature
+experiments
+multi agent systems
+three dimensional
+long-term place recognition
+loop closure detection
+visual slam
+artificial intelligence
+convex optimization problems
+localization and mappings
+structured sparsities
+convex optimization
+recognition
+visual learning
+benchmarking
+edge detection
+optimization
+robustness (control systems)
+convergence
+image edge detection
+illumination variation
+optimization algorithms
+regularized optimization problems
+optical character recognition
+compact representation
+dynamic elements
+feature based modeling
+sparse features
+spatio-temporal properties
+state of the art
+dynamic obstacles
+icp
+kd-tree
+long-term mapping
+robot
+scan matching
+collision avoidance
+motion planning
+urban planning
+k-d tree
+robot programming
+cognitive robotics
+learning and adaptive systems
+mobile and distributed robotics slam
+learning and adaptive system
+localization accuracy
+monte carlo localization
+probabilistic approaches
+rao-blackwellized particle filter
+hidden markov models
+robot applications
+graph optimization
+graph sparsification
+marginalization
+minimization problems
+sparsification
+synthetic and real data
+range sensing
+consistent performance
+localization performance
+pair-wise comparison
+structural information
+graph sizes
+novel methods
+pruning algorithms
+real-world
+robot trajectory
+forestry
+location
+detection methods
+feature descriptors
+geometric descriptor
+local semantics
+mapping systems
+vocabulary tree
+deep representation learning
+chemical activation
+coarse-to-fine strategy
+environmental conditions
+general architectures
+generalization ability
+illumination changes
+sequential combination
+image retrieval
+accelerometer data
+graph representation
+key-frames
+spatial cognition
+long-term spatial memory
+semantic maps
+large-scale
+fab-map
+vision
+space
+multi-robot
+unsupervised learning
+maps
+compression
+long-term
+mutual information
+pose graph
+amount of information
+laser measurements
+mutual informations
+real world experiment
+robot mapping
+compaction
+information theory
+trees (mathematics)
+expected informations
+grid map
+laser range finders
+memory requirements
+occupancy grid map
+runtimes
+sparse graphs
+spatial constraints
+expected information gain
+information gain
+map learning
+simultaneous localization and mapping problems
+static environment
+deep neural network
+heterogeneous measurements
+mobile robot
+global localization
+mobile vehicles
+siamese network
+digital storage
+road vehicles
+critical component
+feature learning
+mobile vehicle
+reduced representation
+similarity models
+large-scale slam
+monocular slam
+multi-robot collaborative slam
+relocalization
+conformal mapping
+merging
+multipurpose robots
+robot learning
+exteroceptive sensor
+multirobots
+re-localization
+robot operating system
+simultaneous localization and mapping algorithms
+autonomous robots
+indoor mobile robots
+hierarchical planners
+localization and navigation
+proposal distribution
+service mobile robots
+distributed computer systems
+target tracking
+topology
+vector spaces
+bayesian networks
+functions
+maximum likelihood
+maximum likelihood estimation
+range finders
+dynamic bayesian networks
+markov localizations
+maximum likelihood estimate
+mobile robot localization
+indoor magnetic field
+msckf
+sensor fusion
+visual-inertial slam
+bibliographies
+bibt e x
+code
+documentation
+ieee
+l a t e x
+style
+template
+tightly-coupled
+simultaneous localization
+service robots
+environments
+human computer interaction
+computation time
+fourier-mellin transforms
+matching performance
+occupancy grids
+scaled-down versions
+auto-encoder
+control engineering computing
+dairy products
+production engineering computing
+production facilities
+robot dynamics
+solid modelling
+transforms
+crowded environment
+long-term localization
+robust localization
+real robot
+robot positions
+robust robots
+monte carlo methods
+probability distributions
+automated vehicles
+geometric distribution
+long-term maintenances
+optimal path planning
+reduction algorithms
+safe navigations
+transient features
+feature-based map
+long-term localisation
+maintenance engineering
+map update.
+pipelines
+task analysis
+transient analysis
+visualization
+maintenance
+geometrical relationship
+high-accuracy
+position information
+relevant features
+typical urban
+convolution
+feedforward neural nets
+image recognition
+intelligent transportation systems
+learning (artificial intelligence)
+loop-closure detection
+antennas
+computational efficiency
+environment perceptions
+operational frequency
+probabilistic scores
+temporal coherency
+visual vocabularies
+binary representations
+bit codes
+car-like robot
+cost performance
+hashing techniques
+high-speed
+information sharing network
+landmark database
+large sizes
+recent progress
+robot localization
+semantic gap
+visual landmarks
+automobiles
+information retrieval
+semantic web
+fast-slam
+frame rate
+indoor space
+ongoing changes
+stereo cameras
+visual map
+visual mapping
+position estimation
+terrestrial robotics
+collaborative filtering
+costs
+autonomous mobile vehicles
+enabling technologies
+map representations
+outdoor environment
+real time performance
+online systems
+dynamic scenes
+dynamic world
+indoor/outdoor
+key frames
+memory consumption
+performance gain
+robust datum
+time-periods
+autonomous vehicle
+feature matching
+computer applications
+bayesian frameworks
+feature matching methods
+quantitative result
+reproducing kernel hilbert spaces
+sparse approximations
+suboptimal solution
+deep learning in robotics and automation
+deep neural networks
+lighting
+user experience
+image transformations
+pre-processing step
+vision based system
+convolutional neural networks
+life-long navigation
+image resolution
+multilayer neural networks
+different layers
+query images
+spatial location
+spatial matching
+temporal correlations
+engines
+density-based clustering
+memory footprint
+multimodal distributions
+precision and recall
+recognition engines
+temporal concepts
+two term control systems
+baseline methods
+descriptors
+experience maps
+navigation accuracy
+proportional-integral control
+segmentation and categorization
+markov processes
+recurrent neural networks
+markov chain models
+recurrent neural network (rnn)
+semantic understanding
+short term memory
+two-dimensional displays
+three dimensional displays
+adversarial
+changing appearance
+feature disentanglement
+self-supervised
+discriminators
+toys
+performance
+visual sensor
+machine learning
+lifelong learning
+global optimization
+large scale systems
+stereo image processing
+application deployment
+framework and algorithms
+life long learning
+long-term perspective
+mapping and localization
+autoregressive moving average model
+forecasting
+time series
+auto-regressive moving average model (arma)
+high-precision localization
+historical information
+modeling and predictions
+predictive mechanisms
+digital arithmetic
+hash functions
+benchmark datasets
+complex environments
+convolution neural network
+extracting features
+dimension reduction
+regional point descriptor
+design
+heuristic methods
+set theory
+problem solving
+landmark selection
+multisession mapping
+wheeled robots
+drilling platforms
+bandwidth consumption
+computational resources
+university of michigan
+wheeled robot
+bandwidth
+cnn
+feature selection
+expected lifetime
+budget control
+computational budget
+core competencies
+inference methods
+robotic applications
+scoring functions
+data transfer
+back-end servers
+mapping scenarios
+reference frame
+autonomous agents
+structural dynamics
+data sharing
+independent agents
+multiple representation
+single-agent
+version control
+visual experiences
+visual servoing
+perception
+sensory perception
+open-source libraries
+processing capability
+real-world datasets
+graphical models
+nonlinear optimization
+binary trees
+nonlinear programming
+recovery
+graphical model
+non-linear optimization
+co-occurrence-matrix
+environment selection
+inverted indices
+loop detection
+similarity criteria
+large dataset
+graph complexity
+mapping problem
+merging procedure
+point cloud data
+robot operations
+robotics research
+information management
+factor-graphs
+computational complexity
+robotics in agriculture and forestry
+geometry
+precision agriculture
+three dimensional computer graphics
+unmanned aerial vehicles (uav)
+agricultural fields
+crop monitoring
+geometric feature
+growth parameters
+matching system
+registration methods
+visual appearance
+crops
+depth from monocular
+global image descriptor
+side modality learning
+reflection
+search engines
+geometry information
+image descriptions
+weakly annotated data
+evolutionary algorithms
+evolution algorithms
+extreme illuminations
+on-line fashion
+seasonal variation
+vision based navigation
+global positioning system
+image sequences
+multi-timescale representations
+off road vehicles
+moving vehicles
+multi-environments
+range measurements
+road environment
+visibility analysis
+semantic segmentation
+classification (of information)
+bayesian neural networks
+feature selection methods
+network uncertainties
+storage complexity
+graph structures
+knowledge representation
+appearance similarities
+environment change
+graph matching problems
+robotics applications
+spatial relationships
+worst case scenario
+meteorology
+natural environments
+visual information
+social networking (online)
+knowledge based systems
+autonomous underwater vehicles
+ships
+computing hardware
+descriptor matching
+linear constraints
+mapping techniques
+ship-hull inspections
+total path length
+hulls (ship)
+collaborative slam
+graph compression
+keyframe selection
+multi robot systems
+redundancy detection
+global system for mobile communications
+helmet mounted displays
+redundancy
+virtual reality
+graph compressions
+key frame selection
+multi-robot systems
+extraction
+computation resources
+crucial technology
+global descriptors
+insensitive features
+invariant feature extraction
+retrieval methods
+adversarial networks
+conditional entropy
+geometry matching
+inference efficiency
+robotic platforms
+unsupervised feature learning
+kitti dataset
+lidar simultaneous localization and mapping (slam)
+multiresolution histogram
+decision making
+motion compensation
+detection algorithm
+driving operations
+positioning information
+precise positioning
+real-time environment
+simultaneous localisation and mappings
+state-of-the-art system
+lifelong mapping
+monocular vision
+automatic initialization
+survival-of-the-fittest
+life-long learning
+perplexity
+topic models
+topological mapping
+external resources
+navigation performance
+probabilistic representation
+topic model
+alignment accuracy
+autonomous surface vessels
+manual inspection
+registration accuracy
+surveys
+absolute number
+assignment problems
+fundamental problem
+high level applications
+image-based features
+natural landmark
+processing power
+robust operation
+upper bound
+bearing-only
+information contents
+key component
+mobile service
+omni-directional vision
+operational area
+selection process
+slam (simultaneous localization and mapping)
+clustering algorithms
+automobile drivers
+image recording
+co-ordinate system
+long-term evaluation
+quality value
+slam algorithm
+advanced driver assistance systems
+camera images
+edge map
+invariant properties
+localization algorithm
+particle filter
+three-dimensional (3d)
+air filters
+exposure controls
+industrial applications
+nonlinear filtering
+real-time navigation
+visual-odometry
+seqslam
+loop-closure
+ekf
+ukf
+large-scale dataset
+multiple sensors
+multisensory data
+multisensory perceptions
+omni-directional sensors
+surrounding environment
+iterative methods
+iterative optimization algorithms
+optimization problems
+regularized optimizations
+voxel representation
+filtering
+information fusion
+probabilistic graphical models
+real time navigation
+smoothing
+filtration
+information filtering
+autonomous ground vehicles
+concurrent architecture
+loop closure constraints
+navigation architectures
+parallel architectures
+dynamic feature filtering
+dynamic indoor environment
+orb-slam2
+point cloud map
+fundamental matrix
+geometric constraint
+positioning accuracy
+ceiling vision
+dynamic environment
+wide-open area
+ceilings
+railway stations
+real environments
+uncertainty analysis
+environment dynamics
+environmental dynamics
+long term performance
+mobile robot mappings
+predictive capabilities
+context
+databases
+lead
+matched filters
+robot sensing systems
+image processing
+robot sensing system
+sequential information
+image representation
+image segmentation
+textures
+traffic signs
+autonomous parking
+centimeter levels
+inertial measurement unit
+semantic features
+visual semantics
+wheel encoders
+high-dimensional
+scene description
+semantic representation
+compact cognitive map
+neighborhood cells
+neighborhood fields
+brain
+cognitive map
+human
+human experiment
+least square analysis
+neighborhood
+rotation
+quaternions
+location awareness
+matrix converters
+laser radar
+aerial robots
+versatile
+long-term memory
+spatio-temporal neural networks
+topological robotic mapping
+fast learning artificial neural networks
+long term memory
+robotic mapping
+spatio-temporal
+spatio-temporal learning
+topological localization
+topological structure
+compact state representation
+incremental covariance recovery
+long-term slam
+nonlinear least squares
+linear systems
+nonlinear analysis
+covariance recoveries
+non-linear least squares
+state representation
+bag of words
+rasterization
+artificial life
+bag-of-visual-words
+computational requirements
+mapping strategy
+recall and precision
+state-of-the-art methods
+field and service robotics
+field robots
+mobile and distributed robotics
+distributed robotics
+field robot
+appearance-based methods
+large urban environments
+kalman filters
+inertial measurements
+localization method
+real-time localization
+sliding window-based
+virtual observations
+map incorporated bundle adjustment
+map maintenance
+persistent autonomy
+geometric precision
+local bundle adjustments
+low-cost equipment
+visual observations
+learning algorithms
+frequency domains
+interpretability
+phase correlation
+relative orientation
+rotation invariant
+structural constraints
+frequency domain analysis
+computer vision for transportation
+condition
+map managements
+ranking functions
+loop closing
+optimization process
+sparse optimization
+convex optimization techniques
+sparse optimizations
+convolutional neural nets
+groupware
+image fusion
+path planning
+network architecture
+attention mechanisms
+feed-forward network
+flexible networks
+image representations
+regions of interest
+radar sensing
+all-weather perception
+clustermap
+lidar-based map building
+map descriptor
+map building
+unmanned vehicles
+'current
+3d data
+cluster maps
+global map
+long term dynamics
+matchings
+semantic clusters
+urban scenarios
+error accumulation
+feature extractor
+frames per seconds
+parallel loops
+parallel task
+augmented reality
+image reconstruction
+motion estimation
