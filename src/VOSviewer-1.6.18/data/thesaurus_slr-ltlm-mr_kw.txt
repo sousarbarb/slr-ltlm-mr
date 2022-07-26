@@ -1,38 +1,118 @@
 label	replace by
 simultaneous localization and mapping	slam
+simultaneous localization and mapping (slam)	slam
+simultaneous localisation and mapping (slam)	slam
 slam (robots)	slam
+slam (robot)	slam
+slam approach	slam
 mobile robots	robot
+mobile robot	robot
+mobile robotics	robot
+mobile robotic	robot
+service robotics	robot
+industrial robots	robot
+industrial robot	robot
+industrial robotics	robot
+industrial robotic	robot
+autonomous mobile robots	robot
+autonomous mobile robot	robot
 intelligent robots	robot
 agricultural robots	robot
 robotics	robot
 robot applications	robot
 robots	robot
+vehicles	vehicle
+autonomous vehicles	vehicle
+autonomous vehicle	vehicle
 robot vision	vision
 computer vision	vision
+cameras	camera
 navigation systems	navigation
+autonomous navigation	navigation
+visual-based navigation	visual nav
+visual navigation	visual nav
 localisation	localization
 localisation systems	localization
 localization system	localization
 localization performance	localization
+robot localization	localization
+robot localisation	localization
+mobile robot localization	localization
+mobile robot localisation	localization
 mapping systems	mapping
+mapping system	mapping
+maps	mapping
+map	mapping
 localization and mappings	slam
+localization and mapping	slam
+localisation and mappings	slam
+localisation and mapping	slam
 real world environments	real world
+real world environment	real world
 real world experiment	real world
-dynamic environments	dynamic environ
+dynamic environments	dynamic env
+dynamic environment	dynamic env
 indoor environment	indoor
 indoors	indoor
 indoor environments	indoor
+indoor positioning system	indoor
+indoor positioning systems	indoor
+outdoor environments	outdoor
 outdoor environment	outdoor
 outdoors	outdoor
 outdoor environments	outdoor
 information theory	info theory
-re-localization	global localization
 real time performance	real-time
 real time	real-time
 graph-based	graph
 graph slam	graph
-changing environment	environ change
-changing environments	environ change
+changing environment	env change
+changing environments	env change
+change detection	env change
 normal distribution	normal dist
-environmental change	environ change
+environmental change	env change
 neural networks	nn
+neural network	nn
+convolutional neural networks	cnn
+convolutional neural network	cnn
+place recognition	place recog
+visual simultaneous localization and mappings	vslam
+visual simultaneous localization and mapping	vslam
+visual simultaneous localisation and mappings	vslam
+visual simultaneous localisation and mapping	vslam
+visual slam	vslam
+vision slam	vslam
+intelligent systems	intell syst
+inteliggent vehicle highway systems	intell syst
+re-localization	global localiz
+re-localisation	global localiz
+relocalization	global localiz
+relocalisation	global localiz
+global localization	global localiz
+global localisation	global localiz
+optical radar	radar
+feature extraction	feature
+features extraction	feature
+semantics	semantic
+long-term autonomy	long-term
+graph-based	graph
+graphic methods	graph
+graphic method	graph
+graph representation	graph
+optimisation	optimization
+deep learning in robotics and automation	deep learning
+learning systems	learning
+learning system	learning
+machine learning	ml
+learning (artificial intelligence)	learning
+loop closure detection	loop closure
+marginalisation	marginalization
+visual localization	visual localiz
+visual localisation	visual localiz
+vision localization	visual localiz
+vision localisation	visual localiz
+visual-based localization	visual localiz
+visual-based localisation	visual localiz
+vision-based localization	visual localiz
+vision-based localisation	visual localiz
+appearance-based	appearance
