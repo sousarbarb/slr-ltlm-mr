@@ -129,3 +129,18 @@ with open("../../data/results/bibtex/included_all_kw.csv","w",encoding="utf8") a
   report_file.write(bib_all_kw_csv)
 with open("../../data/results/bibtex/included_all_kw_unique.txt","w",encoding="utf8") as report_file:
   report_file.write("\n".join(list_unique_kw))
+
+
+
+# Obtain bibtex file removing the abstract and title to see from which terms the keywords came from
+# (however, INSPEC puts indexed and author keywords in the same field, but already helps)
+for entry in bib_all_kw_db.entries:
+  if 'title' in entry:
+    entry['title'] = "";
+  if 'abstract' in entry:
+    entry['abstract'] = "";
+  if 'references' in entry:
+    entry['references'] = "";
+
+with open("../../data/results/bibtex/included_all_kw_no-title-abs.bib","w",encoding="utf8") as bibtex_file:
+  bib.dump(bib_all_kw_db,bibtex_file,writer=bibtex_writer)
