@@ -9,7 +9,7 @@ scores avg publications year
 size variation 0.5
 circles
 max length 30
-size variation 0.5
+size variation 1.0
 min strength 0
 max lines 1000
 colored lines

@@ -1,12 +1,11 @@
-OVERLAY VISUALIZATION
+NETWORK VISUALIZATION (clusters)
 attraction 2
-repulsion 0
+repulsion -3
 resolution 1.00
 min cluster size 1
 scale 1.49
-weights occurrences
-scores avg publications year
-size variation 0.5
+weights documents
+size variation 1.0
 circles
 max length 30
 size variation 1.0

@@ -4,8 +4,8 @@
 			{
 				"id": 18,
 				"label": "barfoot, timothy d",
-				"x": -0.1197,
-				"y": 1.0391,
+				"x": -0.5250,
+				"y": 0.0320,
 				"cluster": 7,
 				"weights": {
 					"Links": 0.0000,
@@ -19,8 +19,8 @@
 			{
 				"id": 28,
 				"label": "bosse, michael",
-				"x": 0.1581,
-				"y": 0.4606,
+				"x": 0.4109,
+				"y": 0.7107,
 				"cluster": 2,
 				"weights": {
 					"Links": 3.0000,
@@ -34,8 +34,8 @@
 			{
 				"id": 36,
 				"label": "burgard, wolfram",
-				"x": 0.7785,
-				"y": -0.2698,
+				"x": 0.9032,
+				"y": -0.0026,
 				"cluster": 3,
 				"weights": {
 					"Links": 2.0000,
@@ -49,8 +49,8 @@
 			{
 				"id": 88,
 				"label": "ding, xiaqing",
-				"x": -0.6972,
-				"y": 0.3928,
+				"x": -0.3678,
+				"y": -0.8401,
 				"cluster": 4,
 				"weights": {
 					"Links": 4.0000,
@@ -64,8 +64,8 @@
 			{
 				"id": 92,
 				"label": "duckett, tom",
-				"x": -0.8480,
-				"y": -0.2487,
+				"x": 0.1161,
+				"y": -0.0325,
 				"cluster": 5,
 				"weights": {
 					"Links": 2.0000,
@@ -79,8 +79,8 @@
 			{
 				"id": 93,
 				"label": "dymczyk, marcin",
-				"x": 0.1351,
-				"y": 0.3379,
+				"x": 0.3549,
+				"y": 0.4000,
 				"cluster": 2,
 				"weights": {
 					"Links": 4.0000,
@@ -94,8 +94,8 @@
 			{
 				"id": 97,
 				"label": "eustice, ryan m",
-				"x": -0.1891,
-				"y": -0.3912,
+				"x": -0.9215,
+				"y": 0.2256,
 				"cluster": 1,
 				"weights": {
 					"Links": 1.0000,
@@ -109,8 +109,8 @@
 			{
 				"id": 103,
 				"label": "furgale, paul",
-				"x": 0.2426,
-				"y": 0.4451,
+				"x": 0.6956,
+				"y": 0.6658,
 				"cluster": 2,
 				"weights": {
 					"Links": 3.0000,
@@ -124,8 +124,8 @@
 			{
 				"id": 111,
 				"label": "gilitschenski, igor",
-				"x": 0.1823,
-				"y": 0.2337,
+				"x": 0.4778,
+				"y": 0.1081,
 				"cluster": 2,
 				"weights": {
 					"Links": 2.0000,
@@ -139,8 +139,8 @@
 			{
 				"id": 119,
 				"label": "grisetti, giorgio",
-				"x": 0.7240,
-				"y": -0.5074,
+				"x": 0.4137,
+				"y": -0.3194,
 				"cluster": 3,
 				"weights": {
 					"Links": 2.0000,
@@ -154,8 +154,8 @@
 			{
 				"id": 127,
 				"label": "han, fei",
-				"x": -0.2226,
-				"y": -0.7780,
+				"x": -0.0142,
+				"y": 0.8678,
 				"cluster": 1,
 				"weights": {
 					"Links": 2.0000,
@@ -169,8 +169,8 @@
 			{
 				"id": 142,
 				"label": "huang, guoquan",
-				"x": -0.1303,
-				"y": -0.6650,
+				"x": -0.3091,
+				"y": 0.7159,
 				"cluster": 1,
 				"weights": {
 					"Links": 5.0000,
@@ -184,8 +184,8 @@
 			{
 				"id": 153,
 				"label": "kaess, michael",
-				"x": -0.1569,
-				"y": -0.4681,
+				"x": -0.7111,
+				"y": 0.4148,
 				"cluster": 1,
 				"weights": {
 					"Links": 3.0000,
@@ -199,8 +199,8 @@
 			{
 				"id": 163,
 				"label": "krajník, tomáš",
-				"x": -0.8530,
-				"y": -0.3258,
+				"x": -0.0875,
+				"y": 0.1655,
 				"cluster": 5,
 				"weights": {
 					"Links": 2.0000,
@@ -214,8 +214,8 @@
 			{
 				"id": 164,
 				"label": "kretzschmar, henrik",
-				"x": 0.6428,
-				"y": -0.4786,
+				"x": 0.5873,
+				"y": -0.5652,
 				"cluster": 3,
 				"weights": {
 					"Links": 2.0000,
@@ -229,8 +229,8 @@
 			{
 				"id": 172,
 				"label": "leonard, john j",
-				"x": -0.0926,
-				"y": -0.5469,
+				"x": -0.4250,
+				"y": 0.4387,
 				"cluster": 1,
 				"weights": {
 					"Links": 3.0000,
@@ -244,8 +244,8 @@
 			{
 				"id": 215,
 				"label": "milford, michael j",
-				"x": 0.8880,
-				"y": 0.3983,
+				"x": -0.9178,
+				"y": -0.2450,
 				"cluster": 6,
 				"weights": {
 					"Links": 1.0000,
@@ -259,8 +259,8 @@
 			{
 				"id": 225,
 				"label": "naseer, tayyab",
-				"x": 0.7095,
-				"y": -0.2516,
+				"x": 1.0472,
+				"y": -0.2415,
 				"cluster": 3,
 				"weights": {
 					"Links": 2.0000,
@@ -274,8 +274,8 @@
 			{
 				"id": 227,
 				"label": "neira, josé",
-				"x": -0.0313,
-				"y": -0.6308,
+				"x": -0.6001,
+				"y": 0.7348,
 				"cluster": 1,
 				"weights": {
 					"Links": 2.0000,
@@ -289,8 +289,8 @@
 			{
 				"id": 229,
 				"label": "newman, paul",
-				"x": 0.4513,
-				"y": 0.9801,
+				"x": -0.5043,
+				"y": -0.3556,
 				"cluster": 8,
 				"weights": {
 					"Links": 0.0000,
@@ -304,8 +304,8 @@
 			{
 				"id": 288,
 				"label": "siegwart, roland",
-				"x": 0.2376,
-				"y": 0.3280,
+				"x": 0.6609,
+				"y": 0.3604,
 				"cluster": 2,
 				"weights": {
 					"Links": 4.0000,
@@ -319,8 +319,8 @@
 			{
 				"id": 294,
 				"label": "stachniss, cyrill",
-				"x": 0.7067,
-				"y": -0.3984,
+				"x": 0.7179,
+				"y": -0.2882,
 				"cluster": 3,
 				"weights": {
 					"Links": 4.0000,
@@ -334,8 +334,8 @@
 			{
 				"id": 310,
 				"label": "tang, li",
-				"x": -0.5636,
-				"y": 0.3655,
+				"x": 0.2085,
+				"y": -0.8299,
 				"cluster": 4,
 				"weights": {
 					"Links": 4.0000,
@@ -349,8 +349,8 @@
 			{
 				"id": 341,
 				"label": "wang, yue",
-				"x": -0.5816,
-				"y": 0.5855,
+				"x": -0.2016,
+				"y": -0.5726,
 				"cluster": 4,
 				"weights": {
 					"Links": 4.0000,
@@ -364,8 +364,8 @@
 			{
 				"id": 358,
 				"label": "wyeth, gordon f",
-				"x": 0.9168,
-				"y": 0.4568,
+				"x": -0.8741,
+				"y": -0.5116,
 				"cluster": 6,
 				"weights": {
 					"Links": 1.0000,
@@ -379,8 +379,8 @@
 			{
 				"id": 365,
 				"label": "xiong, rong",
-				"x": -0.5003,
-				"y": 0.4839,
+				"x": -0.0732,
+				"y": -0.9648,
 				"cluster": 4,
 				"weights": {
 					"Links": 4.0000,
@@ -394,8 +394,8 @@
 			{
 				"id": 382,
 				"label": "yin, huan",
-				"x": -0.7021,
-				"y": 0.5298,
+				"x": 0.0972,
+				"y": -0.5258,
 				"cluster": 4,
 				"weights": {
 					"Links": 4.0000,
@@ -409,8 +409,8 @@
 			{
 				"id": 390,
 				"label": "zhang, hao",
-				"x": -0.1589,
-				"y": -0.8096,
+				"x": -0.0074,
+				"y": 0.5888,
 				"cluster": 1,
 				"weights": {
 					"Links": 2.0000,
@@ -424,8 +424,8 @@
 			{
 				"id": 404,
 				"label": "zhao, cheng",
-				"x": -0.9262,
-				"y": -0.2669,
+				"x": -0.1512,
+				"y": -0.1339,
 				"cluster": 5,
 				"weights": {
 					"Links": 2.0000,
