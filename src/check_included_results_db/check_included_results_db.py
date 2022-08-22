@@ -8,11 +8,15 @@ import bibtexparser as bib
 def check_if_record_exists_in_bib_db(db,xlsx,row):
   for entry in db.entries:
     # - title
-    if entry['title'] == str(xlsx.title[row]):
+    if entry['title'].lower() == str(xlsx.title[row]).lower():
       return True
     # - doi
     if 'doi' in entry:
-      if entry['doi'] == str(xlsx.doi[row]):
+      if entry['doi'].lower() == str(xlsx.doi[row]).lower():
+        return True
+    # - url
+    if 'url' in entry:
+      if entry['url'].lower() == str(xlsx.url[row]).lower():
         return True
 
   return False

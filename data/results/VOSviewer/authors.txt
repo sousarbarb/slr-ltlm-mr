@@ -1,0 +1,15 @@
+NETWORK VISUALIZATION (clusters)
+attraction 2
+repulsion -3
+resolution 1.00
+min cluster size 1
+scale 1.49
+weights documents
+size variation 1.0
+circles
+max length 30
+size variation 1.0
+min strength 0
+max lines 1000
+colored lines
+curved lines

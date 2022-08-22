@@ -95,6 +95,76 @@ feature extraction	feature
 features extraction	feature
 semantics	semantic
 long term	long-term
+long-term mapping and localization	long-term
+long term mapping and localization	long-term
+long-term durability	long-term
+long term durability	long-term
+long-term stability	long-term
+long term stability	long-term
+long-term experiments	long-term
+long-term experiment	long-term
+long term experiments	long-term
+long term experiment	long-term
+long-term performance	long-term
+long term performance	long-term
+long-term memory	long-term
+long term memory	long-term
+long-term dynamics	long-term
+long term dynamics	long-term
+long-term explorations	long-term
+long-term exploration	long-term
+long term explorations	long-term
+long term exploration	long-term
+long-term autonomy	long-term
+long term autonomy	long-term
+long-term robust localization	long-term
+long-term localization	long-term
+long-term robust localisation	long-term
+long-term localisation	long-term
+long-term navigation	long-term
+long-term mapping	long-term
+long-term map	long-term
+long term robust localization	long-term
+long term localization	long-term
+long term robust localisation	long-term
+long term localisation	long-term
+long term navigation	long-term
+long term mapping	long-term
+long term map	long-term
+long-term place recognition	long-term
+long term place recognition	long-term
+long-term spatial memory	long-term
+long term spatial memory	long-term
+long-term maintenances	long-term
+long-term maintenance	long-term
+long term maintenances	long-term
+long term maintenance	long-term
+long-term perspective	long-term
+long term perspective	long-term
+long-term visual place recognition	long-term
+long term visual place recognition	long-term
+long-term evaluation	long-term
+long term evaluation	long-term
+long-term visual navigation	long-term
+long term visual navigation	long-term
+long-term slam	long-term
+long term slam	long-term
+long-term operation	long-term
+long term operation	long-term
+long-term mobile robot autonomy	long-term
+long-term consistency	long-term
+long term mobile robot autonomy	long-term
+long term consistency	long-term
+long-term observations	long-term
+long-term observation	long-term
+long term observations	long-term
+long term observation	long-term
+life long learning	lifelong
+life-long navigation	lifelong
+life-long learning	lifelong
+lifelong slam	lifelong
+lifelong learning	lifelong
+lifelong mapping	lifelong
 graph-based	graph
 graphic methods	graph
 graphic method	graph

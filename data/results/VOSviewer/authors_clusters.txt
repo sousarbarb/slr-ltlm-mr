@@ -1,0 +1,44 @@
+(1) - total of 28 documents
+eustice, ryan m (3): 0000-0002-9989-4942, WroYmiAAAAAJ
+han, fei (3)       : 0000-0002-8619-3987 (no info), no scholar
+huang, guoquan (3) : no orcid, trMUyZIAAAAJ
+kaess, michael (5) : no orcid, 27eupmsAAAAJ
+leonard, john j (5): 0000-0002-8863-6550, WPe7vWwAAAAJ
+neira, josé (3)    : 0000-0003-0668-977X, scoMbR8AAAAJ
+zhang, hao (6)     : no orcid, Ug2VxyUAAAAJ
+
+(2) - total of 18 documents
+bosse, michael (3)     : no orcid, eopb1VgAAAAJ
+dymczyk, marcin (3)    : 0000-0003-3667-8764 (no public info), XYHy7U8AAAAJ
+furgale, paul (3)      : 0000-0002-7367-1046, RNDtSG8AAAAJ
+gilitschenski, igor (3): 0000-0001-6426-365X, Nuw1Y4oAAAAJ
+siegwart, roland (6)   : 0000-0002-2760-7983, MDIyLnwAAAAJ
+
+(3) - total of 21 documents
+burgard, wolfram (7)   : 0000-0002-5680-6500, zj6FavAAAAAJ
+grisetti, giorgio (3)  : 0000-0002-8038-9989, yD-SFG4AAAAJ
+kretzschmar, henrik (3): no orcid, pZuaUlwAAAAJ
+naseer, tayyab (3)     : 0000-0002-3350-3005 (no public info), 1FePZqEAAAAJ
+stachniss, cyrill (5)  : 0000-0003-1173-6972, 8vib2lAAAAAJ
+
+(4) - total of 29 documents
+ding, xiaqing (4): 0000-0001-7802-0130 (no public info), 6u5OHUcAAAAJ
+tang, li (5)     : 0000-0003-2590-6872 (no public info), no scholar
+wang, yue (7)    : 0000-0002-0981-935X (no public info), N543LSoAAAAJ
+xiong, rong (7)  : 0000-0001-9318-9014 (no public info), 1hI9bqUAAAAJ
+yin, huan (6)    : 0000-0002-0872-8202, 1fNc3vUAAAAJ
+
+(5) - total of 12 documents
+duckett, tom (6)  : 0000-0003-2971-7905 (no public info), et1GU2EAAAAJ
+krajník, tomáš (3): 0000-0002-4408-7916, Qv3nqgsAAAAJ
+zhao, cheng (3)   : 0000-0001-8502-3233, EAC-8m0AAAAJ
+
+(6) - total of 9 documents
+milford, michael j (4): 0000-0002-5162-1793, TDSmCKgAAAAJ
+wyeth, gordon f (5)   : 0000-0002-4996-3612, yfXZfXEAAAAJ
+
+(7) - total of 3 documents
+barfoot, timothy d (3): 0000-0003-3899-631X, N_vPIhoAAAAJ
+
+(8) - total of 4 documents
+newman, paul (4): no orcid, BtO5fTUAAAAJ
