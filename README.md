@@ -78,6 +78,21 @@ Mobile Robots
 
 **Last inquiry:** May 17, 2022
 
+**Eligibility criteria (exclusion):**
+
+- [E1] Index: Papers not indexed in a scientific publication venue
+- [E2] Language: Full-text of the papers not published in English
+- [E3] Subject Area: Papers not classified in the databases as Computer
+  Science, Engineering, Mathematics, or Multidisciplinary
+- [E4] Short Papers: Papers classified as short papers accordingly to the
+  publication venue
+- [E5] Gray, Secondary, and Tertiary Literature: Books, preprints, reports,
+  reviews, thesis, ...
+- [E6] Availability: Full-text of the papers not available in digital libraries
+- [E7] Dataset: Papers that focus only on data collection
+- [E8] Coverage: Papers using only odometry for localization
+- [E9] Scope Papers: that focus on different and not related subjects
+
 **Records removed before screening:**
 
 - Duplicates: 1339 records
@@ -96,21 +111,6 @@ considered in the review) and to identify short papers is available in
 ### Screening
 
 **Records screened:** 589 records
-
-**Eligibility criteria (exclusion):**
-
-- [E1] Index: Papers not indexed in a scientific publication venue
-- [E2] Language: Full-text of the papers not published in English
-- [E3] Subject Area: Papers not classified in the databases as Computer
-  Science, Engineering, Mathematics, or Multidisciplinary
-- [E4] Short Papers: Papers classified as short papers accordingly to the
-  publication venue
-- [E5] Gray, Secondary, and Tertiary Literature: Books, preprints, reports,
-  reviews, thesis, ...
-- [E6] Availability: Full-text of the papers not available in digital libraries
-- [E7] Dataset: Papers that focus only on data collection
-- [E8] Coverage: Papers using only odometry for localization
-- [E9] Scope Papers: that focus on different and not related subjects
 
 **Records removed after screening:**
 
@@ -164,24 +164,27 @@ Further information relative to this phase of the review can be found in
 
 **Data extraction items:**
 
-1. [DE1] Long-term considerations: place recognition in varying conditions,
-   dynamic changing environments, memory management, multi-session...
-2. [DE2] Localization method: algorithm / type of localizer -- 2D/3DoF, 3D/6DoF,
-   topological, ...
-3. [DE3] Mapping method: map update algorithm / type of map -- grid, features,
-   topological, ...
-4. [DE4] Multi-robot: no, yes
-5. [DE5] Execution mode: online, offline, both -- requires both online and
-   offline executions
-6. [DE6] Environment and domain: indoor, outdoor / ground, air, water
-7. [DE7] Sensory setup: wheeled odometry, IMU, laser, camera, sonar, radar,
-   GNSS...
-8. [DE8] Evaluation metrics: average traveled error, computation time, memory
-   requirements, precision-recall, ...
-9. [DE9] Ground-truth data: external tracking systems, GNSS, manual, ...
-10. [DE10] Datasets used in the experiments
-11. [DE11] Total traveled distance: total distance / route path
-12. [DE12] Total time interval: total interval / total continuous operation
+1. [DE1] Long-term considerations: long-term factors the works consider in their proposed approach and experiments
+   - appearance - varying conditions, appearance changes, ...
+   - dynamics - environment dynamics, dynamic elements, ...
+   - sparsity - map pruning, redundant data removal, ...
+   - multi-session - map management, ...
+   - computational - memory management, efficiency, ...
+2. [DE2] Localization: how the robot localizes itself and the type of localizer: Bayesian, particle filter, feature matching, point cloud matching, ...
+3. [DE3] Mapping: type of the map. focused on how new information is added to the map the type of information: grid, features, topological (graph SLAM, experience maps), database (images, global features, ...), ...
+4. [DE4] Multi-robot: if the proposed methodologies consider multi-robot systems: yes / no
+5. [DE5] Execution mode: offline, online, if requires both, or if no information on this item: if "online", assumed that it is able to execute the algorithm both online and offline independently; "both" means that the method requires an offline computation and also an online one (dependent on each other)
+6. [DE6] Environment and domain: type of environment (indoor, outdoor) and domains (air, ground, water) tested with the proposed methodologies
+7. [DE7] Sensory setup: which sensors considered in the methodologies: wheel odometry, IMU, laser (2D/3D), camera (monocular / stereo / omnidirectional), sonar, radar, GPS, or a combination of the previous sensors
+8. [DE8] Non-public experiments: if the authors performed experiments or tests with non-public data
+9. [DE9] Ground-truth: how ground-truth for non-public data is obtained or its type, if available: external tracking system, GPS, SLAM-based, manual (annotation, labeling, manual correction, measures, ...)
+10. [DE10] Distance and time characteristics: relative to the non-public experiments if available, as follows
+    - total distance (km) of the non-public experiments
+    - path (km), in the case of repetitive paths
+    - total time (h) in terms of continuous operation
+    - time interval (day/week/month/year, or d/w/m/y) between the first and the last run
+11. [DE11] Datasets: if and which public datasets are used in the experiments: KITTI, Oxford RobotCar, Nordlandsbeen, MIT Stata Center, Intel
+12. [DE12] Evaluation metrics: which metrics are used for evaluation: average traveled error (ATE), pose error (along time, mean, std), execution time, memory, precision-recall, f-score, confusion matrix...
 
 Further information relative to this phase of the review can be found in
 [`data-extraction/`](data/methodology/data-extraction/).

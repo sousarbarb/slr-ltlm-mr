@@ -1,0 +1,58 @@
+\section{Purpose of the study}
+\label{sec:purpose}
+
+\subsection{Limitations of current studies}
+
+\begin{table}[h]
+  \renewcommand{\arraystretch}{1.2}
+  \setlength{\tabcolsep}{1.75pt}
+  \caption[Existent Literature Reviews, Surveys, and Tutorials on SLAM.]{Existent Literature Reviews, Surveys, and Tutorials on SLAM.}
+  \label{tab:purpose:current-literature}
+  \centering
+  {\scriptsize
+  \begin{tabular}{p{0.595\columnwidth} p{0.395\columnwidth}}
+
+\hline
+\textbf{Topic} & \textbf{Reference}\\
+\hline
+Probabilistic approaches and data association%
+& \cite{background:slam:durrant-whyte-bailey,background:slam:bailey-durrant-whyte}\\
+SLAM back end%
+& \cite{background:slam:grisetti}\\
+Multi-robot SLAM%
+& \cite{review:saeedi:2016}\\
+Visual odometry%
+& \cite{background:slam:scaramuzza-fraundorfer,background:slam:fraundorfer-scaramuzza}\\
+Overview of challenges in SLAM%
+& \cite{review:cadena:2016}\\
+Trends in SLAM for autonomous vehicles%
+& \cite{review:bresson:2017}\\
+\textbf{Completar tabela!}\\
+\hline
+
+  \end{tabular}}
+\end{table}
+
+\subsection{Motivations and goals}
+
+Research question: What is the current state of the art of long-term localization and mapping using mobile robots?
+
+Goals of this review:
+
+\begin{itemize}[nosep]
+\item which are the main strategies for accomplishing long-term operations with mobile robots;
+\item how to deal with varying conditions of the environment;
+\item how do autonomous robots deal with the dynamics of the environment;
+\item which are the main strategies to deal with the limited computational resources of a mobile robot on long-term operations.
+\end{itemize}
+
+PICO framework (Population--Intervention--Comparison--Outcome) helps to frame the research questions of this systematic review into a more structured framework:
+
+\begin{itemize}[nosep]
+\item \textbf{Population:} mobile robots;
+\item \textbf{Intervention:} localization, mapping, SLAM;
+\item \textbf{Comparison:} \textit{not applicable to this study};
+\item \textbf{Outcome:} long-term operation, lifelong autonomy, robust.
+%\item \textbf{Context:} continuous operation, service robots, industrial environments.
+\end{itemize}
+
