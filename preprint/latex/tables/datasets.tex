@@ -1,20 +1,37 @@
 \onecolumn
 
+\renewcommand{\arraystretch}{1.125}
+\setlength{\tabcolsep}{1.5pt}
+
 \begin{tiny}
 
-\begin{longtable}{@{\extracolsep{1pt}}p{0.055\textwidth}p{0.08\textwidth}p{0.055\textwidth}p{0.055\textwidth}|c|ccccccc|cc|cccc|cc|p{0.055\textwidth}p{0.055\textwidth}|ccccc@{}}
-  \caption{Datasets used in the 144 included records for long-term localization and / or mapping experiments. Legend: odo -- odometry (wheeled, laser, visual, inertial, or a combination of odometry sources, dist. -- total distance length of the dataset, path -- total path distance if repeated several times, time -- total operation time, int. -- time interval between the start and end acquisition dates / time instants (d/m/y equivalent to day/month/year, 0 if only 1 run), and seq. -- number of sequences of the dataset.}
+\begin{longtable}{@{\extracolsep{1pt}}
+p{0.065\textwidth}                          % Dataset name
+c|                                          % Year
+cccccc|                                     % Long-term
+p{0.095\textwidth}                          % Environment
+p{0.095\textwidth}|                         % Domain
+c|                                          % Sensory setup: odo
+ccccccc|                                    %                camera
+cc|                                         %                laser
+cccc|                                       %                radar, sonar, imu, gps
+cc|                                         % Sensor calibrations
+p{0.095\textwidth}p{0.095\textwidth}|       % Ground-truth + Format
+ccccc@{}}                                   % Distance, time, \#sequences
+  \caption{Datasets used in the 144 included records for long-term localization and / or mapping experiments. Legend: odo -- odometry (wheeled, laser, visual, inertial, or a combination of odometry sources, dist. -- total distance length of the dataset, path -- total path distance if repeated several times, time -- total operation time, int. -- time interval between the start and end acquisition dates / time instants (d/w/m/y equivalent to day/week/month/year, 0 if only 1 run), and seq. -- number of sequences of the dataset.}
   %\vspace{0.5em}
   \label{tab:discussion:datasets}\\
 
 %% FIRST TABLE HEADER
 \hline
-&&&&
+&&
+\multicolumn{6}{c|}{\textbf{Long-term}} &
+&&
 \multicolumn{14}{c|}{\textbf{Sensor}} &
 \multicolumn{2}{c|}{\textbf{Calib.}} &
 &&
 &&&&\\
-&&&&
+&&&&&&&&&&
 \multicolumn{1}{c}{} &
 \multicolumn{7}{c}{\textbf{camera}} &
 \multicolumn{2}{c}{\textbf{laser}}  &
@@ -22,16 +39,18 @@
 &&
 &&
 &&&&\\
-\cline{6-12}
-\cline{13-14}
-\textbf{Dataset} & \textbf{Long-term} & \textbf{Environ.} & \textbf{Domain} & 
+\cline{12-18}
+\cline{19-20}
+\textbf{Dataset} & \textbf{Year} &
+\rotatebox{90}{\textbf{lighting}} & \rotatebox{90}{\textbf{day/night}} & \rotatebox{90}{\textbf{weather}} & \rotatebox{90}{\textbf{seasonal}} & \rotatebox{90}{\textbf{dynamics}} & \rotatebox{90}{\textbf{sparsity}} & 
+\textbf{Environ.} & \textbf{Domain} & 
 \multicolumn{1}{c}{\rotatebox{90}{\textbf{odo}}} &
 \rotatebox{90}{\textbf{gray}} & \rotatebox{90}{\textbf{color}} & \rotatebox{90}{\textbf{monocular}} & \rotatebox{90}{\textbf{stereo}} & \rotatebox{90}{\textbf{omni}} & \rotatebox{90}{\textbf{RGBD}} & \multicolumn{1}{c}{\rotatebox{90}{\textbf{thermal}}} &
 \rotatebox{90}{\textbf{2D}} & \multicolumn{1}{c}{\rotatebox{90}{\textbf{3D}}} &
 \rotatebox{90}{\textbf{radar}} & \rotatebox{90}{\textbf{sonar}} & \rotatebox{90}{\textbf{IMU}} & \rotatebox{90}{\textbf{GPS}} &
 \rotatebox{90}{\textbf{intrinsic}} & \rotatebox{90}{\textbf{extrinsic}} & 
 \textbf{GT data} & \textbf{Format} & 
-\rotatebox{90}{\textbf{dist.} (km)} & \rotatebox{90}{\textbf{path} (km)} & \rotatebox{90}{\textbf{time} (h)} & \rotatebox{90}{\textbf{int.} (d/m/y)} & \rotatebox{90}{\textbf{\#seq.}}\\
+\rotatebox{90}{\textbf{dist.} (km)} & \rotatebox{90}{\textbf{path} (km)} & \rotatebox{90}{\textbf{time} (h)} & \rotatebox{90}{\textbf{int.} (d/w/m/y)} & \rotatebox{90}{\textbf{\#seq.}}\\
 \hline
 \endfirsthead
 
@@ -39,12 +58,14 @@
 \multicolumn{27}{l}{\itshape{\tablename\ \thetable{}: continued from previous page}}
 \vspace{0.5em}\\
 \hline
-&&&&
+&&
+\multicolumn{6}{c|}{\textbf{Long-term}} &
+&&
 \multicolumn{14}{c|}{\textbf{Sensor}} &
 \multicolumn{2}{c|}{\textbf{Calib.}} &
 &&
 &&&&\\
-&&&&
+&&&&&&&&&&
 \multicolumn{1}{c}{} &
 \multicolumn{7}{c}{\textbf{camera}} &
 \multicolumn{2}{c}{\textbf{laser}}  &
@@ -52,16 +73,18 @@
 &&
 &&
 &&&&\\
-\cline{6-12}
-\cline{13-14}
-\textbf{Dataset} & \textbf{Long-term} & \textbf{Environ.} & \textbf{Domain} & 
+\cline{12-18}
+\cline{19-20}
+\textbf{Dataset} & \textbf{Year} &
+\rotatebox{90}{\textbf{lighting}} & \rotatebox{90}{\textbf{day/night}} & \rotatebox{90}{\textbf{weather}} & \rotatebox{90}{\textbf{seasonal}} & \rotatebox{90}{\textbf{dynamics}} & \rotatebox{90}{\textbf{sparsity}} & 
+\textbf{Environ.} & \textbf{Domain} & 
 \multicolumn{1}{c}{\rotatebox{90}{\textbf{odo}}} &
 \rotatebox{90}{\textbf{gray}} & \rotatebox{90}{\textbf{color}} & \rotatebox{90}{\textbf{monocular}} & \rotatebox{90}{\textbf{stereo}} & \rotatebox{90}{\textbf{omni}} & \rotatebox{90}{\textbf{RGBD}} & \multicolumn{1}{c}{\rotatebox{90}{\textbf{thermal}}} &
 \rotatebox{90}{\textbf{2D}} & \multicolumn{1}{c}{\rotatebox{90}{\textbf{3D}}} &
 \rotatebox{90}{\textbf{radar}} & \rotatebox{90}{\textbf{sonar}} & \rotatebox{90}{\textbf{IMU}} & \rotatebox{90}{\textbf{GPS}} &
 \rotatebox{90}{\textbf{intrinsic}} & \rotatebox{90}{\textbf{extrinsic}} & 
 \textbf{GT data} & \textbf{Format} & 
-\rotatebox{90}{\textbf{dist.} (km)} & \rotatebox{90}{\textbf{path} (km)} & \rotatebox{90}{\textbf{time} (h)} & \rotatebox{90}{\textbf{int.} (d/m/y)} & \rotatebox{90}{\textbf{\#seq.}}\\
+\rotatebox{90}{\textbf{dist.} (km)} & \rotatebox{90}{\textbf{path} (km)} & \rotatebox{90}{\textbf{time} (h)} & \rotatebox{90}{\textbf{int.} (d/w/m/y)} & \rotatebox{90}{\textbf{\#seq.}}\\
 \hline
 \endhead
 
@@ -73,49 +96,91 @@
 
 
 
-\citetitle{dataset:stlucia07} & dynamic, lighting variance & outdoor (urban) & ground (car) &  & x &  & x &  &  &  &  &  &  &  &  &  &  &  &  & -- & -- & 66 & -- & 1.67 & -- & 1\\
-\citetitle{dataset:intel03} & map maintenance & indoor (office) & ground (robot) & x &  &  &  &  &  &  &  & x &  &  &  &  &  &  &  & -- & CARMEN & 0.506 & -- & 0.75 & -- & 1\\
-\citetitle{dataset:fhw} & map maintenance & indoor (museum) & ground (TOURBOT) & x &  &  &  &  &  &  &  & x &  &  &  &  &  &  &  & -- & CARMEN & -- & -- & 1.98 & -- & 1\\
-\citetitle{dataset:fr079} & map maintenance & indoor (office) & ground (robot) & x &  &  &  &  &  &  &  & x &  &  &  &  &  &  &  & -- & CARMEN & -- & -- & 0.29 & -- & 1\\
-\citetitle{dataset:fr101} & map maintenance & indoor (office) & ground (robot) & x &  &  &  &  &  &  &  & x &  &  &  &  &  &  &  & -- & CARMEN & -- & -- & 0.29 & -- & 1\\
-\citetitle{dataset:newcollege} & dynamic, lighting variance & outdoor (campus) & ground (Segway) & x & x & x &  & x & x &  &  & x &  &  &  & x & x & x & x & GPS & plain text (non-image), png (stereo), jpg (omni) & 2.2 & -- & 0.73 & -- & 1\\
-\citetitle{dataset:tum-rgbd} & dynamic, lighting variance & indoor (office, industrial hall) & ground (handheld, Pioneer 3) &  &  & x &  &  &  & x &  &  &  &  &  & x &  & x & x & motion capture system (MotionAnalysis) & plain text (non-image), png (image + depth) & 0.285 & -- & 0.35 & -- & 15\\
-\citetitle{dataset:cold} & dynamic, lighting variance, weather variance & indoor (office) & ground (Pioneer 3, ATRV Mini, PeopleBot) & x &  & x & x &  & x &  &  & x &  &  &  &  &  &  &  & laser-based localization, manual corrections & plain text (non-image), jpg (image) & 0.92 & -- & 0.99 & -- & 76\\
-\citetitle{dataset:bicocca-indoor} & dynamic, lighting variance & indoor (office) & ground (Robocom) & x & x & x & x & x & x &  &  & x &  &  & x & x &  & x & x & floorplans, visual tags, multiple lasers-based localization & plain text (non-image), png (image) & -- & -- & 2.5 & 3d & 5\\
-\citetitle{dataset:new-college-fabmap} & dynamic, lighting variance, viewpoint variance & outdoor (campus) & ground (robot) &  &  & x & x &  &  &  &  &  &  &  &  &  & x & x &  & image correspondence, GPS & plain text (non-image), jpg (image) & 1.9 & -- & -- & -- & 1\\
-\citetitle{dataset:city-center-fabmap} & dynamic, lighting variance, viewpoint variance & outdoor (urban) & ground (robot) &  &  & x & x &  &  &  &  &  &  &  &  &  & x & x &  & image correspondence matrix, GPS & plain text (non-image), jpg (image) & 2 & -- & -- & -- & 1\\
-\citetitle{dataset:mit-kilian} & map maintenance & indoor (office) & ground (robot) & x &  &  &  &  &  &  &  & x &  &  & x &  &  &  &  & -- & CARMEN & -- & -- & 2.13 & -- & 1\\
-\citetitle{dataset:albert-b} & map maintenance, lighting variance & indoor (office) & ground (iRobot B21r) & x &  & x & x &  &  &  &  & x &  &  &  &  &  &  &  & -- & CARMEN (non-image), jpg (image) & -- & -- & 0.18 & -- & 1\\
-\citetitle{dataset:cobot} & map maintenance, dynamic, lighting variance, seasonal variance & indoor (office) & ground (robot) & x &  & x &  &  &  & x &  & x &  &  &  &  &  &  &  & -- & ROS bag & 131 & -- & 260 & 2y3m & 1082\\
-\citetitle{dataset:mit-stata} & map maintenance, dynamic, lighting variance, seasonal variance & indoor (office) & ground (PR2) & x &  & x &  & x &  & x &  & x &  &  &  & x &  &  &  & floorplans & ROS bag & 42 & -- & 38 & 1y9m & 84\\
-\citetitle{dataset:kitti} & dynamic, lighting variance & outdoor (urban) & ground (car) &  & x & x & x & x &  &  &  &  & x &  &  & x & x & x & x & RTK GPS/INS & png (image), binary (laser), plain text (imu, gps) & -- & -- & 1.18 & 8d & 61\\
-\citetitle{dataset:cmu-vl} & dynamic, lighting variance, seasonal variance & outdoor (urban) & ground (car) &  &  & x & x &  &  &  &  &  &  &  &  &  & x & x & x & GPS & -- & -- & 8.5 & -- & 1y & 16\\
-\citetitle{dataset:oxford-robotcar} & dynamic, lighting variance, seasonal variance, weather variance & outdoor (urban) & ground (car) & x &  & x & x & x &  &  &  & x & x &  &  & x & x & x & x & RTK GPS/INS & png (image), binary (laser), plain text (imu, gps, odo) & 1010.46 & 10 & -- & 1y8m & 133\\
-\citetitle{dataset:cmu-seasons} & dynamic, lighting variance, seasonal variance & outdoor (urban) & ground (car) &  &  & x & x &  &  &  &  &  &  &  &  &  &  & x & x & image correspondence & jpg (image) & -- & 8.5 & -- & 330d & 17\\
-\citetitle{dataset:robotcar-seasons} & dynamic, lighting variance, seasonal variance, weather variance & outdoor (urban) & ground (car) &  &  & x & x & x &  &  &  &  &  &  &  &  &  & x & x & image correspondence & jpg (image) & -- & 10 & -- & 178d & 10\\
-\citetitle{dataset:nordlandsbanen} & lighting variance, seasonal variance, weather variance & outdoor (railway) & ground (train) &  &  & x & x &  &  &  &  &  &  &  &  &  & x &  &  & GPS & mp4 (video stream), plain text (gps) & 2916 & 729 & 39.74 & -- & 4\\
-\citetitle{dataset:malaga-2009} & dynamic, lighting variance & outdoor (parking, campus) & ground (car) &  &  & x & x &  &  &  &  & x &  &  &  & x & x & x & x & RTK GPS/INS & Rawlog MRPT & 6.358 & -- & -- & -- & 6\\
-\citetitle{dataset:ford} & dynamic, lighting variance & outdoor (campus, urban) & ground (car) &  &  & x &  &  & x &  &  & x & x &  &  & x & x & x & x & RTK GPS/INS & LCM log & -- & -- & -- & 2m & --\\
-\citetitle{dataset:nclt} & dynamic, lighting variance, seasonal variance, weather variance & indoor, outdoor (campus) & ground (Segway) &  &  & x &  &  & x &  &  & x & x &  &  & x & x & x & x & RTK GPS/INS + ``large'' SLAM & binary (laser), tiff (image), plain text (non-laser or image) & 147.4 & -- & 34.9 & 1y4m & 27\\
-\citetitle{dataset:gardens-qut} & dynamic, lighting variance & indoor, outdoor (campus) & ground (handheld) &  &  & x & x &  &  &  &  &  &  &  &  &  &  &  &  & ground-plane position & png (images), plain text (ground plane) & -- & -- & -- & -- & 3\\
-\citetitle{dataset:lcas-strands} & dynamic, lighting variance, seasonal variance & indoor (office) & ground (SCITOS-G5) &  &  & x &  &  &  & x &  & x &  &  &  &  &  &  &  & -- & ROS bag & -- & -- & -- & 1y1m & 368\\
-\citetitle{dataset:euroc} & lighting variance & indoor (industrial hall, office) & air (AscTec Firefly) &  & x &  & x & x &  &  &  &  &  &  &  & x &  & x & x & motion capture system (Vicon), 3D position + structure scan (Leica MS50) & ROS bag & 0.8936 & -- & 0.37 & -- & 11\\
-\citetitle{dataset:utias} & lighting variance, viewpoint variance & indoor (empty space) & ground (iRobot Create) & x &  & x & x &  &  &  &  &  &  &  &  &  &  & x &  & motion capture system (Vicon) & jpg (image), dat (non-image) & -- & -- & 4.78 & -- & 9\\
-\citetitle{dataset:alderley} & dynamic, lighting variance & outdoor (urban) & ground (car) &  &  & x & x &  &  &  &  &  &  &  &  &  &  &  &  & manual frame tagging (longitude, latitude) & -- & 16 & 8 & -- & -- & 2\\
-\citetitle{dataset:fas} & dynamic, lighting variance, seasonal variance & outdoor (urban) & ground (car) &  &  & x &  & x &  &  &  &  &  &  &  &  & x &  &  & GPS, manual corrections & jpg (image) & 110 & -- & -- & 3y & 3\\
-\citetitle{dataset:kudamm} & dynamic, lighting variance, viewpoint variance & outdoor (urban) & ground (car) &  &  & x & x &  &  &  &  &  &  &  &  &  &  &  &  & image correspondence & jpg (image) & -- & -- & -- & -- & 2\\
-\citetitle{dataset:mulran} & dynamic & outdoor (urban) & ground (car) &  &  &  &  &  &  &  &  &  & x & x &  & x & x &  & x & full SLAM (w/ RTK-GPS) & binary (laser), CSV (global pose, radar ray), png (radar polar image) & 41.2 & -- & -- & 2m15d & 12\\
-\citetitle{dataset:yq21} & dynamic, lighting variance & outdoor (campus) & ground (car) &  &  & x & x & x &  &  &  &  & x &  &  & x & x & x & x & RTK-GPS & binary (laser), jpg (images), plain text (gps) & -- & -- & -- & 7d & 21\\
-\citetitle{dataset:cbd} & dynamic, lighting variance, viewpoint variance & outdoor (urban) & ground &  &  & x & x & x &  &  &  &  &  &  &  &  &  &  &  & image correspondence & png (images) & -- & -- & -- & -- & 1\\
-\citetitle{dataset:usyd} & dynamic, lighting variance, seasonal variance & outdoor (campus) & ground (car) & x &  & x & x &  &  &  &  &  & x &  &  & x & x & x & x & GPS & ROS bag & -- & -- & -- & 1y & 52\\
-\citetitle{dataset:lip6indoor} & viewpoint variance & indoor (office) & ground (handheld) &  &  & x & x &  &  &  &  &  &  &  &  &  &  & x &  & image correspondence & ppm (images) & -- & -- & 6m28s & -- & 1\\
-\citetitle{dataset:lip6outdoor} & dynamic, lighting variance & outdoor (campus) & ground (handheld) &  &  & x & x &  &  &  &  &  &  &  &  &  &  & x &  & image correspondence & ppm (images) & -- & -- & 17m42s & -- & 1\\
-\citetitle{dataset:kaist} & dynamic, lighting variance & outdoor (urban) & ground (car) &  &  & x &  & x &  &  & x &  &  &  &  & x & x & x &  & RTK-GPS & png (images), plain text (imu, gps) & 84 & -- & -- & 18d & 36\\
-\citetitle{dataset:bonn} & dynamic & indoor (office) & ground &  &  & x &  &  &  & x &  &  &  &  &  &  &  & x &  & motion capture system (OptiTrack), structure scan (Leica BLK360) & png (images, depth), plain text (imu, gps) & -- & -- & -- & -- & 26\\
-\citetitle{dataset:iplt} & dynamic, lighting variance, seasonal variance, weather variance & outdoor (parking) & ground (car) & x & x &  & x &  &  &  &  & x &  &  &  &  & x & x & x & GPS & ROS bag & -- & 0.2 & -- & 2y & 127\\
-\citetitle{dataset:radiate} & dynamic, lighting variance, weather variance & outdoor (parking, urban) & ground (car) &  &  & x & x & x &  &  &  &  & x & x &  & x & x & x & x & RTK-GPS & ROS bag & -- & -- & 4.98 & -- & --\\
-\citetitle{dataset:ntu} & lighting variance & indoor, outdoor (campus) & air (DJI M600) &  & x &  & x & x &  &  &  &  & x &  &  & x &  & x & x & motion capture system (Leica MS60) & ROS bag & 1.845 & -- & 0.9 & -- & 9\\
-\citetitle{dataset:robotcar-radar} & dynamic, lighting variance, weather variance & outdoor (urban) & ground (car) & x &  & x & x & x &  &  &  &  & x & x &  & x & x & x & x & RTK-GPS, optimized VO + loop + GPS/INS & png (image, raw laser, radar), binary (laser), plain text (imu, gps, odo) & 280 & 10 & -- & 1m & 32\\
+\citetitle{dataset:fhw} & 2001 &  &  &  &  &  & x & indoor (museum) & ground (TOURBOT) & x &  &  &  &  &  &  &  & x &  &  &  &  &  &  &  & -- & CARMEN & -- & -- & 1.98 & -- & 1\\
+\hline
+\citetitle{dataset:fr079} & 2003 &  &  &  &  &  & x & indoor (office) & ground (robot) & x &  &  &  &  &  &  &  & x &  &  &  &  &  &  &  & -- & CARMEN & -- & -- & 0.29 & -- & 1\\
+\hline
+\citetitle{dataset:fr101} & 2003 &  &  &  &  &  & x & indoor (office) & ground (robot) & x &  &  &  &  &  &  &  & x &  &  &  &  &  &  &  & -- & CARMEN & -- & -- & 0.29 & -- & 1\\
+\hline
+\citetitle{dataset:intel03} & 2003 &  &  &  &  &  & x & indoor (office) & ground (robot) & x &  &  &  &  &  &  &  & x &  &  &  &  &  &  &  & -- & CARMEN & 0.506 & -- & 0.75 & -- & 1\\
+\hline
+\citetitle{dataset:mit-kilian} & 2004 &  &  &  &  &  & x & indoor (office) & ground (robot) & x &  &  &  &  &  &  &  & x &  &  & x &  &  &  &  & -- & CARMEN & 2.2 & -- & 2.5 & -- & 1\\
+\hline
+\citetitle{dataset:city-center-fabmap} & 2008 & x &  &  &  & x &  & outdoor (urban) & ground (robot) &  &  & x & x &  &  &  &  &  &  &  &  &  & x & x &  & GPS, manual & plain text (non-image), jpg (image) & 2 & -- & -- & -- & 1\\
+\hline
+\citetitle{dataset:lip6indoor} & 2008 &  &  &  &  &  &  & indoor (office) & ground (handheld) &  &  & x & x &  &  &  &  &  &  &  &  &  &  & x &  & manual & ppm (images) & -- & -- & 0.11 & -- & 1\\
+\hline
+\citetitle{dataset:lip6outdoor} & 2008 & x &  &  &  & x &  & outdoor (campus) & ground (handheld) &  &  & x & x &  &  &  &  &  &  &  &  &  &  & x &  & manual & ppm (images) & -- & -- & 0.3 & -- & 1\\
+\hline
+\citetitle{dataset:new-college-fabmap} & 2008 & x &  &  &  & x &  & outdoor (campus) & ground (robot) &  &  & x & x &  &  &  &  &  &  &  &  &  & x & x &  & GPS, manual & plain text (non-image), jpg (image) & 1.9 & -- & -- & -- & 1\\
+\hline
+\citetitle{dataset:stlucia07} & 2008 & x &  &  &  & x &  & outdoor (urban) & ground (car) &  & x &  & x &  &  &  &  &  &  &  &  &  &  &  &  & -- & -- & 66 & -- & 1.67 & -- & 1\\
+\hline
+\citetitle{dataset:bicocca-indoor} & 2009 & x &  &  &  & x & x & indoor (office) & ground (Robocom) & x & x & x & x & x & x &  &  & x &  &  & x & x &  & x & x & map model, laser-based & plain text (non-image), png (image) & -- & -- & 2.5 & 3d & 5\\
+\hline
+\citetitle{dataset:cold} & 2009 & x & x & x &  & x &  & indoor (office) & ground (Pioneer 3, ATRV Mini, PeopleBot) & x &  & x & x &  & x &  &  & x &  &  &  &  &  &  &  & laser-based, manual & plain text (non-image), jpg (image) & 0.92 & -- & 0.99 & -- & 76\\
+\hline
+\citetitle{dataset:malaga-2009} & 2009 & x &  &  &  & x &  & outdoor (parking, campus) & ground (car) &  &  & x & x &  &  &  &  & x &  &  &  & x & x & x & x & RTK-GPS & Rawlog MRPT & 6.358 & -- & -- & -- & 6\\
+\hline
+\citetitle{dataset:newcollege} & 2009 & x &  &  &  & x &  & outdoor (campus) & ground (Segway) & x & x & x &  & x & x &  &  & x &  &  &  & x & x & x & x & GPS & plain text (non-image), png (stereo), jpg (omni) & 2.2 & -- & 0.73 & -- & 1\\
+\hline
+\citetitle{dataset:albert-b} & 2010 & x &  &  &  &  & x & indoor (office) & ground (iRobot B21r) & x &  & x & x &  &  &  &  & x &  &  &  &  &  &  &  & -- & CARMEN (non-image), jpg (image) & -- & -- & 0.18 & -- & 1\\
+\hline
+\citetitle{dataset:cmu-vl} & 2011 & x &  &  & x & x &  & outdoor (urban) & ground (car) &  &  & x & x &  &  &  &  &  &  &  &  &  & x & x & x & GPS & -- & -- & 8.5 & -- & 1y & 16\\
+\hline
+\citetitle{dataset:ford} & 2011 & x &  &  &  & x &  & outdoor (campus, urban) & ground (car) &  &  & x &  &  & x &  &  & x & x &  &  & x & x & x & x & RTK-GPS & LCM log & -- & -- & -- & 2m & --\\
+\hline
+\citetitle{dataset:utias} & 2011 & x &  &  &  &  &  & indoor (empty space) & ground (iRobot Create) & x &  & x & x &  &  &  &  &  &  &  &  &  &  & x &  & external tracking system & jpg (image), dat (non-image) & -- & -- & 4.78 & -- & 9\\
+\hline
+\citetitle{dataset:alderley} & 2012 & x &  & x &  & x &  & outdoor (urban) & ground (car) &  &  & x & x &  &  &  &  &  &  &  &  &  &  &  &  & manual & -- & 16 & 8 & -- & -- & 2\\
+\hline
+\citetitle{dataset:tum-rgbd} & 2012 & x &  &  &  & x &  & indoor (office, industrial hall) & ground (handheld, Pioneer 3) &  &  & x &  &  &  & x &  &  &  &  &  & x &  & x & x & external tracking system & plain text (non-image), png (image + depth), ROS bag & 0.285 & -- & 0.35 & -- & 15\\
+\hline
+\citetitle{dataset:cobot} & 2013 & x &  &  & x & x & x & indoor (office) & ground (robot) & x &  & x &  &  &  & x &  & x &  &  &  &  &  &  & x & -- & ROS bag & 131 & -- & 260 & 2y3m & 1082\\
+\hline
+\citetitle{dataset:kitti} & 2013 & x &  &  &  & x &  & outdoor (urban) & ground (car) &  & x & x & x & x &  &  &  &  & x &  &  & x & x & x & x & RTK-GPS & png (image), binary (laser), plain text (imu, gps) & -- & -- & 1.18 & 8d & 61\\
+\hline
+\citetitle{dataset:mit-stata} & 2013 & x &  &  & x & x & x & indoor (office) & ground (PR2) & x &  & x &  & x &  & x &  & x &  &  &  & x &  &  & x & map model & ROS bag & 42 & -- & 38 & 1y9m & 84\\
+\hline
+\citetitle{dataset:nordlandsbanen} & 2013 & x &  & x & x &  &  & outdoor (railway) & ground (train) &  &  & x & x &  &  &  &  &  &  &  &  &  & x &  &  & GPS & mp4 (video stream), plain text (gps) & 2916 & 729 & 39.74 & -- & 4\\
+\hline
+\citetitle{dataset:gardens-qut} & 2014 & x & x &  &  & x &  & indoor, outdoor (campus) & ground (handheld) &  &  & x & x &  &  &  &  &  &  &  &  &  &  &  &  & ground-plane position & png (images), plain text (ground plane) & -- & -- & -- & -- & 3\\
+\hline
+\citetitle{dataset:lcas-strands} & 2014 & x & x &  & x & x &  & indoor (office) & ground (SCITOS-G5) &  &  & x &  &  &  & x &  & x &  &  &  &  &  &  & x & -- & ROS bag & -- & -- & -- & 1y1m & 368\\
+\hline
+\citetitle{dataset:kaist} & 2015 & x & x &  &  & x &  & outdoor (urban) & ground (car) &  &  & x &  & x &  &  & x &  &  &  &  & x & x & x & x & RTK-GPS & png (images), plain text (imu, gps) & 84 & -- & -- & 18d & 36\\
+\hline
+\citetitle{dataset:euroc} & 2016 & x &  &  &  &  &  & indoor (industrial hall, office) & air (AscTec Firefly) &  & x &  & x & x &  &  &  &  &  &  &  & x &  & x & x & external tracking system & ROS bag & 0.8936 & -- & 0.37 & -- & 11\\
+\hline
+\citetitle{dataset:nclt} & 2016 & x &  & x & x & x &  & indoor, outdoor (campus) & ground (Segway) &  &  & x &  &  & x &  &  & x & x &  &  & x & x & x & x & RTK-GPS, SLAM-based & binary (laser), tiff (image), plain text (non-laser or image) & 147.4 & -- & 34.9 & 1y4m & 27\\
+\hline
+\citetitle{dataset:kudamm} & 2017 & x &  &  &  & x &  & outdoor (urban) & ground (car) &  &  & x & x &  &  &  &  &  &  &  &  &  &  &  &  & manual & jpg (image) & -- & -- & -- & -- & 2\\
+\hline
+\citetitle{dataset:oxford-robotcar} & 2017 & x & x & x & x & x &  & outdoor (urban) & ground (car) & x &  & x & x & x &  &  &  & x & x &  &  & x & x & x & x & RTK-GPS & png (image), binary (laser), plain text (imu, gps, odo) & 1010.46 & 10 & -- & 1y8m & 133\\
+\hline
+\citetitle{dataset:yq21} & 2017 & x &  &  &  & x &  & outdoor (campus) & ground (car) &  &  & x & x & x &  &  &  &  & x &  &  & x & x & x & x & RTK-GPS & binary (laser), jpg (images), plain text (gps) & 23 & -- & 6.5 & 1w & 21\\
+\hline
+\citetitle{dataset:cmu-seasons} & 2018 & x &  &  & x & x &  & outdoor (urban) & ground (car) &  &  & x & x &  &  &  &  &  &  &  &  &  &  & x & x & manual & jpg (image) & -- & 8.5 & -- & 330d & 17\\
+\hline
+\citetitle{dataset:fas} & 2018 & x &  &  & x & x &  & outdoor (urban) & ground (car) &  &  & x &  & x &  &  &  &  &  &  &  &  & x &  &  & GPS, manual & jpg (image) & 110 & -- & -- & 3y & 3\\
+\hline
+\citetitle{dataset:robotcar-seasons} & 2018 & x &  & x &  & x &  & outdoor (urban) & ground (car) &  &  & x & x & x &  &  &  &  &  &  &  &  &  & x & x & manual & jpg (image) & -- & 10 & -- & 178d & 10\\
+\hline
+\citetitle{dataset:bonn} & 2019 &  &  &  &  & x &  & indoor (office) & ground &  &  & x &  &  &  & x &  &  &  &  &  &  &  & x & x & external tracking system & png (images, depth), plain text (imu, gps) & -- & -- & -- & -- & 26\\
+\hline
+\citetitle{dataset:cbd} & 2019 & x &  &  &  & x &  & outdoor (urban) & ground &  &  & x & x & x &  &  &  &  &  &  &  &  &  &  &  & manual & png (images) & -- & -- & -- & -- & 1\\
+\hline
+\citetitle{dataset:mulran} & 2020 &  &  &  &  & x &  & outdoor (urban) & ground (car) &  &  &  &  &  &  &  &  &  & x & x &  & x & x &  & x & SLAM-based & binary (laser), CSV (global pose, radar ray), png (radar polar image) & 41.2 & -- & -- & 2m15d & 12\\
+\hline
+\citetitle{dataset:robotcar-radar} & 2020 & x &  & x &  & x &  & outdoor (urban) & ground (car) & x &  & x & x & x &  &  &  &  & x & x &  & x & x & x & x & RTK-GPS, SLAM-based & png (image, raw laser, radar), binary (laser), plain text (imu, gps, odo) & 280 & 10 & -- & 1m & 32\\
+\hline
+\citetitle{dataset:usyd} & 2020 & x &  & x & x & x &  & outdoor (campus) & ground (car) & x &  & x & x &  &  &  &  &  & x &  &  & x & x & x & x & GPS & ROS bag & -- & -- & -- & 1y & 52\\
+\hline
+\citetitle{dataset:iplt} & 2021 & x & x & x & x & x &  & outdoor (parking) & ground (car) & x & x &  & x &  &  &  &  & x &  &  &  &  & x & x & x & GPS & ROS bag & -- & 0.2 & -- & 2y & 127\\
+\hline
+\citetitle{dataset:radiate} & 2021 & x & x & x &  & x &  & outdoor (parking, urban) & ground (car) &  &  & x & x & x &  &  &  &  & x & x &  & x & x & x & x & RTK-GPS & ROS bag & -- & -- & 4.98 & -- & --\\
+\hline
+\citetitle{dataset:ntu} & 2022 & x &  &  &  &  &  & indoor, outdoor (campus) & air (DJI M600) &  & x &  & x & x &  &  &  &  & x &  &  & x &  & x & x & external tracking system & ROS bag & 1.845 & -- & 0.9 & -- & 9\\
 
 
 
@@ -126,3 +191,6 @@
 \end{tiny}
 
 \twocolumn
+
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{3pt}

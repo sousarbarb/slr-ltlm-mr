@@ -164,30 +164,77 @@ Further information relative to this phase of the review can be found in
 
 **Data extraction items:**
 
-1. [DE1] Long-term considerations: long-term factors the works consider in their proposed approach and experiments
+1. [DE1] Long-term considerations: long-term factors the works consider in their
+   proposed approach and experiments
    - appearance - varying conditions, appearance changes, ...
    - dynamics - environment dynamics, dynamic elements, ...
    - sparsity - map pruning, redundant data removal, ...
    - multi-session - map management, ...
    - computational - memory management, efficiency, ...
-2. [DE2] Localization: how the robot localizes itself and the type of localizer: Bayesian, particle filter, feature matching, point cloud matching, ...
-3. [DE3] Mapping: type of the map. focused on how new information is added to the map the type of information: grid, features, topological (graph SLAM, experience maps), database (images, global features, ...), ...
-4. [DE4] Multi-robot: if the proposed methodologies consider multi-robot systems: yes / no
-5. [DE5] Execution mode: offline, online, if requires both, or if no information on this item: if "online", assumed that it is able to execute the algorithm both online and offline independently; "both" means that the method requires an offline computation and also an online one (dependent on each other)
-6. [DE6] Environment and domain: type of environment (indoor, outdoor) and domains (air, ground, water) tested with the proposed methodologies
-7. [DE7] Sensory setup: which sensors considered in the methodologies: wheel odometry, IMU, laser (2D/3D), camera (monocular / stereo / omnidirectional), sonar, radar, GPS, or a combination of the previous sensors
-8. [DE8] Non-public experiments: if the authors performed experiments or tests with non-public data
-9. [DE9] Ground-truth: how ground-truth for non-public data is obtained or its type, if available: external tracking system, GPS, SLAM-based, manual (annotation, labeling, manual correction, measures, ...)
-10. [DE10] Distance and time characteristics: relative to the non-public experiments if available, as follows
+2. [DE2] Localization: how the robot localizes itself and the type of localizer:
+   Bayesian, particle filter, feature matching, point cloud matching, ...
+3. [DE3] Mapping: type of the map. focused on how new information is added to
+   the map the type of information: grid, features, topological (graph SLAM,
+   experience maps), database (images, global features, ...), ...
+4. [DE4] Multi-robot: if the proposed methodologies consider multi-robot
+   systems: yes / no
+5. [DE5] Execution mode: offline, online, if requires both, or if no information
+   on this item: if "online", assumed that it is able to execute the algorithm
+   both online and offline independently; "both" means that the method requires
+   an offline computation and also an online one (dependent on each other)
+6. [DE6] Environment and domain: type of environment (indoor, outdoor) and
+   domains (air, ground, water) tested with the proposed methodologies
+7. [DE7] Sensory setup: which sensors considered in the methodologies: wheel
+   odometry, IMU, laser (2D/3D), camera (monocular / stereo / omnidirectional),
+   sonar, radar, GPS, or a combination of the previous sensors
+8. [DE8] Non-public experiments: if the authors performed experiments or tests
+   with non-public data
+9. [DE9] Ground-truth: how ground-truth for non-public data is obtained or its
+   type, if available: external tracking system, GPS, SLAM-based, manual
+   (annotation, labeling, manual correction, measures, ...)
+10. [DE10] Distance and time characteristics: relative to the non-public
+    experiments if available, as follows
     - total distance (km) of the non-public experiments
     - path (km), in the case of repetitive paths
     - total time (h) in terms of continuous operation
-    - time interval (day/week/month/year, or d/w/m/y) between the first and the last run
-11. [DE11] Datasets: if and which public datasets are used in the experiments: KITTI, Oxford RobotCar, Nordlandsbeen, MIT Stata Center, Intel
-12. [DE12] Evaluation metrics: which metrics are used for evaluation: average traveled error (ATE), pose error (along time, mean, std), execution time, memory, precision-recall, f-score, confusion matrix...
+    - time interval (day/week/month/year, or d/w/m/y) between the first and the
+      last run
+11. [DE11] Datasets: if and which public datasets are used in the experiments:
+    KITTI, Oxford RobotCar, Nordlandsbeen, MIT Stata Center, Intel
+12. [DE12] Evaluation metrics: which metrics are used for evaluation: average
+    traveled error (ATE), pose error (along time, mean, std), execution time,
+    memory, precision-recall, f-score, confusion matrix...
 
 Further information relative to this phase of the review can be found in
 [`data-extraction/`](data/methodology/data-extraction/).
+
+## Results Overview
+
+All results retrieved from the bibliographic data of the 144 records included in
+the review can be found in [`results`](data/results/).
+The tool [VOSviewer](https://www.vosviewer.com/) used for obtaining the
+co-occurrence analysis of keywords and co-authorships is available in its
+website or in [`src`](src/VOSviewer-1.6.18/). Lastly, the thesaurus used for
+analyzing keywords co-occurrence can be found in
+[`VOSviewer/data`](src/VOSviewer-1.6.18/data/).
+
+### Keywords co-occurrence
+
+**Original:**
+
+![](https://github.com/sousarbarb/slr-ltlm-mr/blob/main/doc/graphs/kw.png?raw=true)
+
+**With thesaurus:**
+
+![](https://github.com/sousarbarb/slr-ltlm-mr/blob/main/doc/graphs/kw_long-term.png?raw=true)
+
+### Co-authorship analysis
+
+![](https://github.com/sousarbarb/slr-ltlm-mr/blob/main/doc/graphs/authors.png?raw=true)
+
+### Publication year
+
+![](https://github.com/sousarbarb/slr-ltlm-mr/blob/main/doc/graphs/year.png?raw=true)
 
 ## Contacts
 
