@@ -1,17 +1,7 @@
 \section{Discussion}
 \label{sec:discussion}
 
-The keywords co-occurrence analysis discussed in Section~\ref{sec:overview:kw} identifies terms with large occurrence and strong links between each other, that can be related to the categorization considered for the data extraction item DE1 (see Section~\ref{sec:methodology:data}).
-The terms place recognition, global localization, and loop closure are associated to varying appearance of the environment, equivalent to the first category of DE1 (appearance).
-The second one (dynamics) is related to the group of keywords corresponding to dynamic environments. Although methods focused on varying appearance and conditions can possibly deal with dynamic elements in the scene, these methods do not identify specifically those elements neither model the dynamics of the environment.
-As for the other group of keywords related to graph and information theory, these works focus on removing uninformative data from the map~\parencite{kretzschmar-stachniss:2012:0278364912455072}, which are related to map sparsification and to the third category of DE1 (sparsity).
-These relations between the categories appearance, dynamics, and sparsity to the semantic analysis of the keywords co-occurrence supports the categorization of DE1, while also indicating that the discussion on the proposed methodologies should focus on each one of the categories.
-Even though the two remaining categories of DE1 (multi-session and computational) are not represented in the keyword analysis, the execution of the data extraction phase identified the need for having these two categories, given the importance of multi-session handling and computational efficiency for long-term localization and mapping.
-
-Furthermore, the discussion section should focus not only on the proposed methodologies but also on the evaluation of experimental results. Indeed, the data extraction items DE8--12 are all intended to retrieve information on this matter.
-These data items help identify the evaluation metrics used to assess the methods performance, which datasets were used, and the characteristics of the experiments performed by the authors.
-
-Accordingly, this section is organized as follows. First, the included works in the review are discussed by the categories of DE1 separately, focusing on the proposed methodologies and identified trends. Section~\ref{sec:discussion:appearance} discusses methods related for dealing with varying appearance of the environment and place recognition. Section~\ref{sec:discussion:dynamics} reviews articles focused on modeling the environment dynamics or identifying dynamic objects within the environment. Section~\ref{sec:discussion:sparsify} focus on methods for removing redundant data of the map or identifying novelty data to keep the map size constrained to the environment size. Section~\ref{sec:discussion:multisession} discusses how methods handle multi-session in terms of mapping. Section~\ref{sec:discussion:computational} reviews works related to computation concerns over long-term localization and mapping, in addition to the ones relative to map sparsification discussed in Section~\ref{sec:discussion:sparsify}. Then, the evaluations metrics used in the included works are discussed in Section~\ref{sec:discussion:metrics}. Section~\ref{sec:discussion:experiments} analyzes the experimental data used for evaluating the proposed methodologies, including the datasets used and characteristics of the experiments. Finally, Section~\ref{sec:discussion:observations} is reserved to final observations of the discussion relative to the localization and mapping algorithms, and the sensorization more used by the authors of the included records.
+The main goal of this review is to synthesize methodologies focused on long-term localization and mapping. Therefore, the discussion first analyzes the techniques proposed in the 144 included works for the five categories of DE1 (see Section~\ref{a2:data-extraction}). Section~\ref{sec:discussion:appearance} discusses methodologies related to dealing with the varying appearance of environments for localization and place recognition. Section~\ref{sec:discussion:dynamics} analyzes works focused on modeling the environment dynamics or identifying dynamic objects within the environment. Section~\ref{sec:discussion:sparsify} focuses on approaches for removing redundant data from the map or identifying novelty data to keep the map size constrained to the environment size. Section~\ref{sec:discussion:multisession} discusses how methods handle multi-session in terms of mapping. Section~\ref{sec:discussion:computational} reviews works related to computation concerns over long-term localization and mapping, in addition to the ones relative to map sparsification discussed in Section~\ref{sec:discussion:sparsify}. However, the discussion should also focus on how the included works evaluated their results in long-term operations. Thus, Section~\ref{sec:discussion:metrics} presents the evaluation metrics used in the experiments, and Section~\ref{sec:discussion:observations} analyzes the experimental data and datasets used for evaluating the proposed methodologies.
 
 
 
@@ -20,11 +10,13 @@ Accordingly, this section is organized as follows. First, the included works in 
 \subsection{Appearance variance}
 \label{sec:discussion:appearance}
 
-\textcolor{red}{Probably put here an intro more detailed for the appearance variance subsection!!!}
+Next, the discussion focuses on included works categorized in DE1 as appearance. The different methodologies found in these works deal with variable lighting changes, perspective or viewpoint variance, moving elements in the scene, different weather conditions, or changes caused by the year's seasons.
+In order to improve the discussion, the analysis of the proposed techniques related with appearance invariance is organized into the following topics: experience maps for treating different appearances as multiples experiences, handcrafted features, features extracted using Convolutional Neural Networks (CNN), assessment of feature stability, multi-modal features, leverage of temporal coherence by image sequence matching, and a discussion of the different sensors modalities used in the included works for appearance invariance.
 
 
 
 \subsubsection{Experience maps}
+\label{sec:discussion:appearance:exp-maps}
 
 One way to deal with the appearance variance of environments is by treating different conditions as multiple experiences.
 The biologically inspired RatSLAM~\parencite{ball-et-al:2013:9} introduces the experience map as a semi-metric topological map, where each experience is a view of the environment at a certain position and wheel odometry provides the relative pose for the links. New experiences are created when none of the previous ones saved in the map are sufficiently similar in appearance to the current scene.
@@ -54,6 +46,7 @@ Also, other methods should be employed to deal not only with long-term appearanc
 
 
 \subsubsection{Illumination transformations}
+\label{sec:discussion:appearance:illumination}
 
 As a preprocessing step, illumination invariant transformations can be applied to color images for increasing the robustness of visual localization to changing lighting conditions and shadows.
 One example is the illumination invariant space that combines the log-responses of the 3 color channels into an one-dimensional space with a weighting parameter conditioned by the peak spectral responses of each channel, usually available in the camera specifications. This one-dimensional space is only dependent on the sensor and elements in the scene, while being independent of the intensities and colors.
@@ -69,6 +62,7 @@ Even though the Gamma correction does not transform an image to an invariant col
 
 
 \subsubsection{Handcrafted features}
+\label{sec:discussion:appearance:handcrafted}
 
 Many localization and mapping algorithms rely on detection and extraction of features. The designation of handcrafted features refers to properties derived from the sensors data as a two-step process: a keypoint detector to locate the features and their characterization by computing a descriptor capable of distinguishing each feature from the others~\parencite{discussion:handcrafted-features}.
 Algorithms for long-term localization and mapping using handcrafted feature should be robust to changing conditions such as illumination, appearance, weather and seasonal changes.
@@ -80,8 +74,8 @@ A way to improve long-term feature-based visual localization is to enhance the d
 Using an incremental tree-like PIRF (with inverted index as in BoW) dictionary, the method has shown robustness to viewpoint variance and unstable features. Also, PIRF-based localization improved the recall over FAB-MAP in the experiments.
 
 Moreover, Histogram of Oriented Gradients (HOG) features have been used in different works to improve robustness to appearance variance, given that HOG descriptors capture local gradient information robust to seasonal changes \parencite{naseer-et-al:2015:7324181}.
-\cite{li-et-al:2015:7139706} computes local HOG descriptors from visually-salient image patch features in an underwater environment. Using a trained Support-Vector Machine (SVM) to classify the matching between corresponding patches, the proposed method achieved approximately 80\% accuracy with dramatic appearance changes.
-Although \cite{naseer-et-al:2015:7324181} computes HOG descriptors from each cell of a partitioned image, a global descriptor for the whole image joins all the ones respective to each cell. The global descriptor proved to be robust to foliage color changes, occlusions, and seasonal changes.
+\cite{li-et-al:2015:7139706} computes local HOG descriptors from visually-salient image patch features in an underwater environment. Using a trained Support-Vector Machine (SVM) to classify the matching between corresponding patches, the method achieved approximately 80\% accuracy with dramatic appearance changes.
+Although \cite{naseer-et-al:2015:7324181} computes HOG descriptors from each cell of a partitioned image, a global descriptor for the whole image joins all the cell ones. The global descriptor proved to be robust to foliage color changes, occlusions, and seasonal changes.
 \cite{vysotska-et-al:2015:7139576} uses the same global HOG descriptor as in \cite{naseer-et-al:2015:7324181}, but applied to image sequence matching requiring a rough global pose estimation for the images (e.g., GPS) for efficient matching.
 
 Local Difference Binary (LDB) features also include gradient comparisons. These features are used in the Able for Binary-appearance Loop-closure Evaluation (ABLE) \parencite{arroyo-et-al:2018:7} approach to achieve higher descriptiveness power for appearance invariance.
@@ -89,7 +83,21 @@ ABLE outperformed FAB-MAP in terms of precision-recall evaluation metrics. An ad
 
 Another work from the included records focused on improving the long-term performance of handcrafted visual features is from \cite{karaoguz-bozma:2016:4}. Their approach uses bubble descriptors for preserving the relative $S^2$ geometry of visual features, being rotationally invariant. The experimental results demonstrated improvements on viewpoint and illumination invariance of bubble features-based localization.
 
-Even though \cite{cao-et-al:2021:2962416} requires a 2D or a 3D laser for place recognition and not a visual sensor, the proposed method transforms a 3D point cloud (acquired either from accumulating a sequence of 2D laser scans or directly from the 3D laser) to its 2D polar image representation. This transformation uses the centroid of the point cloud to ensure viewpoint invariance. Then, using Gabor filters to detect and describe the contours of the images, \cite{cao-et-al:2021:2962416} generates Binary Robust Independent Elementary Features (BRIEF) descriptors for matching images using an Approximate Nearest Neighbors (ANN) search. In addition to showing the seasonal appearance variance in laser data (e.g., different foliage in the scene), the proposed methodology outperforms SeqSLAM~\parencite{discussion:seqslam} (sequential place recognition) and PointNetVLAD~\parencite{discussion:pointnetvlad} (CNN-based place recognition for 3D point clouds) on precision-recall.
+Instead of preserving the long-term appearance-invariance of visual descriptors, \cite{neubert-et-al:2015:005} introduces the SuperPixel-based Appearance Change Prediction (SP-ACP) to predict extreme appearance changes across seasons.
+SP-ACP extracts descriptors (combination of color histogram in Lab color space with upright SURF descriptor) from the image superpixels and clusters the descriptors into seasonal-specific vocabularies using hierarchical k-means.
+With training images with pixel-accurate alignment between images, the known pixel association creates a translation dictionary between seasons to synthesize a predicted image for cross-season place recognition.
+SP-ACP was able to improve cross-season place recognition performance compared to not comparing with the predicted image, although the method has the limitation of requiring pixel-wise alignment in training.
+
+The work of \cite{griffith-pradalier:2017:21664} considers GPS and compass data in addition to visual data. \cite{griffith-pradalier:2017:21664} builds on SIFT Flow to find dense correspondences among images for survey registration in long-term lakeshore monitoring. SIFT Flow combines the precision of point-based feature matching with the robustness of whole-image matching, while the GPS, the feature tracks from a visual SLAM, and the compass measurements bias the image registration. The proposed method was able to match images from different surveys separated by several months with dramatic changes relative to lighting, occlusions, seasonal changes, and even the sun glare.
+
+Even though \cite{cao-et-al:2018:2815956} and \cite{cao-et-al:2021:2962416} require a 2D or a 3D laser for place recognition and not a visual sensor, these methods use 2D image representations of a point cloud to extract visual handcrafted features.
+\cite{cao-et-al:2018:2815956} transforms the 3D point clouds of a 3D laser into 2D images using the bearing angle 2D representation (image according to the relative position among adjacent laser points, without projecting the point cloud onto a certain surface). Using a BoW approach with the dictionary learned using ORB features, the query image is matched to the database ones, while performing geometric verification by re-projecting the ORB features into the 3D coordinate frame. One main advantage of using LiDAR in the experiments was its less sensitivity to lighting conditions relative to visual sensors while not being incapacitated in dark environments. The proposed method outperformed M2DP~\parencite{discussion:m2dp} -- global descriptor for point clouds --, given that M2DP could not deal in situations where the point clouds distributions were centralized and similar to each other.
+As for \cite{cao-et-al:2021:2962416}, the proposed method accepts also 2D laser data by accumulating a sequence of scans. The 2D representation used differs from \cite{cao-et-al:2018:2815956} by projecting the point cloud into cylindrical coordinates and using the centroid of the point cloud to ensure viewpoint invariance.
+Using Gabor filters to detect and describe the contours of the images, \cite{cao-et-al:2021:2962416} generates Binary Robust Independent Elementary Features (BRIEF) descriptors for matching images using a nearest neighbors search. In addition to showing the seasonal appearance variance in laser data (e.g., different foliage in the scene), the proposed methodology outperforms SeqSLAM~\parencite{discussion:seqslam} (sequential place recognition) and PointNetVLAD~\parencite{discussion:pointnetvlad} (CNN-based place recognition for 3D point clouds) on precision-recall.
+
+In terms of visual features from radar data, \cite{hong-et-al:2022:02783649221080483} extracts visual features used for tracking using a blob detector based on a Hessian matrix. These features are extracted from a 2D cartesian image transformed from the polar image representation of radar, while also compensating the distortion from the vehicle's motion.
+As for loop closure detection, the peaks in intensity from the polar radar image are evaluated to remove noise of areas without a real object due to speckle noise. Then, the processed polar image is transformed into a point cloud and the M2DP descriptor adapted to 2D point clouds is used to detect loop closure.
+The proposed methodology improved the radar odometry tracking, while also outperforming ORB-SLAM2~\parencite{discussion:orb-slam2}.
 
 
 \paragraph{Environment structure features}
@@ -115,262 +123,146 @@ The testing results demonstrated invariance of the registration algorithm to cha
 
 
 \subsubsection{Convolutional Neural Networks (CNN)}
+\label{sec:discussion:appearance:cnn}
 
-Possibly, discuss the recency of these methods as an introduction to this subsubsection.
-
-\textcolor{red}{MISSING HERE INTRO - COMPARE THESE TO HANDCRAFTED IN TERMS OF RECENCY E.G.}
-
-\paragraph{CNN-based features}
-
-
-
-%% GLOBAL FEATURES
-
-zhu-et-al:2018:8500686 VGG16, global feature
-Zhu uses the VGG16 network and its layers conv3\_3, conv4\_3, and conv5\_3 for feature extraction from the images. Forming a global feature for the image and then normalizing the descriptor from float to a binary vector, images are compared using the Hamming distance.
-Performance of every layer outperforms FAB-MAP, and the fusion of the layers outperforms the results of using features from individual layers.
-
-yang-et-al:2021:12054 VGG16, global feature, max pooling
-Yang extracts local features using VGG16 and evaluated the performance from different layers of the network. Fully connected layers suffer from poor accuracy due to spatial information increasing when deep layers in the network, choosing pool 5 (max pooling due to dimension reduction) due to its better accuracy and feature size.
-PLSAV (Parallel loop searching and verifying for loop closure
-detection) had better results than BoW-based approach and FABMAP.
-Feature map from layer flattened to vector, normalized using L2-norm, and used as high-level feature description of the image.
+A more recent direction noted in the included works is the use of CNN.
+The evolution of deep learning in computer vision led to researching how CNN could be used for generating feature representations robust to appearance variance, as an alternative to handcrafted features.
+CNN-based features are known to offer more discriminate power compared to handcrafted features while being able to be more robust in challenging environments~\parencite{taisho-kanji:2016:7866383}.
+The feature representations can be retrieved from the layers of CNN, with earlier ones usually extract low-level features such as edges or corners, while deeper layers extract high-level ones such as semantic structures~\parencite{chen-et-al:2018:2859916}.
+In addition to using the CNN feature maps, the included works also used CNN for semantic segmentation to extract semantic information from sensor data and appearance-content disentanglement for generating appearance-invariant descriptors.
 
 
+\paragraph{CNN feature maps}
 
-%% LOCAL FEATURES
+One application of CNN features is for image place recognition as a classification task. Instead of comparing pairs or triplets of images, the place recognition is formulated as a classification problem~\parencite{chen-et-al:2018:2859916}.
+In \cite{taisho-kanji:2016:7866383}, the layer fc6 (fully connected) of AlexNet extracts 4096-dimensional CNN features from box regions in the query image, then reduced to 128-dimensional features with Principal Component Analysis (PCA). Comparing these features to the ones extracted from the reference images in a cross-domain library (collected in different routes and seasons), \cite{taisho-kanji:2016:7866383} defines the query image as a set of nearest neighbor library features (similar to BoW) and employs the image-to-class distance with the Naive Bayes Nearest Neighbor (NBNN) method. The proposed PCA-NBNN descriptor outperformed BoW and FAB-MAP on a cross-season experiment in precision-recall metrics.
+\cite{chen-et-al:2018:2859916} also formulates a classification task for place recognition, using a VGG16 network for generating local features, while adding a convolutional a fully-connected, and a softmax layer to learn the correct label output for classification. The proposed architecture outperformed FABMAP and SeqSLAM on seasonal changing conditions.
 
-sun-et-al:2021:9635886 VGG, triplet loss, local feature, DarkPoint
-Sun uses the Gamma transform as a non-linear method to strengthen low-illumination (night-time) changes, applying it to normal daytime images to generate low-illumination night-time images. Given that transforming RGB images introduces distortions in the colour channels of the correlated image, for preserving colour information, transform first to HSV (Hue, Saturation, Value) space, and the gamma parameters adjusts the value of the lightness channel exponentially, based on the maximum lightness values. The adjusted channel value together with original hue and saturation will be converted to grey image.
-Sun uses VGG-like architecture for keypoint feature detection. Applying random illumination transforms (translation, scale, in-plane rotation and symmetric perspective distortion) to original training images to generate paired images with different illuminations, geometry consistency computes dense pixel-to-pixel correspondences. The keypoint detector from SuperPoint, MagicPoint, is used to generate keypoints in training. Then, cross-entropy loss applied on detection scores to learn the keypoint detector and triplet (feature positive and negative pairs) loss on uniformly sampled features for contrastive descriptor learning.
-DarkPoint achieves approximetly 1.7x more inliers during navigation than SuperPoint in day-night experiments.
+Place recognition can also be formulated as a coarse to fine image matching problem. An initial set of reference image candidates is obtained based on nearest neighbor distances of image-wise global descriptors~\parencite{xin-et-al:2017:8310121,camara-et-al:2020:9196967,liu-et-al:2021:9561126}, while local features are used for obtaining a more accurate estimation based on spatial matching~\parencite{xin-et-al:2017:8310121,camara-et-al:2020:9196967} or geometrical verification~\parencite{liu-et-al:2021:9561126}.
+\cite{xin-et-al:2017:8310121} extracts both global and local features using a convolutional layer (conv3) of the AlexNet network, where local features are extracted from regions of the image with candidate regions sorted by the objectness score (improves viewpoint invariance).
+Instead of using AlexNet, \cite{camara-et-al:2020:9196967} uses layers from VGG16 for feature extraction, specifically, conv5-2 and conv4-2 layers for global and local features, respectively.
+As for \cite{liu-et-al:2021:9561126}, the MobileNetV2 network is selected for global feature extraction due to its computational efficiency. However, their work uses grid-based motion statistics with Oriented FAST and Rotated BRIEF (ORB) local features instead of CNN features.
 
-zhang-et-al:2022:3086822 Key.Net + HardNet, ASMK, local fetures
-Zhang uses Key.Net (combines handcrafted and learned filters to detect keypoints at different scale levels, helping reduce the number of learnable parameters) and HardNet (applies novel loss to L2Net generating a compact descriptor of 128 dimensions) to extract the keypoints and corresponding descriptors, given that it was demonstrated that Key.Net with HardNet can achieve impressive performance in both repeatability results and matching scores regardless of viewpoint and illumination changes. Selecting a candidate frame via Aggregated Selective Match Kernel (ASMK) to search semantically similar images in the reference database. Then, using Locality-driven Accurate motion field Learning (LAL) for loop closure verification concentrating on searching for compatible planar geometry between candidate pairs meaning that motion field between them should satisfy the smoothness prior (due to loops detected within few meters).
-LAL has a good performance on precision curves, due to its using extra neighboring information to construct
-accurate motion field. Problems in experiment with variations in orientation and velocity, due to have wide baselines and dynamic objects.
+Deep features can be combined with handcrafted features and preprocessing techniques to facilitate learning and further enhance their discriminative properties.
+\cite{zhang-et-al:2022:3086822} uses the Key.Net network for keypoint generation, given that combines handcrafted and learned filters to detect keypoints at different scale levels, helping reduce the number of learnable parameters. Combined with HardNet for descriptor extraction, the method outperformed a BoW approach in viewpoint and illumination changing conditions.
+\cite{yin-et-al:2020:2905046} proposes a handcrafted rotational invariant feature to be the input of a LocNet network for 3D laser-based place recognition. The proposed handcrafted feature reduced the complexity of the network and improved the efficiency on similarity evaluation.
+As for preprocessing techniques to help in training, \cite{sun-et-al:2021:9635886} uses a the Gamma transform and other transformations (translation, scale, in-plane rotation, and symmetric perspective distortion) to generate day-nigh image pairs from daytime ones. These images are used for training the proposed visual descriptor DarkPoint on the keypoints generated by the SuperPoint keypoint detector. DarkPoint achieved approximately 1.7x more inliers during navigation than the original SuperPoint in day-night experiments.
 
+Given that feature maps can extract different types of features depending on the deepness of the respective layers, \cite{zhu-et-al:2018:8500686} extracts features from three different layers (conv3-3, conv4-4, conv5-3) of a VGG16 network and concatenates these to form a global descriptor for an image. A cross-season experiment showed an increasing performance in precision-recall when the single layer gets deeper.
+These results are conformal to ones obtained in \cite{yang-et-al:2021:12054}. The conv5-3 achieved higher accuracy than conv4-4 and conv3, indicating that the spatial information increases in deeper layers improving the place recognition. \cite{zhu-et-al:2018:8500686} also showed that fusing the three layers used in their work by concatenating them into a global descriptor improves even further the place recognition performance.
+Moreover, \cite{yu-et-al:2019:8961714} chooses DenseNet for feature extraction due to this network reusing feature maps, i.e., connecting all layers with the same map sizes directly with each other. Then, \cite{yu-et-al:2019:8961714} uses the Weighted Vector of Locally Aggregated Descriptor (WVLAD) encoding for obtaining a global descriptor of the image. The proposed descriptor improved precision-recall over other architectures (VGG16, ResNet50) and to a BoW place recognition method.
 
+The included works also focus on LiDAR and radar place recognition with CNN features. However, the raw point cloud data is not directly suitable for the CNN inputs. The most common solution is to project the point clouds onto the surface plane, the so-called Bird's-Eye View (BEV).
+\cite{yin-et-al:2018:8593562} encodes directly the BEV of a LiDAR into a low dimensional global feature using a bidirectional Generative Adversarial Network (GAN). Using the extracted features within the SeqSLAM framework, the proposed method improved the precision-recall metrics over the original SeqSLAM in changing conditions.
+Similarly, \cite{martini-et-al:2020:s20216002} extracts a global descriptor from the BEV using NetVLAD but with the point cloud from a radar sensor.
+\cite{kim-et-al:2019:2897340} formulates the point cloud descriptor Scan Context Image (SCI), also known as ScanContext. The 3D point cloud is converted to a polar representation of BEV named Scan Context (SC) matrix, where each cell of the 2D matrix contains the maximum height of points around a scene. Using the jet colormap to transform the SC into the SCI as a three-channel image suitable for the CNN inputs, \cite{kim-et-al:2019:2897340} uses a LeNet network for feature extraction and place classification. The proposed architecture outperforms PointNetVLAD~\parencite{discussion:pointnetvlad} and the handcrafted point cloud feature M2DP in precision-recall.
+Based on SCI~\parencite{kim-et-al:2019:2897340}, \cite{xu-et-al:2021:3060741} proposes the Differentiable Scan Context with Orientation (DiSCO) descriptor. This method distinguishes from SCI by applying the Fast Fourier Transformation (FFT) to convert the polar BEV representation to the frequency domain. Given that frequency spectrum is translation-invariant, DiSCO becomes rotation invariant. The results showed a superior performance to SCI and PointNetVLAD in changing conditions.
+Similar to DiSCO~\parencite{xu-et-al:2021:3060741}, \cite{yin-et-al:2021:661199} also uses SCI and FFT for feature extraction of point clouds. The difference is the use of a shared U-Net architecture to extract features of LiDAR and radar data, training simultaneously the radar-to-radar, LiDAR-to-radar, and LiDAR-to-Lidar place recognition tasks. The proposed method had similar or improved performance in these three recognition tasks relative to SCI and DiSCO.
+In addition to BEV, \cite{yin-et-al:2021:3061375} also uses the spherical view. Using two separated 2D CNN following the convolutional layers in VGG16 to encode local features, a VLAD layer extracts place features from each view (BEV and spherical). A tightly-coupled fusion network fuses the features of each view. The proposed FusionVLAD descriptor outperformed PointNetVLAD and M2DP on the recall metric in appearance variant conditions.
 
-%% GLOBAL > LOCAL FOR COARSE > FINE MATCHING LOCALIZATION
-
-xin-et-al:2017:8310121 AlexNet conv3, global + local features, global for candidates > local for accurate matching
-Xin also uses features extracted with AlexNet because it was shown to have invariance against challenging environments, but from the third convolutional layer (conv3), due to fully connected layers (fc) not being as effective as convolutional ones because of the loss of spatial information. Both global (image-wise) and local (region-wise) are extracted with conv3 from AlexNet to improve the robustness to viewpoint changes compared to using only global features. Edge Boxes applied to extract reliable features to describe the scene sorting all candidate boxes according to objectness score, similar to Taishko. Image-wise features find small set of potential places, and then stable region-wise features considering both spatial and descriptor distance of the features for a more accurate result.
-Compared to HOG, BoW, and to conv3 global features, the proposed method outperforms them in precision-recall, but HOG BOW and conv3 glboal+local features proposed methodology had a worsen performance when testing with all day sequences (due to region detail dependent features being affected by day to night appearance changes) compared to global conv3 AlexNet.
-Studies the possibility of using a random selection technique for feature dimension reduction, given that requires no need for further training nor significant loss in efficiency and effectiveness compared to Local Sensitive Hushing (LSH) and Principal Component Analysis (PCA).
-Cosine distance for evaluate query image compared to database (global descriptor).
-
-camara-et-al:2020:9196967 global + local features, global for initial set candidates > local accurate matching, VGG16
-Similar to Xin, Camera uses global features of the conv5-2 layer from VGG16 to compute global features to get an initial set of candidates based on nearest neighbor distance, and then compares geometrically the N candidates to the query image, based on the activations from the conv4-2 layer and their spatial location of the features created from them. Two databases: image filtering database to save global descriptors of reference images for the first step, and a spatial matching database to save the spatial arrangement of their containing vectors. Spatial matching by identifiying matching pairs by closest distance and keeping track of their position.
-PCA to reduce each vector of the 16 cubes to 100 dimensions.
-
-
-
-%% IMAGE PLACE RECOGNITION AS CLASSIFICATION TASK
-
-taisho-kanji:2016:7866383 AlexNet fc6, instead of BoW uses a cross-domain library of images, global descriptor (60 nearest neighbor), reformulate visual place recog as classification problem
-BoW methods describe a scene image as a collection of visual words using a pre-trained library of feature descriptors. However, domain specific-learning of the library has poor performance in cross-domain scenarios. Thus, Taisho uses a cross-domain library consisting of images collected in different routes and seasons than the database images. From each library image, extract a set of 100 bounding boxes with the highest objectness score and select the 20 ones with the largest area as scene parts. Then extract 4096-dimensional DCNN features from the boxes' regions using the AlexNet (fc6, fully connect layer) network. Place recognition also extracts the 20 scene parts as for library images, defining the images as a set of 60 nearest neighbor library features (find 3 for each bounding box), and then employing the image-to-class distance with the Naive Bayes Nearest Neighbor (NBNN). The method outperformed in localization rate the works BoW and FAB-MAP.
-Principal Component Analysis (PCA) can be used for dimensionality reduction (4096 to 128-dimensional features), defining the proposed descriptor PCA-NBNN.
-
-chen-et-al:2018:2859916 VGG16, place recognition as classification, local features used for the classification problem
-Chen uses a pre-trained VGG16 network to generate local features in a spatial location and then applies an attention mask for weighting the importance of each spatial location in the image. Local descriptor and global latent context fused to estimate the attention score at each spatial location to use global-level context information to guide attention spent in each region.  The attention mask is parameterized by a CNN which takes the feature map as input, learned from different layers of the network to consider features from early layers (e.g., edges or corners) and deeper ones (semantic structures). They formulate place recognition as a classification problem, i.e., classifying each image to its correct place instead of comparing pairs or triplet of images.
-Proposed methodology outperforms FABMAP, SeqSLAM, and without attention mask in precision-recall metrics on seasonal changing conditions.
-
-
-
-%% TRIPLET LOSS
-
-liu-et-al:2021:9561126 global + local features, global coarse estimation > local accurate, MobileNetV2
-Liu selects the MobileNetV2 network for global feature extraction due to its computational efficiency, in using triplet images for training, while also using  Grid-based Motion Statistics (GMS) with ORB features for local geometrical verification. Compared to FABMAP, iBoW, and SeqSLAM, performed similar or even better maximum recall rate at 100\% precision and lower execution times.
-
-yin-et-al:2020:2905046 3D laser, LocNet, semi-handcrafted features (instead of ``fully'' CNN features)
-Yin uses LocNet as the feature extraction from a 3D laser scan, with LocNet following a semi-handcrafter feature learning architecture and embedding the feature in the Euclidean space, while reducing complexity of the network and improving the efficinecy on similarity evaluation. Indeed, a designed handcrafted rotational invariant feature is the input of the network. Siamese architecture and contrastive loss employed in training LocNet.
-LocNet improves AUC and f-score compared to M2DP.
-
-
-%% SIDE INFORMATION
-
-piasco-et-al:2021:6 CNN-based features, triplet loss, side information, global features
-Piasco also employs triplet loss training within a CNN feature extractor framework. The CNN encoder aggregates local features to produce a global image-wise descriptor, while a decoder uses the deep representation of the image to reconstruct the scene geometry from the features obtained by the encoder. Then, training uses the fusion of image and depth map descriptors in the triplet loss function. Depth information is only used as side information during training given that could not be available at test time providing interesting building edges understanding. Compared to a domain adaptation method in an all-day experiment, the proposed method does not need to know in advance the source and target domains given that depth maps are invariant to the image domain.
-Reduce dimension of the descriptors by applying PCA and whitening.
-
-
-
-%% VLAD-BASED GLOBAL FEATURES
-
-yu-et-al:2019:8961714 DenseNet, global features using WVLAD
-Yu chooses DenseNet for feature extraction due to DenseNet reusing feature maps - earlier / lower layers contain more structural info and measure fine-grained similarity (similar to handcrafted features), while higher / deeper layers care more about semantic information and measure semantic similarity. Using the output of the last dense block with 7x7 feature maps and 1024 channels, decoumpling can be made by feature maps - 49 local descriptors with 1024 dimensions - or by channel - 1024 local descriptors with 49 dimensions. Feature maps decoupling chosen due to having better performance than by channel decoumpling. Then, uses Weighted Vector of Locally Aggregated Descriptor (WVLAD) for obtaining a global descriptor of the image, i.e., encode the 49x246 (256 after 4 max-pooling by channel) local descriptors into a single one.
-Compared with other networks such as ResNet50, VGG, etc., improves precision-recall. Plus, compared to ORG and SIFT encoded by BoW and VLAD, WVLAD obtains better precision-recall.
-The 4 max-pooling by channel proposed to reduce the descriptors dimensions with minimal accuracy reduction. 1024-dimension divided into 256 groups and maximum of ech group used as final descriptor. Compared to PCA, 4 max-pooling by channel has less computational complexity but similar performance.
-
-martini-et-al:2020:s20216002 NetVLAD + VGG16, radar, global feature by NetVLAD encoding
-Martini uses NetVLAD with VGGG16 as a front-end feature extractor from polar radar images (range azimuth images). Modifications on VGG architecture to add circular padding along the azimuth direction to improve the rotation invariance of the feature descriptors to the input radar scans. Plus, application of a Gaussian blur before downsampling to reduce aliasing effect of the convolutional operations. Then, use a triplet loss training function (anchor radar scan, positive example from same location, and negative example from dissimilar location) to enforce metric space. Compared to Scan Context adapted to radar, proposed approach had improved precision-recall metrics.
-
-yin-et-al:2021:3061375 VLAD, 3D point cloud, global feature, top-down + spherical views, VGG16
-Yin proposes the FusionVLAD as a global descriptor for place recognition from a 3D point cloud with a parallel fusion network structure to learn point cloud representations from multi-view projections: project the 3D point cloud from an octree map into a top-down view and a spherical view. Using two separated 2D CNN following the convolutional layers in VGG16 to encode local features, the VLAD layer extracts 512-dimension place features from each view (top-down and spherical) separately. Then tightly-coupled fusion network between each feature of the 2 views, with a novel supervision objective lazy viewpoint-free loss metriuc to learn viewpoint-invariant and distinguishable descriptors, by combining a triplet loss for orientation-invariance with a transitional triplet loss to reduce feature difference, the later similar to NetVLAD.
-
-
-
-%% BIRD-EYE VIEW (BEV) + SCANCONTEXT (POINT CLOUDS)
-
-yin-et-al:2018:8593562 3D laser, adversarial learning, SeqSLAM, bird-view view, global feature
-Yin proposes the Place Feature Learning (PFL) method for 3D laser-based features. Using Dynamic Octree Mapping (DOM) that is updated based on raw points and motion error model of the robot to model the local mapping around the robot, the method encodes the bird-view images of the DOM into a low dimensional feature vector using adversarial feature learning, which is a variant of the Generative Adversarial Network (GAN). The encoder maps data space to latent code space and the decoder generates synthetic data from latent code. This encoding improves the generalization of feature inference and unique mapping from raw data to latent code space. Using the extracted features for place recognition within the SeqSLAM framework, the proposed features improved the precision-recall metrics over the original SeqSLAM in changing conditions. Plus, compared to a pure Adversarial Feature Learning (AFL), the latter sometimes loses original geometry while reducing mapping uniquess, while the proposed method was able to maintain the global geometry structure.
-
-kim-et-al:2019:2897340 3D laser, SCI (scan context-based), LeNet for feature + place classification, augmentation, new place detection
-Kim formulates a point cloud descriptor named Scan Context Image (SCI) and introduces a classification-based place recognition using the SCI. First, the 3D point cloud is converted to a Scan Context (SC) matrix containing the maximum heigh of points around a scene, with the rows and columns defined by the radial and azimuthal directions of the point cloud planar region (cylindrical representation). Using the jet colormap to transform the SC into a three-channel image suitable for the CNN inputs, use a LeNet network for feature extraction and place classification, being the output label the corresponding place index. The proposed method also uses augmentation to tackle viewpoint variance and is able to detect un-learn places using the entropy of the output vector of the network - if entropy higher than a certain threshold, place consider new one. SCI outperforms PointNetVLAD and the handcrafter M2DP in precision-recall.
-
-xu-et-al:2021:3060741 u-net, scan context based, 3D laser, DiSCO, place recognition for global localization, FFT
-Xu proposes the Differentiable Scan Context with Orientation (DiSCO) downsamples a 3D point cloud from a 3D laser to its bird-eye view representation. Being compatible with normal Scan Context (single-layer height bird-eye view), multi-layer density BEV counting number of points in each voxel, and multi-layer BEV occupied BEV, use polar transform then CNN to learn features in polar domain. Finally, apply Fourier Transformation FFT to convert the polar BEV image representation to the frequency domain, given that frequency spectrum is translation-invariant (note rotation is transformed to translation by polar transform), thus, descriptor becoming rotation invariant.
-Quadruplet loss in training as PointNetVLAD to force the network to learn a close distance between vs taken at similar places and far apart distance between different ones.
-Superior performance than ScanContext (Kim), PointNetVLAD.
-
-yin-et-al:2021:661199 LIDAR + radar, U-Net, ScanContext, triplet loss, FFT
-Yin proposes a shared network to extract features of lidar and radar data. Collecting lidar and radar scans at the same pose, use ScanContext of Kim to extract their respective representations (radar as polar representation, and lidar as occupied representation). Using a shared U-Net architecture, extract feature embeddings from the lidar and radar. Then, apply FFT to the polar bird's eye view representation given that theoretically the rotation of the vehicle results in a translation in polar representation and, given that the magnitude of frequency is translation-invariant, the final signatures would be rotation-invariant to the vehicle heading, similar to DiSCO assumption.
-Training uses the triplet loss and mixes and combinations in it (Radar2Radar, Lidar2Radar, and Lidar2Lidar), even though, only training the network once.
-Compared to DiSCO and ScanContext from Kim, joint learning in the proposed method improved or had similar in the 3 recognition tasks.
-
-
-
-
-
-
-
+Lastly, a trend found in the included works to improve the discriminative power of CNN features is the use of triplets~\parencite{martini-et-al:2020:s20216002,liu-et-al:2021:9561126,piasco-et-al:2021:6,sun-et-al:2021:9635886,yin-et-al:2021:3061375,yin-et-al:2021:661199} in training.
+A triplet consists in an anchor image, a positive corresponding match, and an unrelated negative example. Triplet loss tries to minimize the matching distance between positive pairs (anchor, positive) and maximize that between negative ones (anchor, negative)~\parencite{sun-et-al:2021:9635886}.
+Additionally, \cite{piasco-et-al:2021:6} uses also depth information during training, given that depth maps and their geometric information remain more stable across time than visual ones. A CNN encoder aggregates local features to produce a global descriptor, while a decoder reconstructs the scene geometry from the features obtained by the encoder. Then, triplet loss during training uses the fusion of image and depth map descriptors. In the experiments, the depth map training supervision provided building shapes understanding while improving the performance compared to not using side information.
 
 \paragraph{Semantic segmentation}
 
-naseer-et-al:2017:7989305
-qin-et-al:2020:9340939
-berrio-et-al:2021:3094485
-singh-et-al:2021:9564866
-wang-et-al:2021:9739599
+Instead of using the feature maps of CNN, the networks can also segment raw data to extract semantic information.
+\cite{naseer-et-al:2017:7989305} uses the Fast-Net network for extracting saliency maps for stable structures. These structures considered in training are man-made ones such as buildings or signs that are presumable to be stable in long-term. Then, the salient maps boost the importance of features retrieved from a convolutional layer (conv3) for place recognition. The proposed method improved the precision-recall metrics compared to HOG and place recognition without boosting stable structures on a cross-season experiment.
 
+The included works also use semantic features from pixel-wise labeling of image data.
+\cite{qin-et-al:2020:9340939} modifies an U-Net for semantic feature detection specifically trained for parking lots. This network generates pixel-wise segmentation of lanes, parking lines, guide signs, speed bumps, free space, obstacles, and wall, used in both localization and feature mapping. In the experiments, the semantic features were robust to light changes, texture-less-regions, motion blur, and appearance change.
+\cite{berrio-et-al:2021:3094485} also segments an image with pixel-wise labels, discriminating 12 classes: pole, building, road, vegetation, undrivable road, pedestrian, rider, sky, fence, vehicle, and unknown. Using the extrinsic parameters of the 3D laser--camera, the pixel-wise semantic information from the labeled images is transferred to the 3D point cloud. Then, pole and corner features are retrieved from the projected point cloud onto the horizontal plane based on the IMU data for localization and mapping. The long-term evaluation of the map corrections showed a decrease over time demonstrating the stability of these features in outdoor environments.
+In addition to pixel-wise segmentation, \cite{singh-et-al:2021:9564866} connects the regions of each instance of the semantic classes to characterize them in terms of their centroid in 3D camera coordinates (using also depth information from a stereo camera) and connections to other regions. The proposed global semantic-geometric descriptor defines a location in terms of how the pairs of semantic entities are distributed in the scene. The proposed method obtained higher accuracy when compared to SeqSLAM, FAB-MAP, and a BoW-based place recognition methods in a highly dynamic outdoor experiment.
 
-\paragraph{Predict environment changes}
+Similar to \cite{singh-et-al:2021:9564866}, graph embedding of semantic features also tries to integrate the relationships between features for improving the robustness of place recognition.
+\cite{han-et-al:2018:2856274} proposes the Holism-And-Landmark Graph Embedding (HALGE) descriptor. In the training phase, an image is represented by its global HOG descriptor and semantic features (static or stable elements such as houses, traffic signs, trees).
+A graph relates the training images from different domains and locations, where the nodes are images or the semantic classes, and the edges represent the presence of a semantic class in an image or if two images represent the same location.
+Then, HALGE learns a projection matrix of each template database image from the graph to generate an appearance invariant feature from the original global HOG descriptor. The proposed method improved the performance over HOG, SURF, and color and AlexNet-based descriptors in changing conditions.
+As for \cite{gao-zhang:2020:9196906}, the proposed method formulated the place recognition task into a graph matching problem. The graph represents each semantic feature (same classes as in \cite{singh-et-al:2021:9564866}) by its central position in the image coordinate frame, while the edges that relate the features represent theirs spatial distance and angular relations, and their appearance similarity (Euclidean distance of local HOG descriptors). Then, a graph optimization optimizes a correspondence matrix between the features in the query to the ones in the template images for obtaining the final matching scores, assuming a long-term worst-case scenario (maximizes the distance and angular similarities of features that have the least similar appearance).
+The proposed method outperformed \cite{han-et-al:2018:3} and an HOG-based place recognition method on recall at higher precision in outdoor experiments with seasonal and weather changing conditions.
 
-neubert-et-al:2015:005
-hu-et-al:2022:1003907
+Semantic information can also be retrieved from other sensors such as LiDAR. \cite{wang-et-al:2021:9739599} uses the RangeNet++ network for inferring semantic labels of 3D point clouds from LiDAR data. Even though the network can label 10 different categories, the method only used the categories representative of pole-like objects (poles, tree trunks). The method achieved a higher localization accuracy than SCI~\parencite{kim-et-al:2019:2897340} in an outdoor experiment with moving elements and dense vegetation.
 
 
 \paragraph{Appearance-content disentanglement}
 
-qin-et-al:2020:103561
-oh-eoh:2021:app11198976
-tang-et-al:2021:17298814211037497
-hu-et-al:2022:1003907
+A location has different representations due to weather or seasonal changing conditions in the long-term perspective, among other factors. In terms of image data, the information retrieved from these representations could be separated in terms of its contents and appearance. The included works studied this possibility by learning the appearance-content disentanglement for feature representation that assumes the decomposition of the images latent space into apperance and content spaces~\parencite{qin-et-al:2020:103561}.
+
+\cite{oh-eoh:2021:app11198976} adopts a Variational AutoEncoders (VAE) architecture that uses an encoder to generate the appearance and content feature vectors, while a decoder reconstructs the original image from these vectors.
+Instead of using a single encoder, \cite{qin-et-al:2020:103561} proposes the Feature Disentanglement Network (FDNet) consisting of independent content and an appearance encoders, a decoder, and also an appearance discriminator to ensure the vectors are unrelated. Even though the content feature vector demonstrated to invariant to seasonal changes, the method significantly reduced its performance on high viewpoint variance, where the content vector changed greatly while the appearance one did not changed at all. This results indicated that viewpoint change is considered to be content in the proposed algorithm.
+With a similar architecture to \cite{qin-et-al:2020:103561}, \cite{tang-et-al:2021:17298814211037497} also considers a place domain discriminator to ensure that the content discriminator only contains the place information and not also its appearance, while also using data augmentation in training to increase robustness against viewpoint changes. In the experiments, all images generated from a zero-appearance feature vector looked similar, while their place information remains conserved indicating that the proposed method can disentangle the input image across appearance changes.
+
+Even though \cite{hu-et-al:2022:1003907} does not extract appearance and content independent features from the images, the proposed architecture builds on the same assumption of appearance-content disentanglement that a content representation of a location is shared across multiple domains.
+\cite{hu-et-al:2022:1003907} adopts a multi-domain image-to-image architecture that expands the CycleGAN architecture from two to multiple domains, with domain-specific encoder-decoder pairs and discriminators.
+For obtaining a shared-latent feature across different domains, the descriptor is learned using the feature consistency loss for domain-invariance.
+In the experiments, even though night-time images were not included in the training, the model was able to learn the content space of the places, while also outperforming FAB-MAP.
 
 
 
-\subsubsection{Feature relevance}
+\subsubsection{Feature stability}
 
-konolige-bowman:2009:5354121
-murphy-sibley:2014:6907022
-dymczyk-et-al:2016:66
-nobre-et-al:2018:8461111
-egger-et-al:2018:8593854
-luthardt-et-al:2018:8569323
-bürki-et-al:2019:21870
-derner-et-al:2021:103676
-berrio-et-al:2021:3094485
+Although long-term handcrafted or CNN-based features intend to remain invariant to changing conditions of the environment, their long-term stability is not guaranteed to be the same for all detected features. In this context, \cite{dymczyk-et-al:2016:66} proposes a CNN architecture based on AlexNet for evaluating the feature stability for long-term visual localization. The network is trained using a set of labeled data pairs (image patch around the feature keypoint, label) or triplets (adds depth information), where the feature label is binary - stable or unstable - computed for training by assessing the number of the feature observations over multiple sessions. In the experiments of over 15 months and changing conditions, the proposed method outperformed random selection of features for localization in terms of f-score, while the addition of depth information improved the method's performance.
+
+Other approaches in the included works define predictor functions for evaluating the feature stability.
+\cite{berrio-et-al:2019:8814289} defines the following predictors to evaluate the pole and corner features extracted from a 3D laser: the number of observations, maximum detected and possible spanning angle, maximum length driven while observing the feature, maximum detection area, and concentration ratio. A regression algorithm adjusts the weights of each predictor based on the number of observations across sessions to define the scoring function. A threshold based on the histogram of the feature scores determines which features to include in the long-term map.
+Although \cite{berrio-et-al:2021:3094485} also uses the concentration ratio and maximum driven length as predictors, their approach simplifies the selection by including features that have been observed for more than 1m and conserving the ones in sparse density areas to avoid localization failures. \cite{berrio-et-al:2021:3094485} also defines a visibility measure related to the maximum range from where the feature is detected at a particular angle and the respective probability of detection to only the feature metrics when it is a match or if both not detected and not occluded.
+
+Furthermore, \cite{egger-et-al:2018:8593854} and \cite{derner-et-al:2021:103676} propose methodologies for updating the map upon detecting changing conditions of the environment.
+\cite{egger-et-al:2018:8593854} defines a minimum time interval between evaluations and the number of reconfirmations before updating the map with new stable and persistent features. The change in the conditions is determined by an overlap measure between the current view and the existing map that measures the relative amount of matched surfels extracted from a 3D laser. The proposed methodology led to a successful deployment of a robot over 18 months in changing conditions.
+Even though \cite{derner-et-al:2021:103676} does not add features after creating the visual database used as a map, the method updates the feature weights saved that represent their stability and reliability for localization. After computing the transformation between the current view and the best database match, the descriptors of the latter are compared with their transformed counterparts, i.e., re-projecting the keypoints of the database on the query image using the transformation and re-compute the respective descriptors. The descriptors similarity, a spatial and temporal constraints, and the number of successful matches determine if the environment changed to update the feature weights based on their previous value and on the descriptors similarity. The method outperformed the localization without the weights update.
+
+Instead of assuming observability independence, the observation of the features may be correlated between them.
+\cite{nobre-et-al:2018:8461111} models the feature persistence using a Bayesian filter in a time-varying feature-based environmental model. The model considers the correlation between features without assuming no specific-sensor feature descriptor. The approach follows a survivability formulation where each map feature has a latent survival-time (represents the time when the feature ceases to exist) and a persistence variable. The marginal persistence is estimated probabilistically given the detection sequence of all features, following the intuition that if a set of features is co-observed and geometrically close, the likelihood that they belong to the same semantic object is high. The marginal feature persistence weights the data associations. The method was able to maintain track of the localization and updating the map accordingly in a semi-static changing environment.
+\cite{luthardt-et-al:2018:8569323} proposes the Long-term Landmarks (LLamas) as persistent features, where the candidate points are the inlier feature tracks from visual odometry (short-term stable points). Considering that the map holds quality and viewpoint information, the correlated quality between neighboring viewpoints is modeled by Markov Random Field. The experiments showed that the identified LLamas over a 2 month experiment consisted on persistent structures in the environment such as curbstone, sign, or a street lamp, discarding varying structures like vegetation, parked carts or shadows.
+As for \cite{bürki-et-al:2019:21870}, the proposed appearance equivalence class measure models the probability of observing the feature given the past map sessions. This model expects to observe again the same features together with those already co-observed in the past.
+Although the proposed selection measure outperformed the random selection of features in changing environments, the method suffered from the lock-in effect due to abrupt changes in the environment not being reflected in the observation sessions.
 
 
 
 \subsubsection{Multi-modal features}
 
-filliat:2007:364080
-neubert-et-al:2015:005
-han-et-al:2017:2662061
-latif-et-al:2017:016
-han-et-al:2018:3
-zhang-et-al:2018:8460674
-siva-zhang:2018:8461042
-siva-et-al:2020:9340992
+Another type of approach to feature-based localization and mapping is the use of multi-modal features, given that these features can be more discriminative than only considering a single feature space~\parencite{latif-et-al:2017:016}.
+\cite{filliat:2007:364080} proposes a two-stage voting scheme for localization integrating 3 different feature spaces: SIFT, local color histograms, and local normalized grey level histograms. First, each feature space votes for the estimated location based on an incremental dictionary, without considering features seen in all known locations. Then, the votes of the different modalities are joined into a score that determines which location is the correct one.
+On the contrary, \cite{latif-et-al:2017:016} tested the use of multi-modal features -- GIST and feature maps from a CNN -- by concatenating their descriptors into a single vector. 
+In both \cite{filliat:2007:364080} and \cite{latif-et-al:2017:016}, the use of multiple feature spaces improved the localization performance over considering only a single feature space.
+
+The included works also cover a more specific approach to multi-modal features by formulating the place recognition task as a regularized sparse optimization problem. The optimization uses training data for learning the weight of each feature modality when computing the matching score between the query and database images~\parencite{han-et-al:2017:2662061,han-et-al:2018:3,siva-zhang:2018:8461042,siva-et-al:2020:9340992}.
+\cite{han-et-al:2017:2662061} formulates the Shared Representative Appearance Learning (SRAL) for fusing multi-modal visual features from 6 different spaces applied on downsampled images as scene descriptors: color histograms, GIST, HOG, Local Binary Patterns (LBP), SURF, and AlexNet (conv3). SRAL outperformed the individual feature spaces and also the concatenation of the 6 spaces into a single descriptor.
+\cite{han-et-al:2018:3} proposes the RObust Multimodal Sequence-based loop closure detection (ROMS), that is the adaptation of the regularized optimization to image sequence matching. The modalities considered are LDB \parencite{arroyo-et-al:2018:7}, GIST, Faster R-CNN, and ORB. ROMS outperformed both FAB-MAP and SeqSLAM in appearance changing conditions, while improving the performance over considering a single feature space.
+In addition to learn discriminative modalities, \cite{siva-zhang:2018:8461042} formulates the Fusion of Omnidirectional Multisensory Perception (FOMP) that learns the weights representative of discriminative views (omnidirectional vision) and considers both image and depth modalities of features. The feature spaces considered are GIST, HOG, LBP, and AlexNet (conv3). In a cross-season experiment, the depth-related modalities had more importance than the image ones, indicating that the latter are more susceptible to appearance change. Also, FOMP outperformed feature concatenation and only using the front field of view.
+As for \cite{siva-et-al:2020:9340992}, the proposed Voxel-Based Representation Learning (VBRL) method identifies representative feature modalities and voxels from 3D point cloud. The feature spaces considered are the HOG in the XY, XZ, and YZ planes, the subvoxel occupancy scene descriptors, and the covariance points containe within each voxel. VBRL outperforms only considering discriminative voxels or features, and also outperformed descriptor concatenation in changing conditions.
 
 
 
-\subsubsection{Geometric consistency}
+\subsubsection{Image sequence matching}
 
-xin-et-al:2017:8310121
-stable region-wise features considering both spatial and descriptor distance of the features for a more accurate result.
+The temporal coherence of a sequence of visual data improves the performance of long-term place recognition in appearance variant conditions due to higher discriminative properties while exploring the temporal sequential relationships of the images~\parencite{ouerghi-et-al:2018:s18040939,nguyen-et-al:2013:004}.
+\cite{ouerghi-et-al:2018:s18040939} builds on SeqSLAM~\parencite{discussion:seqslam} by proposing the Sequence Matching Across Route Traversals (SMART) system. The original SeqSLAM defines a location as a sequence of images by searching first for the best sequence match and then performing a local search for place recognition. Given the SeqSLAM's drawback on lack of viewpoint invariance due to global matching, SMART introduces a variable offset in the image match to compare each frame with the database within a range of image offsets, while also fusing the place recognition with visual odometry using an Extended Kalman Filter (EKF). The fusion of topological with local metric localization improved the mean error distance error over visual odometry in changing conditions, while SeqSLAM only provides a location-wise estimation.
+\cite{han-et-al:2018:3} compared frame-to-frame matching to the proposed ROMS algorithm that models frame correlation and formulates the image sequence matching problem into a regularized sparse optimization (in addition to learning the features modalities). ROMS improved the place recognition over frame-to-frame matching, while outperforming SeqSLAM and FAB-MAP in changing conditions.
 
-camara-et-al:2020:9196967 spatial matching by identifiying matching pairs by closest distance and keeping track of their position.
+Moreover, \cite{vysotska-et-al:2015:7139576} defines image sequence matching between a query and a database as a data association graph, encoding in the graph the cost proportional to the similarity between two images given by a HOG descriptor~\parencite{naseer-et-al:2015:7324181}. Instead of formulating the sequence matching as a network flow optimization problem, \cite{vysotska-et-al:2015:7139576} estimates the shortest path in the graph. This approach requires a rough global pose estimation for the images (e.g., GPS) to search efficiently through the graph for possible image matches.
+\cite{naseer-et-al:2015:7324181} leverages the temporal sequence of images by requiring ordered sequential images in the database. The state transition model of the Bayes filter allows transitions between all places but modeled with different probabilities, while a sequence filtering searches for sequences of local peaks of matching images. The sequential information is accounted by imposing a minimum sequence length and maximum gap in frames between two matches to avoid false-positives.
+Both \cite{vysotska-et-al:2015:7139576} and \cite{naseer-et-al:2015:7324181} outperformed SeqSLAM and network flow in the experiments.
 
-\paragraph{Map geometry}
+Although an image sequence is a set of images, the sequence itself can be described by a descriptor. In both \cite{arroyo-et-al:2018:7} and \cite{zhu-et-al:2018:8500686}, the sequence descriptor is the concatenation of the single images, and the sequence matching is the computation of Hamming distance between the descriptors. \cite{arroyo-et-al:2018:7} uses the LDB binary descriptors for single images, and the experiments showed a lower accuracy for single image matching in long-term compared to the sequence descriptor. Also, the proposed method outperformed FAB-MAP and SeqSLAM in terms of precision-recall metrics.
+As for \cite{zhu-et-al:2018:8500686}, the feature maps from VGG16 are normalized into a binary descriptor. The method outperformed FAB-MAP, SeqSLAM, and ABLE~\parencite{arroyo-et-al:2018:7} in a cross-season experiment.
 
-li-et-al:2015:7139706
-xin-et-al:2017:8310121
-cao-et-al:2018:2815956
-mactavish-et-al:2018:21838
-martini-et-al:2020:s20216002
-camara-et-al:2020:9196967
-liu-et-al:2021:9561126
-singh-et-al:2021:9564866
-hong-et-al:2022:02783649221080483
-zhang-et-al:2022:3086822
+Lastly, \cite{nguyen-et-al:2013:004} proposes an approach to identify topological places based on an image stream. 
+The method uses a clustering scheme K-iteration Fast Learning Neural Network (FLANN) to organize the visual input images into scene tokens. These tokes are the input to a Spatio-Temporal Long-Term Memory (LTM) architecture equivalent to an NN-based memory structure, in which the topological locations defined as image sequences are stored in the memory structure (LTM cells). Then, the proposed architecture models the topological structure of an environment by linking the scene clusters into a temporally ordered sequence using a one-shot learning mechanism and only requiring a single representation of the sequence.
+A pooling system determines the current topological location of the robot.
+The method was able to localize different topological sequences in appearance changing conditions.
 
-
-\paragraph{Graph embedding}
-
-li-et-al:2015:7139706
-han-et-al:2018:2856274
-gao-zhang:2020:9196906
-hong-et-al:2022:02783649221080483
-
-
-
-\subsubsection{Temporal consistency}
-
-nguyen-et-al:2013:004
-murphy-sibley:2014:6907022
-naseer-et-al:2015:7324181
-vysotska-et-al:2015:7139576
-griffith-pradalier:2017:21664
-arroyo-et-al:2018:7
-han-et-al:2018:3
-ouerghi-et-al:2018:s18040939
-zhu-et-al:2018:8500686
-cao-et-al:2021:2962416
-yin-et-al:2021:3061375
 
 
 
 \subsubsection{Sensor modalities}
 
-laser
-bosse-zlot:2009:009
-cao-et-al:2018:2815956
-egger-et-al:2018:8593854
-yin-et-al:2018:8593562
-berrio-et-al:2019:8814289
-kim-et-al:2019:2897340
-yin-et-al:2020:2905046
-cao-et-al:2021:2962416
-meng-et-al:2021:3062647
-schaefer-et-al:2021:103709
-siva-et-al:2020:9340992
-wang-et-al:2021:9739599
-xu-et-al:2021:3060741
-yin-et-al:2021:3061375
+The appearance variance in the environments affects visual sensors as well as ranging-based ones such as 2D/3D lasers or radar. Visual data is affected by the illumination changes of day-night situations, the weather changing conditions, and the changes on visual data caused by the different seasons of the year. Laser-based localization does not suffer from illumination variance. However, the laser is affected by low reflections or occlusions  in unfavorable conditions such as fog, direct light, or moving elements in the scene. As for radar, the sensor is invariant to lighting and weather changes. Still, noisy measurements affect the performance of radar-based localization and mapping in long-term scenarios~\parencite{yin-et-al:2021:661199}.
 
-radar
-martini-et-al:2020:s20216002
-hong-et-al:2022:02783649221080483
-
-magnetometer
-coulin-et-al:2022:3136241
-
-laser + radar
-yin-et-al:2021:661199
-
-camera + laser
-biswas-veloso:2013:0278364913503892
-pérez-et-al:2015:y
-ding-et-al:2020:2942760
-berrio-et-al:2021:3094485
-
-camera + laser + UWB
-nguyen-et-al:2022:3094157
-
-
+Consequently, long-term localization and mapping algorithms should also consider fusing different sensor modalities to use the advantages of each one and improve the overall robustness to appearance changes. In addition to the works already discussed previously,\cite{pérez-et-al:2015:y}, \cite{coulin-et-al:2022:3136241}, and \cite{nguyen-et-al:2022:3094157} also focus on appearance invariance upon changing environments while using more than one modality.
+\cite{pérez-et-al:2015:y} introduces an appearance-based particle injection in the Monte Carlo Localization (MCL) framework to account the visual place recognition of FAB-MAP~\cite{discussion:fab-map}. The BoW model of FAB-MAP is created using visual data recorded at different hours and changing conditions. Then, using the BoW model and a 2D occupancy grid as prior, the MCL fuses the odometry (wheel encoders and IMU data), the 2D laser, and the loop closure detection from FAB-MAP. The method did not need any manual recovery even in the case of global localization in a crowded environment with significant lighting changing conditions.
+\cite{coulin-et-al:2022:3136241} proposes the use of a magnetic map with a Multi-State Constraint Kalman Filter (MSCKF). The magnetic map is built offline using visual-inertial SLAM in conjunction with global optimization to provide ground-truth positions for the map readings. As for localization, the tightly-coupled visual-inertial MSCKF reuses the magnetic map, while simultaneously estimating the magnetometer bias to avoid calibrating it every session. The experiments compared the proposed method to a visual-inertial SLAM algorithm with a visual map on a run one year after the creation of the map. The proposed method outperformed the other one given that visual data was variant to appearance changes in the environment, while reducing the ATE from 2.4m to 0.033m compared to using vision-only in the MSCKF.
+As for \cite{nguyen-et-al:2022:3094157}, the proposed Visual-Inertial-Ranging-Lidar (VIRAL) sensor fusion algorithm includes an IMU, LiDAR, a camera, and Ultra-Wide-Band (UWB) data for localizing an aerial vehicle in indoor environments, with the first three sensor modalities for odometry and UWB for absolute positioning in the world frame. VIRAL formulates cost functions of the sensors evaluated at every time step for inclusion in the optimization. The method improved over ORB-SLAM3~\parencite{discussion:orb-slam3} in the experiments performed with an aerial vehicle in changing lighting conditions.
 
 
 
@@ -379,6 +271,14 @@ nguyen-et-al:2022:3094157
 
 \subsection{Map sparsification}
 \label{sec:discussion:sparsify}
+
+berrio-et-al:2019:8814289
+Using the pole and corner features extracted from a 3D laser, Berrio uses the following predictor variables to evaluate a feature: number of detections, maximum detected spanning angle, maximum length driven while observing the landmark, maximum area of detection, maximum possible spanned angle, and concentration ratio.
+Then, a cross-validated elastic net regularized regression algorithm using training data (based on the number of observations across multiple sessions) adjusts the coefficients for identified predictors. The concentration ratio and the maximum angle predictors seem to have much lower coefficients relative to the other ones.
+
+berrio-et-al:2021:3094485
+Using the pole and corner features extracted from the fusion of image segmentation and 3D laser data, Berrio use two predictors to assess the quality of features for including in the map or not: concentration ratio and the maximum length driven while observing the landmark. Instead of using a regression algorithm ,the method selects landmarks that have been observed for more than 1m of distance. The concentration ratio avoids the exclusion of landmarks when the density is very sparse (so eliminating one landmark could lead to localization failures), and excludes the ones in high density areas.
+The prior map contains the positions and attributes of the features including a visibility measure of each map feature -- visibility volumetric volume to assess the stability of the features: maximum range from where the feature was detected at a particular angle and the probability at detecting at that particular angle. Allows to only updating the feature metrics when it is a match or not detected + not occluded.
 
 \subsection{Multi-session}
 \label{sec:discussion:multisession}
@@ -404,6 +304,9 @@ Reduce dimension of the descriptors by applying PCA and whitening.
 
 yang-et-al:2021:12054
 select max-pooling layer instead of convulutional one
+
+naseer-et-al:2017:7989305
+Uses Sparse Random Projections for embedding high-dimensional feature vectors into lower dimensions. The precision-recall metrics is very similar to the full dimensional descriptor.
 
 \subsection{Evaluation metrics}
 \label{sec:discussion:metrics}
