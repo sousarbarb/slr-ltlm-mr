@@ -573,19 +573,6 @@ DO  - 10.1177/0278364912455072
 UR  - http://dx.doi.org/10.1177/0278364912455072
 ER  - 
 
-TY  - CPAPER
-AU  - Kretzschmar, Henrik
-AU  - Stachniss, Cyrill
-AU  - Grisetti, Giorgio
-TI  - Efficient information-theoretic graph pruning for graph-based SLAM with
-      laser range finders
-SP  - 865-871
-PY  - 2011
-DA  - 2011
-DO  - 10.1109/IROS.2011.6094414
-UR  - http://dx.doi.org/10.1109/IROS.2011.6094414
-ER  - 
-
 TY  - JOUR
 AU  - Kretzschmar, Henrik
 AU  - Grisetti, Giorgio
@@ -1900,20 +1887,6 @@ PY  - 2012
 DA  - 2012
 DO  - 10.1109/ICRA.2012.6224622
 UR  - http://dx.doi.org/10.1109/ICRA.2012.6224622
-ER  - 
-
-TY  - CPAPER
-AU  - Maddern, Will
-AU  - Milford, Michael J
-AU  - Wyeth, Gordon F
-TI  - Towards persistent localization and mapping with a continuous
-      appearance-based topology
-VL  - 8
-SP  - 281-288
-PY  - 2013
-DA  - 2013
-DO  - 10.15607/rss.2012.viii.036
-UR  - http://dx.doi.org/10.15607/rss.2012.viii.036
 ER  - 
 
 TY  - CPAPER
