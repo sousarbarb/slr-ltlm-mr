@@ -1,7 +1,7 @@
 \section{Discussion}
 \label{sec:discussion}
 
-The main goal of this review is to synthesize methodologies focused on long-term localization and mapping. Therefore, the discussion first analyzes the techniques proposed in the 144 included works for the five categories of DE1 (see Section~\ref{sec:methodology:data}). Section~\ref{sec:discussion:appearance} discusses methodologies related to dealing with the varying appearance of environments for localization and place recognition. Section~\ref{sec:discussion:dynamics} analyzes works focused on modeling the environment dynamics or identifying dynamic objects within the environment. Section~\ref{sec:discussion:sparsify} focuses on approaches for removing redundant data from the map or identifying novelty data to keep the map size constrained to the environment size. Section~\ref{sec:discussion:multisession} discusses how methods handle multi-session in terms of mapping. Section~\ref{sec:discussion:computational} reviews works related to computation concerns over long-term localization and mapping, in addition to the ones relative to map sparsification discussed in Section~\ref{sec:discussion:sparsify}. However, the discussion should also focus on how the included works evaluated their results in long-term operations. Thus, Section~\ref{sec:discussion:metrics} presents the evaluation metrics used in the experiments, and Section~\ref{sec:discussion:observations} analyzes the experimental data and datasets used for evaluating the proposed methodologies.
+The main goal of this review is to synthesize methodologies focused on long-term localization and mapping. Therefore, the discussion first analyzes the techniques proposed in the 142 included works for the five categories of DE1 (see Section~\ref{sec:methodology:data}). Section~\ref{sec:discussion:appearance} discusses methodologies related to dealing with the varying appearance of environments for localization and place recognition. Section~\ref{sec:discussion:dynamics} analyzes works focused on modeling the environment dynamics or identifying dynamic objects within the environment. Section~\ref{sec:discussion:sparsify} focuses on approaches for removing redundant data from the map or identifying novelty data to keep the map size constrained to the environment size. Section~\ref{sec:discussion:multisession} discusses how methods handle multi-session in terms of mapping. Section~\ref{sec:discussion:computational} reviews works related to computation concerns over long-term localization and mapping, in addition to the ones relative to map sparsification discussed in Section~\ref{sec:discussion:sparsify}. However, the discussion should also focus on how the included works evaluated their results in long-term operations. Thus, Section~\ref{sec:discussion:metrics} presents the evaluation metrics used in the experiments, and Section~\ref{sec:discussion:observations} analyzes the experimental data and datasets used for evaluating the proposed methodologies.
 
 
 
@@ -64,6 +64,7 @@ Even though the Gamma correction does not transform an image to an invariant col
 
 Many localization and mapping algorithms rely on detection and extraction of features. The designation of handcrafted features refers to properties derived from the sensors data as a two-step process: a keypoint detector to locate the features and their characterization by computing a descriptor capable of distinguishing each feature from the others~\parencite{discussion:handcrafted-features}.
 Algorithms for long-term localization and mapping using handcrafted feature should be robust to changing conditions such as illumination, appearance, weather and seasonal changes.
+
 
 \paragraph{Visual features}
 
@@ -162,6 +163,7 @@ Lastly, a trend found in the included works to improve the discriminative power 
 A triplet consists in an anchor image, a positive corresponding match, and an unrelated negative example. Triplet loss tries to minimize the matching distance between positive pairs (anchor, positive) and maximize that between negative ones (anchor, negative)~\parencite{sun-et-al:2021:9635886}.
 Additionally, \cite{piasco-et-al:2021:6} uses also depth information during training, given that depth maps and their geometric information remain more stable across time than visual ones. A CNN encoder aggregates local features to produce a global descriptor, while a decoder reconstructs the scene geometry from the features obtained by the encoder. Then, triplet loss during training uses the fusion of image and depth map descriptors. In the experiments, the depth map training supervision provided building shapes understanding while improving the performance compared to not using side information.
 
+
 \paragraph{Semantic segmentation}
 
 Instead of using the feature maps of CNN, the networks can also segment raw data to extract semantic information.
@@ -249,7 +251,6 @@ Lastly, \cite{nguyen-et-al:2013:004} proposes an approach to identify topologica
 The method uses a clustering scheme K-iteration Fast Learning Neural Network (FLANN) to organize the visual input images into scene tokens. These tokes are the input to a Spatio-Temporal Long-Term Memory (LTM) architecture equivalent to an NN-based memory structure, in which the topological locations defined as image sequences are stored in the memory structure (LTM cells). Then, the proposed architecture models the topological structure of an environment by linking the scene clusters into a temporally ordered sequence using a one-shot learning mechanism and only requiring a single representation of the sequence.
 A pooling system determines the current topological location of the robot.
 The method was able to localize different topological sequences in appearance changing conditions.
-
 
 
 
@@ -364,16 +365,133 @@ All of these methods using geometric constraints to improve the identification o
 
 
 
+
+
 \subsection{Map sparsification}
 \label{sec:discussion:sparsify}
 
-berrio-et-al:2019:8814289
-Using the pole and corner features extracted from a 3D laser, Berrio uses the following predictor variables to evaluate a feature: number of detections, maximum detected spanning angle, maximum length driven while observing the landmark, maximum area of detection, maximum possible spanned angle, and concentration ratio.
-Then, a cross-validated elastic net regularized regression algorithm using training data (based on the number of observations across multiple sessions) adjusts the coefficients for identified predictors. The concentration ratio and the maximum angle predictors seem to have much lower coefficients relative to the other ones.
+The next subject in this discussion analyzes included works categorized as sparsify in DE1. The methodologies proposed in those works manage the map size of the environment representation perceived by the mapping agent, where the size should be dependent on the operation area and not on the trajectory length of the robots.
+Hence, the discussion on map sparsification is organized into the following topics: sparsification of graph SLAM to remove redundant nodes or outdated environment observations, management of the keyframe graph and its features relative to the keyframe formulation of the SLAM problem, and generic sparsification methods proposed in the included works for feature maps.
 
-berrio-et-al:2021:3094485
-Using the pole and corner features extracted from the fusion of image segmentation and 3D laser data, Berrio use two predictors to assess the quality of features for including in the map or not: concentration ratio and the maximum length driven while observing the landmark. Instead of using a regression algorithm ,the method selects landmarks that have been observed for more than 1m of distance. The concentration ratio avoids the exclusion of landmarks when the density is very sparse (so eliminating one landmark could lead to localization failures), and excludes the ones in high density areas.
-The prior map contains the positions and attributes of the features including a visibility measure of each map feature -- visibility volumetric volume to assess the stability of the features: maximum range from where the feature was detected at a particular angle and the probability at detecting at that particular angle. Allows to only updating the feature metrics when it is a match or not detected + not occluded.
+
+
+\subsubsection{Pose graph SLAM}
+
+In graph-based SLAM, the constant update of the map leads to the ever-growing problem of the pose graph, where most basic approaches grow with the length of the trajectory or operation time. However, this growth should be bounded only by the size of the mapped environment. Information-theoretic methods focus on removing redundant nodes based on the concept of mutual information for limiting graph growth~\parencite{kretzschmar-stachniss:2012:0278364912455072}. Outdated nodes should also be removed to limit the graph size and update the current map representation upon changes in the environment. Additionally, the spatial distribution, time recency, and fusion of information onto existing nodes can also enable the reduction of nodes over time.
+
+
+\paragraph{Mutual information}
+
+The concept of mutual information from information theory can be used to determine which nodes to remove from the pose graph.
+\cite{kretzschmar-et-al:2010:2} and \cite{kretzschmar-stachniss:2012:0278364912455072} estimate the expected information gain of a node based on its entropy contributing to the robot's pose belief in the current pose's neighborhood. The nodes with the lowest information gain are removed until the value is greater than a threshold. \cite{kretzschmar-stachniss:2012:0278364912455072} also sets a limit on the total number of nodes of the graph.
+However, these two methods differ on how to marginalize the edges.
+\cite{kretzschmar-et-al:2010:2} removes all $N$ edges of a removed node and adds $N-1$ edges between the removed one and a neighbor node. The latter is selected as the node that minimizes the edges length of the affected nodes by the removal. Effectively, the method only decreases by 1 the total number of edges per node removal.
+As for \cite{kretzschmar-stachniss:2012:0278364912455072}, this method summarizes the information of the original edges into the nodes that are kept using an approximate marginalization that preserves sparsity. This approximation is based on using Chow-Liu trees to approximate a local probability distribution of the graph minimizing the relative entropy, or also known as the Kullback-Leibler Divergence (KLD), to reduce the number of edges locally.
+In the experiments, both \cite{kretzschmar-et-al:2010:2} and \cite{kretzschmar-stachniss:2012:0278364912455072} stabilize the number of nodes and edges over time, limiting the computational requirements of online execution, while full marginalization (densely connected graph after removal) leads to an increasing number of edges.
+
+The works focused on edge marginalization assume the prior selection of the node for removal.
+\cite{carlevaris-bianco-et-al:2014:2347571} proposes the Generic Linear Constraints (GLC) to produce a set of constraints over the subset of nodes affected by the node removal. These constraints can produce either the full marginalization (dense GLC) or a sparse approximation using a Chow-Liu tree (sparse GLC). The repeated application of a sparse GLC node removal only had a low difference in both mean pose error and KLD compared to the full graph.
+\cite{ozog-et-al:2016:21582} applies the same graph marginalization as \cite{carlevaris-bianco-et-al:2014:2347571} on a pose graph map obtained with an underwater vehicle. The system also had similar KLD compared to full graph.
+\cite{huang-et-al:2013:6698835} formulates an $l_1$-regularized optimization problem to minimize the KLD of the approximation estimating Generic Linear Constraints (GLC) from the discarded measurements. The proposed method did not impact the localization error while also reducing by 77\% the non-zero elements of the information matrix, improving the sparsity of the graph.
+As for \cite{mazuran-et-al:2016:0278364915581629}, this work proposes the Nonlinear Factor Recovery (NFR) edge marginalization, recovering the set of nonlinear factors that best represent the marginal distribution of the subset of nodes affected in the removal in terms of KLD, while considering both global and local linearization points. \cite{mazuran-et-al:2016:0278364915581629} demonstrated that NFR is equivalent to GLC when using only relative measurements. In the experiments, NFR tended to achieve similar or improved performance relative to GLC between the sparsified and full graph, having similar results or improved KLD depending on good or poor linearization points, respectively.
+
+Other methods in the included works doe not require edge marginalization.
+\cite{maddern-et-al:2012:6224622} does not impose global geometric corrections on loop closure to ensure similar odometric sequences on different passages in the same locations, only requiring the update on existent odometric edges. The method sets a maximum limit on the number of nodes eliminating the ones with lowest relative information content computed by the negative log of odometric and appearance-based matching likelihoods. The algorithm stabilized at a constant execution time and memory occupation due to the limit of nodes.
+\cite{ila-et-al:2017:0278364917691110} proposes an incremental solution to decide whether a node should be added or not. Only nodes part of informative links or establishing informative links are added to the graph, avoiding to add unnecessary edges and thus not requiring edge marginalization. Although the method was able to slow the growth rate of nodes and edges in the experiments, the method was not able to bound it.
+\cite{egger-et-al:2018:8593854} filters all poses with an overlap with their closest neighbors of the respective submaps higher than a threshold. The removal also updates the scores of affected neighbors relative to the number of observations required for evaluating the stability of the 3D LiDAR surfel features. Considering an overlap threshold of 0.6, the resulting map in the experiments was 9.4MB compared to the 5GB of the initial point cloud map.
+
+
+\paragraph{Outdated information}
+
+Instead of selecting nodes based on mutual information, the removal of outdated nodes based on the current information can limit the size of the pose graph.
+\cite{walcott-bryant-et-al:2012:6385561} removes inactive nodes that do not represent the current state of the environment, considering the creation of nodes for each run to be able to create the active and dynamic maps required for dealing with dynamic environments. The removed points labeled in the dynamic map (points no longer present in the active map) over time allow the identification of inactive nodes. In the experiments, the method was only able to remove approximately 50\% of the nodes and edges compared to the full graph.
+\cite{tang-et-al:2019:7} filters submaps in the proposed manifold navigation considering the number of successful localization in each location versus the attempted ones to indicate the outdated submaps. Even though the number of nodes stabilizes over time, the stabilization only happens on the third day, possibly due to the proposed manifold navigation treating new conditions of the environment as new nodes.
+\cite{boniardi-et-al:2019:003} also evaluates the current localization of the robot to select nodes for removal. The method prunes outdated nodes when the pose's belief drops below a tolerance level, possibly related to changes in the environment. Additionally, upon loop detection, the method builds a local map from the subset of nodes candidate for loop closure. This local map allows for discarding candidates that are not topologically consistent with the local environment surrounding the robot using ray tracing, avoiding the addition of unnecessary edges. The method was able to limit the graph size in the same environment over multiple runs, being dependent on the size of the operational area and not on the operation time.
+
+
+\paragraph{Spatial density and time recency}
+
+The spatial distribution of the nodes is another approach to evaluate the graph sparsity.
+\cite{johannsson-et-al:2013:6630556} proposes an incremental approach for managing the addition of new nodes, similar to \cite{ila-et-al:2017:0278364917691110}. However, the method only adds a new node if there is no existing node in the current position, instead of being based on mutual information. If a loop is detected, though the first one would not generate any new node due to the spatial constraint, in the case of a second loop, the method compounds the chain of constraints between the first and second loops to add a new constraint.
+In contrast to \cite{johannsson-et-al:2013:6630556}, \cite{zeng-si:2021:6} adds nodes upon revisiting locations for optimizing the pose graph. Then, the method identifies redundant nodes clustering loop closure edges to identify similar trajectories.
+Both works showed reduced growth compared to the full graph in the number of nodes in the experiments, even though the growth did seem to stabilize.
+
+In addition to the spatial density, the time recency of the node can be another factor for selecting nodes for removal.
+\cite{kurz-et-al:2021:9636530} tries to keep the spatial density of nodes below a certain threshold across the entire map. The proposed scale-invariant density measure determines to remove the nodes with the highest densities, marginalizing their edges with an approach similar to \cite{kretzschmar-et-al:2010:2}, until the density is lower than a threshold. The removal process keeps the most recent nodes from being removed, even though the density measure is computed considering all nodes. The method reduced the growth in the number of nodes compared to the full graph, having stabilized over time.
+Similarly, \cite{ali-et-al:2021:3100882} also favors older nodes for removal, moving older nodes after a certain traveled distance from the online graph to an offline database to not lose the information. Also, upon loop detection, the older submap is substituted with a new one. Compared to \cite{discussion:orb-slam2}, the proposed method had lower computational requirements in terms of CPU and memory usage.
+
+
+\paragraph{Information fusion}
+
+The information fusion between nodes and/or with the current observation also allows the reduction of the graph growth.
+Both \cite{einhorn-gross:2013:6698849} and \cite{einhorn-gross:2015:008} fuse NDT map fragments that cover a similar region of the environment, only fusing nodes whose relative pose is known with low uncertainty. The marginalization of the affected edges is performed using the same approach as \cite{kretzschmar-et-al:2010:2}. In the experiments, the number of vertices in both works did not increase significantly on revisiting locations.
+Assuming that a loop closure occurs due to spatial closeness having overlap between the affected nodes, Lazaro merges loop closure-related nodes (including intra- and inter-sessions) following a similar methodology to the ray tracing one used for detecting dynamic changes in the environment. The oldest point cloud is used as a reference for refinement with the newest one based on their timestamps. Edge marginalization is based on condensed measurements where the remaining node is connected to the neighbors using a star-like topology. The method achieved a 50\% node reduction in an experiment while retaining the localization accuracy.
+\cite{karaoguz-bozma:2020:2} uses a Topological Spatial Cognition (TSC) model to organize the visual place memory as a collection of appearances and respective descriptors for each robot, with a hierarchical organization to cluster places with a similar appearance. Based on the similarity of the descriptors, \cite{karaoguz-bozma:2020:2} merges place memories of TSC models on a multi-robot system, incorporating all places known by other robots but not known to itself. The merge is performed based on the nature of overlap of the descriptor hyperspheres in appearance space. Although the method was able to merge the TSC models between two robots leading to 18 final locations, the merged locations are more than the 15 predicted ones due to limited field of view and appearance changes.
+
+
+
+\subsubsection{Keyframe SLAM}
+
+A specific formulation of the pose graph is the keyframe SLAM, where the keyframes are selected from the frames usually captured by a camera, the 3D map points are triangulated considering features extracted from the camera images, and the edges determine the keyframes that observe the map points. Odometry and shared observations of map points induce additional edges between keyframes~\parencite{schmuck-chli:2019:00071}.
+The keyframe SLAM also suffers the same ever-growing graph problem as the standard pose graph formulation. Thus, long-term localization and mapping methods using keyframe SLAM should employ policies to manage the growth of the number of keyframes and map points, or restricting the selection of the frames from the views captures from a sensor to ensure the graph sparsity.
+
+
+\paragraph{Keyframe graph management}
+
+Clustering techniques are employed in the included works to identify keyframes for removal.
+\cite{konolige-bowman:2009:5354121} proposes the Least-Recently Used (LRU) algorithm to limit the keyframes in a local neighborhood, while preserving their diversity and removing preferably older unmatched views. LRU clusters keyframes  based on its feature matching closeness, assuming that keyframes capturing similar environment appearances will be in the same cluster. If the number of local keyframes exceeds a threshold, older ones are removed from each cluster. Then, having clusters only with a single view, LRU removes the oldest exemplars. LRU reduced significantly the number of views and edges relative to having no management rule for keyframes while preserving the mean number of clusters in local neighborhoods, i.e., preserving the diversity.
+Instead of evaluating single keyframes, \cite{bouaziz-et-al:2022:4} exploits the similarity between traversals in the keyframe map that represent runs possibly in different environment conditions. Hierarchical clustering on a proposed similarity matrix between traversals identifies which one to remove when their number exceeds a predefined threshold, trying to maintain the map diversity as possible as in \cite{konolige-bowman:2009:5354121}. The limitation on the number of traversals bound the computational requirements of the method.
+
+Moreover, \cite{gadd-newman:2016:7759843} implements a merge process in its centralized versioning framework to measure the relevance of discovered segments by every single agent using stereo matching from visual odometry. The merging strategy with multiple agents built the map in an experiment in 3.6h, while a single agent would require 12.4h, while the size of the merged database was smaller than a single agent due to the redundancy check.
+Similar to methods for sparsifying the standard pose graph, \cite{ding-et-al:2019:8968550} uses the KLD measure to determine which keyframe to remove based on their contribution. When adding a new one, the method updates the KLD of each keyframe that has common features to the new frame. The keyframes with KLD lower than a threshold are removed using GLC for edge marginalization if needed. The proposed sparsification approach reduced the map size for transmitting it between an external agent and the robot.
+
+Although the keyframe management removes map points indirectly, e.g., when the points are not well constrained with less than 2 observations~\parencite{schmuck-chli:2019:00071}, management techniques on the keyframe graph can also remove points directly from the feature map.
+LLamaSLAM~\parencite{luthardt-et-al:2018:8569323} considers only high-quality LLama points for adding to the map, while ensuring their spatial coverage in a 2D grid selecting only the best 10 points within each cell. The keyframe selection is based on the overall quality threshold of the observed LLama points in the frame.
+Furthermore, \cite{mur-artal-et-al:2015:2463671} implements in ORB-SLAM both keyframe and feature addition and removal rules. ORB-SLAM only adds a keyframe if the current view tracks at least 50 points in the sliding window and less than 90\% of the points of the current reference keyframe, while discards all keyframes whose 90\% points are seen in at least more than 3 other keyframes. As for map points, the points are only retained if the tracking finds them in more than 25\% of the frames which are predicted to be observed in and must be observed from at least 3 keyframes.
+\cite{zhang-et-al:2018:1729881418780178} implements the same map management method as ORB-SLAM in a multi-robot system to reduce redundant data, where each robot executes independently monocular SLAM and communications their map with other robots.
+Instead of using thresholds, \cite{schmuck-chli:2019:00071} modifies ORB-SLAM with a redundancy score to classify the map points. The method defines a maximum score of 1 for features seen in more than 5 keyframes (also removing these points from the map) and a score of 0 for the minimum of 2 observations, while scoring the keyframes by the normalized sum of their features' scores. Considering a maximum limit of keyframes, the algorithm was able to compress up to 50\% relative to no management while also outperforming the original ORB-SLAM in RMSE.
+
+The selection process of features for removal in the keyframe graph can use more than a single scoring function.
+\cite{dymczyk-et-al:2015:7139575} scores the map points on the number of observations (considering a lower bound for removal, while restraining the deletion in rarely visited areas and not well-constrained points), the descriptors variance (rejecting the ones with high variances), and the number of observations between different sessions. The method also sets a minimum number of keypoints to retain a keyframe and a total limit on the number of map points. These policies led to an approximately constant number of keyframes and map points in posterior sessions in the same environment.
+
+
+\paragraph{Representative keyframes}
+
+Another approach to reduce the growth of keyframe graph found in the included works is to restrict the selection of the keyframes from the sensor live data.
+\cite{pirker-et-al:2011:6048253} only adds keyframes to the graph if at least 55\% of the image area is covered by keypoints used for tracking, in contrast with the standard rule of adding frames accordingly to a certain motion relative to the previous keyframe. Also, the method removes points based on their visibility accordingly to the Histogram of Oriented Cameras (HOC) descriptor that represents a map point. The method was able to keep the map size proportional to explored space stabilizing the number of features.
+
+Topic-probabilistic models used in both \cite{paul-newman:2013:0278364913509859} and \cite{murphy-sibley:2014:6907022} also try to identify the most representative keyframes from camera images.
+\cite{paul-newman:2013:0278364913509859} applies Latent Dirichlet Allocation (LDA) as a probabilistic topic model to identify perplexing observations and for retrieving images similar in thematic content, providing a compact representation of the sampling set to improve the timing efficiency of FAB-MAP. Topic models provide a low-dimensional representation of BoW, capturing their thematic content via word-occurrences. Although the method reduced the number of generated keyframes, Paul did not implemented a deletion or forgetting rule for the map frames.
+As for \cite{murphy-sibley:2014:6907022}, their approach implements probabilistic Latent Semantic Indexing (pLSI) as the topic modeling engine in an incremental manner to expand the vocabulary and perform topic updating online. The topic clustering using DBSCAN identifies temporally smoothed unique places. In the experiments, the proposed method retained up to 1.06\% of the image stream while having similar precision and recall metrics relative to considering all frames, respectively.
+
+
+
+\subsubsection{Features management}
+
+In addition to feature management policies applied in keyframe SLAM and discussed previously, the included works also propose techniques to sparsify feature maps for improving the mapping scalability in the long-term time frame.
+\cite{hochdorfer-schlegel:2009} and \cite{hochdorfer-et-al:2009:5339626} focus on ensuring the spatial distribution of the features in the environment, removing the ones that cover nearly the same region.
+The first clusters SURF-based features based on the $l_1$ distance of their 2D position in the map using k-means with the number of clusters as 25\% of known features in the map. Considering feature information content as dependent on the covariance matrix, the proposed approach selects the cluster with the maximum difference in information content and removes the feature with the lowest localization benefit while limiting the number of map features to 50. This limit constrains the computation requirements of the method. The second work uses DBSCAN instead of k-means because the former is a density-based algorithm while the latter is a partitioning one. Even though both \cite{hochdorfer-schlegel:2009} and \cite{hochdorfer-et-al:2009:5339626} limit the number of map features and improve their spatial coverage, the DBSCAN-based method led to a better spatial distribution of features compared to k-means.
+
+The evaluation on matching observations with the features in the map versus the number of attempts could indicate unstable or dynamic features that could be removed from the map and reducing its size.
+\cite{davison-murray:2002:1017615} deletes features after a predetermined number of matching fails when they should be visible and sets a maximum of 2 features in the map, the minimum for the robot to localize itself. Even though the limit was to improve the computational efficiency with the resources available at the time, the map should have consider more features to improve localization robustness.
+Similar to \cite{davison-murray:2002:1017615}, the STM/LTM memory scheme implemented by \cite{dayoub-et-al:2011:013} and \cite{bacca-et-al:2013:003} imposes a consecutive observation of the features for retaining them in the map. \cite{bacca-et-al:2013:003} showed in its experimental results that removing useless and old features avoided the ever-increasing number of features, leading to an approximately constant map size over different runs.
+
+Furthermore, the use of multiple predictors for evaluating feature stability on changing conditions also helps the sparsification of the feature map.
+The removal of features with low scores on the predictor proposed by \cite{berrio-et-al:2019:8814289} had similar localization covariance in the experiments while removing up to 70\% of the least valuable features in the map.
+\cite{berrio-et-al:2021:3094485} also evaluates the concentration ratio and maximum driven length predictors used in their work. Features in high concentration areas and low visibility in terms of the maximum driven length while observing them are discarded from the map. The removal method contributed to the map size being approximately constant in later runs throughout a 24 weeks experiment.
+Similar to \cite{berrio-et-al:2019:8814289}, \cite{dymczyk-et-al:2016:7759673} formulates a regression for optimizing the weights given to the predictors and combining all predictors into a single score. The method considers as predictors the number of frames the feature is re-observed, traveled distance while observing the landmark and the one between the two most distant keyframes while tracking, maximum angle between observation rays, the mean reprojection error, a gravity constant to favor anchored objects presumable more useful for localization, the vertical coordinate, and the descriptor appearance classification. The results showed a 80\% reduction on data transfers with similar localization recall when selecting a subset of the map features compared to retaining all features.
+Also, \cite{mühlfellner-et-al:2016:21595} creates a Summary Map from a map gathered over multiple traversals in the environment by selecting a limited number of features, first, based on the observations in distinct traversals, and then, on the total number of observations. The authors compared the Summary Map with 1200 features to only selecting features seen during the most recent traversals, features seen in two or more traversals, and to the works of \cite{konolige-bowman:2009:5354121} and \cite{dayoub-et-al:2011:013}. The proposed selection method, \cite{konolige-bowman:2009:5354121}, and retaining features seen in two or more traversals achieved the higher localization accuracy, while the Summary Map had higher accuracy that the other methods at the same map size.
+
+In terms of managing a BoW dictionary, \cite{tsintotas-et-al:2021:103782} presents an incremental Bow model to remove multiple codewords of repetitive patterns representing the same environmental elements at different time instants. A spatial check identifies the redundant words upon loop closure, where the words are ignored if not associated with the chosen loop image and are merged with the ones in the database accordingly to the median of the descriptors. The incremental approach reduced the model size compared to other BoW-based approaches while also improving the timing efficiency due to having fewer visual words for searching for loop closures.
+Instead of managing the addition and removal of words from the BoW model, \cite{opdenbosch-et-al:2018:00114} proposes a culling map point algorithm by minimizing the points coding cost to keep map points that exhibit good compression properties and favor the ones with many visually similar observations when assigning the features descriptors to its closest visual word from a pre-trained BoW model. The method allows the definition of an apriori size of the desired BoW model to constrain the computation requirements. The integration of the proposed method in ORB-SLAM2 reduced by 3 times the map size (3MB to 1MB) having a similar localization success rate, while also reducing the number of points substantially (17426 to 2370). 
+
+Lastly, the works of \cite{schaefer-et-al:2021:103709} and \cite{wang-et-al:2021:9739599} that retrieve pole features from 3D LiDAR data for appearance invariance in changing conditions also employ feature management policies to avoid redundant points in the maps.
+\cite{schaefer-et-al:2021:103709} merges ambiguous poles by projecting them onto the ground plane and evaluate their overlap. The merge process computes a weighted average over their center coordinates and widths over the mean pole score, determined by averaging over the scores of all voxels that touch the pole.
+\cite{wang-et-al:2021:9739599} segments the point clouds into clusters based on the semantic labels obtained with the RangeNet++ network. For each cluster, the label is voted by the statistical number of the point labels in the cluster. Considering the clusters of the global map versus the ones found in the current laser scan, each cluster of the current scan is searched by the closest neighbor and is only added into the map if the cluster is not found in the global map.
+
+
+
+
 
 \subsection{Multi-session}
 \label{sec:discussion:multisession}
@@ -403,13 +521,13 @@ select max-pooling layer instead of convulutional one
 naseer-et-al:2017:7989305
 Uses Sparse Random Projections for embedding high-dimensional feature vectors into lower dimensions. The precision-recall metrics is very similar to the full dimensional descriptor.
 
-\subsection{Evaluation metrics}
-\label{sec:discussion:metrics}
-
 \subsection{Long-term experimental data}
 \label{sec:discussion:experiments}
 
 \input{tables/datasets}
+
+\subsection{Evaluation metrics}
+\label{sec:discussion:metrics}
 
 \subsection{Final observations}
 \label{sec:discussion:observations}
