@@ -496,6 +496,27 @@ Lastly, the works of \cite{schaefer-et-al:2021:103709} and \cite{wang-et-al:2021
 \subsection{Multi-session}
 \label{sec:discussion:multisession}
 
+This section analyzes works categorized as multi-session in DE1 focusing on methodologies for dealing with the start of the robot in each operation session. A multi-session system must handle the data acquired in each session by a robot without having a prior initial pose relative to the current map. This system should avoid the restart of the mapping procedure in all runs while being capable of localizing the robot in the existing map~\parencite{labbé-michaud:2019:21831}.
+In the context of long-term localization and mapping, a multi-session solution is desirable to integrate new information acquired over different operation runs without requiring a known initial pose for accomplishing a continuous autonomous operation in a changing and dynamic environment.
+Even though global localization is required for multi-session to localize the robot in a known map without any prior knowledge, Sections~\ref{sec:discussion:appearance}~and~\ref{sec:discussion:dynamics} already discuss methodologies for topological and metrical localization robust to changes and moving elements in the scene.
+
+One methodology found in the included works is the implementation of global multi-session where both localization and mapping processes consider a global common frame between all sessions~\parencite{ozog-et-al:2016:21582}.
+\cite{bürki-et-al:2019:21870} implements an offline process to localize a new mapping session against an existing map. This process generates an initial pose estimation for the vehicle in the new dataset and the feature association between the new dataset and the features in the map. New map points are created from unmatched features in the multi-session association step. Then, the system optimizes the resulting global multi-session map again with bundle adjustment.
+
+Instead of assuming that the localization is always possible to perform in the current map similarly to global multi-session, another possibility is considering independent sessions at the beginning of each run.
+\cite{latif-et-al:2012:6385879} proposes the RRR method that defines 2 types of loop closures: intra- and inter-session. If no inter-session loop, RRR considers all sessions unconnected between them. Assuming that the front-end of graph SLAM deals with odometry outliers, the graph error introduced by each constraint would be caused only by loop closing links. Then, RRR clusters loop hypotheses accordingly to its impact on the graph error, where small and similar errors versus greater and contradictory would be caused by correct and false loop closures, respectively. The method was able to recover from 600 wrong loop closures in a 4 session experiment.
+\cite{oberländer-et-al:2013:6766479} starts a new mapping session in each run. Eventually, the independent graph will be connected to previous sessions by matching the submaps of the graph nodes, similar to the inter-loop considered by \cite{latif-et-al:2012:6385879}.
+Similar implementations are considered by \cite{mühlfellner-et-al:2016:21595}, \cite{lázaro-et-al:2018:8594310}, and \cite{labbé-michaud:2019:21831}, allowing inter-loop links connect different sessions when the data association module of localization and mapping finds a candidate loop between sessions. Also, the experimental results in \cite{mühlfellner-et-al:2016:21595} showed an improvement in terms of increasing localization recoveries from failures when considering a multi-session map compared to single-session.
+
+The representation of independent mapping sessions can be represented in the same graph using anchor nodes as \cite{ozog-et-al:2016:21582}.
+Each robot session has an associated anchor node containing the transformation from the global to the session's reference frames. This representation allows individual sessions to optimize their pose graphs before any links are formed between sessions while allowing faster convergence than global multi-session in the pose graph formulation of the SLAM problem.
+Additionally, \cite{ozog-et-al:2016:21582} uses GLC constraints~\parencite{carlevaris-bianco-et-al:2014:2347571} for graph sparsification, as discussed previously.
+The method was capable of merging a multi-session experiment with 12 sessions 3 years apart.
+
+
+
+
+
 \subsection{Computational}
 \label{sec:discussion:computational}
 

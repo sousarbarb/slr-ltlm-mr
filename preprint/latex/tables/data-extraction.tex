@@ -115,9 +115,7 @@ p{0.15\textwidth}                     % D12: evaluation metrics
 \hline
 \cite{ikeda-tanaka:2010:5509579} &   &   &   &   & x & particle filter (location) & dictionary (semantic hashing) & -- & x & x &  & x &  & x &  & camera (mono) & x & GPS & 40 & 20 & -- & -- & -- & execution time, localization rate, memory\\
 \hline
-\cite{dayoub-et-al:2011:013} &   & x &   &   &   & feature matching (location) & keyframe (graph, 6DoF edges) & -- &  & x & x &  &  & x &  & camera (omni) & x & initial position, laser-based & -- & -- & -- & 3d & -- & orientation error, similarity score\\
-\hline
-\cite{kretzschmar-et-al:2011:6048060} &   &   & x &   &   & point cloud matching (2D, 3DoF) & pose graph (graph, 2D point clouds, 3DoF edges) & -- &  & x & x &  &  & x &  & laser (2D) & -- & no pruning & -- & -- & -- & -- & FR079, Intel 2003 & \#edges, \#nodes\\
+\cite{dayoub-et-al:2011:013} &   & x & x &   &   & feature matching (location) & keyframe (graph, 6DoF edges) & -- &  & x & x &  &  & x &  & camera (omni) & x & initial position, laser-based & -- & -- & -- & 3d & -- & orientation error, similarity score, \#localization failures\\
 \hline
 \cite{pirker-et-al:2011:6048253} &   &  & x &   &   & feature matching (3D, 6DoF) & keyframe (graph) & -- &  & x & x & x &  & x &  & camera (gray, mono) & x & -- & 1.2 & -- & -- & 2w & -- & position error, \#map points\\
 \hline
@@ -153,21 +151,19 @@ p{0.15\textwidth}                     % D12: evaluation metrics
 \hline
 \cite{nguyen-et-al:2013:004} & x &   &   &   &   & feature matching (location) & pose graph (graph) & -- &  & x & x &  &  & x &  & camera (color, mono) & -- & -- & -- & -- & -- & -- & COLD & computational complexity, execution time, localization rate\\
 \hline
-\cite{maddern-et-al:2013:036} &   &   & x &   &   & particle filter (2D, 3DoF) & pose graph (graph, 3DoF edges) & -- &  & x &  & x &  & x &  & wheel odometry, camera (color, mono) & -- & manual & -- & -- & -- & -- & New College & execution time, memory, pose error, precision-recall\\
-\hline
 \cite{churchill-newman:2013:0278364913499193} & x &   &   &   &   & visual odometry (3D, 6DoF) & experience (graph, local views, observability edges) & -- &  & x & x &  &  & x &  & camera (color, stereo) & x & RTK-GPS & 37 & 0.7 & -- & 3m & -- & execution time, \#localization failures\\
 \hline
 \cite{pomerleau-et-al:2014:6907397} &   & x &   &   &   & point cloud matching (3D, 3DoF) & point cloud (laser, 3D) & -- &  & x &  & x &  & x &  & wheel odometry, laser (3D) & x & map, targeted speed & 3.9 & 1.3 & -- & 7m & -- & execution time, velocity error\\
 \hline
-\cite{murphy-sibley:2014:6907022} & x &   & x &   &   & image classification (location) & keyframe (graph) & -- &  & x &  & x &  & x &  & camera (color, mono) & x & -- & -- & -- & -- & 1w & New College & execution time, confusion matrix, precision-recall, \#nodes\\
+\cite{murphy-sibley:2014:6907022} &   &   & x &   &   & image classification (location) & keyframe (graph) & -- &  & x &  & x &  & x &  & camera (color, mono) & x & -- & -- & -- & -- & 1w & New College & execution time, confusion matrix, precision-recall, \#nodes\\
 \hline
-\cite{carlevaris-bianco-et-al:2014:2347571} &   &   & x &   &   & odometry, point cloud matching (2/3D, 3/6DoF) & pose graph (graph) & -- &  & x & x & x &  & x & x & camera (mono), laser (2D/3D) & -- & no pruning & -- & -- & -- & -- & Intel 2003, MIT Kilian Court, NCLT & execution time, KLD, \#nodes\\
+\cite{carlevaris-bianco-et-al:2014:2347571} &   &   & x &   &   & odometry, point cloud matching (2/3D, 3/6DoF) & pose graph (graph) & -- &  & x & x & x &  & x & x & camera (mono), laser (2D/3D) & -- & no pruning & -- & -- & -- & -- & Intel 2003, MIT Kilian Court, NCLT & execution time, KLD, pose error, \#nodes\\
 \hline
 \cite{williams-et-al:2014:0278364914531056} &   &   &   &   & x & odometry (3D, 6DoF) & pose graph (graph) & -- &  & x &  & x & x & x &  & wheel odometry, camera (color, stereo), IMU & x & RTK-GPS, simulation & -- & -- & -- & -- & KITTI & execution time, KLD\\
 \hline
 \cite{einhorn-gross:2015:008} &   & x & x &   &   & odometry & pose graph (graph, 2D/3D NDT) & -- &  & x & x &  &  & x &  & camera (mono, RGBD), laser (2D) & x & -- & 7 & -- & 3 & 2d & -- & execution time, \#nodes\\
 \hline
-\cite{pérez-et-al:2015:y} & x &   &   &   &   & particle filter (3D, 6DoF) & pose graph (graph, 6DoF edges) & -- & x & x &  & x &  & x &  & wheel odometry, camera (gray, stereo), laser (2D) & x & SLAM-based & 11.5 & -- & 3.5 & -- & -- & pose error\\
+\cite{pérez-et-al:2015:y} & x &   &   &   &   & particle filter (3D, 6DoF) & grid (2D, occupancy), dictionary (BoW) & -- & x & x &  & x &  & x &  & wheel odometry, camera (gray, stereo), laser (2D) & x & SLAM-based & 11.5 & -- & 3.5 & -- & -- & pose error\\
 \hline
 \cite{li-et-al:2015:7139706} & x &   &   & x &   & feature matching (location) & pose graph (graph) & -- & -- & -- &  & x &  &  & x & camera (gray, mono) & x & manual & -- & -- & -- & 3y & -- & confusion matrix\\
 \hline
@@ -201,7 +197,7 @@ p{0.15\textwidth}                     % D12: evaluation metrics
 \hline
 \cite{mühlfellner-et-al:2016:21595} &   &   & x & x &   & reprojection minimization (3D, 6DoF) & keyframe (graph) & -- & x & x &  & x &  & x &  & wheel odometry, camera (gray, mono) & x & RTK-GPS & 22 & -- & -- & 1y & -- & computational complexity, localization rate, pose error, \#map points\\
 \hline
-\cite{an-et-al:2016:0} & x & x &   &   &   & EKF (2D, 3DoF) & pose graph (graph) & -- &  & x & x &  &  & x &  & wheel odometry, camera (gray, mono) & x & manual, simulation & 0.254 & -- & 0.33 & -- & -- & pose error, \#edges, \#nodes\\
+\cite{an-et-al:2016:0} & x & x &   &   &   & EKF (2D, 3DoF) & pose graph (graph) & -- &  & x & x &  &  & x &  & wheel odometry, camera (gray, mono), laser (2D) & x & manual, simulation & 0.254 & -- & 0.33 & -- & -- & pose error, \#edges, \#nodes\\
 \hline
 \cite{taisho-kanji:2016:7866383} & x &   &   &   &   & image classification (location) & database (images, image features) & -- & -- & -- &  & x &  & x &  & camera (color, mono) & x & manual & -- & -- & -- & -- & -- & localization rate\\
 \hline
@@ -209,7 +205,7 @@ p{0.15\textwidth}                     % D12: evaluation metrics
 \hline
 \cite{biswas-veloso:2017:005} &   & x &   &   &   & Bayesian (2D, 3DoF) & feature (2D line segments) & -- &  & x & x & x &  & x &  & wheel odometry, laser (2D), camera (RGBD) & -- & manual, SLAM-based & -- & -- & -- & -- & CoBots & pose error, \#localization failures\\
 \hline
-\cite{griffith-pradalier:2017:21664} & x &   & x & x &   & SIFT flow (3D, 6DoF) & pose graph (graph, 6DoF edges) & -- & x &  &  & x &  &  & x & camera (color, mono), GPS, IMU & x & manual & 100 & -- & -- & 1y2m & -- & absolute alignment error\\
+\cite{griffith-pradalier:2017:21664} & x &   &  & x &   & SIFT flow (3D, 6DoF) & pose graph (graph, 6DoF edges) & -- & x &  &  & x &  &  & x & camera (color, mono), GPS, IMU & x & manual & 100 & -- & -- & 1y2m & -- & absolute alignment error\\
 \hline
 \cite{naseer-et-al:2017:7989305} & x &   &   &   & x & feature matching (location) & -- & -- &  & x &  & x &  & x &  & camera (color, mono) & x & manual & 100 & -- & -- & 3y & -- & f-score, precision-recall\\
 \hline
@@ -253,9 +249,9 @@ p{0.15\textwidth}                     % D12: evaluation metrics
 \hline
 \cite{arroyo-et-al:2018:7} & x &   &   &   & x & image sequence matching (location) & -- & -- & -- & -- &  & x &  & x &  & camera (mono, stereo) & -- & -- & -- & -- & -- & -- & KITTI, New College, Nordlandsbanen & confusion matrix, execution time, precision-recall\\
 \hline
-\cite{ouerghi-et-al:2018:s18040939} & x &   &   &   &   & image sequence matching (location), visual odometry (3D, 2DoF) & keyframe (graph) & -- &  & x &  & x &  & x &  & wheel odometry, camera (mono) & -- & -- & -- & -- & -- & -- & KITTI & execution time, pose error\\
+\cite{ouerghi-et-al:2018:s18040939} & x &   &   &   &   & image sequence matching (location), visual odometry (3D, 2DoF), EKF(2D, 3DoF) & keyframe (graph) & -- &  & x &  & x &  & x &  & wheel odometry, camera (mono) & -- & -- & -- & -- & -- & -- & KITTI & execution time, pose error\\
 \hline
-\cite{siva-zhang:2018:8461042} & x &   &   &   &   & feature matching (location) & -- & -- & -- & -- &  & x &  & x &  & camera (omni) & x & GPS & 19.15 & -- & -- & 1y & -- & precision-recall\\
+\cite{siva-zhang:2018:8461042} & x &   &   &   &   & feature matching (location) & -- & -- & -- & -- &  & x &  & x &  & camera (omni, RGBD) & x & GPS & 19.15 & -- & -- & 1y & -- & precision-recall\\
 \hline
 \cite{luthardt-et-al:2018:8569323} & x &   & x &   &   & visual odometry (3D, 6DoF) & pose graph (graph) & -- & x & x &  & x &  & x &  & camera (gray, mono) & x & GPS & -- & -- & -- & -- & -- & pose error\\
 \hline
@@ -267,7 +263,7 @@ p{0.15\textwidth}                     % D12: evaluation metrics
 \hline
 \cite{kim-et-al:2019:2897340} & x &   &   &   &   & feature matching (location) & grid (location, 2D) & -- & -- & -- &  & x &  & x &  & laser (3D) & -- & -- & -- & -- & -- & -- & NCLT, Oxford RobotCar & precision-recall\\
 \hline
-\cite{berrio-et-al:2019:8814289} & x &   & x &   &   & point cloud matching (2D, 3DoF) & feature (pole, corners) & -- & x &  &  & x &  & x &  & laser (3D) & x & manual & -- & -- & -- & 6m & -- & pose covariance, \#map points\\
+\cite{berrio-et-al:2019:8814289} & x &   & x &   &   & point cloud matching (2D, 3DoF) & feature (pole, corners) & -- & x &  &  & x &  & x &  & laser (3D) & x & manual & -- & 0.5 & -- & 6m & -- & pose covariance, \#map points\\
 \hline
 \cite{wang-et-al:2019:8793499} &   & x &   &   &   & bundle adjustment (3D, 6DoF) & keyframe (graph) & -- & -- & -- & x & x &  & x &  & camera (RGBD) & x & simulation & -- & -- & -- & -- & TUM RGBD & ATE, precision\\
 \hline
@@ -279,7 +275,7 @@ p{0.15\textwidth}                     % D12: evaluation metrics
 \hline
 \cite{labbé-michaud:2019:21831} &   &   &   & x & x & BoW (location), odometry (2/3D, 3/6DoF) & pose graph (graph) & -- &  & x & x & x & x & x &  & wheel odometry, camera (stereo, RGBD), laser (2D/3D) & -- & -- & -- & -- & -- & -- & EuRoC, KITTI, MIT Stata Center, TUM RGBD & ATE, execution time, \#nodes\\
 \hline
-\cite{zhang-et-al:2019:8814347} &   & x &   &   &   & point cloud matching (2D, 3DoF) & grid (occupancy, 2D) & -- &  & x & x &  &  & x &  & laser (2D) & x & SLAM-based & -- & -- & -- & -- & -- & execution time, pose error\\
+\cite{zhang-et-al:2019:8814347} &   & x &   &   &   & point cloud matching (2D, 3DoF) & grid (signed distance field, 2D) & -- &  & x & x &  &  & x &  & laser (2D) & x & SLAM-based & -- & -- & -- & -- & -- & execution time, pose error\\
 \hline
 \cite{schmuck-chli:2019:00071} &   &   & x &   &   & odometry (3D, 6DoF) & keyframe (graph) & -- &  & x & x &  & x &  &  & camera, IMU & -- & -- & -- & -- & -- & -- & EuRoC & pose error\\
 \hline
@@ -307,7 +303,7 @@ p{0.15\textwidth}                     % D12: evaluation metrics
 \hline
 \cite{camara-et-al:2020:9196967} & x &   &   &   & x & feature matching (location) & -- & -- &  & x &  & x &  & x &  & camera & -- & -- & -- & -- & -- & -- & Berlin Kudamm, Gardens Point Campus, Nordlandsbanen & execution time, memory, precision-recall\\
 \hline
-\cite{gao-zhang:2020:9196906} & x &   &   &   &   & feature matching (location) & -- & -- & -- & -- &  & x &  & x &  & camera (color, mono) & -- & -- & -- & -- & -- & -- & CMU-VL, St Lucia 2007 & precision-recall\\
+\cite{gao-zhang:2020:9196906} & x &   &   &   &   & feature matching (location) & -- & -- & x &  &  & x &  & x &  & camera (color, mono) & -- & -- & -- & -- & -- & -- & CMU-VL, St Lucia 2007 & precision-recall\\
 \hline
 \cite{yang-et-al:2020:s20082432} &   & x &   &   &   & visual odometry (3D, 6DoF) & keyframe (graph) & -- &  & x & x &  &  & x &  & camera (RGBD) & -- & -- & -- & -- & -- & -- & TUM RGBD & ATE, execution time, pose error\\
 \hline
@@ -337,7 +333,7 @@ p{0.15\textwidth}                     % D12: evaluation metrics
 \hline
 \cite{thomas-et-al:2021:9561701} &   & x &   &   &   & point cloud matching (3D, 6DoF) & grid (occupancy, 3D) & -- & x & x & x &  &  & x &  & wheel odometry, laser (3D) & x & simulation & -- & -- & -- & -- & -- & confusion matrix, execution time, precision-recall\\
 \hline
-\cite{berrio-et-al:2021:3094485} & x &   &   &   &   & -- & grid (feature, 2D) & -- & -- & -- &  & x &  & x &  & wheel odometry, camera (color, mono), laser (3D), IMU & -- & -- & -- & -- & -- & -- & USyd Campus & pose covariance\\
+\cite{berrio-et-al:2021:3094485} & x &   & x &   &   & -- & grid (feature, 2D) & -- & x &  &  & x &  & x &  & wheel odometry, camera (color, mono), laser (3D), IMU & -- & -- & -- & -- & -- & -- & USyd Campus & pose covariance\\
 \hline
 \cite{oh-eoh:2021:app11198976} & x &   &   &   &   & feature matching (location) & -- & -- & -- & -- &  & x &  & x &  & camera (color, mono) & -- & -- & -- & -- & -- & -- & KAIST, Nordlandsbanen & precision-recall\\
 \hline
@@ -377,7 +373,7 @@ p{0.15\textwidth}                     % D12: evaluation metrics
 \hline
 \cite{du-et-al:2022:3028218} &   & x &   &   &   & reprojection minimization (3D, 6DoF) & keyframe (graph) & -- &  & x & x &  &  & x &  & camera (RGBD) & -- & -- & -- & -- & -- & -- & Bonn RGB-D Dynamic, TUM RGBD & ATE, execution time, pose error\\
 \hline
-\cite{xing-et-al:2022:22062} &   & x &   &   &   & feature matching (3D, 6DoF) & keyframe (graph) & -- &  & x & x & x & x & x &  & camera (RGBD), IMU & x & -- & -- & -- & -- & -- & EuRoC, KITTI, TUM RGBD & execution time, localization rate, pose error\\
+\cite{xing-et-al:2022:22062} &   & x &   &   & x & feature matching (3D, 6DoF) & keyframe (graph) & -- &  & x & x & x & x & x &  & camera (RGBD), IMU & x & -- & -- & -- & -- & -- & EuRoC, KITTI, TUM RGBD & execution time, localization rate, pose error\\
 \hline
 \cite{hong-et-al:2022:02783649221080483} & x &   &   &   &   & feature matching (location), point cloud matching (2D, 3DoF) & keyframe (graph) & -- &  & x &  & x &  & x &  & radar & -- & -- & -- & -- & -- & -- & MulRan, Oxford RobotCar, RADIATE & ATE, execution time, pose error\\
 
