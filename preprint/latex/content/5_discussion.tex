@@ -1,7 +1,7 @@
 \section{Discussion}
 \label{sec:discussion}
 
-The main goal of this review is to synthesize methodologies focused on long-term localization and mapping. Therefore, the discussion first analyzes the techniques proposed in the 142 included works for the five categories of DE1 (see Section~\ref{sec:methodology:data}). Section~\ref{sec:discussion:appearance} discusses methodologies related to dealing with the varying appearance of environments for localization and place recognition. Section~\ref{sec:discussion:dynamics} analyzes works focused on modeling the environment dynamics or identifying dynamic objects within the environment. Section~\ref{sec:discussion:sparsify} focuses on approaches for removing redundant data from the map or identifying novelty data to keep the map size constrained to the environment size. Section~\ref{sec:discussion:multisession} discusses how methods handle multi-session in terms of mapping. Section~\ref{sec:discussion:computational} reviews works related to computation concerns over long-term localization and mapping, in addition to the ones relative to map sparsification discussed in Section~\ref{sec:discussion:sparsify}. However, the discussion should also focus on how the included works evaluated their results in long-term operations. Thus, Section~\ref{sec:discussion:metrics} presents the evaluation metrics used in the experiments, and Section~\ref{sec:discussion:observations} analyzes the experimental data and datasets used for evaluating the proposed methodologies.
+The main goal of this review is to synthesize methodologies focused on long-term localization and mapping. Therefore, the discussion first analyzes the techniques proposed in the 142 included works for the five categories of DE1 (see Section~\ref{sec:methodology:data}). Section~\ref{sec:discussion:appearance} discusses methodologies related to dealing with the varying appearance of environments for localization and place recognition. Section~\ref{sec:discussion:dynamics} analyzes works focused on modeling the environment dynamics or identifying dynamic objects within the environment. Section~\ref{sec:discussion:sparsity} focuses on approaches for removing redundant data from the map or identifying novelty data to keep the map size constrained to the environment size. Section~\ref{sec:discussion:multisession} discusses how methods handle multi-session in terms of mapping. Section~\ref{sec:discussion:computational} reviews works related to computation concerns over long-term localization and mapping, in addition to the ones relative to map sparsification discussed in Section~\ref{sec:discussion:sparsity}. However, the discussion should also focus on how the included works evaluated their results in long-term operations. Thus, Section~\ref{sec:discussion:metrics} presents the evaluation metrics used in the experiments, and Section~\ref{sec:discussion:observations} analyzes the experimental data and datasets used for evaluating the proposed methodologies.
 
 
 
@@ -368,9 +368,9 @@ All of these methods using geometric constraints to improve the identification o
 
 
 \subsection{Map sparsification}
-\label{sec:discussion:sparsify}
+\label{sec:discussion:sparsity}
 
-The next subject in this discussion analyzes included works categorized as sparsify in DE1. The methodologies proposed in those works manage the map size of the environment representation perceived by the mapping agent, where the size should be dependent on the operation area and not on the trajectory length of the robots.
+The next subject in this discussion is the analysis of the included works categorized as sparsity in DE1. The methodologies proposed in those works manage the map size of the environment representation perceived by the mapping agent, where the size should be dependent on the operation area and not on the trajectory length of the robots.
 Hence, the discussion on map sparsification is organized into the following topics: sparsification of graph SLAM to remove redundant nodes or outdated environment observations, management of the keyframe graph and its features relative to the keyframe formulation of the SLAM problem, and generic sparsification methods proposed in the included works for feature maps.
 
 
@@ -443,7 +443,7 @@ Clustering techniques are employed in the included works to identify keyframes f
 Instead of evaluating single keyframes, \cite{bouaziz-et-al:2022:4} exploits the similarity between traversals in the keyframe map that represent runs possibly in different environment conditions. Hierarchical clustering on a proposed similarity matrix between traversals identifies which one to remove when their number exceeds a predefined threshold, trying to maintain the map diversity as possible as in \cite{konolige-bowman:2009:5354121}. The limitation on the number of traversals bound the computational requirements of the method.
 
 Moreover, \cite{gadd-newman:2016:7759843} implements a merge process in its centralized versioning framework to measure the relevance of discovered segments by every single agent using stereo matching from visual odometry. The merging strategy with multiple agents built the map in an experiment in 3.6h, while a single agent would require 12.4h, while the size of the merged database was smaller than a single agent due to the redundancy check.
-Similar to methods for sparsifying the standard pose graph, \cite{ding-et-al:2019:8968550} uses the KLD measure to determine which keyframe to remove based on their contribution. When adding a new one, the method updates the KLD of each keyframe that has common features to the new frame. The keyframes with KLD lower than a threshold are removed using GLC for edge marginalization if needed. The proposed sparsification approach reduced the map size for transmitting it between an external agent and the robot.
+Similar to methods for sparsification of the standard pose graph, \cite{ding-et-al:2019:8968550} uses the KLD measure to determine which keyframe to remove based on their contribution. When adding a new one, the method updates the KLD of each keyframe that has common features to the new frame. The keyframes with KLD lower than a threshold are removed using GLC for edge marginalization if needed. The proposed sparsification approach reduced the map size for transmitting it between an external agent and the robot.
 
 Although the keyframe management removes map points indirectly, e.g., when the points are not well constrained with less than 2 observations~\parencite{schmuck-chli:2019:00071}, management techniques on the keyframe graph can also remove points directly from the feature map.
 LLamaSLAM~\parencite{luthardt-et-al:2018:8569323} considers only high-quality LLama points for adding to the map, while ensuring their spatial coverage in a 2D grid selecting only the best 10 points within each cell. The keyframe selection is based on the overall quality threshold of the observed LLama points in the frame.
@@ -468,7 +468,7 @@ As for \cite{murphy-sibley:2014:6907022}, their approach implements probabilisti
 
 \subsubsection{Features management}
 
-In addition to feature management policies applied in keyframe SLAM and discussed previously, the included works also propose techniques to sparsify feature maps for improving the mapping scalability in the long-term time frame.
+In addition to feature management policies applied in keyframe SLAM and discussed previously, the included works also propose techniques for sparsification of feature maps for improving the mapping scalability in the long-term time frame.
 \cite{hochdorfer-schlegel:2009} and \cite{hochdorfer-et-al:2009:5339626} focus on ensuring the spatial distribution of the features in the environment, removing the ones that cover nearly the same region.
 The first clusters SURF-based features based on the $l_1$ distance of their 2D position in the map using k-means with the number of clusters as 25\% of known features in the map. Considering feature information content as dependent on the covariance matrix, the proposed approach selects the cluster with the maximum difference in information content and removes the feature with the lowest localization benefit while limiting the number of map features to 50. This limit constrains the computation requirements of the method. The second work uses DBSCAN instead of k-means because the former is a density-based algorithm while the latter is a partitioning one. Even though both \cite{hochdorfer-schlegel:2009} and \cite{hochdorfer-et-al:2009:5339626} limit the number of map features and improve their spatial coverage, the DBSCAN-based method led to a better spatial distribution of features compared to k-means.
 
@@ -520,27 +520,63 @@ The method was capable of merging a multi-session experiment with 12 sessions 3 
 \subsection{Computational}
 \label{sec:discussion:computational}
 
-taisho-kanji:2016:7866383
-Principal Component Analysis (PCA) can be used for dimensionality reduction (4096 to 128-dimensional features), defining the proposed descriptor PCA-NBNN.
+Next, this section discusses the works categorized as computational in DE1. These works focus on computational concerns of long-term localization and mapping apart from map sparsification, as the latter subject is already discussed in Section~\ref{sec:discussion:sparsity} and belongs to another category in DE1 (sparsity).
+The discussion is organized by the following topics: mechanisms to manage map storage, techniques for reducing the descriptor dimensions, parallel computing, and timing efficiency improvements for place recognition in long-term localization and mapping.
 
-xin-et-al:2017:8310121
-Studies the possibility of using a random selection technique for feature dimension reduction, given that requires no need for further training nor significant loss in efficiency and effectiveness compared to Local Sensitive Hushing (LSH) and Principal Component Analysis (PCA).
-Cosine distance for evaluate query image compared to database (global descriptor).
 
-yu-et-al:2019:8961714
-The 4 max-pooling by channel proposed to reduce the descriptors dimensions with minimal accuracy reduction. 1024-dimension divided into 256 groups and maximum of ech group used as final descriptor. Compared to PCA, 4 max-pooling by channel has less computational complexity but similar performance.
 
-camara-et-al:2020:9196967
-PCA to reduce each vector of the 16 cubes to 100 dimensions.
+\subsubsection{Map management}
 
-piasco-et-al:2021:6
-Reduce dimension of the descriptors by applying PCA and whitening.
+Although map sparsification techniques try to maintain constrained memory and processing requirements by removing redundant or outdated information from the map, these techniques could not be enough to guarantee computational stability in online execution. Thus, a methodology followed by \cite{oberländer-et-al:2013:6766479} and \cite{labbé-michaud:2019:21831} only maintains a sampled version of the map in RAM while the remaining part or the whole map is saved in the disk memory.
+\cite{oberländer-et-al:2013:6766479} makes the proposed multi-session submap graph compatible with serialization, allowing its nodes to be transparently swapped out to disk. The online execution maintains only a smaller version of the entire graph in RAM. This version allows faster localization estimates, where the full-resolution map can be brought back into memory on demand when detailed comparisons are needed for localization. The oldest scans are moved to disk upon adding new ones to limit the memory to a constant size.
+As for \cite{labbé-michaud:2019:21831}, the proposed Real-Time Appearance-Based Mapping (RTAB-Map) implements a memory system resembling the one adopted by \cite{dayoub-et-al:2011:013}: STM, Working Memory (WM), and LTM. However, these memories only define which nodes of the graph are considered in the online execution. Indeed, STM assembles the sensor data into a node for adding to the graph, WM is the nodes considered for operation, and LTM are nodes transferred from LTM to satisfy the online requirements of RTAB-Map, where the latter is an SQLite offline database. This transfer is dictated by a weighting mechanism to favor frequently observed locations to be preserved in WM.
+Both works satisfied the online requirements of the respective localization and mapping algorithms in the experiments due to capping the memory and computation requirements of the online execution.
 
-yang-et-al:2021:12054
-select max-pooling layer instead of convulutional one
+In the context of Earth-scale mapping, \cite{kim-et-al:2021:3047421} presents a Geodetic Normal Distribution (GND) map structure. A geodetic quad-tree tiling organizes the Earth's surface into spatial tiles with the same angular size in latitude and longitude directions, where a unique identification number inferred by location allows real-time searching. This tiling organization allows large-scale localization and a way to manage submaps of different locations on the Earth. Also, the 3D LiDAR point cloud conversion into normal distributions compresses the map size of each location.
+The method was able to compress the map size by 85\% relative to only considering a point cloud while satisfying the localization requirements of the experimental setup. Also, the method was able to map and localize three different continents (Europe, Asia, and America) with the GPS information inferring the quad-key tile of vehicle's localization.
 
-naseer-et-al:2017:7989305
-Uses Sparse Random Projections for embedding high-dimensional feature vectors into lower dimensions. The precision-recall metrics is very similar to the full dimensional descriptor.
+
+
+\subsubsection{Descriptor dimension reduction}
+
+The reduction of features descriptor dimensions can reduce the overall map size and increase the efficiency in feature searching and matching.
+An example is the work of \cite{bosse-zlot:2009:009} that performs a nonlinear normalization on each descriptor while reducing the the proposed moment grid descriptor's dimensions to remove elements with low signal-to-noise ratio. Both normalization functions and dimension reduction require training their respective parameters in map data from a similar environment to the expected one. The method showed that reducing the dimension of feature descriptors reduces the computation required for nearest searching neighbors and the map size.
+
+One of the most used techniques for reducing descriptors' dimensions of CNN-based features is Principal Component Analysis (PCA). This compression algorithm requires learning its model using extracted features from a database of example images as training data. Both \cite{taisho-kanji:2016:7866383} and \cite{camara-et-al:2020:9196967} used PCA for reducing from a 4096-dim AlexNet and a 25088-dim VGG16 descriptors to 128 and 100 dimensions, respectively. The results presented in both works showed that PCA does not affect significantly the accuracy of the place recognition methods while reducing the computation time.
+Also, PCA can be combined with whitening as in \cite{piasco-et-al:2021:6} to make the features less correlated with each other and have all the same variance while reducing the descriptor dimensions.
+
+Furthermore, the random selection of descriptor components to reduce its dimensions is employed in \cite{naseer-et-al:2017:7989305} and \cite{xin-et-al:2017:8310121} due to not requiring a learning phase, unlike PCA.
+\cite{naseer-et-al:2017:7989305} uses Sparse Random Projection for embedding its FastNet-based descriptor with approximately 130000 dimensions into a reduced 4096-dim descriptor. The compression procedure achieved similar f-score, and precision-recall metrics compared to the uncompressed descriptor.
+\cite{xin-et-al:2017:8310121} evaluated the compressing of the 64896-dim AlexNet-based feature used in their work using a random selection of the descriptor's components. The results showed similar precision while speeding up 17 times the matching speed and achieving a compression ratio of 93.7\% considering descriptors with 4096 dimensions.
+Also, max-pooling the descriptors of CNN-based features by channel is another technique for dimension reduction.
+\cite{yu-et-al:2019:8961714} uses 4-max pooling to reduce 1024-dim descriptors into 256 dimensions. Even though the accuracy of place recognition was slightly lower than PCA in the experiments, the pooling reduction scheme had lower computational complexity.
+
+Semantic hashing implemented in \cite{ikeda-tanaka:2010:5509579} focuses on learning a compact binary code for image retrieval. The method uses GIST scene descriptors as input to the network architecture that progressively maps the high-dimensional input vector to lower dimensions. The network's output is binarized by a threshold learned in the training phase for obtaining the final lower-dim binary descriptor, where the binary code allows searching directly in a hash table. In the experiments, the method achieved a compact feature representation scalable for large environments, with an 8KB visual dictionary, and a 5.3MB of visual words on approximately 20km in mapping and localization trajectories. However, semantic hashing had the same problems as pre-trained dictionaries as BoW, where there is a semantic gap between the dataset used for learning the dictionary and the one for localization.
+
+
+
+\subsubsection{Parallel computing}
+
+In terms of improving the overall efficiency of the computational resources, parallel computing allows the simultaneous execution of algorithms.
+\cite{williams-et-al:2014:0278364914531056} proposes concurrent filtering and smoothing for pose graph formulations of SLAM to achieve faster updates of the current solution while optimizing simultaneously the full graph even in presence of loop closures. The method factorizes the graph into three groups: a small number of most recent states, a large group of states for global smoothing, and separator states to make the filter and smoother ones conditionally independent. If the computation of the filtering stage exceeds a real-time threshold, the algorithm moves the older states in filtering to the smoother thread for further optimization. Periodic synchronization exchanges updated information between the filter and smoother threads after concurrent updates while also accounting for delays. The method achieved a constant filtering time update while concurrently performing full optimization of the graph. Even though the smoother update time increased over time, the smoother optimization required to improve the consistency of the graph over time did not interfere with the filtering stage.
+\cite{yang-et-al:2021:12054} also uses multi-threading computing. The multi-thread approach splits an image into multiple grids for high parallelism and feature extraction for loop closure. The results showed a reduction in computational complexity by checking 4 candidates in parallel for each frame.
+
+The use of external computation resources allows parallel computation of different algorithms, even though delays may occur.
+\cite{ding-et-al:2019:8968550} divides the localization task between the robot and the cloud. The latter is responsible to maintain a map and refine the localization estimation of the robot considering visual-inertial odometry constraints sent to the cloud. This refinement performs an alignment of the data received from the robot to the laser and visual points of the cloud map. As for the robot, only maintains a local sliding window and implements a delayed state EKF to account the refined localization estimators computed by the cloud. Even with a network latency of 5s, the EKF was able to converge and achieve a robust localization in terms of ATE.
+Similarly, \cite{ding-et-al:2019:8968550} stores the global map in an external computing system, in their case, an edge device. The method adapts ORB-SLAM2 for mobile-edge parallel execution, where only the most recent data is kept in the mobile device and the edge device performs the heavier computation tasks such as global bundle adjustment and optimization of the graph relations. The method achieved constant memory usage and execution time on the mobile device in the experiments due to outsourcing computation tasks to the edge device.
+
+
+
+\subsubsection{Timing efficiency}
+
+Finally, three other included works focus on improving the timing efficiency related to the place recognition process.
+\cite{mohan-et-al:2015:7139966} considers 2 discretization levels for the words of a BoW model: a finer level representing the images and a coarse one representing environments. The method implements 2 nested levels of inverted indexes for fast computation, where one encodes the co-occurrence of words in a high-level environment index, and another index stores the BoW image words of the environments. As for place recognition, the query image is transformed into 2 BoW vectors representing the fine and coarse levels to perform a coarse-to-fine search in the respective indexes. Compared to a single inverted-index as in a standard BoW model, the hierarchical inverted index achieves similar accuracy in loop recognition while decreasing the execution time, allowing large dictionaries for the same execution time.
+The second work focused on timing efficiency is \cite{latif-et-al:2017:016}. This method formulates a sparse $l_1$ minimization problem that is convex  for place recognition instead of nearest neighbor search to find a vector whose elements best explain the image also represented by a vector. This formulation is independent of the representations (e.g., BoW, scene features) leveraging fast convergent optimizers to ensure real-time generation of loop closure hypotheses. As for the vector solution of the optimization, it is expected to be very sparse (only 1 non-zero, if current image matches perfectly one of the dictionary). However, the method only declares a valid loop only when it is globally unique, to avoid false positives. The experiments showed similar precision to a BoW-based approach and lower recall due to being more conservative on loop closure detection, while being compatible with a real-time implementation (116.45ms mean time for 4800-dim image descriptors in a database of 8358 images).
+As for the third work, \cite{wu-wu:2019:8968599} uses a deep supervised hashing network to learn hash codes for direct access of similar features in a hash table, similar to \cite{ikeda-tanaka:2010:5509579}. Even when using brute force for matching hash codes, the method achieved a 6.67ms matching time with a 8192-dim descriptor in a 10000 image database, while having similar precision-recall and f-score compared to SeqSLAM or AlexNet-based place recognition.
+
+
+
+
 
 \subsection{Long-term experimental data}
 \label{sec:discussion:experiments}
