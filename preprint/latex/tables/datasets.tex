@@ -1,11 +1,15 @@
-\onecolumn
+%\onecolumn
 
 \renewcommand{\arraystretch}{1.125}
 \setlength{\tabcolsep}{1.5pt}
 
 \begin{tiny}
 
-\begin{longtable}{@{\extracolsep{1pt}}
+\begin{table*}
+  \centering
+  \caption{Datasets used in the 142 included records for long-term localization and / or mapping experiments. Legend: odo -- odometry (wheeled, laser, visual, inertial, or a combination of odometry sources), dist. -- total distance length of the dataset, path -- total path distance if repeated several times, time -- total operation time, int. -- time interval between the start and end acquisition dates / time instants (d/w/m/y equivalent to day/week/month/year, 0 if only 1 run), and seq. -- number of sequences of the dataset.}
+  \label{tab:discussion:datasets}\begin{tiny}
+  \begin{tabular}[!h]{@{\extracolsep{1pt}}
 p{0.065\textwidth}                          % Dataset name
 c|                                          % Year
 cccccc|                                     % Long-term
@@ -18,11 +22,10 @@ cccc|                                       %                radar, sonar, imu, 
 cc|                                         % Sensor calibrations
 p{0.095\textwidth}p{0.095\textwidth}|       % Ground-truth + Format
 ccccc@{}}                                   % Distance, time, \#sequences
-  \caption{Datasets used in the 144 included records for long-term localization and / or mapping experiments. Legend: odo -- odometry (wheeled, laser, visual, inertial, or a combination of odometry sources, dist. -- total distance length of the dataset, path -- total path distance if repeated several times, time -- total operation time, int. -- time interval between the start and end acquisition dates / time instants (d/w/m/y equivalent to day/week/month/year, 0 if only 1 run), and seq. -- number of sequences of the dataset.}
-  %\vspace{0.5em}
-  \label{tab:discussion:datasets}\\
 
-%% FIRST TABLE HEADER
+
+
+%% HEADER
 \hline
 &&
 \multicolumn{6}{c|}{\textbf{Long-term}} &
@@ -52,49 +55,10 @@ ccccc@{}}                                   % Distance, time, \#sequences
 \textbf{GT data} & \textbf{Format} & 
 \rotatebox{90}{\textbf{dist.} (km)} & \rotatebox{90}{\textbf{path} (km)} & \rotatebox{90}{\textbf{time} (h)} & \rotatebox{90}{\textbf{int.} (d/w/m/y)} & \rotatebox{90}{\textbf{\#seq.}}\\
 \hline
-\endfirsthead
-
-%% TABLE HEADER IN THE FOLLOWING PAGES
-\multicolumn{27}{l}{\itshape{\tablename\ \thetable{}: continued from previous page}}
-\vspace{0.5em}\\
-\hline
-&&
-\multicolumn{6}{c|}{\textbf{Long-term}} &
-&&
-\multicolumn{14}{c|}{\textbf{Sensor}} &
-\multicolumn{2}{c|}{\textbf{Calib.}} &
-&&
-&&&&\\
-&&&&&&&&&&
-\multicolumn{1}{c}{} &
-\multicolumn{7}{c}{\textbf{camera}} &
-\multicolumn{2}{c}{\textbf{laser}}  &
-&&&&
-&&
-&&
-&&&&\\
-\cline{12-18}
-\cline{19-20}
-\textbf{Dataset} & \textbf{Year} &
-\rotatebox{90}{\textbf{lighting}} & \rotatebox{90}{\textbf{day/night}} & \rotatebox{90}{\textbf{weather}} & \rotatebox{90}{\textbf{seasonal}} & \rotatebox{90}{\textbf{dynamics}} & \rotatebox{90}{\textbf{sparsity}} & 
-\textbf{Environ.} & \textbf{Domain} & 
-\multicolumn{1}{c}{\rotatebox{90}{\textbf{odo}}} &
-\rotatebox{90}{\textbf{gray}} & \rotatebox{90}{\textbf{color}} & \rotatebox{90}{\textbf{monocular}} & \rotatebox{90}{\textbf{stereo}} & \rotatebox{90}{\textbf{omni}} & \rotatebox{90}{\textbf{RGBD}} & \multicolumn{1}{c}{\rotatebox{90}{\textbf{thermal}}} &
-\rotatebox{90}{\textbf{2D}} & \multicolumn{1}{c}{\rotatebox{90}{\textbf{3D}}} &
-\rotatebox{90}{\textbf{radar}} & \rotatebox{90}{\textbf{sonar}} & \rotatebox{90}{\textbf{IMU}} & \rotatebox{90}{\textbf{GPS}} &
-\rotatebox{90}{\textbf{intrinsic}} & \rotatebox{90}{\textbf{extrinsic}} & 
-\textbf{GT data} & \textbf{Format} & 
-\rotatebox{90}{\textbf{dist.} (km)} & \rotatebox{90}{\textbf{path} (km)} & \rotatebox{90}{\textbf{time} (h)} & \rotatebox{90}{\textbf{int.} (d/w/m/y)} & \rotatebox{90}{\textbf{\#seq.}}\\
-\hline
-\endhead
-
-%% TABLE FOOTER
-\hline
-\endfoot
-\hline
-\endlastfoot
 
 
+
+%% CONTENT
 
 \citetitle{dataset:fhw} & 2001 &  &  &  &  &  & x & indoor (museum) & ground (TOURBOT) & x &  &  &  &  &  &  &  & x &  &  &  &  &  &  &  & -- & CARMEN & -- & -- & 1.98 & -- & 1\\
 \hline
@@ -184,13 +148,13 @@ ccccc@{}}                                   % Distance, time, \#sequences
 
 
 
-%  \end{tabular}}
-%\end{table*}
-\end{longtable}
+\hline
+
+  \end{tabular}\end{tiny}
+\end{table*}
+%\end{longtable}
 
 \end{tiny}
-
-\twocolumn
 
 \renewcommand{\arraystretch}{1.25}
 \setlength{\tabcolsep}{3pt}

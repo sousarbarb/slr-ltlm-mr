@@ -37,7 +37,7 @@ Autonomous experiences are the ones relative to the repetition phase. These expe
 Unlike \cite{churchill-newman:2013:0278364913499193}, new experiences have a known metric pose relative to the others in the pose graph.
 
 In general, experience-based navigation methods try to generate new experiences if the environment changes, expecting that at a certain point in time the robot will be able to localize itself relative to previous experiences, not requiring new ones to be added to the map.
-However, these approaches are not scalable in the long-term timeframe nor to deal with dynamic elements, even using central servers as in \cite{gadd-newman:2016:7759843} with more computational resources than the robots.
+However, these approaches are not scalable in the long-term time frame nor to deal with dynamic elements, even using central servers as in \cite{gadd-newman:2016:7759843} with more computational resources than the robots.
 Pruning algorithms would be required to remove redundant or outdated information, as in \cite{konolige-bowman:2009:5354121} or \cite{tang-et-al:2019:7}.
 Also, other methods should be employed to deal not only with long-term appearance changes (weather conditions or seasonal changes) but also with dynamic elements in the scene.
 
@@ -581,11 +581,160 @@ As for the third work, \cite{wu-wu:2019:8968599} uses a deep supervised hashing 
 \subsection{Long-term experimental data}
 \label{sec:discussion:experiments}
 
+While the previous subsections of the discussion in this review focus on the methodologies for performing long-term localization and mapping, this section focuses on the analysis of the experimental data used by the authors in their experiments. The analysis is organized as follows: identification and discussion of the public datasets used by the included works in the review, discussion of the distance and time characteristics of the experimental data, and identification of the types of ground-truth data more used and proposed for evaluating the proposed methodologies.
+
+
+
+\subsubsection{Public datasets}
+
+The analysis of the data extraction item DE11 shows that 89 of the 142 (62.7\%) included works in this review used public datasets to evaluate the proposed methodologies. This percentage indicates the importance of using datasets in the experiments, possibly due to facilitating the accessibility to the experimental data and allowing comparisons between works that use the same datasets and evaluation metrics. Even considering the 77 works that also performed private experiments, 24 (31\%) of those also used datasets for evaluating the proposed methods.
+Also, Figure~\ref{fig:discussion:datasets} presents the usage of public datasets over time versus the records published per year.
+This graph shows similar linear tendencies between the two series and an usage over than 65\% in the past 5 years. The latter percentage strengths the indication of the importance of using public datasets in the experiments given by the included works in this review.
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/datasets.png}
+  \caption{Evolution of the usage of public datasets per year considering the 142 included records in this review.}
+  \label{fig:discussion:datasets}
+\end{figure}
+
+Although DE11 indicates which datasets are used in the experiments, this item does not characterize the datasets. Thus, Table~\ref{tab:discussion:datasets} presents a comparison table with the following items: long-term characteristics of the dataset in terms of the environment conditions (lighting, day and night sequences, weather and seasonal changing conditions, dynamic elements, and sparsity), type of environment (indoor, outdoor, or both), the domain of the agent used for acquiring data (ground, air, or water, and the commercial unit used if indicated), sensorization, if the dataset provides intrinsic and extrinsic calibration of the sensor setup used, type of ground-truth data, format, and long-term characteristics in terms of distance, time, and the number of runs. Next, the discussion focuses on comparing the datasets based on the column items presented in Table~\ref{tab:discussion:datasets} and correlating their usage in terms of DE1.
+
 \input{tables/datasets}
+
+
+\paragraph{Environment}
+
+The outdoor environment is the most seen one in the 43 datasets, with 27 being acquired outdoors compared to 19 indoors, and 3 datasets (\citetitle{dataset:gardens-qut}, \citetitle{dataset:nclt}, and \citetitle{dataset:ntu}) having indoor and outdoor sequences.
+The environment changing conditions more present in indoor datasets are lighting changes and dynamic elements, e.g., in office environments where the exterior and artificial light influence the visual perception and moving people increase environment dynamics (not only the people, but moving objects taken by persons).
+Although night periods, weather and seasonal changes also influence indoor conditions, this influence is mostly in the lighting conditions and only appear in 4 indoor-only datasets (\citetitle{dataset:cold}, \citetitle{dataset:cobot}, \citetitle{dataset:mit-stata}, and \citetitle{dataset:lcas-strands}), accordingly to the respective dataset descriptions.
+Similarly, the outdoor datasets are more affected by changing lighting and moving objects. However, these datasets consider more frequently and are more influenced by other changes. This influence is not only in lighting conditions but also in visual perception (color of the leaves in different seasons) and moving elements in the scene (water of the rain or moving tree branches due to strong wind).
+In terms of recency, in the past 5 years, only 2 of the 14 datasets released during that period are in indoor locations. This recent tendency and the fact of 27/43 datasets having outdoor sequences indicate more interest in this type of environment by the included works in this review.
+
+As for the diversity of the acquisition conditions, the most diverse datasets are \citetitle{dataset:cold}, \citetitle{dataset:lcas-strands}, \citetitle{dataset:nclt}, \citetitle{dataset:usyd}, \citetitle{dataset:radiate}, \citetitle{dataset:iplt}, and \citetitle{dataset:oxford-robotcar}. The latter two have all changing conditions in the environment, i.e., lighting, day/night sequences, dynamic elements, and weather and seasonal changes. Even though the remaining diverse datasets do not consider one of these conditions, the datasets are still interesting in the long-term localization and mapping context with a high diversity of environment conditions.
+
+The datasets categorized as sparsity are intended for testing map maintenance algorithms to constrain the graph size in the graph SLAM formulation to the operation area and not to the trajectory length due to usually being available the full graph map of the dataset. Although these datasets are useful for evaluating map maintenance, they normally lack several other changing conditions that influence long-term localization and mapping while also all of those datasets being indoors. Only \citetitle{dataset:cobot} and \citetitle{dataset:mit-stata} datasets seem to be more diverse in terms of environment conditions by capturing sequences with different lighting conditions and dynamic elements in the scene.
+
+
+\paragraph{Sensorization}
+
+In terms of the type of sensors used for acquiring data, the ones utilized in the datasets are odometry (wheeled, visual, inertial, laser, or a combination of different odometric sources), cameras (monocular, stereo, omnidirectional, RGBD, or thermal), lasers (2D/3D), radar, sonar, IMU, and GPS, similar to the sensors found in the data extraction phase of this review. The more common type of sensor is camera used in 37/43 (86\%) datasets. This predominance is conformal with the high usage in 104/142 (73.2\%) included works and occurrence of related keywords in the analysis presented in Figure~\ref{fig:overview:kw} (both vision and camera keywords appear in the graph with 18 and 7 occurrences, respectively), indicating an interest of using camera sensors in data acquisition and long-term localization and mapping.
+Also, the omnidirectional vision used in 5 datasets can be accomplished by using an hyperbolic mirror (\citetitle{dataset:bicocca-indoor}, \citetitle{dataset:cold}), joining the image of several cameras and using their extrinsic calibrated parameters, or using an omnidirectional camera (\citetitle{dataset:ford}, \citetitle{dataset:nclt}, \citetitle{dataset:newcollege}) such as the Point Grey LadyBug 2 5-view.
+Although the thermal camera is only present in \citetitle{dataset:kaist}, this sensor can be interesting for building inspection \parencite{yue-et-al:2020:9197072}.
+
+Moreover, datasets used in the included works recently released also use 3D laser (or LiDAR) and radar sensors. Although the older dataset with 3D laser is from 2011 (\citetitle{dataset:ford}), 5/10 (50\%) datasets using this sensor were released over the past 5 years from a total of 14 datasets released in this same period. This trend is noted also when analyzing the DE7 item of the included works, where 24/27 (89\%) methods using a 3D laser were proposed since 2018, indicating a recent importance of this sensor for long-term localization and mapping.
+As for radar data, all 3 datasets using the sensor (\citetitle{dataset:mulran}, \citetitle{dataset:robotcar-radar}, and \citetitle{dataset:radiate}) were released since 2020. A corresponding recency is noted in included works with 3/4 (75\%) methods (\cite{martini-et-al:2020:s20216002}, \cite{yin-et-al:2021:661199}, and \cite{hong-et-al:2022:02783649221080483}) using the sensor are also from 2020 onwards. This recent usage indicates a recent interest of using radar data within the scope of this review's topic, probably due to being less affected by changing lighting or weather conditions compared to visual sensors~\parencite{hong-et-al:2022:02783649221080483}.
+
+As for the other sensors used in the dataset, odometry data, IMU, 2D laser, and GPS are also extensively used in the datasets.
+The first two provide relative motion information of the vehicle and are used in 16 and 17 datasets and 33 and 19 included works, respectively.
+Although the 2D laser is used in 17 datasets, 15 of those are from 2016 and previous years. However, the sensor is still used in the included works over the years, especially in indoor environments, with 21/25 works for indoors using 2D lasers.
+As for GPS data, this sensor is usually used as ground-truth data, as will be discussed later.
+
+Sensor calibration is important for achieving long-term localization and mapping, not only for avoiding the propagation of inconsistency pose errors between sensors through time, but also to process the perceived data from the environment in the same coordinate referential frame. The intrinsic calibration is usually relative to camera sensors, where 25/37 (68\%) datasets with this sensor provide the intrinsic parameters to the user. Some of the datasets with cameras do not provide those parameters due to being intended only for image-based place recognition (e.g., \citetitle{dataset:city-center-fabmap}, \citetitle{dataset:cbd}, or \citetitle{dataset:fas}).
+In terms of extrinsic calibration, 24/43 (56\%) datasets provide these parameters, being useful for evaluating methods where the parameters are required to be processed in the same reference frame.
+
+The datasets more diverse in terms of their sensor setup are \citetitle{dataset:bicocca-indoor}, \citetitle{dataset:oxford-robotcar}, and \citetitle{dataset:robotcar-radar}, with 7, 6, and 6 different types of sensors, respectively.
+
+
+\paragraph{File format}
+
+Most of the datasets used by the included works define a specific format for organizing the respective data. These formats use standard file types such as plain text, CSV, or binary files having the advantage of not being tied to any particular software. Even so, there are common characteristics between those specific formats.
+Images are usually saved in JPG or PNG files, whereas PNG files are also used in the datasets for saving depth information of RGBD sensors.
+The laser data is usually saved in binary files due to its easiness for parsing by different programming languages and size considerations~\parencite{dataset:kitti,dataset:oxford-robotcar}.
+Another common aspect of specific formats found in the datasets of Table~\ref{tab:discussion:datasets} is the use of plain text or CSV files to save IMU, GPS, and/or odometry data.
+As for radar data, the respective polar representations are saved in PNG files.
+
+However, the datasets also make available standard log formats compatible with different types of sensor data.
+The most used one is ROSbag from the Robot Operating System (ROS) framework in 9 datasets. This log format is compatible with common messages defined in ROS for different sensors\footnote{\url{http://wiki.ros.org/common_msgs}}.
+The other standard format used in more than one dataset is CARMEN log files defined in the CARMEN robot navigation toolkit\footnote{\url{https://carmen.sourceforge.net/}}. Although this log format supports different sensor data such as odometry or lasers, the CARMEN navigation toolkit is not updated since 2008 (version 0.7.4-beta), considered to be deprecated.
+
+
+\paragraph{Usage relation with the included records}
+
+As for relating the datasets usage with this review's included works, the datasets can be related with the DE1 categorization of the records. From the appearance category in DE1, 50/75 (67\%) works use 32 different public datasets from Tabl~\ref{tab:discussion:datasets} to evaluate the proposed methodologies. The datasets most used are \citetitle{dataset:kitti}, \citetitle{dataset:nordlandsbanen}, \citetitle{dataset:nclt}, \citetitle{dataset:stlucia07}, and \citetitle{dataset:oxford-robotcar} (13, 11, 9, 8, and 8 usages). \citetitle{dataset:kitti} is also the most used overall, given the 26 works utilizing it for evaluation. However, this dataset and \citetitle{dataset:stlucia07} do not have seasonal nor weather changing conditions that greatly influence the appearance invariance of the methods, as discussed in Section~\ref{sec:discussion:appearance}, even though those datasets have high usage by the appearance-related works. Indeed, more recent datasets such as \citetitle{dataset:nclt} or \citetitle{dataset:oxford-robotcar} already widely used for evaluation, or also \citetitle{dataset:usyd} and \citetitle{dataset:radiate} would be suitable for evaluating the appearance invariance of the localization and mapping algorithms due to the datasets' diversity in terms of varying conditions.
+
+Although the works categorized as dynamics and sparsity also use public datasets for evaluation, the usage is slightly lower than for appearance-related methods (44\% and 51\%, respectively, compared to 67\%).
+\citetitle{dataset:kitti}, \citetitle{dataset:tum-rgbd}, and \citetitle{dataset:lcas-strands} are the only datasets used in more than one work categorized as dynamic (7, 6, and 2 usages, respectively), considering a total of 10 different datasets used by these works. However, \citetitle{dataset:kitti} and \citetitle{dataset:tum-rgbd} could be not the most suitable datasets for evaluating the performance over different levels of dynamics in the environment due to the smaller total operation time of 1.18h and 0.35h, respectively, compared to other datasets classified as having dynamic elements in Table~\ref{tab:discussion:datasets}. For example, \citetitle{dataset:lcas-strands} has a time frame of 1 year and a month in an indoor office environment capturing different motion frequencies or habits of the persons working at the scene with an average of 1 daily acquisition run. \citetitle{dataset:oxford-robotcar} and \citetitle{dataset:usyd} are also interesting due to the long time frames of the data acquisition (1 year and 8 months, and 1 year, with 133 and 52 runs, respectively). Also, \citetitle{dataset:iplt} is captured in a parking lot environment capturing semi-static and dynamic moving cars in the scene.
+As for sparsity-related works, 22 different datasets are used in the experiments, whereas \citetitle{dataset:kitti}, \citetitle{dataset:intel03}, \citetitle{dataset:mit-kilian}, \citetitle{dataset:mit-stata}, and \citetitle{dataset:euroc} being the most utilized ones (6, 5, 3, 3, and 3 usages, respectively). \citetitle{dataset:kitti} and \citetitle{dataset:euroc} are used for evaluating feature management techniques, though these datasets have small operation time frames and, possibly, trajectory lengths. Although \citetitle{dataset:mit-stata} would seem like a good dataset for evaluating the sparsity due to the long trajectory length and time frame (42km and 38h, respectively), the dataset's description indicates that hardware and calibration problems in the data acquisition setup may have created inconsistencies in the data. As for \citetitle{dataset:intel03}, \citetitle{dataset:mit-kilian}, and other datasets classified as sparsity in Table~\ref{tab:discussion:datasets}, these are widely used for graph sparsification due to repeated passages in same locations with a total of 15 usages, even though those datasets have usually only 1 data sequence. Other recent datasets could also be interesting for evaluation sparsification techniques of the map such as \citetitle{dataset:oxford-robotcar} and \citetitle{dataset:mulran}, given the repeated passages over the 10km path and the long trajectory length of 41.2km, respectively.
+
+Furthermore, 5/7 multi-session works used datasets, whereas the \citetitle{dataset:mit-stata} and \citetitle{dataset:intel03} being the most used ones with 2 usages each. While each data sequence of \citetitle{dataset:mit-stata} may represent a single session~\parencite{lázaro-et-al:2018:8594310}, the unique data sequence of \citetitle{dataset:intel03} can be split into different sessions~\cite{latif-et-al:2012:6385879}. This approach is valid for applying to other datasets in Table~\ref{tab:discussion:datasets}.
+As for the computational categorization on DE1, this category does not relate to the datasets used in the experiments because the computational efficiency is more dependent on the proposed localization and/or mapping algorithm than on the data.
+
+In terms of multi-robot works~\parencite{gadd-newman:2016:7759843,zhang-et-al:2018:1729881418780178,karaoguz-bozma:2020:2,yue-et-al:2020:9197072} identified by the DE4, even though the dataset \citetitle{dataset:utias} collects data from 5 robots and being the only multi-robot dataset in Table~\ref{tab:discussion:datasets}, it is only used in \cite{nobre-et-al:2018:8461111} to test the reconfiguration of landmarks in the scene in different runs for single-robot localization and mapping. The only datasets used in multi-robot works are \citetitle{dataset:kitti} in \cite{zhang-et-al:2018:1729881418780178} and \citetitle{dataset:cold} in \cite{karaoguz-bozma:2020:2}. These works assume that different data sequences are acquired by different agents or segment the sequence in data subsets, similar to the evaluation with datasets of multi-session works.
+However, the fact that only 4 multi-robot works are included in this review and only 1 public dataset used in the included records is acquired with multiple vehicles could indicate that the use of multi-robot systems is not yet widely studied in the long-term localization and mapping topic.
+
+
+
+\subsubsection{Distance and time considerations}
+
+Next, analyzing the total trajectory length of the private experiments on the included records (DE10 on Table~\ref{tab:a2:data-extraction}) and public datasets (see Table~\ref{tab:discussion:datasets}), 5 works and 6 datasets have a length greater than 100km.
+Higher values on the trajectory length indicate possibly more interesting data for evaluating sparsity management techniques discussed in Section~\ref{sec:discussion:sparsity}, given that the desired behavior of a mapping algorithm is its scalability being only dependent on the environment size and not on the trajectory length. Although the total trajectory length does not necessarily relates directly with the environment area, the latter is rarely seen in the experiments description, and even for the trajectory length, only 36/77 works that perform private experiments and 22/43 datasets indicate the length.
+
+The other distance measure considered in this review to characterize the experimental data is the one relative to repeating the same path, with 7/8 datasets and 3/8 included works that specify this metric having a repetitive path distance greater than 8km and more than 1 run. These low numbers do not necessarily indicate incomplete information in the experimental description due to a data acquisition can be performed on non-repetitive routes. Even so, repeating the same exact path under different environment conditions (i.e., appearance variance) could be a case study for evaluating the appearance invariance of localization and mapping algorithms discussed in Section~\ref{sec:discussion:appearance}.
+
+In terms of time-related long-term characteristics of experimental data, longer total operation times indicate a robust evaluation of the proposed localization and mapping algorithms over long continuous periods, and greater time interval suggests data acquired under severe changing conditions (not only in the environment appearance but also semi-static modifications in the scene). However, only 2/10 works performing private experiments and indicating the total operation time test their methods over a total of 8h (equivalent to a work day), while also only 4/23 datasets that define the total log time in their description have more than 8h of data. On the contrary, 41/77 works and 18/43 datasets characterize the interval between the first and the last data sequence, which of those 29 works performing private experiments and 17 datasets have at least a 1 week interval. These results indicate that even though the included works in this review use experimental data with greater time intervals, often several days or weeks, not so much importance is given towards the total operation time.
+
+
+
+\subsubsection{Ground-truth data}
+
+As for the types of ground-truth data found in the included works (see DE9 in Table~\ref{tab:a2:data-extraction}) and the public datasets used for evaluation (see Table~\ref{tab:discussion:datasets}), the manual annotation is one of the most used types of ground-truth including image to image association (e.g., useful for evaluating image-based place recognition), manual alignment of maps~\parencite{biswas-veloso:2013:0278364913503892}, or manually segmenting images~\parencite{dataset:kitti}.
+Although GPS-based data is also widely used in the experiments, whereas the RTK-GPS variant improves the pose precision compared to the basic positioning system, GPS is meant for use in outdoor environments. The alternative for indoor environments used in the experiments is external tracking systems using, e.g., reflective markers put on the robot to track them through systems such as OptiTrack\footnote{\url{https://optitrack.com/}} or Vicon\footnote{\url{https://www.vicon.com/}} to provide precise measurements of the robot's pose.
+Simulation data used in 10 included works can also provide precise ground-truth data for the robot's pose or other types of information, even though not in a real environment.
+
+Moreover, SLAM or laser-based ground-truth data are also found in the experimental evaluation of the included works and public datasets. The experimental methodology uses localization and mapping algorithms other than the one being evaluated to provide ground-truth data usually using a different sensor setup, or using the same algorithm but including all data sessions or global optimization over the entire pose graph.
+Specifically, laser-based localization is widely used in the included works as ground-truth data to evaluate vision-based methods~\parencite{nuske-et-al:2009:20306}.
+Similarly to SLAM-based ground-truth data, the experimental results of localization and mapping methods without pruning are also used as a reference for evaluating sparsification algorithms~\parencite{carlevaris-bianco-et-al:2014:2347571}.
+
+As for model-based ground-truth data, the work of \cite{boniardi-et-al:2019:003} and the datasets \citetitle{dataset:bicocca-indoor} and \citetitle{dataset:mit-stata} propose the use of floor plans as a model of the environment to align the current estimation with the model and obtain a ground-truth for the trajectory of the robot on the map.
+\cite{ozog-et-al:2016:21582}  is the other method using map models in the experimental evaluation but in the context of ship hull inspection, where the current map estimation is aligned with the ship hull CAD model for obtaining the trajectory ground-truth data.
+However, the use of map-based ground-truth data to evaluate the mapping process is not seen in the included works, other than performing a visual quality evaluation over the mapping results and the sensor data.
+
+
+
+
 
 \subsection{Evaluation metrics}
 \label{sec:discussion:metrics}
 
-\subsection{Final observations}
-\label{sec:discussion:observations}
+The final topic of discussion over the included works in this review is the analysis on evaluation metrics used for assessing the performance of the proposed methodologies (see DE12 in Table~\ref{tab:discussion:datasets}).
+This analysis is organized by metrics intended for place recognition, evaluation of the robot pose, assessment of map sparsity, and computational performance.
+
+
+
+\subsubsection{Place recognition}
+
+The evaluation of place recognition performance within the context of this review is intrinsically related to the invariance to changing conditions of long-term localization and mapping, and so, works categorized as appearance in DE1. The most used metrics for place recognition in the included works are precision and recall, where 50/142 works use these metrics in the experimental evaluation, and from those works 39 are categorized as appearance. These metrics characterize the performance of recognizing successfully different places related to the number of true and false positives and true and false negatives, and also include the precision-recall curve where a greater area under the curve indicates a better classifier for place recognition.
+
+Other metrics less used in the included works but also important are the confusion matrix, the localization success rate, and the f-score and f-beta measures. The confusion matrix associates the predicted place to the true value in the case of each data entry representing a unique place, and a unique diagonal in the matrix would be the ideal result. This matrix is also used for comparing the data stream versus a reference database, where the appearance of multiple diagonals in the matrix indicates the capability of the place recognition algorithm to perform loop closure relative to the database.
+The localization rate is the ratio between the number of successful localization versus and the attempts. As for the f-score and f-beta metrics, these measures combines the precision and recall in an unique value, where the f-beta allows the weighting of precision versus recall depending on which is more important for the method's use case.
+
+
+
+\subsubsection{Robot pose}
+
+Robot pose-related metrics are widely used in works categorized as appearance, dynamic, and sparsity methods (21/75, 18/32, and 16/45, respectively). The pose error indicates if the localization algorithm is affected by changing conditions over time. For dynamic-related methods, the pose error is also useful to show the influence of moving elements in the scene on the localization performance. As for sparsification techniques, the pose error cn characterize the influence of the map pruning algorithm over the localization estimator.
+
+In terms of evaluating the robot pose, the pose error is also one of the most used metrics in the included works (50/142). These works evaluate the pose error metric in terms of its instant measurement over time or relative to a data sequence in terms of the mean, standard deviation, and/or RMSE values of the pose error. Also, a specific measure of pose error used in 15/142 works is the Absolute Trajectory Error (ATE) usually computed over an entire trajectory. This metric requires the time alignment between the localization estimation and the ground-truth data and computes the mean and standard deviation of the estimation differences between samples with the same time instant\footnote{See definition of ATE in the TUM dataset (\url{https://vision.in.tum.de/data/datasets/rgbd-dataset/tools\#absolute\_trajectory\_error\_ate}) and in the RAWSEEDS benchmarking toolkit (\url{http://www.rawseeds.org/rs/methods/view//9})}.
+
+The covariance of the pose estimation is also considered in the included works for evaluating the robot pose error, where the covariance matrix represents the uncertainty of the robot's pose over an experiment. Also, in \cite{hochdorfer-schlegel:2009}, the covariance matrix's eigenvalues are used to evaluate the uncertainty of the estimator, where greater values represent greater uncertainties. Instead of computing the eigen values from the covariance matrix, \cite{dayoub-duckett:2008:4650701} computes these values from the inverse covariance matrix, and so, the logic also inverts relative to \cite{hochdorfer-schlegel:2009}, where smaller eigen values would mean smaller uncertainties in that case.
+
+
+
+\subsubsection{Map sparsity}
+
+As for evaluating the map sparsity, this evaluation is inherently related to the sparsity category of DE1.
+In terms of metrics, the analysis of the evolution of the number of nodes is widely used in 19/45 sparsity-related works. This metric is useful to study the evolution of the graph size in the graph formulation of SLAM over the operation time and/or trajectory length.
+The number of edges over time or the edge reduction ratio compared to no pruning data also indicate growth over time of the edges, while the gamma index of a graph (ratio between the number of existing edges and the possible ones) indicates the current sparsity over the graph connectivity.
+Another important metric for evaluating the graph sparsification is the Kullback-Leibler Divergence (KLD) measure that defines the difference between two probabilistic distributions. The included works use the KLD to compare the information loss between the sparse graph and the one without pruning, in which a 0 value of KLD would mean that the two distributions have identical information, and so the graph pruning algorithm was able to remove only redundant data.
+More generally, the evaluation of the number of map points over time is also presented in the results of sparsity-related works.
+
+
+
+\subsubsection{Computational performance}
+
+Finally, the evaluation of the computational performance is widely analyzed in the included works. This evaluation is not necessarily related to only the computational category of DE1 because an algorithm's computational performance impacts its online execution. Considering the 110 methods with online execution modes identified in Table 1 by DE5, 76 (69.1\%) works evaluate the computational resources required for online execution of the proposed methodology, indicating the importance of this type of experimental analysis in the included works. In terms of computational performance metrics, the execution time measurement is most used one being evaluated in 69 works. However, other metrics such as the runtime memory or the computational complexity are considered in the included works for evaluating the computational resources required to execute the proposed methodologies.
+
+
+
 
