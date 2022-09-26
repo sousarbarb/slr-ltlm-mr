@@ -1,6 +1,6 @@
 NETWORK VISUALIZATION (clusters)
-attraction 2
-repulsion -3
+attraction 4
+repulsion -2
 resolution 1.00
 min cluster size 1
 scale 1.49

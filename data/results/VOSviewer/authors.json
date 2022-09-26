@@ -4,8 +4,8 @@
 			{
 				"id": 18,
 				"label": "barfoot, timothy d",
-				"x": -0.5250,
-				"y": 0.0320,
+				"x": -0.1250,
+				"y": -0.9778,
 				"cluster": 7,
 				"weights": {
 					"Links": 0.0000,
@@ -19,8 +19,8 @@
 			{
 				"id": 28,
 				"label": "bosse, michael",
-				"x": 0.4109,
-				"y": 0.7107,
+				"x": -0.6416,
+				"y": 0.5762,
 				"cluster": 2,
 				"weights": {
 					"Links": 3.0000,
@@ -34,9 +34,9 @@
 			{
 				"id": 36,
 				"label": "burgard, wolfram",
-				"x": 0.9032,
-				"y": -0.0026,
-				"cluster": 3,
+				"x": 0.6862,
+				"y": -0.6741,
+				"cluster": 4,
 				"weights": {
 					"Links": 2.0000,
 					"Total link strength": 4.0000,
@@ -49,9 +49,9 @@
 			{
 				"id": 88,
 				"label": "ding, xiaqing",
-				"x": -0.3678,
-				"y": -0.8401,
-				"cluster": 4,
+				"x": -0.4117,
+				"y": -0.3694,
+				"cluster": 3,
 				"weights": {
 					"Links": 4.0000,
 					"Total link strength": 16.0000,
@@ -64,8 +64,8 @@
 			{
 				"id": 92,
 				"label": "duckett, tom",
-				"x": 0.1161,
-				"y": -0.0325,
+				"x": 0.3418,
+				"y": 0.5869,
 				"cluster": 5,
 				"weights": {
 					"Links": 2.0000,
@@ -79,8 +79,8 @@
 			{
 				"id": 93,
 				"label": "dymczyk, marcin",
-				"x": 0.3549,
-				"y": 0.4000,
+				"x": -0.2157,
+				"y": 0.5752,
 				"cluster": 2,
 				"weights": {
 					"Links": 4.0000,
@@ -94,8 +94,8 @@
 			{
 				"id": 97,
 				"label": "eustice, ryan m",
-				"x": -0.9215,
-				"y": 0.2256,
+				"x": 0.0013,
+				"y": -0.5831,
 				"cluster": 1,
 				"weights": {
 					"Links": 1.0000,
@@ -109,8 +109,8 @@
 			{
 				"id": 103,
 				"label": "furgale, paul",
-				"x": 0.6956,
-				"y": 0.6658,
+				"x": -0.4539,
+				"y": 0.3803,
 				"cluster": 2,
 				"weights": {
 					"Links": 3.0000,
@@ -124,8 +124,8 @@
 			{
 				"id": 111,
 				"label": "gilitschenski, igor",
-				"x": 0.4778,
-				"y": 0.1081,
+				"x": -0.1103,
+				"y": 0.8800,
 				"cluster": 2,
 				"weights": {
 					"Links": 2.0000,
@@ -137,25 +137,10 @@
 				}
 			},
 			{
-				"id": 119,
-				"label": "grisetti, giorgio",
-				"x": 0.4137,
-				"y": -0.3194,
-				"cluster": 3,
-				"weights": {
-					"Links": 2.0000,
-					"Total link strength": 4.0000,
-					"Documents": 3.0000
-				},
-				"scores": {
-					"Avg. pub. year": 2013.0000
-				}
-			},
-			{
 				"id": 127,
 				"label": "han, fei",
-				"x": -0.0142,
-				"y": 0.8678,
+				"x": 0.5086,
+				"y": 0.1617,
 				"cluster": 1,
 				"weights": {
 					"Links": 2.0000,
@@ -169,8 +154,8 @@
 			{
 				"id": 142,
 				"label": "huang, guoquan",
-				"x": -0.3091,
-				"y": 0.7159,
+				"x": 0.2157,
+				"y": -0.0007,
 				"cluster": 1,
 				"weights": {
 					"Links": 5.0000,
@@ -184,8 +169,8 @@
 			{
 				"id": 153,
 				"label": "kaess, michael",
-				"x": -0.7111,
-				"y": 0.4148,
+				"x": 0.0286,
+				"y": -0.3094,
 				"cluster": 1,
 				"weights": {
 					"Links": 3.0000,
@@ -199,8 +184,8 @@
 			{
 				"id": 163,
 				"label": "krajník, tomáš",
-				"x": -0.0875,
-				"y": 0.1655,
+				"x": 0.4062,
+				"y": 0.8523,
 				"cluster": 5,
 				"weights": {
 					"Links": 2.0000,
@@ -212,25 +197,10 @@
 				}
 			},
 			{
-				"id": 164,
-				"label": "kretzschmar, henrik",
-				"x": 0.5873,
-				"y": -0.5652,
-				"cluster": 3,
-				"weights": {
-					"Links": 2.0000,
-					"Total link strength": 5.0000,
-					"Documents": 3.0000
-				},
-				"scores": {
-					"Avg. pub. year": 2011.0000
-				}
-			},
-			{
 				"id": 172,
 				"label": "leonard, john j",
-				"x": -0.4250,
-				"y": 0.4387,
+				"x": -0.1067,
+				"y": -0.0394,
 				"cluster": 1,
 				"weights": {
 					"Links": 3.0000,
@@ -244,24 +214,24 @@
 			{
 				"id": 215,
 				"label": "milford, michael j",
-				"x": -0.9178,
-				"y": -0.2450,
+				"x": 0.9585,
+				"y": -0.0949,
 				"cluster": 6,
 				"weights": {
 					"Links": 1.0000,
-					"Total link strength": 4.0000,
-					"Documents": 4.0000
+					"Total link strength": 3.0000,
+					"Documents": 3.0000
 				},
 				"scores": {
-					"Avg. pub. year": 2012.0000
+					"Avg. pub. year": 2011.6667
 				}
 			},
 			{
 				"id": 225,
 				"label": "naseer, tayyab",
-				"x": 1.0472,
-				"y": -0.2415,
-				"cluster": 3,
+				"x": 0.4461,
+				"y": -0.8058,
+				"cluster": 4,
 				"weights": {
 					"Links": 2.0000,
 					"Total link strength": 4.0000,
@@ -274,8 +244,8 @@
 			{
 				"id": 227,
 				"label": "neira, josé",
-				"x": -0.6001,
-				"y": 0.7348,
+				"x": 0.0271,
+				"y": 0.2359,
 				"cluster": 1,
 				"weights": {
 					"Links": 2.0000,
@@ -289,8 +259,8 @@
 			{
 				"id": 229,
 				"label": "newman, paul",
-				"x": -0.5043,
-				"y": -0.3556,
+				"x": -0.9338,
+				"y": 0.2200,
 				"cluster": 8,
 				"weights": {
 					"Links": 0.0000,
@@ -304,8 +274,8 @@
 			{
 				"id": 288,
 				"label": "siegwart, roland",
-				"x": 0.6609,
-				"y": 0.3604,
+				"x": -0.4152,
+				"y": 0.7842,
 				"cluster": 2,
 				"weights": {
 					"Links": 4.0000,
@@ -319,24 +289,24 @@
 			{
 				"id": 294,
 				"label": "stachniss, cyrill",
-				"x": 0.7179,
-				"y": -0.2882,
-				"cluster": 3,
+				"x": 0.4533,
+				"y": -0.5229,
+				"cluster": 4,
 				"weights": {
-					"Links": 4.0000,
-					"Total link strength": 7.0000,
-					"Documents": 5.0000
+					"Links": 2.0000,
+					"Total link strength": 2.0000,
+					"Documents": 4.0000
 				},
 				"scores": {
-					"Avg. pub. year": 2013.2000
+					"Avg. pub. year": 2013.7500
 				}
 			},
 			{
 				"id": 310,
 				"label": "tang, li",
-				"x": 0.2085,
-				"y": -0.8299,
-				"cluster": 4,
+				"x": -0.8545,
+				"y": -0.2442,
+				"cluster": 3,
 				"weights": {
 					"Links": 4.0000,
 					"Total link strength": 18.0000,
@@ -349,9 +319,9 @@
 			{
 				"id": 341,
 				"label": "wang, yue",
-				"x": -0.2016,
-				"y": -0.5726,
-				"cluster": 4,
+				"x": -0.5228,
+				"y": -0.6434,
+				"cluster": 3,
 				"weights": {
 					"Links": 4.0000,
 					"Total link strength": 22.0000,
@@ -364,24 +334,24 @@
 			{
 				"id": 358,
 				"label": "wyeth, gordon f",
-				"x": -0.8741,
-				"y": -0.5116,
+				"x": 0.9510,
+				"y": 0.1530,
 				"cluster": 6,
 				"weights": {
 					"Links": 1.0000,
-					"Total link strength": 4.0000,
-					"Documents": 5.0000
+					"Total link strength": 3.0000,
+					"Documents": 4.0000
 				},
 				"scores": {
-					"Avg. pub. year": 2011.4000
+					"Avg. pub. year": 2011.0000
 				}
 			},
 			{
 				"id": 365,
 				"label": "xiong, rong",
-				"x": -0.0732,
-				"y": -0.9648,
-				"cluster": 4,
+				"x": -0.5748,
+				"y": -0.1250,
+				"cluster": 3,
 				"weights": {
 					"Links": 4.0000,
 					"Total link strength": 22.0000,
@@ -394,9 +364,9 @@
 			{
 				"id": 382,
 				"label": "yin, huan",
-				"x": 0.0972,
-				"y": -0.5258,
-				"cluster": 4,
+				"x": -0.8097,
+				"y": -0.5438,
+				"cluster": 3,
 				"weights": {
 					"Links": 4.0000,
 					"Total link strength": 20.0000,
@@ -409,8 +379,8 @@
 			{
 				"id": 390,
 				"label": "zhang, hao",
-				"x": -0.0074,
-				"y": 0.5888,
+				"x": 0.5298,
+				"y": -0.1045,
 				"cluster": 1,
 				"weights": {
 					"Links": 2.0000,
@@ -424,8 +394,8 @@
 			{
 				"id": 404,
 				"label": "zhao, cheng",
-				"x": -0.1512,
-				"y": -0.1339,
+				"x": 0.6214,
+				"y": 0.6327,
 				"cluster": 5,
 				"weights": {
 					"Links": 2.0000,
@@ -524,16 +494,6 @@
 				"strength": 3.0000
 			},
 			{
-				"source_id": 119,
-				"target_id": 164,
-				"strength": 2.0000
-			},
-			{
-				"source_id": 119,
-				"target_id": 294,
-				"strength": 2.0000
-			},
-			{
 				"source_id": 127,
 				"target_id": 142,
 				"strength": 1.0000
@@ -574,11 +534,6 @@
 				"strength": 1.0000
 			},
 			{
-				"source_id": 164,
-				"target_id": 294,
-				"strength": 3.0000
-			},
-			{
 				"source_id": 172,
 				"target_id": 227,
 				"strength": 1.0000
@@ -586,7 +541,7 @@
 			{
 				"source_id": 215,
 				"target_id": 358,
-				"strength": 4.0000
+				"strength": 3.0000
 			},
 			{
 				"source_id": 225,

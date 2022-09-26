@@ -158,9 +158,9 @@ Further information relative to this phase of the review can be found in
 
 **Records analyzed for data extraction:** 175 records
 
-**Records removed for having extended versions:** 31 records
+**Records removed for having extended versions:** 33 records
 
-**Records to include in the review:** 144 records
+**Records to include in the review:** 142 records
 
 **Data extraction items:**
 
@@ -210,7 +210,7 @@ Further information relative to this phase of the review can be found in
 
 ## Results Overview
 
-All results retrieved from the bibliographic data of the 144 records included in
+All results retrieved from the bibliographic data of the 142 records included in
 the review can be found in [`results`](data/results/).
 The tool [VOSviewer](https://www.vosviewer.com/) used for obtaining the
 co-occurrence analysis of keywords and co-authorships is available in its

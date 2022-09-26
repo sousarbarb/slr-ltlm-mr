@@ -1893,60 +1893,6 @@ KW  - Robotics, Trees (mathematics)
 N1  - cited By 76
 ER  - 
 
-TY  - CPAPER
-AU  - Kretzschmar, H
-AU  - Stachniss, C
-AU  - Grisetti, G
-AD  - University of Freiburg, Department of Computer Science, Freiburg, Germany;
-      Sapienza University of Rome, Department of Systems and Computer Science,
-      Rome, Italy
-TI  - Efficient information-theoretic graph pruning for graph-based SLAM with
-      laser range finders
-SP  - 865-871
-PY  - 2011
-DA  - 2011
-AB  - In graph-based SLAM, the pose graph encodes the poses of the robot during
-      data acquisition as well as spatial constraints between them. The size of
-      the pose graph has a substantial influence on the runtime and the memory
-      requirements of a SLAM system, which hinders long-term mapping. In this
-      paper, we address the problem of efficient information-theoretic
-      compression of pose graphs. Our approach estimates the expected
-      information gain of laser measurements with respect to the resulting
-      occupancy grid map. It allows for restricting the size of the pose graph
-      depending on the information that the robot acquires about the environment
-      or based on a given memory limit, which results in an any-space SLAM
-      system. When discarding laser scans, our approach marginalizes out the
-      corresponding pose nodes from the graph. To avoid a densely connected pose
-      graph, which would result from exact marginalization, we propose an
-      approximation to marginalization that is based on local Chow-Liu trees and
-      maintains a sparse graph. Real world experiments suggest that our approach
-      effectively reduces the growth of the pose graph while minimizing the loss
-      of information in the resulting grid map. © 2011 IEEE.
-DO  - 10.1109/IROS.2011.6048060
-C1  - San Francisco, CA
-UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-84455169163&doi=10.1109%2fIROS.2011.6048060&partnerID=40&md5=bf7e84780c60fe957fb2fa454b90d5ac
-UR  - http://dx.doi.org/10.1109/IROS.2011.6048060
-KW  - Expected informations
-KW  - Graph-based
-KW  - Grid map
-KW  - Laser measurements
-KW  - Laser range finders
-KW  - Laser scans
-KW  - Marginalization
-KW  - Memory requirements
-KW  - Occupancy grid map
-KW  - Real world experiment
-KW  - Runtimes
-KW  - Sparse graphs
-KW  - Spatial constraints, Information theory
-KW  - Intelligent robots
-KW  - Robotics, Trees (mathematics)
-N1  - cited By 41; Conference of 2011 IEEE/RSJ International Conference on
-      Intelligent Robots and Systems: Celebrating 50 Years of Robotics, IROS'11
-      ; Conference Date: 25 September 2011 Through 30 September 2011; Conference
-      Code:87712
-ER  - 
-
 TY  - JOUR
 AU  - Kretzschmar, H
 AU  - Grisetti, G
@@ -6436,60 +6382,6 @@ C1  - 345 E 47TH ST, NEW YORK, NY 10017 USA
 UR  - http://dx.doi.org/10.1109/ICRA.2012.6224622
 N1  - IEEE International Conference on Robotics and Automation (ICRA), St Paul,
       MN, MAY 14-18, 2012
-ER  - 
-
-TY  - CPAPER
-AU  - Maddern, W
-AU  - Milford, M
-AU  - Wyeth, G
-A2  - Newman P., Srinivasa S, Roy N
-AD  - School of Electrical Engineering and Computer Science, Queensland
-      University of Technology, Brisbane, QLD, Australia
-TI  - Towards persistent localization and mapping with a continuous
-      appearance-based topology
-VL  - 8
-SP  - 281-288
-PY  - 2013
-DA  - 2013
-PB  - MIT Press Journals
-AB  - Appearance-based localization can provide loop closure detection at vast
-      scales regardless of accumulated metric error. However, the computation
-      time and memory requirements of current appearance-based methods scale not
-      only with the size of the environment but also with the operation time of
-      the platform. Additionally, repeated visits to locations will develop
-      multiple competing representations, which will reduce recall performance
-      over time. These properties impose severe restrictions on long-Term
-      autonomy for mobile robots, as loop closure performance will inevitably
-      degrade with increased operation time. In this paper we present a
-      graphical extension to CAT-SLAM, a particle filter-based algorithm for
-      appearancebased localization and mapping, to provide constant computation
-      and memory requirements over time and minimal degradation of recall
-      performance during repeated visits to locations. We demonstrate loop
-      closure detection in a large urban environment with capped computation
-      time and memory requirements and performance exceeding previous
-      appearance-based methods by a factor of 2. We discuss the limitations of
-      the algorithm with respect to environment size, appearance change over
-      time and applications in topological planning and navigation for long-Term
-      robot operation. © 2013 Massachusetts Institute of Technology.
-DO  - 10.15607/rss.2012.viii.036
-UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-84959269406&doi=10.15607%2frss.2012.viii.036&partnerID=40&md5=a8db41048130a303fe5d7645f10e623d
-UR  - http://dx.doi.org/10.15607/rss.2012.viii.036
-KW  - Agricultural robots
-KW  - Mapping
-KW  - Robot programming
-KW  - Robotics
-KW  - Topology
-KW  - Vision, Appearance based
-KW  - Appearance-based methods
-KW  - Computation time
-KW  - Large urban environments
-KW  - Localization
-KW  - Localization and mappings
-KW  - Memory requirements
-KW  - SLAM, Robots
-N1  - cited By 4; Conference of International Conference on Robotics Science and
-      Systems, RSS 2012 ; Conference Date: 9 July 2012 Through 13 July 2012;
-      Conference Code:166169
 ER  - 
 
 TY  - CPAPER

@@ -16,10 +16,8 @@ siegwart, roland (6)   : 0000-0002-2760-7983, MDIyLnwAAAAJ
 
 (3) - total of 21 documents
 burgard, wolfram (7)   : 0000-0002-5680-6500, zj6FavAAAAAJ
-grisetti, giorgio (3)  : 0000-0002-8038-9989, yD-SFG4AAAAJ
-kretzschmar, henrik (3): no orcid, pZuaUlwAAAAJ
 naseer, tayyab (3)     : 0000-0002-3350-3005 (no public info), 1FePZqEAAAAJ
-stachniss, cyrill (5)  : 0000-0003-1173-6972, 8vib2lAAAAAJ
+stachniss, cyrill (4)  : 0000-0003-1173-6972, 8vib2lAAAAAJ
 
 (4) - total of 29 documents
 ding, xiaqing (4): 0000-0001-7802-0130 (no public info), 6u5OHUcAAAAJ
@@ -34,8 +32,8 @@ krajník, tomáš (3): 0000-0002-4408-7916, Qv3nqgsAAAAJ
 zhao, cheng (3)   : 0000-0001-8502-3233, EAC-8m0AAAAJ
 
 (6) - total of 9 documents
-milford, michael j (4): 0000-0002-5162-1793, TDSmCKgAAAAJ
-wyeth, gordon f (5)   : 0000-0002-4996-3612, yfXZfXEAAAAJ
+milford, michael j (3): 0000-0002-5162-1793, TDSmCKgAAAAJ
+wyeth, gordon f (4)   : 0000-0002-4996-3612, yfXZfXEAAAAJ
 
 (7) - total of 3 documents
 barfoot, timothy d (3): 0000-0003-3899-631X, N_vPIhoAAAAJ

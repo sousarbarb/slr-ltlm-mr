@@ -11,7 +11,6 @@ FAB-MAP + RatSLAM: Appearance-based SLAM for multiple times of day;2010;10.1109/
 Lifelong Map Learning for Graph-based SLAM in Static Environments;2010;10.1007/s13218-010-0034-2;0;1;0;0;1;0
 Visual robot localization using compact binary landmarks;2010;10.1109/ROBOT.2010.5509579;0;1;1;1;1;1
 CD SLAM - Continuous localization and mapping in a dynamic world;2011;10.1109/IROS.2011.6048253;0;0;0;1;1;0
-Efficient information-theoretic graph pruning for graph-based SLAM with laser range finders;2011;10.1109/IROS.2011.6048060;0;1;1;1;1;0
 Long-term experiments with an adaptive spherical view representation for navigation in changing environments;2011;10.1016/j.robot.2011.02.013;1;1;0;1;1;1
 Capping Computation Time and Storage Requirements for Appearance-based Localization with CAT-SLAM;2012;10.1109/ICRA.2012.6224622;0;1;0;0;0;1
 Dynamic pose graph SLAM: Long-term mapping in low dynamic environments;2012;10.1109/IROS.2012.6385561;0;1;1;1;1;1
@@ -30,7 +29,6 @@ Long-term mapping and localization using feature stability histograms;2013;10.10
 OpenRatSLAM: An open source brain-based SLAM system;2013;10.1007/s10514-012-9317-9;0;1;0;1;1;1
 Self-help: Seeking out perplexing images for ever improving topological mapping;2013;10.1177/0278364913509859;0;1;0;1;1;1
 Temporally scalable visual SLAM using a reduced pose graph;2013;10.1109/ICRA.2013.6630556;0;0;0;1;1;0
-Towards persistent localization and mapping with a continuous appearance-based topology;2013;10.15607/rss.2012.viii.036;0;0;0;1;1;0
 Concurrent filtering and smoothing: A parallel architecture for real-time navigation and full smoothing;2014;10.1177/0278364914531056;0;0;0;0;1;1
 Generic node removal for factor-graph SLAM;2014;10.1109/TRO.2014.2347571;0;0;1;1;1;1
 Incremental unsupervised topological place discovery;2014;10.1109/ICRA.2014.6907022;0;0;1;1;1;1
