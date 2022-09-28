@@ -1,3 +1,48 @@
 \section{Introduction}
 \label{sec:intro}
 
+An autonomous mobile robot requires a representation of its surroundings to localize itself relative to the environment.
+Simultaneous Localization and Mapping (SLAM) addresses this problem by incorporating the robot state estimation (pose and possibly other state variables) concurrently with the mapping process. This process builds a representation of the environment perceived by the robot originating a map incrementally built when exploring unknown areas or refined on passages through known locations.
+
+In a static scene, the robot would only need to map once because it would be always consistent with the environment.
+However, autonomous systems deployed in industrial locations, outdoor environments, or even service-oriented applications such as shopping centers or homes deal with moving elements in the scene (humans, objects), environment reconfiguration (machines moving places), and appearance variations (lighting, weather, seasonal, or daytime changes).
+These varying conditions are a challenge for the SLAM system, where the system should decide how (consider the most current state or only the most static changes?) and when to update the map (when the variations occur or after a certain time?).
+This challenge is also known as the stability-plasticity dilemma, where the long-term localization and mapping should both adapt to new environment changes and preserve old states over time~\parencite{biber-duckett:2009:0278364908096286}.
+
+Furthermore, the map would grow indefinitely when gathering new information from the environment. This ever-growing problem poses another challenge for the SLAM system in the long-term due to the limited computational resources of the mapping vehicle. Indeed, the map size should be dependent on the environment area and not on the trajectory length of the mapping process nor operation time, only growing when the robot would explore unknown locations~\parencite{kretzschmar-stachniss:2012:0278364912455072}.
+
+Although several studies overview SLAM literature, only a subset of those studies mentions long-term challenges of performing SLAM.
+\cite{purpose:study:cadena:2016} has a brief survey on the robustness and scalability of autonomous systems focused on loop closure validation, dynamic environments, pose graph sparsification, and parallel and distributed computing for metric and semantic SLAM.
+In contrast, \cite{purpose:study:lowry:2016} limits the study to vision-based topological SLAM discussing also the challenge of varying conditions.
+While \cite{purpose:study:bresson:2017} overviews autonomous driving trends in terms of scalability, map updatability, and dynamicity, the survey limits the discussion to algorithms that have both odometry and mapping modules, excluding localization-only works. Also, \cite{purpose:study:bresson:2017} focuses more on the modules of the SLAM (relocalization, localization against a map).
+\cite{purpose:study:kunze:2018} gives a brief overview of AI-related works for robustness to appearance changes and learning dynamics of the environment, discussing areas in which artificial intelligence (AI) enables long-term operation of autonomous systems.
+As for \cite{purpose:study:zaffar:2018}, the study evaluates the long-term autonomy of sensors such as monocular and stereo cameras, and LiDAR.
+However, to the best of the authors knowledge, none of the existing studies overviews the trends for dealing with long-term challenges in SLAM. Also, the studies that overview some of the challenges of lifelong SLAM do not clarify the process for identifying the cited works, not allowing other researchers to repeat the identification process of records when searching in bibliographic databases.
+
+Therefore, this paper presents a systematic literature review on long-term localization and mapping following the Preferred Reporting Items for Systematic reviews and Meta-Analysis~(PRISMA)~\parencite{methodology:prisma} statement.
+The systematic method followed in this review allows the replication of the results by other researchers and leads to the inclusion of 142 works for discussion and analysis.
+Also, this paper makes available a public GitHub repository\footnote{\url{https://github.com/sousarbarb/slr-ltlm-mr}} with all the documentation and scripts used during the process of systematic revision of the literature.
+The main contributions of this paper relative to the existing studies on SLAM are the following ones:
+
+\begin{itemize}[nosep]
+\item discussion on methodologies and trends focused on appearance invariance, dynamic elements, map sparsification and multi-session techniques, and other computational concerns;
+\item comparative analysis on the public datasets and experimental data used in the included works in terms of environment conditions, sensorization, and distance and time properties;
+\item presentation of common evaluation metrics used by the included works in the experimental results.
+\end{itemize}
+
+This review does not intend to review the fundamentals of SLAM nor the main formulations. The reader should refer to \cite{purpose:study:durrant-whyte-bailey:2006:1} and \cite{purpose:study:durrant-whyte-bailey:2006:2} for the Extended Kalman Filter (EKF) and particle filter probabilistic formulations, and to \cite{purpose:study:grisetti:2010} for the pose graph formulation of SLAM.
+
+
+
+
+
+\subsection{Paper organization}
+
+The rest of this review is organized as follows.
+Section~\ref{sec:purpose} discusses the limitations of existent studies and reviews and presents the purpose and motivations of this paper.
+Section~\ref{sec:methodology} explains the methodology followed in this review to search and select the included records, and the data extraction process for synthesis and analysis. In Appendix~\ref{a2:data-extraction}, Table~\ref{tab:a2:data-extraction} presents the data extraction results of the included records.
+Next, Section~\ref{sec:overview} analyzes the bibliographic information of the 142 included works in this review in terms of the identification results of each data source considered in the methodology, keywords co-occurrence and co-authorship relations, the year of publication, and the publication venue.
+Section~\ref{sec:discussion} discusses the methodologies found in the included records related to long-term localization and mapping and analyzes the experimental data and evaluation metrics used in the experiments by the authors.
+Then, Section~\ref{sec:future} outlines challenges and future directions.
+Section~\ref{sec:limitations} discusses possible limitations of this study.
+Lastly, Section~\ref{sec:conclusions} presents the conclusions.
