@@ -1,15 +1,11 @@
 \section{Purpose of the study}
 \label{sec:purpose}
 
-\textcolor{red}{PUT INTRO HERE!!!}
-
-
-
-
-
 \subsection{Limitations of current studies}
 
-
+The main studies reviewing the SLAM literature are presented in Table~\ref{tab:purpose:current-literature}. In terms of introductions to the problem formulation, these studies focus on explaining different frameworks for performing SLAM. \cite{purpose:study:durrant-whyte-bailey:2006:1} and \cite{purpose:study:durrant-whyte-bailey:2006:2} perform an in-depth discussion on Bayesian-based probabilistic formulations, namely, EKF and the Rao-Blackwellized particle filter frameworks, also categorized as filtering approaches to the SLAM problem. Filtering approaches model the problem as an online state estimation, where the state being the robot pose (and possibly other variables) and the map. In contrast, \cite{purpose:study:grisetti:2010} explains in detail a smoothing formulation, the graph-based SLAM, characterized by estimating the full trajectory of the robot from the set of sensor measurements, also known as full SLAM. \cite{purpose:study:thrun:2008} introduces both probabilistic (EKF and particle filter) and smoothing (graph) formulations of SLAM.
+Focusing on vision sensorization, \cite{purpose:study:scaramuzza-fraundorfer:2011:1} and \cite{purpose:study:scaramuzza-fraundorfer:2012:2} present an extensive tutorial on visual odometry for estimating relative motion from visual data, where the study discusses camera modeling and calibration, motion estimation, and feature matching. \cite{purpose:study:yousif:2015} extends the previous visual odometry tutorial to include methodologies for vision-based SLAM.
+Although the introductions mentioned here provide comprehensive explanations of the problem formulation itself, none of these introductions focus the discussion on possible long-term challenges of SLAM.
 
 \begin{table}[h]
   \caption[Existent Literature Reviews, Surveys, and Tutorials on SLAM.]{Existent Literature Reviews, Surveys, and Tutorials on SLAM.}
@@ -79,31 +75,43 @@
 \end{table}
 
 
+Moreover, other studies focus on theoretical aspects of the SLAM formulation. \cite{purpose:study:dissanayake:2011} discusses the fundamental properties of SLAM, namely, observability (if the problem is solvable), convergence (if the state uncertainty converges to a finite value), and consistency (if the estimated state is unbiased). Huang extends the previous work to provide an in-depth explanation of the fundamental properties while defining criteria for the performance evaluation of SLAM algorithms in terms of consistency, accuracy, and computational efficiency. In contrast to \cite{purpose:study:dissanayake:2011} that focuses mainly on filtering-based SLAM, \cite{purpose:study:huang-dissanayake:2016} also discusses the properties in the context of smoothing approaches. Both these two studies focus only on theoretical aspects, not discussing the problem of long-term localization and mapping.
+
+In terms of surveys in the literature on SLAM trends, \cite{purpose:study:cadena:2016} provides a broad overview of metric and semantic SLAM works. This study also briefly discusses the localization and mapping robustness in terms of loop closure validation and dealing with a dynamic environment, and the SLAM scalability concerning pose graph sparsification, and parallel and distributed computing. On the contrary, \cite{purpose:study:lowry:2016} focus on topological SLAM providing a comprehensive review on visual place recognition. Although the study discusses the challenges on navigation in varying conditions, the discussion is limited to vision sensors.
+\cite{purpose:study:bresson:2017} surveys trends regarding single and multi-vehicle SLAM and large-scale experiments for autonomous vehicles. Although the study compares the methods over accuracy, scalability, availability, recovery, map updatability, and scene dynamicity, Bresson only refers to approaches composed at least by odometry and a mapping module, not discussing localization-only algorithms. Also, the discussion is more focused on loop closure and relocalization modules and leveraging existing data, not on the methodologies for dealing with the long-term challenges of continuous SLAM.
+Similarly to \cite{purpose:study:bresson:2017}, \cite{purpose:study:kuutti:2018} and \cite{purpose:study:badue:2021} analyze trends for self-driving vehicles. While \cite{purpose:study:kuutti:2018} focuses on sensorization and cooperative localization between vehicles, \cite{purpose:study:badue:2021} concentrates on the architecture of autonomous driving systems. However, none of those two studies discuss challenges for accomplishing long-term SLAM.
+\cite{purpose:study:saeedi:2016} presents a review on multi-robot SLAM discussing several solutions and techniques. Even though the authors identify large-scale and dynamic environments, multi-session, and agent scalability as challenges for multi-robot SLAM, the study does not overview existent methodologies to tackle those problems.
+\cite{purpose:study:paull:2014} and \cite{purpose:study:ebadi} also overview the SLAM literature but are more specific in terms of the context, where the former focus on autonomous underwater navigation and the latter on SLAM in extreme underground environments. However, those two studies not discuss long-term SLAM.
+
+The surveys of \cite{purpose:study:kunze:2018} and \cite{purpose:study:zaffar:2018} are focused on some challenges of long-term autonomy. 
+\cite{purpose:study:kunze:2018} provides a brief overview on how AI can enable the long-term operation of autonomous systems. Although the survey discusses challenges such as environments with varying appearance and learning the dynamics of moving elements, the discussion is limited to AI-related works and only briefly analyzes the localization and mapping tasks due to also focusing on reasoning, human-robot interaction, and planning.
+As for \cite{purpose:study:zaffar:2018}, the study only focuses on reviewing, discussing, and comparing different sensors in terms of sensor lifetime, field operability, ease-of-replacement, and suitability to different types of environment.
+
+Nevertheless, none of the existent studies presented in Table~\ref{tab:purpose:current-literature} describe their methodology to select the works for discussion. This limitation does not allow other researchers to repeat the reviewing process for, e.g., updating existent studies to maintain an up-to-date knowledge on the current state-of-the-art in SLAM.
 
 
 
-\subsection{Motivations and goals}
 
-Research question: What is the current state of the art of long-term localization and mapping using mobile robots?
 
-Goals of this review:
+\subsection{Motivation and goals}
+
+This study reviews the literature on long-term localization and mapping for mobile robots. The review follows the PRISMA~\parencite{methodology:prisma} guidelines defining a systematic methodology to ensure the repeatability of the selection and data extraction processes while allowing future updates over the discussion and the review's methodology presented in this study. 
+Furthermore, the literature review presented in this paper does not focus on any specific strategy or time interval of publication. These considerations improve the coverage of the review over the long-term localization and mapping topic.
+
+In summary, this review intends to understand the following questions:
 
 \begin{itemize}[nosep]
-\item which are the main strategies for accomplishing long-term operations with mobile robots;
-\item how to deal with varying conditions of the environment;
-\item how do autonomous robots deal with the dynamics of the environment;
-\item which are the main strategies to deal with the limited computational resources of a mobile robot on long-term operations;
-\item how the methods evaluate their results;
-\item which are the public datasets more used for evaluating long-term localization and mapping.
+\item main challenges inherent to lifelong SLAM;
+\item main strategies for accomplishing long-term operations with mobile robots;
+\item public datasets commonly used for evaluating long-term localization and mapping algorithms;
+\item how the researchers evaluate the performance of autonomous systems in long-term operations.
 \end{itemize}
 
-PICO framework (Population--Intervention--Comparison--Outcome) helps to frame the research questions of this systematic review into a more structured framework:
+When framing the review in the Population -- Intervention -- Comparison -- Outcome (PICO) framework to summarize the population, which approaches and the kind of experimental results the review is interested in~\parencite{purpose:pico}, the template specific to this review's topic is the following one:
 
 \begin{itemize}[nosep]
 \item \textbf{Population:} mobile robots;
 \item \textbf{Intervention:} localization, mapping, SLAM;
 \item \textbf{Comparison:} \textit{not applicable to this study};
 \item \textbf{Outcome:} long-term operation, lifelong autonomy, robust.
-%\item \textbf{Context:} continuous operation, service robots, industrial environments.
 \end{itemize}
-
