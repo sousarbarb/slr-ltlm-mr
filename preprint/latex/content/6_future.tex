@@ -1,13 +1,63 @@
 \section{Challenges and Future Directions}
 \label{sec:future}
 
-\begin{itemize}[nosep]
-\item multi-robot long-term localization and mapping
-\item fusion of different sensors
-\item availability of datasets in continuous operation in challenging long-term scenarios (urban, industry -- storage / logistics facilities)
-\item edge/cloud computing
-\item parameters of the algorithms adapting along time accordingly to changes in the environment
-\item specific hardware for improving computational performance (FPGA, operating systems specific for real-time usage, etc.)
-\item interaction with the user: map update and consequent visualization by the users not being on raw data but instead on higher levels of abstraction (CAD, automatic extract of the environment topological locations)
-\item hierarchical localization and mapping (topological location > coarse localization > millimeter level of localization or  something like that)
-\end{itemize}
+The growing interest in mobile robots and their usage in different applications and complex environments stress the importance of improving the robustness of autonomous systems. Although the localization and mapping algorithms included in this study help achieve long-term operations, these algorithms are not bulletproof.
+So, in addition to the challenges discussed in Section~\ref{sec:discussion}, other potential challenges related to lifelong SLAM and research directions are listed below.
+
+
+
+\paragraph{Vision-based global place recognition}
+
+Given the limited field of view characteristic of vision sensors (apart from omnidirectional cameras), the analysis of the included records shows that it is still challenging to recognize places using vision-based global descriptors.
+The limited field of view influences the visual content of the image, as shown in the experimental results of \cite{qin-et-al:2020:103561}, where the method significantly reduced its performance due to viewpoint variance.
+
+One possible direction could be the usage of data augmentation as in \cite{tang-et-al:2021:17298814211037497} for learning global visual descriptors, even though the latter work does not clarify to what extent augmented data helped in viewpoint variance.
+Another possible solution would be the use of omnidirectional vision, even though the networks traditionally used for learning CNN-based features (considered more discriminative compared to handcrafted features, as previously discussed in Section~\ref{sec:discussion:appearance:cnn}) may not be directly applicable due to the different aspect ratio of omnidirectional images.
+
+
+
+\paragraph{Dynamics modeling}
+
+Most of the included works modeling the environment dynamics determine the observations as static (permanent change), semi-static (short-term static object or static at the current observation instant), or dynamic (moving object in the scene) by either representing them in maps associated with different discrete meanings of dynamics or reasoning the relation between their semantic class and the expected dynamics. However, the determination of a dynamics value for the observations could be interesting to observe its evaluation over time for predicting the environment dynamics or accounting them in the localization and mapping processes.
+
+In the included works, \cite{tipaldi-et-al:2013:0278364913502830} and \cite{rapp-et-al:2015:77} use Markov-based processes for predicting environment dynamics. However, these works assume the independence of observations, which could not be valid because static and dynamic objects may influence the dynamics of their surroundings. While FreMEn~\parencite{krajník-et-al:2017:2665664} estimates the dynamicity through spectral analysis, this method assumes only periodic changes in the environment. Even though ARMA~\parencite{wang-et-al:2020:9468884} models both aperiodic and periodic changes, its offline operation does not allow an online estimation of the observations' dynamicity value. So, it remains a challenge estimating online the dinamicity of environment observations unless the localization and mapping algorithms assume discrete levels for dynamics.
+
+
+
+\paragraph{Online graph sparsification}
+
+In the graph formulation for the SLAM problem, the methods GLC~\parencite{carlevaris-bianco-et-al:2014:2347571} and NFR~\parencite{mazuran-et-al:2016:0278364915581629} stand out in terms of their graph sparsification results, obtaining a graph growth approximately dependent only on the environment area and not on the operation time or trajectory length. However, these methods are mostly intended for offline execution (e.g., between operation sessions) due to their additional computational cost when operating online.
+\cite{ila-et-al:2017:0278364917691110} seems to be an interesting alternative by proposing an incremental solution focused on the computational cost of graph sparsification. However, experimental results only showed that the method slows the graph's growth rate instead of bounding when operating in the same environment area. Even though \cite{boniardi-et-al:2019:003} achieves a bounded computation time by pruning nodes based on topological consistency, it remains to be seen the results of graph sparsification without the CAD prior and in more highly dynamic environments.
+Thus, online graph sparsification is still an open research question and important for extended time periods of continuous operation periods.
+
+
+
+\paragraph{Decentralized computation}
+
+Given the computational complexity inherent to SLAM, an alternative to running locally in the robot is decentralizing the algorithm's execution, offloading some parts to external agents with more computational power.
+In the included works, while \cite{ali-et-al:2020:3389033} implements a mobile-edge parallel execution bounding the computation time in the local device, the execution time and memory of the edge device grow over time. Furthermore, the state of the communication link influences the quality of localization and mapping, as shown in Ding when evaluating the proposed cloud-based visual localization system with different network delays and packet losses.
+Although the solution proposed by \cite{ding-et-al:2019:8968550} can deal with delays up to 5s, the method requires a permanent link with the cloud due to the robot only performing localization.
+
+Overall, the topic of decentralized computing either by using edge devices or cloud-based solutions is still not well studied in the context of long-term localization and mapping. For example, the external devices could be able to perform global optimizations and searches, improving the initial estimations given by the robot. Another use case for decentralized long-term SLAM would be the external agent keeping observations of the same location at different time instants to evaluate the appearance and dynamic changes in the scene, while the robot would access the most updated, invariant, and stable map for localization.
+
+
+
+\paragraph{Multi-robot long-term SLAM}
+
+Most of the current research discussed in this review focuses on single-robot long-term SLAM. Extending the current research for multi-robot systems would be interesting for optimizing the autonomous systems operation. However, the consideration of multi-robots also creates new challenges. One of would could be the decentralized and distribution SLAM execution within the multi-robot system (e.g., which information to exchange between robots) and the possibility of having external agents (e.g., edge or cloud devices) to the multi-robot system for offloading computation tasks. Another challenge would be considering the heterogeneous characteristics of the robots (domain, sensors, motion constraints) in merging information.
+
+
+
+\paragraph{Active exploration}
+
+Information-driven exploration is an interesting research topic consisting on actively planning the locations and times for the robot to visit. In the context of lifelong localization and mapping, active navigation could plan the robot trajectory, e.g., for avoiding locations that the robot predicts to be highly dynamic or for generating specific mapping tasks in locations known to be very susceptible to appearance changes to maintain an up to date representation of the environment.
+One example found in the included works is \cite{santos-et-al:2016:2516594} that uses the dynamic prediction provided by the FreMEn module for the planner to predict which areas are more likely to change and define the locations to explore.
+However, achieving active navigation would require a tightly coupling the planning process with the robot's localization and mapping estimations. Also, the reasoning and modeling of the environments changes would play an important role for planning the tasks.
+
+
+
+\paragraph{Human-to-Machine Interfaces}
+
+The persons interacting day-to-day with autonomous systems may also play an important role in achieving a successful long-term operation. An operator of the system can provide a priori information useful for the localization and mapping tasks. For example, if the relocalization estimation was not successful based on the current environment representation, the operator could define the robot's initial pose. Another example could be the dynamics modeling accounting also the operator input for specific areas.
+
+However, the interaction with the user should not be through raw sensor data due to possibly increasing the need for special training for the operator, especially in industrial applications. \cite{boniardi-et-al:2019:003} presents an interesting work in terms of using CAD prior for localization and mapping while facilitating the interaction with the user. Another potential direction could be using higher levels of information for interaction such as high-level geometric and semantic features perceived by the robot.
