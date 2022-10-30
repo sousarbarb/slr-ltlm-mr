@@ -266,4 +266,8 @@ Project Link:
 
 This work is financed by National Funds through the Portuguese funding agency,
 [FCT - Fundação para a Ciência e a Tecnologia](https://www.fct.pt/index.phtml.en),
+within project LA/P/0063/2020.
+This work is also financed by National Funds through the Portuguese funding
+agency,
+[FCT - Fundação para a Ciência e a Tecnologia](https://www.fct.pt/index.phtml.en),
 within scholarship 2021.04591.BD.
