@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:cc="http://creativecommons.org/ns#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:svg="http://www.w3.org/2000/svg"
+     xmlns="http://www.w3.org/2000/svg"
+     version="1.1"
+     width="1148.4572"
+     height="312.84583"
+     id="svg2">
+    <defs
+         id="defs4">
+        <marker
+             refX="0"
+             refY="0"
+             orient="auto"
+             id="Arrow2Lend-1"
+             style="overflow:visible">
+            <path
+                 d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+                 transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+                 id="path3904-52"
+                 style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round" />
+        </marker>
+        <marker
+             refX="0"
+             refY="0"
+             orient="auto"
+             id="Arrow2Lend-1-5"
+             style="overflow:visible">
+            <path
+                 d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+                 transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+                 id="path3904-52-1"
+                 style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round" />
+        </marker>
+    </defs>
+    <metadata
+         id="metadata7">
+        <rdf:RDF>
+            <cc:Work
+                 rdf:about="">
+                <dc:format>image/svg+xml</dc:format>
+                <dc:type
+                     rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                <dc:title></dc:title>
+            </cc:Work>
+        </rdf:RDF>
+    </metadata>
+    <g
+         transform="translate(135.948,-23.719681)"
+         id="layer1">
+        <g
+             id="g3095">
+            <text
+                 x="194.97588"
+                 y="73.524368"
+                 id="text3066"
+                 xml:space="preserve"
+                 style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:black;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"><tspan
+                     x="194.97588"
+                     y="73.524368"
+                     id="tspan3068"
+                     style="font-size:48px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Droid Sans;-inkscape-font-specification:Droid Sans Bold">MULTI-STORE MODEL</tspan></text>
+            <g
+                 id="g3061">
+                <g
+                     id="g5654">
+                    <g
+                         id="g5634">
+                        <path
+                             d="m 559.90788,155.90236 192.93913,0"
+                             id="path4744-4"
+                             style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Lend-1)" />
+                        <text
+                             x="604.19788"
+                             y="150.23503"
+                             id="text4732"
+                             xml:space="preserve"
+                             style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:black;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"><tspan
+                                 x="604.19788"
+                                 y="150.23503"
+                                 id="tspan4734"
+                                 style="font-size:22px;font-weight:bold;-inkscape-font-specification:Bitstream Vera Sans Mono Bold">transfer</tspan></text>
+                    </g>
+                    <g
+                         id="g5639">
+                        <path
+                             d="m 754.68518,223.69821 -192.93913,0"
+                             id="path4744-6"
+                             style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Lend-1)" />
+                        <text
+                             x="596.92004"
+                             y="244.4012"
+                             id="text4732-7"
+                             xml:space="preserve"
+                             style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:black;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"><tspan
+                                 x="596.92004"
+                                 y="244.4012"
+                                 id="tspan4734-0"
+                                 style="font-size:22px;font-weight:bold;-inkscape-font-specification:Bitstream Vera Sans Mono Bold">retrieval</tspan></text>
+                    </g>
+                </g>
+                <g
+                     id="g5649">
+                    <path
+                         d="m 122.20816,189.8179 192.93913,0"
+                         id="path4744"
+                         style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Lend-1)" />
+                    <text
+                         x="159.89691"
+                         y="183.75142"
+                         id="text4732-3"
+                         xml:space="preserve"
+                         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:black;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"><tspan
+                             x="159.89691"
+                             y="183.75142"
+                             id="tspan4734-7"
+                             style="font-size:22px;font-weight:bold;-inkscape-font-specification:Bitstream Vera Sans Mono Bold">attention</tspan></text>
+                </g>
+                <g
+                     id="g3056">
+                    <path
+                         d="m 515.50548,252.32137 0,48.48732 -150.51273,0 0,-44.44671"
+                         id="path5244"
+                         style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Lend-1-5)" />
+                    <text
+                         x="377.90408"
+                         y="321.254"
+                         id="text4732-4"
+                         xml:space="preserve"
+                         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:black;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"><tspan
+                             x="377.90408"
+                             y="321.254"
+                             id="tspan4734-1"
+                             style="font-size:22px;font-weight:bold;-inkscape-font-specification:Bitstream Vera Sans Mono Bold">rehearsal</tspan></text>
+                </g>
+                <g
+                     id="g5616">
+                    <rect
+                         width="239.40616"
+                         height="125.25892"
+                         x="-119.198"
+                         y="127.17083"
+                         id="rect3070"
+                         style="fill:none;stroke:#171717;stroke-width:3.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+                    <text
+                         x="-0.5710907"
+                         y="172.75781"
+                         id="text5536"
+                         xml:space="preserve"
+                         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:black;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"><tspan
+                             x="-0.5710907"
+                             y="172.75781"
+                             id="tspan5538"
+                             style="font-size:38px;font-weight:bold;-inkscape-font-specification:Bitstream Vera Sans Mono Bold">sensory</tspan><tspan
+                             x="-0.5710907"
+                             y="220.25781"
+                             id="tspan5540"
+                             style="font-size:38px;font-weight:bold;-inkscape-font-specification:Bitstream Vera Sans Mono Bold">memory</tspan></text>
+                </g>
+                <g
+                     id="g5622">
+                    <rect
+                         width="239.40616"
+                         height="125.25892"
+                         x="318.57748"
+                         y="127.17083"
+                         id="rect3070-2"
+                         style="fill:none;stroke:#171717;stroke-width:3.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+                    <text
+                         x="437.39923"
+                         y="176.55225"
+                         id="text5604"
+                         xml:space="preserve"
+                         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:black;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"><tspan
+                             x="437.39923"
+                             y="176.55225"
+                             id="tspan5606"
+                             style="font-size:38px;font-weight:bold;text-align:center;text-anchor:middle;-inkscape-font-specification:Bitstream Vera Sans Mono Bold">short-term</tspan><tspan
+                             x="437.39923"
+                             y="224.05225"
+                             id="tspan5608"
+                             style="font-size:38px;font-weight:bold;text-align:center;text-anchor:middle;-inkscape-font-specification:Bitstream Vera Sans Mono Bold">memory</tspan></text>
+                </g>
+                <g
+                     id="g5628">
+                    <rect
+                         width="239.40616"
+                         height="125.25892"
+                         x="756.35297"
+                         y="127.17083"
+                         id="rect3070-9"
+                         style="fill:none;stroke:#171717;stroke-width:3.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+                    <text
+                         x="875.93542"
+                         y="176.55225"
+                         id="text5610"
+                         xml:space="preserve"
+                         style="font-size:38px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:black;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"><tspan
+                             x="875.93542"
+                             y="176.55225"
+                             id="tspan5612"
+                             style="font-weight:bold;text-align:center;text-anchor:middle;-inkscape-font-specification:Bitstream Vera Sans Mono Bold">long-term</tspan><tspan
+                             x="875.93542"
+                             y="224.05225"
+                             id="tspan5614"
+                             style="font-weight:bold;text-align:center;text-anchor:middle;-inkscape-font-specification:Bitstream Vera Sans Mono Bold">memory</tspan></text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
